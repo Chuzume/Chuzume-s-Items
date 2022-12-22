@@ -1,0 +1,1 @@
+execute if data entity @s HandItems[0].tag{Charged:0b} run function chuz_items:entity/shotgun_pillager/fire
