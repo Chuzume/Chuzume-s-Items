@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuz_items:craft/shotgun
+# @within advancement chuz_items:craft/shotgun
 
 # 実行者の位置にアイテムを召喚
     execute at @s run loot spawn ~ ~ ~ loot chuz_items:item/shotgun
