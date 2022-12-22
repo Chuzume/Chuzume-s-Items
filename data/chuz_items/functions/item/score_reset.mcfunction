@@ -1,3 +1,3 @@
-scoreboard players reset @s S.Rif_Reload
-scoreboard players reset @s S.Rif_Ready
-scoreboard players reset @s S.Rif_Charge
+scoreboard players reset @s ChuzItems.Reload
+scoreboard players reset @s ChuzItems.Ready
+scoreboard players reset @s ChuzItems.Charge

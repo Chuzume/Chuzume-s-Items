@@ -21,6 +21,6 @@
 
 # リセットと残弾消費
     execute in overworld run function chuz_items:item/consume_ammo
-    scoreboard players reset @s S.Rif_Charge
+    scoreboard players reset @s ChuzItems.Charge
     tag @s remove Chuz.This
     tag @s remove Chuz.PlayerAttack

@@ -36,4 +36,4 @@
     execute unless data storage chuz:context Item.Mainhand run item replace entity @s weapon.offhand with air
 
 # リセット
-    tag @s remove S.Rif_Steping
+    tag @s remove ChuzItems.Steping

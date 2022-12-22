@@ -1,12 +1,12 @@
 
 
 # 何で攻撃されたのかタグ付与
-    tag @s remove S.Rif_Hit.Bullet
-    tag @s add S.Rif_Hit.BulletHS
+    tag @s remove ChuzItems.Hit.Bullet
+    tag @s add ChuzItems.Hit.BulletHS
 
 # 当てるといい音が鳴る
-    execute as @e[tag=S.Rif_Projectile,tag=!S.Rif_Shell,sort=nearest,limit=1] at @a if score @s Chuz_En.ID = @p Chuz_Pl.ID run playsound entity.arrow.hit_player player @p ~ ~ ~ 2 1
-    execute as @e[tag=S.Rif_Projectile,tag=S.Rif_Shell,sort=nearest,limit=1] at @a if score @s Chuz_En.ID = @p Chuz_Pl.ID run playsound entity.arrow.hit_player player @p ~ ~ ~ 0.5 1
+    execute as @e[tag=ChuzItems.Projectile,tag=!ChuzItems.Shell,sort=nearest,limit=1] at @a if score @s Chuz_En.ID = @p Chuz_Pl.ID run playsound entity.arrow.hit_player player @p ~ ~ ~ 2 1
+    execute as @e[tag=ChuzItems.Projectile,tag=ChuzItems.Shell,sort=nearest,limit=1] at @a if score @s Chuz_En.ID = @p Chuz_Pl.ID run playsound entity.arrow.hit_player player @p ~ ~ ~ 0.5 1
 
 # 胴体ダメージ削除
     data remove storage csr_score_damage: ChuzDamage.Body

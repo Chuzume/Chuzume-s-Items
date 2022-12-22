@@ -28,12 +28,12 @@
 
 # グレートソード
     # タグ付与
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Forgesoul_Greatsword} run tag @s add S.Rif_HoldGreatSword
+        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Forgesoul_Greatsword} run tag @s add ChuzItems.HoldGreatSword
     # メイン
-     execute if entity @s[tag=S.Rif_HoldGreatSword] run function chuz_items:item/great_sword/main
+     execute if entity @s[tag=ChuzItems.HoldGreatSword] run function chuz_items:item/great_sword/main
 
 # タグ削除
-    execute unless data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Forgesoul_Greatsword} run tag @s remove S.Rif_HoldGreatSword
+    execute unless data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Forgesoul_Greatsword} run tag @s remove ChuzItems.HoldGreatSword
 
 # 共通処理
     # アイテムが変わったら状態リセット

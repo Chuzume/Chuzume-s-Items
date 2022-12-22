@@ -31,5 +31,5 @@
     tag @s remove Chuz.This
 
 # リロードを阻害
-    scoreboard players reset @s S.Rif_Ready
-    scoreboard players reset @s S.Rif_Reload
+    scoreboard players reset @s ChuzItems.Ready
+    scoreboard players reset @s ChuzItems.Reload

@@ -3,10 +3,10 @@
     loot replace entity @s weapon.mainhand loot chuz_items:item/shotgun
 
 # ルールが弾使うモードなら弾を減らす 消せた弾のぶんだけ$Ammoに代入
-    execute if score $S.Rif_Setting1 Chuz.Rule matches 1 store result score $Ammo Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Shotshell}} 2
+    execute if score $ChuzItems.Setting1 Chuz.Rule matches 1 store result score $Ammo Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Shotshell}} 2
         
 # ルールが弾使うモードじゃないなら常に2を代入
-    execute if score $S.Rif_Setting1 Chuz.Rule matches 0 run scoreboard players set $Ammo Chuz.Temporary 2
+    execute if score $ChuzItems.Setting1 Chuz.Rule matches 0 run scoreboard players set $Ammo Chuz.Temporary 2
         
 # リセット
     scoreboard players reset @s Chuz.Temporary
@@ -26,10 +26,10 @@
     execute at @s run playsound minecraft:block.piston.contract player @a ~ ~ ~ 0.8 2
 
 # リセット
-    title @s[tag=!S.Rif_ReloadSuccess] actionbar {"text":""}
-    tag @s remove S.Rif_ReloadFailed
-    tag @s remove S.Rif_ReloadSuccess
-    scoreboard players reset @s S.Rif_Reload
+    title @s[tag=!ChuzItems.ReloadSuccess] actionbar {"text":""}
+    tag @s remove ChuzItems.ReloadFailed
+    tag @s remove ChuzItems.ReloadSuccess
+    scoreboard players reset @s ChuzItems.Reload
 
 # 更新
     function chuz_items:item/replaceitem

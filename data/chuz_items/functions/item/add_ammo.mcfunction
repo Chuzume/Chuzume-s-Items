@@ -15,7 +15,7 @@
     execute store result storage chuz:context Item.Mainhand.tag.ChuzData.Ammo int 1 run scoreboard players get $AmmoReload Chuz.Temporary
 
 # スコアリセット
-    scoreboard players reset @s S.Rif_Reload
+    scoreboard players reset @s ChuzItems.Reload
 
 # 更新
     function chuz_items:item/replaceitem

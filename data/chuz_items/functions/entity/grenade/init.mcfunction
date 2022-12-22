@@ -1,6 +1,6 @@
 execute facing entity @e[type=marker,tag=Chuz.Spread,distance=..100] feet run tp @s ~ ~-0.3 ~ ~ ~
 kill @e[type=marker,tag=Chuz.Spread,distance=..100]
-tag @s add S.Rif_Grenade
+tag @s add ChuzItems.Grenade
 tag @s remove Chuz.Projectile_Init
 scoreboard players set @s Chuz.Range 60
 execute at @s run function chuz_items:entity/motion

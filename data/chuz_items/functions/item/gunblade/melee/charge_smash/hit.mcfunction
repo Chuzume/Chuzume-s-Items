@@ -3,7 +3,7 @@
     execute if entity @s[type=end_crystal] run summon tnt
 
 # 何で攻撃されたのかタグ付与
-    tag @s add S.Rif_Hit.ChargeSmash
+    tag @s add ChuzItems.Hit.ChargeSmash
     tag @s add Chuz.HitReact
 
 # ヒット音

@@ -8,8 +8,8 @@
         execute anchored eyes run particle smoke ^-0.25 ^ ^0.7 0 0 0 0.05 5
 
 # リセット
-    scoreboard players reset @s S.Rif_Charge
-    scoreboard players remove @s S.Rif_Burst 1
+    scoreboard players reset @s ChuzItems.Charge
+    scoreboard players remove @s ChuzItems.Burst 1
     tag @s remove Chuz.This
 
 # 更新

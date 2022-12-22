@@ -3,9 +3,9 @@
     playsound minecraft:entity.player.levelup player @a ~ ~ ~ 4 2
 
 # フルバースト
-    scoreboard players set @s S.Rif_Burst 8
+    scoreboard players set @s ChuzItems.Burst 8
 
 # リセット
-    scoreboard players reset @s S.Rif_Charge
-    scoreboard players reset @s S.Rif_Ready
-    scoreboard players reset @s S.Rif_Reload
+    scoreboard players reset @s ChuzItems.Charge
+    scoreboard players reset @s ChuzItems.Ready
+    scoreboard players reset @s ChuzItems.Reload

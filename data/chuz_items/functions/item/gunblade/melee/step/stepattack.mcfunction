@@ -2,7 +2,7 @@
 # 実行者にタグ付与
     tag @s add Chuz.This
     tag @s add Chuz.PlayerAttack
-    tag @s add S.Rif_NoStepAttack
+    tag @s add ChuzItems.NoStepAttack
 
  # 音
      playsound minecraft:entity.witch.throw player @a ~ ~ ~ 2 1
@@ -20,6 +20,6 @@
 
 # リセットと残弾消費
     execute in overworld run function chuz_items:item/consume_ammo
-    scoreboard players reset @s S.Rif_Charge
+    scoreboard players reset @s ChuzItems.Charge
     tag @s remove Chuz.This
     tag @s remove Chuz.PlayerAttack
