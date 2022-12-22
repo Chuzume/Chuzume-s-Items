@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "iiO",
+        " Lc"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:spyglass"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "O": {
+            "tag": "minecraft:planks"
+        },
+        "L": {
+            "item": "minecraft:lever"
+        },
+        "c": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:chest",
+        "count": 1
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "craftsman_arms:gunblade"
+      }
+    }
+  },
+  "rewards": {
+    "function": "craftsman_arms:craft/gunblade"
+  }
+}

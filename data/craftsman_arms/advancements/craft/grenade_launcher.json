@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "craftsman_arms:grenade_launcher"
+      }
+    }
+  },
+  "rewards": {
+    "function": "craftsman_arms:craft/grenade_launcher"
+  }
+}

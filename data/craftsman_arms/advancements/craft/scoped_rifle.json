@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "craftsman_arms:scoped_rifle"
+      }
+    }
+  },
+  "rewards": {
+    "function": "craftsman_arms:craft/scoped_rifle"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:armor_stand",
+    "minecraft:marker",
+    "minecraft:item",
+    "minecraft:arrow",
+    "minecraft:spectral_arrow",
+    "minecraft:wither_skull",
+    "minecraft:experience_bottle",
+    "minecraft:dragon_fireball",
+    "minecraft:small_fireball",
+    "minecraft:fireball",
+    "minecraft:falling_block",
+    "minecraft:snowball",
+    "minecraft:egg",
+    "minecraft:ender_pearl",
+    "minecraft:potion"
+  ]
+}

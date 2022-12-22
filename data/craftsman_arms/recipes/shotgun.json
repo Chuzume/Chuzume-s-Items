@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "igO",
+        "_IL"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "O": {
+            "tag": "minecraft:planks"
+        },
+        "_": {
+            "tag": "minecraft:wooden_slabs"
+        },
+        "I": {
+            "item": "minecraft:iron_trapdoor"
+        },
+        "L": {
+            "item": "minecraft:lever"
+        }
+    },
+    "result": {
+        "item": "minecraft:chest",
+        "count": 1
+    }
+}

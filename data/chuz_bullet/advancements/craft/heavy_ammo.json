@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chuz_bullet:heavy_ammo"
+      }
+    }
+  },
+  "rewards": {
+    "function": "chuz_bullet:craft/heavy_ammo"
+  }
+}

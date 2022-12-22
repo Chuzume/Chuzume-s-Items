@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  #",
+        "iiO",
+        "DRg"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_trapdoor"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "O": {
+            "tag": "minecraft:planks"
+        },
+        "D": {
+            "item": "minecraft:diamond_sword"
+        },
+        "R": {
+            "item": "minecraft:repeater"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:chest",
+        "count": 1
+    }
+}

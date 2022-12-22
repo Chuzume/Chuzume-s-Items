@@ -1,0 +1,12 @@
+
+ScoreToHealth: 赤石愛様
+https://github.com/Ai-Akaishi/ScoreToHealth
+
+Oh! My Dat!: 赤石愛様
+https://github.com/Ai-Akaishi/OhMyDat
+
+MCCMD-ScoreDamage: ちぇん様
+https://github.com/ChenCMD/MCCMD-ScoreDamage
+
+MCCMD-ForwardSpread: ちぇん様
+https://github.com/ChenCMD/MCCMD-ForwardSpread

@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "nbt": "Item.Mainhand.tag.ChuzData.RawName",
+                  "storage": "chuz:context",
+                  "interpret": true,
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "| ",
+                  "color": "gray"
+                },
+                {
+                  "nbt": "Item.Mainhand.tag.ChuzData.Ammo",
+                  "storage": "chuz:context",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " |",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

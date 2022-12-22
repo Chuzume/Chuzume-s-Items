@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chuz_bullet:shot_shell"
+      }
+    }
+  },
+  "rewards": {
+    "function": "chuz_bullet:craft/shot_shell"
+  }
+}
