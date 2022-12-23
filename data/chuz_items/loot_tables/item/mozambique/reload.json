@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Mozambique Shotgun \",\"color\":\"aqua\",\"italic\":false},{\"text\":\" | Reloading |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[Ammo: Shotshell]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\\\\\"リロード中！\\\\\"\",\"color\":\"gray\",\"italic\":false}']},HideFlags:7,Unbreakable:1b,CustomModelData:3,ChuzData:{ItemID:Mozambique,Ammotype:Shotshell,ItemMode:Reloading,NoOffhand:True,Ammo:0,MaxAmmo:6},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-100d,Operation:0,UUID:[I;1214350222,1737049035,-2006853743,-1572707679],Slot:\"mainhand\"}]}"
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "chuz:context"
+              },
+              "ops": [
+                {
+                  "source": "Item.Mainhand.tag.ChuzData.Ammo",
+                  "target": "ChuzData.Ammo",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
