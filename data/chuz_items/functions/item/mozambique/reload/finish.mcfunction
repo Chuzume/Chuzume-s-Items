@@ -15,4 +15,7 @@
     scoreboard players reset @s ChuzItems.Reload
 
 # マガジン式リロード
-    function chuz_items:common/reload/magazine/
+    # 弾薬を使う
+        execute if score $ChuzItems.Setting1 Chuz.Rule matches 1 run function chuz_items:common/reload/magazine/
+    # 弾薬を使わない
+        execute if score $ChuzItems.Setting1 Chuz.Rule matches 0 run function chuz_items:common/reload/magazine/no_ammo_need

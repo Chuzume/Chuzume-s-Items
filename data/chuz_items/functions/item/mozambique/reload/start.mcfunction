@@ -14,10 +14,10 @@
     execute at @s run playsound minecraft:block.iron_door.close player @a ~ ~ ~ 1 1.5
     execute at @s run playsound minecraft:block.iron_door.open player @a ~ ~ ~ 1 1.5
 
+# 射撃のポーズ戻す
+    tag @s remove ChuzItems.Shot.ADS
+    tag @s remove ChuzItems.Shot.Normal
+
 # スコア
-    #scoreboard players set @s C.Apex_Ammo -1
     scoreboard players reset @s ChuzItems.CoolTime
     tag @s remove ChuzItems.ReloadStart
-    #tag @s remove C.Apex_NormalShot
-    #tag @s remove C.Apex_ADSShot
-    #tag @s remove C.Apex_ZeroReload

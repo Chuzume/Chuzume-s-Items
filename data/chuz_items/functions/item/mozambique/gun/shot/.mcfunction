@@ -18,21 +18,18 @@
 
 # 弾を召喚
     # 上
-        execute anchored eyes run summon marker ^-0.25 ^ ^ {Tags:["ChuzItems.Projectile","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:2.5,HeadDamage:4.0,Speed:10,Range:200,Spread:0.0f}}}
+        execute anchored eyes run summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Mozambique","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:2.5,HeadDamage:4.0,Speed:10,Range:200,Spread:0.0f}}}
         execute anchored eyes run summon marker ^ ^0.25 ^10 {Tags:["SpreadMarker"]}
-        tag @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] add ChuzItems.Projectile.Mozambique
         execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/common/init
 
     # 下
-        execute anchored eyes run summon marker ^-0.25 ^ ^ {Tags:["ChuzItems.Projectile","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:2.5,HeadDamage:4.0,Speed:10,Range:200,Spread:0.0f}}}
+        execute anchored eyes run summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Mozambique","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:2.5,HeadDamage:4.0,Speed:10,Range:200,Spread:0.0f}}}
         execute anchored eyes run summon marker ^0.25 ^-0.25 ^10 {Tags:["SpreadMarker"]}
-        tag @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] add ChuzItems.Projectile.Mozambique
         execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/common/init
 
     # 下2
-        execute anchored eyes run summon marker ^-0.25 ^ ^ {Tags:["ChuzItems.Projectile","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:2.5,HeadDamage:4.0,Speed:10,Range:200,Spread:0.0f}}}
+        execute anchored eyes run summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Mozambique","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:2.5,HeadDamage:4.0,Speed:10,Range:200,Spread:0.0f}}}
         execute anchored eyes run summon marker ^-0.25 ^-0.25 ^10 {Tags:["SpreadMarker"]}
-        tag @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] add ChuzItems.Projectile.Mozambique
         execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/common/init
 
 # 弾が減る

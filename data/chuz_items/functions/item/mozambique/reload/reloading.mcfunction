@@ -4,7 +4,7 @@
 #
 # @within function chuz_items:item/mozambique/main
 
-# スコア増やしてく 20になったら終了
+# スコア増やしてく、一定値で終了
     scoreboard players add @s ChuzItems.Reload 1
     execute if score @s ChuzItems.Reload matches 50.. run function chuz_items:item/mozambique/reload/finish
 
