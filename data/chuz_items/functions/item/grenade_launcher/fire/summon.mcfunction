@@ -1,4 +1,4 @@
 # 弾を召喚
-    execute anchored eyes run particle smoke ^-0.25 ^-0.2 ^0.7 0 0 0 0.05 10
-    execute anchored eyes run summon item ^-0.25 ^ ^ {Health:9999,Fire:2,PickupDelay:32767,Item:{id:"minecraft:chain_command_block",Count:1b,tag:{display:{Name:'{"text":"Grenade Bullet","color":"white","italic":false}',Lore:['{"text":" "}','{"text":"ホッパーに吸い込まれたグレネード。","color":"gray","italic":false}','{"text":"どういうわけか弾薬として機能する。","color":"gray","italic":false}']},CustomModelData:4,ChuzData:{ItemID:Explosive_Cartridge}}},Tags:["ChuzItems.Projectile","Chuz_UUIDAttack","Chuz.Projectile_Init"]}
+    particle smoke ^-0.25 ^-0.2 ^0.7 0 0 0 0.05 10 force @a[distance=..20]
+    summon item ^-0.25 ^ ^ {Health:9999s,Fire:2s,PickupDelay:32767s,Item:{id:"minecraft:chain_command_block",Count:1b,tag:{display:{Name:'{"text":"Grenade Bullet","color":"white","italic":false}',Lore:['{"text":" "}','{"text":"ホッパーに吸い込まれたグレネード。","color":"gray","italic":false}','{"text":"どういうわけか弾薬として機能する。","color":"gray","italic":false}']},CustomModelData:4,ChuzData:{ItemID:Explosive_Cartridge}}},Tags:["Chuz.Projectile",ChuzItems.Projectile.Grenade,"Chuz.UUIDAttack","Chuz.Init"]}
     execute at @s run function chuz_items:item/grenade_launcher/fire/spread

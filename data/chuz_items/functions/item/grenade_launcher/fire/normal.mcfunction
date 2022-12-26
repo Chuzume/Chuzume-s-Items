@@ -1,24 +1,24 @@
 # 俺が実行者だ
-    tag @s add Chuz.This
+    tag @s add This
     
-# 発砲
-    playsound chuzume:launcher_shot player @a ~ ~ ~ 3 1.2
-    playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 0.7
-    playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 1
-    playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 3 1.5
+# 演出
+    execute positioned ^ ^-0.2 ^0.5 run playsound chuzume:launcher_shot player @a ~ ~ ~ 3 1.1
+    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 0.7
+    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 1
+    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 3 1.5
 
 # 弾を召喚
     function chuz_items:item/grenade_launcher/fire/summon
 
 # 弾丸にInit処理
-    scoreboard players set @e[type=item,tag=Chuz.Projectile_Init,limit=1] Chuz.Speed 10
-    execute as @e[type=item,tag=Chuz.Projectile_Init,limit=1] at @s run function chuz_items:entity/grenade/init
+    scoreboard players set @e[type=item,tag=Chuz.Init,distance=..100,limit=1] Chuz.Speed 10
+    execute as @e[type=item,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/grenade/init
 
 # 弾が減る
     execute in overworld run function chuz_items:item/consume_ammo
 
 # もう実行者ではない
-    tag @s remove Chuz.This
+    tag @s remove This
 
 # リロードを阻害
     scoreboard players reset @s ChuzItems.Ready
