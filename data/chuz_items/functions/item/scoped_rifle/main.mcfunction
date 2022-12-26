@@ -9,15 +9,15 @@
     execute if entity @s[scores={ChuzItems.Charge=13}] run playsound minecraft:item.crossbow.loading_end player @s ~ ~ ~ 2 1.5
     execute if entity @s[scores={ChuzItems.Charge=30}] run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 1 2
     execute if entity @s[scores={ChuzItems.Charge=30}] run playsound minecraft:block.note_block.bell player @a ~ ~ ~ 1 1.5
-    
+
 # 離して発砲
-    execute unless score @s[scores={ChuzItems.Charge=13..29}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/scoped_rifle/fire/normal
+    execute unless score @s[scores={ChuzItems.Charge=13..29}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuz_items:item/scoped_rifle/fire/normal
 
 # シャープシュート
-    execute unless score @s[scores={ChuzItems.Charge=30..}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/scoped_rifle/fire/sharpshoot
+    execute unless score @s[scores={ChuzItems.Charge=30..}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuz_items:item/scoped_rifle/fire/sharpshoot
 
 # 残弾0なら失敗
-    execute unless score @s[scores={ChuzItems.Charge=13..}] ChuzItems.Sneak matches 0.. if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/scoped_rifle/fire/out_of_ammo
+    execute unless score @s[scores={ChuzItems.Charge=13..}] ChuzItems.Sneak matches 0.. if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuz_items:item/scoped_rifle/fire/out_of_ammo
 
 # 残弾0でリロードをする
     execute unless score @s ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:4} run scoreboard players add @s ChuzItems.Ready 1
