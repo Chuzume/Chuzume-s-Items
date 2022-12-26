@@ -1,18 +1,11 @@
-
+#> chuz_items:entity/projectile/check
+#
 # 弾丸の種類を判別
-    # 通常弾丸
-        execute if entity @s[tag=ChuzItems.Bullet] run function chuz_items:entity/bullet/tick
+#
+# @within function chuz_items:tick
 
-    # ショットシェル
-        execute if entity @s[tag=ChuzItems.Shell] run function chuz_items:entity/shell/tick
+# 再帰弾丸の共通処理
+    execute if entity @s[tag=ChuzItems.RecursiveBullet] run function chuz_items:entity/projectile/recursive_bullet/tick
 
-    # グレネード弾
-        execute if entity @s[tag=ChuzItems.Grenade] run function chuz_items:entity/grenade/tick
-
-    # モザンビーク弾丸
-        execute if entity @s[tag=ChuzItems.Projectile.Mozambique] run function chuz_items:entity/projectile/mozambique/tick
-
-    # 敵の弾丸
-        execute if entity @s[tag=ChuzItems.Shell_Enemy] run function chuz_items:entity/shell_enemy/tick
-
-# 
+# グレネード弾
+    execute if entity @s[tag=ChuzItems.Projectile.Grenade] run function chuz_items:entity/grenade/tick

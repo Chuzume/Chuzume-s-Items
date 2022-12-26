@@ -4,12 +4,15 @@
 #
 # @within function chuz_items:item/**
 
+
 # 拡散設定
     # どれくらい視点から離すか
         data modify storage forward_spreader: Distance set from entity @s data.ChuzData.Distance
 
-    # どれくらい拡散させるか
-        data modify storage forward_spreader: Spread set from entity @s data.ChuzData.Spread
+    # どれくらい拡散させるか。ただしスコアから拡散させる設定だったら無視
+        execute unless score @p[tag=This] ChuzItems.Spread matches 0.. run data modify storage forward_spreader: Spread set from entity @s data.ChuzData.Spread
+    # スコアから拡散させる。
+        execute if score @p[tag=This] ChuzItems.Spread matches 1.. store result storage forward_spreader: Spread float 0.01 run scoreboard players get @p[tag=This] ChuzItems.Spread
 
     # タグ付きプレイヤーから実行する。ただし拡散0なら射撃側で設定する
         execute unless data storage forward_spreader: {Spread:0.0f} as @p[tag=This] at @s run function chuz_items:item/gunblade/ranged/fire/spread
