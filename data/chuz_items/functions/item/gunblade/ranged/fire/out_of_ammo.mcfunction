@@ -10,7 +10,7 @@
 # リセット
     scoreboard players reset @s ChuzItems.Charge
     scoreboard players remove @s ChuzItems.Burst 1
-    tag @s remove Chuz.This
+    tag @s remove This
 
 # 更新
     function chuz_items:item/replaceitem

@@ -1,6 +1,6 @@
 
 # 実行者にタグ付与
-    tag @s add Chuz.This
+    tag @s add This
     tag @s add Chuz.PlayerAttack
     tag @s add ChuzItems.NoStepAttack
 
@@ -16,10 +16,10 @@
     execute anchored eyes positioned ^ ^ ^2 run particle minecraft:lava ~ ~ ~ 0.0 0.0 0.0 0.1 3
 
 # 火薬パワーでなんか吹っ飛ばす
-    execute positioned ^ ^ ^2 as @e[type=!#chuz_items:unhurtable,tag=!Chuz.This,nbt=!{Invulnerable:1b},distance=..2] at @s rotated 0 ~ facing entity @p[tag=Chuz.This] feet run function chuz_items:item/gunblade/melee/charge_smash/hit
+    execute positioned ^ ^ ^2 as @e[type=!#chuz_items:unhurtable,tag=!This,nbt=!{Invulnerable:1b},distance=..2] at @s rotated 0 ~ facing entity @p[tag=This] feet run function chuz_items:item/gunblade/melee/charge_smash/hit
 
 # リセットと残弾消費
     execute in overworld run function chuz_items:item/consume_ammo
     scoreboard players reset @s ChuzItems.Charge
-    tag @s remove Chuz.This
+    tag @s remove This
     tag @s remove Chuz.PlayerAttack

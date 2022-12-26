@@ -28,4 +28,4 @@
 # リセット
     scoreboard players reset @s ChuzItems.Ready
     scoreboard players reset @s ChuzItems.Reload
-    tag @s remove Chuz.This
+    tag @s remove This

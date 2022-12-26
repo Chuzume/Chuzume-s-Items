@@ -16,4 +16,4 @@
     execute rotated ~ 0 run function chuz_items:item/gunblade/summon_recursive
 
 # リセット
-    tag @s remove Chuz.This
+    tag @s remove This
