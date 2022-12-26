@@ -6,9 +6,9 @@
 
 # 発砲
     # 腰だめ
-        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=!chuz_items:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/mozambique/gun/shot/
+        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=!chuz_items:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes run function chuz_items:item/mozambique/gun/shot/
     # ADS
-        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=chuz_items:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/mozambique/gun/shot/ads
+        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=chuz_items:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes run function chuz_items:item/mozambique/gun/shot/ads
 
 # クールタイム処理
     scoreboard players remove @s[scores={ChuzItems.CoolTime=1..}] ChuzItems.CoolTime 1
