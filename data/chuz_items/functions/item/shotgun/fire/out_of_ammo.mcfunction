@@ -1,7 +1,7 @@
 
 # 音
-    playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 2 1
-    playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 2 1.2
+    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 2 1
+    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 2 1.2
 
 # 煙
     # 腰だめ
