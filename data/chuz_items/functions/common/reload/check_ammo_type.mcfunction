@@ -5,7 +5,7 @@
 # @within function chuz_items:common/reload/**
 
 # ヘビー
-    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammotype:Heavy_Bullet} store success score $ConsumeSuccess Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Heavt_Bullet}} 1
+    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammotype:Heavy_Bullet} store success score $ConsumeSuccess Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Heavy_Bullet}} 1
 # ショットシェル
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammotype:Shotshell} store success score $ConsumeSuccess Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Shotshell}} 1
 # エクスプローシブ
