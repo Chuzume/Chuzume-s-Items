@@ -8,11 +8,11 @@
     tag @s add This
 
 # 演出
-    execute anchored eyes positioned ^ ^-0.4 ^0.5 run playsound chuzume:rifle_shot player @a ~ ~ ~ 5 0.5
-    execute anchored eyes positioned ^ ^-0.4 ^0.5 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5
-    execute anchored eyes positioned ^ ^-0.4 ^0.5 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.6
-    execute anchored eyes positioned ^ ^-0.4 ^0.5 run playsound minecraft:entity.shulker.shoot player @a ~ ~ ~ 5 1.8
-    execute anchored eyes positioned ^ ^-0.4 ^0.5 run playsound minecraft:entity.zombie.attack_wooden_door player @a ~ ~ ~ 3 1.5
+    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound chuzume:rifle_shot player @a ~ ~ ~ 5 0.5
+    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5
+    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.6
+    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.shulker.shoot player @a ~ ~ ~ 5 1.8
+    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.zombie.attack_wooden_door player @a ~ ~ ~ 3 1.5
 
 # タグ付与: 通常射撃
     tag @s add ChuzItems.Shot.Normal

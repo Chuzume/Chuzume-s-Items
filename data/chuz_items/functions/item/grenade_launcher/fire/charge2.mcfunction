@@ -2,10 +2,10 @@
     tag @s add This
     
 # 演出
-    execute positioned ^ ^-0.2 ^0.5 run playsound chuzume:launcher_shot player @a ~ ~ ~ 3 1.7
-    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 1.3
-    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 1.6
-    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 3 1.5
+    execute positioned ^ ^-0.2 ^1.0 run playsound chuzume:launcher_shot player @a ~ ~ ~ 3 1.7
+    execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 1.3
+    execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 1.6
+    execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 3 1.5
 
 # 弾を召喚
     function chuz_items:item/grenade_launcher/fire/summon

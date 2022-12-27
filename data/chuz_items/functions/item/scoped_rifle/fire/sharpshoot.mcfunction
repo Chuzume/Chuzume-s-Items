@@ -2,11 +2,11 @@
     tag @s add This
     
 # 発砲
-    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 5 2
-    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5
-    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.7
-    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:block.chain.break player @a ~ ~ ~ 4 1.5
-    execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 5 0.8
+    execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 5 2
+    execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5
+    execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.7
+    execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:block.chain.break player @a ~ ~ ~ 4 1.5
+    execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 5 0.8
 
 # 弾を召喚
     # 腰だめ

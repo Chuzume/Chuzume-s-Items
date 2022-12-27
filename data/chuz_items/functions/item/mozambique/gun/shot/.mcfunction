@@ -5,10 +5,10 @@
 # @within function chuz_items:item/mozambique/gun/
 
 # 演出
-    execute positioned ^ ^-0.4 ^0.5 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5
-    execute positioned ^ ^-0.4 ^0.5 run playsound minecraft:block.chain.break player @a ~ ~ ~ 4 2
-    execute positioned ^ ^-0.4 ^0.5 run playsound minecraft:entity.shulker.shoot player @a ~ ~ ~ 5 2
-    execute positioned ^ ^-0.4 ^0.5 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 5 1.5
+    execute positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5
+    execute positioned ^ ^-0.4 ^1.0 run playsound minecraft:block.chain.break player @a ~ ~ ~ 4 2
+    execute positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.shulker.shoot player @a ~ ~ ~ 5 2
+    execute positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 5 1.5
 
 # タグ付与: 通常射撃
     tag @s add ChuzItems.Shot.Normal
