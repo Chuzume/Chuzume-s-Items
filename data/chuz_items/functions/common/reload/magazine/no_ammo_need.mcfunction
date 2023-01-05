@@ -15,7 +15,7 @@
     execute store result storage chuz:context Item.Mainhand.tag.ChuzData.Ammo int 1 run scoreboard players get $AmmoAddition Chuz.Temporary
 
 # 更新
-    function chuz_items:item/replaceitem
+    execute in overworld run function chuz_items:item/replaceitem
 
 # スコアリセット
     scoreboard players reset $AmmoAddition Chuz.Temporary
