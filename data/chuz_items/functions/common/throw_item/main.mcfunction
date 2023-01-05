@@ -12,5 +12,5 @@
 
 # 手持ちが素手なら、アイテムのリロード処理開始
     tag @s add This
-    execute unless data storage chuz:context Item.Mainhand anchored eyes positioned ^ ^ ^0.05 as @e[type=item,distance=..200,sort=nearest,limit=1] in overworld run function chuz_items:common/throw_item/check
+    execute if data storage chuz:context Item.Mainhand{tag:{ChuzData:{ItemID:{}}}} anchored eyes positioned ^ ^ ^0.05 as @e[type=item,distance=..200,sort=nearest,limit=1] in overworld run function chuz_items:common/throw_item/check
     tag @s remove This

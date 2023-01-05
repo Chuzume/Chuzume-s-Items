@@ -4,7 +4,6 @@
 #
 # @within function chuz_items:common/throw_item/check
 
-
 # プレイヤーのUUIDを入れる
     data modify storage chuz:context UUID set from entity @a[tag=This,limit=1] UUID
 
