@@ -15,9 +15,8 @@
     data modify storage chuz:context MaxAmmo set from entity @s Item.tag.ChuzData.MaxAmmo
     execute store success storage chuz:context Reload int 1 run data modify storage chuz:context MaxAmmo set from entity @s Item.tag.ChuzData.Ammo
 
-# 暴力
-     execute if data storage chuz:context {Reload:1} run data modify storage chuz:context Item.Mainhand set from entity @s Item
-    #tellraw @a [{"text":"storage: "},{"storage":"chuz:context","nbt":"Item.Mainhand.tag.ChuzData.ItemID"}]
+# 暴力で投げたアイテムを現在の手持ちということにする
+    execute if data storage chuz:context {Reload:1} run data modify storage chuz:context Item.Mainhand set from entity @s Item
 
 # リロードの開始を宣言
     execute if data storage chuz:context {Reload:1} run tag @p[tag=This] add ChuzItems.ReloadStart

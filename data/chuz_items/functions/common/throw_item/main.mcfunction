@@ -7,7 +7,10 @@
 # スコアリセット
     scoreboard players reset @s ChuzItems.DropReload
 
-# 投げた武器は何かチェック
+# 素手かどうかチェック
+    data modify storage chuz:context Item.Mainhand set from entity @s SelectedItem
+
+# 手持ちが素手なら、アイテムのリロード処理開始
     tag @s add This
-    execute anchored eyes positioned ^ ^ ^0.05 as @e[type=item,distance=..200,sort=nearest,limit=1] in overworld run function chuz_items:common/throw_item/check
+    execute unless data storage chuz:context Item.Mainhand anchored eyes positioned ^ ^ ^0.05 as @e[type=item,distance=..200,sort=nearest,limit=1] in overworld run function chuz_items:common/throw_item/check
     tag @s remove This
