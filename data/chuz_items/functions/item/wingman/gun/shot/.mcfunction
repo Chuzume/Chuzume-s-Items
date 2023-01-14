@@ -7,6 +7,7 @@
 # 俺が実行者だ
     tag @s add This
 
+
 # 演出
     execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound chuzume:rifle_shot player @a ~ ~ ~ 5 0.5
     execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5
@@ -21,8 +22,10 @@
     scoreboard players set @s ChuzItems.CoolTime 7
 
 # リコイル
-    execute if entity @s[scores={ChuzItems.Recoil.Change=0..}] run scoreboard players set @s ChuzItems.Recoil 7
-    execute unless entity @s[scores={ChuzItems.Recoil.Change=0..}] run scoreboard players set @s ChuzItems.Recoil 17
+    execute if entity @s[scores={ChuzItems.Recoil.Change=0..}] run data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.17f],Smooth:5,Wait_Tick:4}
+    execute unless entity @s[scores={ChuzItems.Recoil.Change=0..}] run data modify storage yv:gun Recoil set value {Magnitude:[1.85f,-3.325f],Smooth:5,Wait_Tick:4}
+    # リコイル開始
+        function yv_recoil:
 
 # 真上リコイルに変更
     scoreboard players set @s ChuzItems.Recoil.Change 12

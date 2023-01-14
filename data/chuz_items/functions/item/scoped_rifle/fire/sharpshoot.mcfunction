@@ -1,6 +1,12 @@
 # 俺が実行者だ
     tag @s add This
     
+# リコイル
+    data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.5f],Smooth:5,Wait_Tick:0}
+    # リコイル開始
+        function yv_recoil:
+
+
 # 発砲
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 5 2
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5

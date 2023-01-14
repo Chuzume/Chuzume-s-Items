@@ -11,4 +11,4 @@
         execute if entity @s[tag=Chuz.UsingSpyglass] anchored eyes run particle smoke ^ ^ ^0.7 0 0 0 0.05 2
 
 # 更新
-    function chuz_items:item/replaceitem
+    execute in overworld run function chuz_items:item/replaceitem

@@ -1,6 +1,11 @@
 # 俺が実行者だ
     tag @s add This
     
+# リコイル
+    data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.17f],Smooth:5,Wait_Tick:0}
+    # リコイル開始
+        function yv_recoil:
+
 # 発砲
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 5 2
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:block.chain.break player @a ~ ~ ~ 4 1.5
@@ -21,7 +26,7 @@
     execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/common/init
 
 # 弾が減る
-    execute in overworld run function chuz_items:item/consume_ammo
+    function chuz_items:item/consume_ammo
 
 # もう実行者ではない
     tag @s remove This

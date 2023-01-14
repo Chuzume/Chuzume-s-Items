@@ -29,4 +29,4 @@
     execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Charge
 
 # 更新
-    function chuz_items:item/replaceitem
+    execute in overworld run function chuz_items:item/replaceitem
