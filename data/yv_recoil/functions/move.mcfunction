@@ -1,4 +1,4 @@
-#> yv_yv_recoil:move
+#> yv_recoil:move
 
 # 現在の角度を取得
     data modify storage yv:gun Rotation set from entity @s Rotation
@@ -32,5 +32,5 @@
     kill @e[type=marker,tag=YvGun.RecoilRotation,sort=nearest,limit=1]
 
 # 目標の向きになったら
-    execute if score $Move_Yaw YvGun.Core matches -1000..1000 if score $Move_Pitch YvGun.Core matches -1000..1000 at @s run function yv_yv_recoil:control_check
+    execute if score $Move_Yaw YvGun.Core matches -1000..1000 if score $Move_Pitch YvGun.Core matches -1000..1000 at @s run function yv_recoil:control_check
     execute if score $Move_Yaw YvGun.Core matches -1000..1000 if score $Move_Pitch YvGun.Core matches -1000..1000 run tag @s remove YvGun.Recoil

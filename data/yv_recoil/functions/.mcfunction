@@ -1,4 +1,4 @@
-#> yv_yv_recoil:
+#> yv_recoil:
 
 #data modify storage yv:recoil Recoil set value {Magnitude:[0.0f,-10.0f],Smooth:5,Tick:15}
 
