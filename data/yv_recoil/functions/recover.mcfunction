@@ -1,4 +1,4 @@
-#> yv_recoil:recover
+#> yv_yv_recoil:recover
 
 # 現在の角度を取得
     data modify storage yv:gun Rotation set from entity @s Rotation

@@ -1,4 +1,4 @@
-#>  yv_recoil:control_check
+#>  yv_yv_recoil:control_check
 
 # 現在のピッチを取得
     data modify storage yv:gun Rotation set from entity @s Rotation
