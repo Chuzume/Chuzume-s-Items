@@ -3,7 +3,7 @@
     execute in overworld positioned 0.0 0.0 0.0 run tp @e[type=marker,tag=Chuz.Vector0,limit=1] ^ ^ ^-0.1
 
 # chuz:storageのVectorにVector0のPosを保存 ( chuz:storage {Vector:[X,Y,Z]} )
-    data modify storage chuz:storage Vector set from entity @e[tag=Chuz.Vector0,limit=1] Pos
+    data modify storage chuz:storage Vector set from entity @e[type=marker,tag=Chuz.Vector0,limit=1] Pos
 
 # XYZにchuz:storageのVectorから100倍して取得
     execute store result score #X Chuz.Calc run data get storage chuz:storage Vector[0] 10000

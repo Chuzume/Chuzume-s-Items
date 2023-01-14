@@ -1,7 +1,6 @@
-execute facing entity @e[type=marker,tag=Chuz.Spread,distance=..100] feet run tp @s ~ ~-0.3 ~ ~ ~
-kill @e[type=marker,tag=Chuz.Spread,distance=..100]
-tag @s add ChuzItems.Grenade
-tag @s remove Chuz.Projectile_Init
+execute facing entity @e[type=marker,tag=SpreadMarker,distance=..100] feet run tp @s ~ ~-0.3 ~ ~ ~
+kill @e[type=marker,tag=SpreadMarker,distance=..100]
+tag @s remove Chuz.Init
 scoreboard players set @s Chuz.Range 60
 execute at @s run function chuz_items:entity/motion
 
@@ -9,4 +8,4 @@ execute at @s run function chuz_items:entity/motion
     execute run data modify entity @s ArmorItems[0].tag.OwnerUUID set from entity @p UUID
 
 # スコアコピー
-    scoreboard players operation @s Chuz_En.ID = @p Chuz_Pl.ID
+    scoreboard players operation @s Chuz.EntityID = @p Chuz.PlayerID

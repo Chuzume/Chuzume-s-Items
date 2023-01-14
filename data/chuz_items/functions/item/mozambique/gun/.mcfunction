@@ -35,7 +35,7 @@
     execute if score @s ChuzItems.CoolTime matches 0 run function chuz_items:item/mozambique/gun/reset
 
 # 更新
-    function chuz_items:item/replaceitem
+    execute in overworld run function chuz_items:item/replaceitem
 
 # 残弾0ならリロード開始
     execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/mozambique/reload/start

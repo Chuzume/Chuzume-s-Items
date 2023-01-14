@@ -18,4 +18,4 @@
     scoreboard players reset @s ChuzItems.Reload
 
 # 更新
-    function chuz_items:item/replaceitem
+    execute in overworld run function chuz_items:item/replaceitem
