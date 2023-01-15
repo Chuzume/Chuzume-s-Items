@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'[{\"text\":\"Craftsman Shotgun\",\"color\":\"aqua\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[RClick: Fire]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Shotshell]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"keybind\":\"\\\\\"シンプルだからこそ強い、二連式ショットガン。\\\\\"\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:31,Charged:1b,ChuzData:{Ammo:0,AmmoUse:1,NoOffhand:true,ItemID:Craftsman_Shotgun,RawName:'{\"text\":\"Craftsman Shotgun\",\"color\":\"aqua\",\"italic\":false}'}}"
+                "tag": "{display:{Name:'[{\"text\":\"Craftsman Shotgun\",\"color\":\"aqua\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[RClick: Fire]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Shotshell]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"シンプルだからこそ強い、二連式ショットガン。\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:31,Charged:1b,ChuzData:{Ammo:0,AmmoUse:1,NoOffhand:true,ItemID:Craftsman_Shotgun,RawName:'{\"text\":\"Craftsman Shotgun\",\"color\":\"aqua\",\"italic\":false}'}}"
               }
             ]
           }
