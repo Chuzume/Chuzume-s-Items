@@ -20,17 +20,17 @@
     # 上
         summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Mozambique","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:2.5,HeadDamage:4.0,Speed:10,Range:200,Spread:0.0f}}}
         summon marker ^ ^0.25 ^10 {Tags:["SpreadMarker"]}
-        execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/common/init
+        execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/recursive_bullet/init
 
     # 下
         summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Mozambique","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:2.5,HeadDamage:4.0,Speed:10,Range:200,Spread:0.0f}}}
         summon marker ^0.25 ^-0.25 ^10 {Tags:["SpreadMarker"]}
-        execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/common/init
+        execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/recursive_bullet/init
 
     # 下2
         summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Mozambique","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:2.5,HeadDamage:4.0,Speed:10,Range:200,Spread:0.0f}}}
         summon marker ^-0.25 ^-0.25 ^10 {Tags:["SpreadMarker"]}
-        execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/common/init
+        execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/recursive_bullet/init
 
 # 弾が減る
     execute in overworld run function chuz_items:item/consume_ammo

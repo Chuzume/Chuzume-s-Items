@@ -3,7 +3,7 @@
     playsound minecraft:entity.player.levelup player @a ~ ~ ~ 4 2
 
 # フルバースト
-    scoreboard players set @s ChuzItems.Burst 8
+    scoreboard players set @s ChuzItems.BurstCount 8
 
 # リセット
     scoreboard players reset @s ChuzItems.Charge

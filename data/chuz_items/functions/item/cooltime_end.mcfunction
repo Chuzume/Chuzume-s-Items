@@ -1,8 +1,8 @@
-#> chuz_items:item/wingman/gun/reset
+#> chuz_items:item/cooltime_end
 #
-# ディレイ0になった際のリセット処理 
+# 
 #
-# @within function chuz_items:item/wingman/gun/
+# @within function chuz_items:item/**
 
 # 射撃のポーズ戻す
     tag @s remove ChuzItems.Shot.ADS

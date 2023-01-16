@@ -6,7 +6,7 @@
     execute store result storage csr_score_damage: ChuzDamage.Head int 1 run data get entity @s data.ChuzData.HeadDamage
 
 # ダメージを与える
-    execute if score @s Chuz.HitCheck matches 0 as @e[type=!#chuz_items:unhurtable,dx=0,sort=nearest,limit=1] unless entity @s[gamemode=!adventure,gamemode=!survival] at @s run function chuz_items:entity/projectile/common/hit_damage
+    execute if score @s Chuz.HitCheck matches 0 as @e[type=!#chuz_items:unhurtable,dx=0,sort=nearest,limit=1] unless entity @s[gamemode=!adventure,gamemode=!survival] at @s run function chuz_items:entity/projectile/recursive_bullet/hit_damage
 
 # 消失
-    execute if score @s Chuz.HitCheck matches 0 run function chuz_items:entity/projectile/common/break
+    execute if score @s Chuz.HitCheck matches 0 run function chuz_items:entity/projectile/recursive_bullet/break

@@ -40,7 +40,7 @@
     scoreboard players reset @s[scores={ChuzItems.Recoil.Change=0}] ChuzItems.Recoil.Change
 
 # リセット
-    execute if score @s ChuzItems.CoolTime matches 0 run function chuz_items:item/wingman/gun/reset
+    execute if score @s ChuzItems.CoolTime matches 0 run function chuz_items:item/cooltime_end
 
 # 更新
     execute in overworld run function chuz_items:item/replaceitem

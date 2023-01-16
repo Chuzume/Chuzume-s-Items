@@ -1,4 +1,4 @@
-#> chuz_items:entity/projectile/common/init
+#> chuz_items:entity/projectile/recursive_bullet/init
 #
 # 弾丸の共通Init処理
 #

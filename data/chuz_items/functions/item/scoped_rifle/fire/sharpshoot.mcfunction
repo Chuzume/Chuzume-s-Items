@@ -2,7 +2,7 @@
     tag @s add This
     
 # リコイル
-    data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.5f],Smooth:5,Wait_Tick:0}
+    data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.5f],Smooth:5,WaitTick:0}
     # リコイル開始
         function yv_recoil:
 
@@ -25,7 +25,7 @@
         execute if entity @s[tag=Chuz.UsingSpyglass] run summon marker ^ ^-0.15 ^10 {Tags:["SpreadMarker"]}
 
 # 弾丸にInit処理
-    execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/common/init
+    execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuz_items:entity/projectile/recursive_bullet/init
 
 # 弾が減る
     execute in overworld run function chuz_items:item/consume_ammo
