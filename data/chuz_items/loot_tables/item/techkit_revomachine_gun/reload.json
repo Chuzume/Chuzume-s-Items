@@ -9,21 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'[{\"text\":\"TechKit: Revomachine Gun\",\"color\":\"aqua\",\"italic\":false},{\"text\":\" | Reloading |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[Ammo: Light Bullet]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"REGENERATING!\",\"color\":\"gray\",\"italic\":false}']},HideFlags:7,Unbreakable:1b,CustomModelData:5,ChuzData:{ItemID:TechKit_Revomachine_Gun,Ammotype:Light_Bullet,ItemMode:Reloading,NoOffhand:True,Ammo:0,MaxAmmo:30},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-100d,Operation:0,UUID:[I;1908651258,-1320467918,-2105435935,1856381054],Slot:\"mainhand\"}]}"
-              },
-              {
-                "function": "minecraft:copy_nbt",
-                "source": {
-                  "type": "minecraft:storage",
-                  "source": "chuz:context"
-                },
-                "ops": [
-                  {
-                    "source": "Item.Mainhand.tag.ChuzData.Ammo",
-                    "target": "ChuzData.Ammo",
-                    "op": "replace"
-                  }
-                ]
+                "tag": "{display:{Name:'[{\"text\":\"TechKit: Revomachine Gun\",\"color\":\"aqua\",\"italic\":false},{\"text\":\" | Reloading |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[Ammo: Light Bullet]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"REGENERATING!\",\"color\":\"gray\",\"italic\":false}']},HideFlags:7,Unbreakable:1b,CustomModelData:11,ChuzData:{ItemID:TechKit_Revomachine_Gun,Ammotype:Light_Bullet,ItemMode:Reloading,NoOffhand:1b,NoDrop:1b,Ammo:0,MaxAmmo:30},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-100d,Operation:0,UUID:[I;1908651258,-1320467918,-2105435935,1856381054],Slot:\"mainhand\"}]}"
               }
             ]
           }
