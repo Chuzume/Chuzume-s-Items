@@ -1,1 +1,0 @@
-summon pillager ~ ~ ~ {CanJoinRaid:1b,Tags:["ChuzItems.Crossbowgunner"],HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{CustomModelData:33,Enchantments:[{id:"minecraft:quick_charge",lvl:5s}],Charged:1b}},{}],HandDropChances:[0.000F,0.085F]}
