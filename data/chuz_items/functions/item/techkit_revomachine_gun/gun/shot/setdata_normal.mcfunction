@@ -13,6 +13,5 @@
 # バースト数を設定
     scoreboard players set @s ChuzItems.BurstCount 2
 
-# 精度上昇
-    scoreboard players remove @s ChuzItems.Spread 5
-    scoreboard players set @s[scores={ChuzItems.Spread=..0}] ChuzItems.Spread 1
+# 精度
+    scoreboard players set @s ChuzItems.Spread 20

@@ -8,11 +8,14 @@
     loot replace entity @s weapon.mainhand loot chuz_items:item/techkit_revomachine_gun/
 
 # 演出
-    playsound minecraft:block.iron_door.close player @a ~ ~ ~ 1 1.5
-    playsound minecraft:block.piston.contract player @a ~ ~ ~ 1 2
-
-# 精度悪化からスタート
-    scoreboard players set @s ChuzItems.Spread 40
+    playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 1 2
+    playsound minecraft:entity.allay.item_given player @a ~ ~ ~ 1 2
+    execute anchored eyes run particle dust_color_transition 0 0.75 1 1 0.3 1 1 ^-0.5 ^-0.3 ^1.0 0 0.2 0 0 10 normal @s
+    execute anchored eyes run particle dust_color_transition 0 0.75 1 1 0.3 1 1 ^-0.5 ^-0.3 ^0.8 0 0.2 0 0 10 normal @s
+    execute anchored eyes run particle dust_color_transition 0 0.75 1 1 0.3 1 1 ^-0.5 ^-0.3 ^0.6 0 0.2 0 0 10 normal @s
+    execute anchored eyes run particle dust_color_transition 0 0.75 1 1 0.3 1 1 ^-0.5 ^-0.3 ^0.4 0 0.2 0 0 10 normal @s
+    execute anchored eyes run particle dust_color_transition 0 0.75 1 1 0.3 1 1 ^-0.5 ^-0.3 ^0.2 0 0.2 0 0 10 normal @s
+    execute anchored eyes run particle dust_color_transition 0 0.75 1 1 0.3 1 1 ^-0.5 ^-0.3 ^0.0 0 0.2 0 0 10 normal @s
 
 # スコアリセット
     scoreboard players reset @s ChuzItems.Reload
