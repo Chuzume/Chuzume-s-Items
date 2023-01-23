@@ -2,7 +2,7 @@
 #
 # 投げたアイテムを返却
 #
-# @within function chuz_items:common/throw_item/start_reload
+# @within function chuz_items:common/throw_item/check
 
 # ドロップできないアイテム
     data modify storage chuz:context Item merge from entity @s Item
