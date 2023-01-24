@@ -2,7 +2,7 @@
 #
 # 通常弾のパーティクル
 #
-# @within function chuz_items:entity/projectile/common/particle
+# @within function chuz_items:entity/projectile/recursive_bullet/particle
 
 particle minecraft:dust 1 0.7 0 0.3 ^ ^ ^ 0 0 0 0 1 force @a[distance=..60]
 particle minecraft:dust 1 0.5 0 0.2 ^ ^ ^ 0 0 0 0 1 force @a[distance=..60]

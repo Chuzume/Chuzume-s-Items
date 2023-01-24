@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuz_items:entity/projectile/common/particle
+# @within function chuz_items:entity/projectile/recursive_bullet/particle
 
 # パーティクル
     particle minecraft:dust 1 0.35 0 0.2 ~ ~ ~ 0 0 0 0 1 force @a[distance=..50]

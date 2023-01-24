@@ -6,16 +6,16 @@
     data modify storage chuz:storage Vector set from entity @e[type=marker,tag=Chuz.Vector0,limit=1] Pos
 
 # XYZにchuz:storageのVectorから100倍して取得
-    execute store result score #X Chuz.Calc run data get storage chuz:storage Vector[0] 10000
-    execute store result score #Z Chuz.Calc run data get storage chuz:storage Vector[2] 10000
+    execute store result score $X Chuz.Calc run data get storage chuz:storage Vector[0] 10000
+    execute store result score $Z Chuz.Calc run data get storage chuz:storage Vector[2] 10000
 
 # それぞれにChuz.Speed掛ける
-    scoreboard players operation #X Chuz.Calc *= @s Chuz.Speed
-    scoreboard players operation #Z Chuz.Calc *= @s Chuz.Speed
+    scoreboard players operation $X Chuz.Calc *= @s Chuz.Speed
+    scoreboard players operation $Z Chuz.Calc *= @s Chuz.Speed
 
 # chuz:storageのVectorにそれぞれを戻す
-    execute store result storage chuz:storage Vector[0] double -0.0001 run scoreboard players get #X Chuz.Calc
-    execute store result storage chuz:storage Vector[2] double -0.0001 run scoreboard players get #Z Chuz.Calc
+    execute store result storage chuz:storage Vector[0] double -0.0001 run scoreboard players get $X Chuz.Calc
+    execute store result storage chuz:storage Vector[2] double -0.0001 run scoreboard players get $Z Chuz.Calc
 
 # 対象のMにchuz:storageのVectorをそのままセット
     data modify entity @s Motion[0] set from storage chuz:storage Vector[0]
@@ -23,5 +23,5 @@
 
 # リセット
     data remove storage chuz:storage Vector
-    scoreboard players reset #X Chuz.Calc
-    scoreboard players reset #Z Chuz.Calc
+    scoreboard players reset $X Chuz.Calc
+    scoreboard players reset $Z Chuz.Calc

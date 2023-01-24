@@ -1,5 +1,5 @@
 
-# 爆發
+# 爆発
     execute if entity @s[type=end_crystal] run summon tnt
 
 # 何で攻撃されたのかタグ付与
