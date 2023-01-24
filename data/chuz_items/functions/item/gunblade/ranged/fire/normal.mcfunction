@@ -2,8 +2,11 @@
     tag @s add This
 
 # リコイル開始
-    data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.5f],Smooth:5,WaitTick:0}
-    function yv_recoil:
+    execute if score $Gamerule.Recoil Chuz.Rule matches 1 run data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.5f],Smooth:5,WaitTick:0}
+    execute if score $Gamerule.Recoil Chuz.Rule matches 1 run function yv_recoil:
+
+# クールタイム設定
+    scoreboard players set @s ChuzItems.CoolTime 2
 
 # 発砲
     execute positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 0.5
@@ -14,7 +17,7 @@
 
 # 弾を召喚
     # 腰だめ
-        particle smoke ^-0.25 ^ ^0.7 0 0 0 0.05 5
+        particle smoke ^-0.25 ^ ^0.7 0 0 0 0.05 2
         execute unless score @s ChuzItems.BurstCount matches 1.. run summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Normal","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:6.0,HeadDamage:8.0,Speed:60,Range:400,Distance:10.0f,Spread:0.1f}}}
         execute if score @s ChuzItems.BurstCount matches 1.. run summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Normal","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:6.0,HeadDamage:8.0,Speed:60,Range:400,Distance:10.0f,Spread:1.0f}}}
 

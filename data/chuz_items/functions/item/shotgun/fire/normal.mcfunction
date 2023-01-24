@@ -1,9 +1,9 @@
 # 俺が実行者だ
     tag @s add This
     
-# リコイル開始
-    execute unless entity @s[x_rotation=80..90] run data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-5.0f],Smooth:5,WaitTick:0}
-    execute unless entity @s[x_rotation=80..90] run function yv_recoil:
+# リコイル
+    execute if score $Gamerule.Recoil Chuz.Rule matches 1 unless entity @s[x_rotation=80..90] run data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-5.0f],Smooth:5,WaitTick:0}
+    execute if score $Gamerule.Recoil Chuz.Rule matches 1 unless entity @s[x_rotation=80..90] run function yv_recoil:
 
 # 発砲
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 3 2

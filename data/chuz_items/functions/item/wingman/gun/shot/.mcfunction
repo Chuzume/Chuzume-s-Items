@@ -21,10 +21,9 @@
     scoreboard players set @s ChuzItems.CoolTime 7
 
 # リコイル
-    execute if entity @s[scores={ChuzItems.Recoil.Change=0..}] run data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.17f],Smooth:5,WaitTick:4}
-    execute unless entity @s[scores={ChuzItems.Recoil.Change=0..}] run data modify storage yv:gun Recoil set value {Magnitude:[1.85f,-3.325f],Smooth:5,WaitTick:4}
-    # リコイル開始
-        function yv_recoil:
+    execute if score $Gamerule.Recoil Chuz.Rule matches 1 if entity @s[scores={ChuzItems.Recoil.Change=0..}] run data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.17f],Smooth:5,WaitTick:4}
+    execute if score $Gamerule.Recoil Chuz.Rule matches 1 unless entity @s[scores={ChuzItems.Recoil.Change=0..}] run data modify storage yv:gun Recoil set value {Magnitude:[1.85f,-3.325f],Smooth:5,WaitTick:4}
+    function yv_recoil:
 
 # 真上リコイルに変更
     scoreboard players set @s ChuzItems.Recoil.Change 12
@@ -33,8 +32,8 @@
     tag @s add ChuzItems.Shot.Normal
 
 # 精度悪化
-    scoreboard players add @s ChuzItems.Spread 20
-    scoreboard players set @s[scores={ChuzItems.Spread=50..}] ChuzItems.Spread 50
+    #scoreboard players add @s ChuzItems.Spread 20
+    #scoreboard players set @s[scores={ChuzItems.Spread=50..}] ChuzItems.Spread 50
 
 # 弾を召喚
     execute anchored eyes run summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Wingman","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:8.0,HeadDamage:16.0,Speed:45,Range:400,Distance:3.0f,Spread:0.1f}}}

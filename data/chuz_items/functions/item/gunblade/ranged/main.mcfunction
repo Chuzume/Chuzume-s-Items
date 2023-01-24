@@ -1,6 +1,6 @@
 
 # 発砲
-    execute unless score @s[scores={ChuzItems.Crossbow=0..}] ChuzItems.Charge matches 30.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuz_items:item/gunblade/ranged/fire/normal
+    execute unless score @s[scores={ChuzItems.Crossbow=0..}] ChuzItems.Charge matches 30.. unless score @s ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuz_items:item/gunblade/ranged/fire/normal
     # 残弾0なら失敗
         execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/shotgun/fire/out_of_ammo
 

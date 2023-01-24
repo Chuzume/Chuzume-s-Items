@@ -2,9 +2,8 @@
     tag @s add This
     
 # リコイル
-    data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.17f],Smooth:5,WaitTick:0}
-    # リコイル開始
-        function yv_recoil:
+    execute if score $Gamerule.Recoil Chuz.Rule matches 1 run data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.17f],Smooth:5,WaitTick:0}
+    execute if score $Gamerule.Recoil Chuz.Rule matches 1 run function yv_recoil:
 
 # 発砲
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 5 2

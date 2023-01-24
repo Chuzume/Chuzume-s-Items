@@ -4,14 +4,15 @@
 #
 # @within function chuz_items:item/wingman/main
 
+
+
 # 発砲
+    # 残弾0ならリロード開始
+        execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:common/reload/check_have_ammo
     # 腰だめ
         execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=!chuz_items:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/wingman/gun/shot/
     # ADS
         execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=chuz_items:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/wingman/gun/shot/ads
-
-# クールタイム処理
-    scoreboard players remove @s[scores={ChuzItems.CoolTime=1..}] ChuzItems.CoolTime 1
 
 # ADS
     #構える
@@ -22,8 +23,8 @@
         execute if score @s ChuzItems.Charge matches 1.. unless predicate chuz_items:sneak run scoreboard players reset @s ChuzItems.Charge
 
 # 精度が落ち着いていく
-    execute unless score @s ChuzItems.Spread matches ..1 run scoreboard players remove @s ChuzItems.Spread 1
-    scoreboard players reset @s[scores={ChuzItems.Spread=..1}] ChuzItems.Spread
+    #execute unless score @s ChuzItems.Spread matches ..1 run scoreboard players remove @s ChuzItems.Spread 1
+    #scoreboard players reset @s[scores={ChuzItems.Spread=..1}] ChuzItems.Spread
 
 # 見た目
     # 通常時
@@ -39,11 +40,5 @@
     scoreboard players remove @s[scores={ChuzItems.Recoil.Change=1..}] ChuzItems.Recoil.Change 1
     scoreboard players reset @s[scores={ChuzItems.Recoil.Change=0}] ChuzItems.Recoil.Change
 
-# リセット
-    execute if score @s ChuzItems.CoolTime matches 0 run function chuz_items:item/cooltime_end
-
 # 更新
     execute in overworld run function chuz_items:item/replaceitem
-
-# 残弾0ならリロード開始
-    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/wingman/reload/start
