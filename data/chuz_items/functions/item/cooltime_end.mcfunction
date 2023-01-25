@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuz_items:item/**
+# @within function chuz_items:player/tick
 
 # 射撃のポーズ戻す
     tag @s remove ChuzItems.Shot.ADS

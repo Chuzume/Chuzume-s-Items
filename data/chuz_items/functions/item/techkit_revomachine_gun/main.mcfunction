@@ -2,7 +2,7 @@
 #
 # 武器モードチェック
 #
-# @within function chuz_items:storage
+# @within function chuz_items:player/tick
 
 # 通常モード
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemMode:Standby} run function chuz_items:item/techkit_revomachine_gun/gun/

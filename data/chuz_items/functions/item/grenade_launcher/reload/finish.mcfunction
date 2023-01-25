@@ -3,10 +3,10 @@
     loot replace entity @s weapon.mainhand loot chuz_items:item/grenade_launcher
 
 # ルールが弾使うモードなら弾を減らす 消せた弾のぶんだけ$Ammoに代入
-    execute if score $ChuzItems.Setting1 Chuz.Rule matches 1 store result score $Ammo Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Explosive_Cartridge}} 1
+    execute if score $Gamerule.AmmoRequire Chuz.Rule matches 1 store result score $Ammo Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Explosive_Cartridge}} 1
         
 # ルールが弾使うモードじゃないなら常に1
-    execute if score $ChuzItems.Setting1 Chuz.Rule matches 0 run scoreboard players set $Ammo Chuz.Temporary 1
+    execute if score $Gamerule.AmmoRequire Chuz.Rule matches 0 run scoreboard players set $Ammo Chuz.Temporary 1
         
 # リセット
     scoreboard players reset @s Chuz.Temporary

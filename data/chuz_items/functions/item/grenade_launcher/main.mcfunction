@@ -23,9 +23,6 @@
 # 発砲(チャージ2)
     execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches 20.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuz_items:item/grenade_launcher/fire/charge2
 
-# スコープまたはスニークでリロードを中断
-    execute if predicate chuz_items:sneak run function chuz_items:item/grenade_launcher/charge
-
 # リロード
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/grenade_launcher/reload/start
 

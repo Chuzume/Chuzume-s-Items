@@ -2,8 +2,9 @@ tellraw @a ["\n----------\n\n",{"text":"[Craftsman Scoped Rifle] の導入に成
 forceload add 100000 100000
 execute unless block 100001 0 100000 light_blue_shulker_box run setblock 100001 0 100000 light_blue_shulker_box
 execute unless block 100001 1 100000 bedrock run setblock 100001 1 100000 bedrock
-scoreboard players set $ChuzItems.Setting1 Chuz.Rule 1
-scoreboard players set $ChuzItems.Setting2 Chuz.Rule 0
+scoreboard players set $Gamerule.AmmoRequire Chuz.Rule 1
+scoreboard players set $Gamerule.Griefing Chuz.Rule 0
+scoreboard players set $Gamerule.Recoil Chuz.Rule 1
 # Chuz.Vector0が存在しなければ召喚
     forceload add 0 0 0 0
     kill @e[type=area_effect_cloud,tag=Chuz.Vector0]

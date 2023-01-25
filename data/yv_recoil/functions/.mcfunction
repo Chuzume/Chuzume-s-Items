@@ -16,6 +16,6 @@
 
     execute store result score @s YvGun.RecoilSmooth run data get storage yv:gun Recoil.Smooth 1
 
-    execute store result score @s YvGun.RecoilRecover run data get storage yv:gun Recoil.Wait_Tick 1
+    execute store result score @s YvGun.RecoilRecover run data get storage yv:gun Recoil.WaitTick 1
 
     tag @s add YvGun.Recoil

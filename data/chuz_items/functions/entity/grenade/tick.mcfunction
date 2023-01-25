@@ -7,7 +7,7 @@
     # クールタイム加算
         scoreboard players add @s ChuzItems.CoolTime 1
     # 一定のクールタイムが過ぎたら、接触で爆発するようになる
-        execute if entity @s[scores={ChuzItems.CoolTime=5..}] positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=!#chuz_items:unhurtable,dx=0] run function chuz_items:entity/grenade/explode
+        execute if entity @s[scores={ChuzItems.CoolTime=5..}] positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=!#chuz_items:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,dx=0] run function chuz_items:entity/grenade/explode
 
 # キル
     scoreboard players remove @s Chuz.Range 1

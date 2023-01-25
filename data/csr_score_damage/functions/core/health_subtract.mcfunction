@@ -39,7 +39,7 @@
         execute if entity @s[type=player] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
 
     # プレイヤーかつヘルス0なら死亡メッセージ
-        execute if entity @s[type=player] if score @s ScoreToHealth matches ..0 run function chuz_items:message/death/bullet
+        execute if entity @s[type=player] if score @s ScoreToHealth matches ..0 run function chuz_items:message/death
 # 演出
     #execute if score $Health ScoreDamageCore matches 1.. if entity @s[type=!player] run data modify entity @s ActiveEffects append value {Id:19b,Amplifier:4b,Duration:1}
     function csr_score_damage:core/damage_indicator

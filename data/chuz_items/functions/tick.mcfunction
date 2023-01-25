@@ -1,9 +1,12 @@
 
 # ストレージ
-    execute as @a at @s run function chuz_items:storage
+    execute as @a at @s run function chuz_items:player/tick
 
 # 飛び道具チェック 
     execute as @e[type=#chuz_items:projectile,tag=Chuz.Projectile] at @s run function chuz_items:entity/projectile/check
+
+# カタログ
+    execute as @e[type=armor_stand,tag=ChuzItems.Entity.Catalogue] at @s run function chuz_items:entity/catalogue/tick
 
 # スライムを消す
     execute as @e[type=magma_cube,tag=Chuz.CollisionSlime] at @s run function chuz_items:entity/col_slime/main
@@ -12,10 +15,7 @@
     execute as @a unless score @s Chuz.PlayerID matches 0.. run function chuz_items:score_id
 
 # UUIDヒット後のリアクション
-    execute as @e[type=!#chuz_items:unhurtable,tag=Chuz.HitReact,nbt={HurtTime:10s}] at @s run function chuz_items:hitreact 
-
-# 敵キャラテスト
-    #execute as @e[type=pillager,tag=ChuzItems.Crossbowgunner] at @s run function chuz_items:entity/shotgun_pillager/main
+    execute as @e[type=!#chuz_items:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,tag=Chuz.HitReact,nbt={HurtTime:10s}] at @s run function chuz_items:hitreact 
 
 # やぶ氏のリコイルライブラリ
     function yv_recoil:tick

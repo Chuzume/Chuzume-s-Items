@@ -5,13 +5,12 @@
 # @within function chuz_items:item/mozambique/main
 
 # 発砲
+    # 残弾0ならリロード開始
+        execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:common/reload/check_have_ammo
     # 腰だめ
         execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=!chuz_items:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes run function chuz_items:item/mozambique/gun/shot/
     # ADS
         execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=chuz_items:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes run function chuz_items:item/mozambique/gun/shot/ads
-
-# クールタイム処理
-    scoreboard players remove @s[scores={ChuzItems.CoolTime=1..}] ChuzItems.CoolTime 1
 
 # ADS
     #構える
@@ -30,12 +29,6 @@
         execute if entity @s[tag=!ChuzItems.Shot.Normal] if predicate chuz_items:sneak run scoreboard players set $CMD Chuz.Temporary 14
     # 反動(ADS)
        execute if entity @s[tag=!ChuzItems.Shot.Normal] if score @s ChuzItems.CoolTime matches 3..7 run scoreboard players set $CMD Chuz.Temporary 15
-   
-# リセット
-    execute if score @s ChuzItems.CoolTime matches 0 run function chuz_items:item/mozambique/gun/reset
 
 # 更新
     execute in overworld run function chuz_items:item/replaceitem
-
-# 残弾0ならリロード開始
-    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuz_items:item/mozambique/reload/start

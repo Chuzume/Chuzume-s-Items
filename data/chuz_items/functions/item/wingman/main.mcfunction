@@ -2,7 +2,7 @@
 #
 # 持ってる間の処理
 #
-# @within function chuz_items:storage
+# @within function chuz_items:player/tick
 
 # 通常モード
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Wingman,ItemMode:Standby} run function chuz_items:item/wingman/gun/

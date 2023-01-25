@@ -16,6 +16,11 @@
     #declare tag Chuz.CollisionSlime
     #declare tag Chuz.NonVanillaMob
     #declare tag Chuz.Explosion
+    #declare tag Chuz.UUIDHit
+    #declare tag Chuz.UUIDHit.Reset
+    #declare tag Chuz.PlayerAttack
+    #declare tag Chuz.Uninterferable
+    #declare tag Chuz.PlayerShouldInvulnerable
 
 #> 飛び道具関連
     #declare tag ChuzItems.HeadShot
@@ -26,12 +31,21 @@
     #declare tag ChuzItems.Projectile.Sharpshoot
     #declare tag ChuzItems.Projectile.Shell
     #declare tag ChuzItems.Projectile.Grenade
+    #declare tag ChuzItems.Projectile.RevoBullet
+    #declare tag ChuzItems.Projectile.ThrownGun
 
-#> リコイル関連
-    #declare tag ChuzItems.ActiveRecoil
+#> カタログ周りのタグ
+    #declare tag ChuzItems.Entity.Catalogue
+    #declare tag ChuzItems.Entity.Catalogue.Wait
+    #declare tag ChuzItems.Entity.Catalogue.InUse
+    #declare tag ChuzItems.Entity.Catalogue.Trader
+    #declare tag ChuzItems.Entity.Catalogue.Hologram
 
 #> その他
     #declare tag ChuzItems.Steping
+    #declare tag ChuzItems.ReloadSuccess
+    #declare tag ChuzItems.ReloadFailed
+    #declare tag ChuzItems.Reflected
 
 #> 制御系タグ
     #declare tag ChuzItems.ReloadStart
@@ -40,6 +54,7 @@
 
 #> ストレージ
     #declare storage chuz:storage
+    #declare storage chuz:context
     #declare storage chuz:context
 
 #> スコアホルダー
