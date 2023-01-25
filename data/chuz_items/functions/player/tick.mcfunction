@@ -1,9 +1,29 @@
+#> chuz_items:player/tick
+#
+# プレイヤーが常に実行してる処理
+#
+# @within function chuz_items:tick
+
+## タグなど
+    function chuz_items:player/manage_tag
+
+## お願いOhMyDat!
+    function oh_my_dat:please
 
 ## データ取得
     function chuz_items:get_data/
 
 ## リロード
-    execute if entity @s[scores={ChuzItems.DropReload=0..}] run function chuz_items:common/throw_item/main
+    execute if entity @s[scores={ChuzItems.Drop=0..}] run function chuz_items:common/throw_item/main
+
+## リロード用データ
+    # 削除
+        data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].HoldedItem
+    # 書き換え / Modify  
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].HoldedItem set from storage chuz:context Item.Mainhand
+
+## 保存してみる
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from storage chuz:context Item.Mainhand
 
 ## スコープライフル
     # メインハンドに入ってる時のメイン処理
@@ -44,6 +64,11 @@
 
     # ヘッドショットに成功
         execute if entity @s[tag=ChuzItems.HeadShot] run function chuz_items:common/headshot/success
+
+    # クールタイム処理
+        scoreboard players remove @s[scores={ChuzItems.CoolTime=1..}] ChuzItems.CoolTime 1
+        # リセット
+            execute if score @s ChuzItems.CoolTime matches 0 run function chuz_items:item/cooltime_end
 
     # オフハンドに入れると戻ってくる
         execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} run function chuz_items:item/no_offhand
