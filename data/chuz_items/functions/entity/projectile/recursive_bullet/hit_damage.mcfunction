@@ -2,8 +2,8 @@
 # 爆発
     execute if entity @s[type=end_crystal] run summon tnt
 
-# 何で攻撃されたのかタグ付与
-    tag @s add ChuzItems.Hit.Bullet
+# キルログ設定
+    data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sの%3$sで撃たれた。","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"nbt":"KillerItem.HoldItem","storage":"chuz:context","interpret":true}]}'
 
 # ヒット音
     playsound minecraft:entity.player.attack.strong neutral @a ~ ~ ~ 1.5 1

@@ -1,8 +1,6 @@
 
-
-# 何で攻撃されたのかタグ付与
-    tag @s remove ChuzItems.Hit.Bullet
-    tag @s add ChuzItems.Hit.BulletHS
+# キルログ設定
+    data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sの%3$sで正確に頭を撃ち抜かれた","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"nbt":"KillerItem.HoldItem","storage":"chuz:context","interpret":true}]}'
 
 # 持ち主にヘッドショットタグ付与
     execute as @e[tag=Chuz.Projectile,distance=..100,sort=nearest,limit=1] at @a if score @s Chuz.EntityID = @p Chuz.PlayerID run tag @p add ChuzItems.HeadShot 

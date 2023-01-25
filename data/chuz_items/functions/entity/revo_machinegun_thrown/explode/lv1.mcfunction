@@ -14,14 +14,14 @@
     playsound minecraft:entity.zombie.attack_iron_door neutral @a ~ ~ ~ 2 2
     playsound minecraft:block.respawn_anchor.deplete neutral @a ~ ~ ~ 3 2
 
-# 何で攻撃されたのかタグ付与
-    #tag @s add ChuzItems.Hit.Bullet
+# キルログ設定
+    data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sに%3$sをぶつけられた。","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"text":"Techkit: Revomachine Gun","color":"#37CDFF"}]}'
 
 # ダメージ設定
     data modify storage csr_score_damage: Damage set value 5.0f
 
 # ダメージを与える
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=!#chuz_items:unhurtable,nbt={Invulnerable:0b},dx=0] at @s run function csr_score_damage:api/attack
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=!#chuz_items:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},dx=0] at @s run function csr_score_damage:api/attack
     data remove storage csr_score_damage: Damage
 
 # キル
