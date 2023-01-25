@@ -16,7 +16,7 @@
     playsound minecraft:block.respawn_anchor.deplete neutral @a ~ ~ ~ 3 2
 
 # キルログ設定
-    data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sに%3$sをぶつけられた。","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"text":"Techkit: Revomachine Gun","color":"#37CDFF"}]}'
+    data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sに%3$sをぶつけられた","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"text":"Techkit: Revomachine Gun","color":"#37CDFF"}]}'
 
 # ダメージ設定
     data modify storage csr_score_damage: Damage set value 10.0f
