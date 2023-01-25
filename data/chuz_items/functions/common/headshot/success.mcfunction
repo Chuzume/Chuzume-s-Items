@@ -2,7 +2,7 @@
 #
 # ヘッドショット成功時
 #
-# @within function chuz_items:storage
+# @within function chuz_items:player/tick
 
 # 演出
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 2 1
