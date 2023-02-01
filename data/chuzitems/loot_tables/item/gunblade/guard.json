@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Craftsman Gunblade\",\"color\":\"gold\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]'},CustomModelData:16,HideFlags:6,AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-9999,Operation:0,UUID:[I;-1431379476,79973923,-1780379030,33626283],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-1.4,Operation:0,UUID:[I;-121934769,-432714473,-1261042058,-129039772],Slot:\"mainhand\"}],ChuzData:{Ammo:0,AmmoUse:1,ItemID:Craftsman_Gunblade,ItemMode:Parry,RawName:'{\"text\":\"Craftsman Gunblade\",\"color\":\"gold\",\"italic\":false}'}}"
+              "tag": "{display:{Name:'[{\"text\":\"Craftsman Gunblade\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]'},CustomModelData:16,HideFlags:6,AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-9999,Operation:0,UUID:[I;-1431379476,79973923,-1780379030,33626283],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-1.4,Operation:0,UUID:[I;-121934769,-432714473,-1261042058,-129039772],Slot:\"mainhand\"}],ChuzData:{Ammo:0,AmmoUse:1,ItemID:Craftsman_Gunblade,ItemMode:Parry,RawName:'{\"text\":\"Craftsman Gunblade\",\"color\":\"#ffce60\",\"italic\":false}'}}"
             }
           ]
         }

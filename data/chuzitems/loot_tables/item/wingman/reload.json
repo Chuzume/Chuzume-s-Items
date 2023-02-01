@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Wingman\",\"color\":\"aqua\",\"italic\":false},{\"text\":\" | Reloading |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[Ammo: Heavy Bullet]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"リロード中！\",\"color\":\"gray\",\"italic\":false}']},HideFlags:7,Unbreakable:1b,CustomModelData:5,ChuzData:{ItemID:Wingman,Ammotype:Heavy_Bullet,ItemMode:Reloading,NoOffhand:1b,NoDrop:1b,Ammo:0,MaxAmmo:6},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-100d,Operation:0,UUID:[I;1908651258,-1320467918,-2105435935,1856381054],Slot:\"mainhand\"}]}"
+              "tag": "{display:{Name:'[{\"text\":\"Wingman\",\"color\":\"#C71A1A\",\"italic\":false},{\"text\":\" | Reloading |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[Ammo: Heavy Bullet]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"リロード中！\",\"color\":\"gray\",\"italic\":false}']},HideFlags:7,Unbreakable:1b,CustomModelData:5,ChuzData:{ItemID:Wingman,Ammotype:Heavy_Bullet,ItemMode:Reloading,NoOffhand:1b,NoDrop:1b,Ammo:0,MaxAmmo:6},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-100d,Operation:0,UUID:[I;1908651258,-1320467918,-2105435935,1856381054],Slot:\"mainhand\"}]}"
             },
             {
               "function": "minecraft:copy_nbt",
