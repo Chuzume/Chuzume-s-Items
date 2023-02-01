@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chuzitems:wingman"
+      }
+    }
+  },
+  "rewards": {
+    "function": "chuzitems:item/wingman/craft"
+  }
+}

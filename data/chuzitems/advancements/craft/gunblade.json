@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chuzitems:gunblade"
+      }
+    }
+  },
+  "rewards": {
+    "function": "chuzitems:item/gunblade/craft"
+  }
+}

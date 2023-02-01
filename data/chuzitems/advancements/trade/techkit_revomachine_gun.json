@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:villager_trade",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:crossbow"
+            ],
+            "nbt": "{ChuzData:{ItemID:TechKit_RevomachineGun_Sample,SellSample:1b}}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "chuzitems:item/techkit_revomachine_gun/get"
+    }
+  }
+  

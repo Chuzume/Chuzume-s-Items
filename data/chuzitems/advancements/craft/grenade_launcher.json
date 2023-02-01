@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chuzitems:grenade_launcher"
+      }
+    }
+  },
+  "rewards": {
+    "function": "chuzitems:item/grenade_launcher/craft"
+  }
+}

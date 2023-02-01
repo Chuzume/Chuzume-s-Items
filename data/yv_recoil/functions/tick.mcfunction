@@ -2,7 +2,7 @@
 #
 # Yavu_8B氏作のリコイル処理のTick部分
 #
-# @within function chuz_items:tick
+# @within function chuzitems:tick
 
 # タグが付いているならリコイル処理
     execute as @a[tag=YvGun.Recoil] at @s run function yv_recoil:move

@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:spyglass"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "chuzitems:item/using_spyglass"
+      }
+    }

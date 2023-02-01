@@ -25,6 +25,6 @@
 # 引数チェック
     execute unless data storage csr_score_damage: Damage run tellraw @a [{"text":"ERROR >>","color":"red"},{"text":"引数が足りません","color":"white"},{"text":"\nMissing Damage at csr_score_damage:api/attack","color":"white"}]
 # Healthを持つEntityであれば実行
-    execute if data storage csr_score_damage: Damage if entity @s[type=!#chuz_items:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,type=!ender_dragon,nbt={Invulnerable:0b}] run function csr_score_damage:core/attack
+    execute if data storage csr_score_damage: Damage if entity @s[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,type=!ender_dragon,nbt={Invulnerable:0b}] run function csr_score_damage:core/attack
 # enderdragonにヒットした場合、処理をHealthを持つ中央部分に移す
     execute if data storage csr_score_damage: Damage if entity @s[type=ender_dragon,nbt={Invulnerable:0b}] as @e[type=ender_dragon,team=!null,sort=nearest,limit=1] run function csr_score_damage:core/attack

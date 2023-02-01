@@ -4,7 +4,7 @@
 #
 # @within
 #   function yv_reflection:
-#   function chuz_items:
+#   function chuzitems:
 
 #declare tag YvBounce.Stop
 #declare tag YvBounce.Disable.X

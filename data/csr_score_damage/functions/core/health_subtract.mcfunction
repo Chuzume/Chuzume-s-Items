@@ -26,20 +26,20 @@
         execute if entity @s[type=!player] if score $SubtractedHealth ScoreDamageCore matches 1.. store result entity @s Health float 0.0001 run scoreboard players get $SubtractedHealth ScoreDamageCore
 
     # プレイヤー、またはドラゴンでないなら、ヘルス0でキル
-        execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches ..0 run function chuz_items:hitreact 
+        execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches ..0 run function chuzitems:hitreact 
         execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches ..0 run kill @s
 
     # ドラゴンならヘルス0でDragonPhaseを9にして墜落させる
         execute if entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches ..0 run data merge entity @s {DragonPhase:9}
 
     # ヘルスが1以上ならUUID攻撃
-        execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches 1.. run function chuz_items:uuid_hit_no_kb
+        execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches 1.. run function chuzitems:uuid_hit_no_kb
 
     # プレイヤーなら見た目だけダメージ
         execute if entity @s[type=player] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
 
     # プレイヤーかつヘルス0なら死亡メッセージ
-        execute if entity @s[type=player] if score @s ScoreToHealth matches ..0 run function chuz_items:message/death
+        execute if entity @s[type=player] if score @s ScoreToHealth matches ..0 run function chuzitems:message/death
 # 演出
     #execute if score $Health ScoreDamageCore matches 1.. if entity @s[type=!player] run data modify entity @s ActiveEffects append value {Id:19b,Amplifier:4b,Duration:1}
     function csr_score_damage:core/damage_indicator

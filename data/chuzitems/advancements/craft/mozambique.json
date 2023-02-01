@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chuzitems:mozambique"
+      }
+    }
+  },
+  "rewards": {
+    "function": "chuzitems:item/mozambique/craft"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chuzitems:shotgun"
+      }
+    }
+  },
+  "rewards": {
+    "function": "chuzitems:item/shotgun/craft"
+  }
+}

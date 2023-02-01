@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuz_items:load
+# @within function chuzitems:load
 
 # スコア定義
     scoreboard objectives add YvGun.Core dummy
