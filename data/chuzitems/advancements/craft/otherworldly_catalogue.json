@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "unlock": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "chuzitems:otherworldly_catalogue"
+        }
+      }
+    },
+    "rewards": {
+      "function": "chuzitems:item/otherworldly_catalogue/craft"
+    }
+  }

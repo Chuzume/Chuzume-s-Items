@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:ender_eye"
+        },
+        {
+            "item": "minecraft:book"
+        },
+        {
+            "item": "minecraft:diamond"
+        }
+    ],
+    "result": {
+        "item": "minecraft:chest",
+        "count": 1
+    }
+}
