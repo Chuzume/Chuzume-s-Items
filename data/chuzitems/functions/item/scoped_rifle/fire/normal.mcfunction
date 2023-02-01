@@ -14,7 +14,7 @@
 # 弾を召喚
     # 腰だめ
         execute if entity @s[tag=!Chuz.UsingSpyglass] run particle smoke ^-0.25 ^ ^0.7 0 0 0 0.05 5
-        execute if entity @s[tag=!Chuz.UsingSpyglass] run summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.Projectile.Normal","ChuzItems.RecursiveBullet","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:7.0,HeadDamage:14.0,Speed:90,Range:800,Distance:10.0f,Spread:0.1f}}}
+        execute if entity @s[tag=!Chuz.UsingSpyglass] run summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.Projectile.Normal","ChuzItems.RecursiveBullet","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:7.0,HeadDamage:14.0,Speed:90,Range:800,Distance:10.0f,Spread:1.0f}}}
 
     # スコープ！
         execute if entity @s[tag=Chuz.UsingSpyglass] run particle smoke ^ ^ ^0.7 0 0 0 0.05 2
