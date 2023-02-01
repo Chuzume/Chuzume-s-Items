@@ -4,6 +4,10 @@
 #
 # @within advancement chuzitems:craft/scoped_rifle
 
+# 演出
+    execute anchored eyes positioned ^ ^ ^1.5 run playsound minecraft:block.smithing_table.use player @a ~ ~ ~ 1 1
+    execute anchored eyes positioned ^ ^ ^1.5 run playsound minecraft:item.spyglass.use player @a ~ ~ ~ 1 0.8
+
 # 実行者の位置にアイテムを召喚
     execute at @s run loot spawn ~ ~ ~ loot chuzitems:item/scoped_rifle 
 
