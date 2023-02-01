@@ -20,7 +20,7 @@
     execute if data storage chuz:context {Reload:1} run kill @s
     
 # 最大時
-    #execute if data storage chuz:context {Reload:0} in overworld run function chuzitems:common/throw_item/return_item
+    execute if data storage chuz:context {Reload:0} in overworld run function chuzitems:common/throw_item/return_item
 
 # リセット
     data remove storage chuz:context MaxAmmo
