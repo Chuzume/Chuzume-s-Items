@@ -18,8 +18,8 @@
     tag @s[scores={ChuzItems.CoolTime=20..}] remove ChuzItems.Entity.Catalogue.Wait 
     scoreboard players reset @s[scores={ChuzItems.CoolTime=20..}] ChuzItems.CoolTime
 
-#
-    execute if entity @a[scores={ChuzItems.Trade=1..}] run playsound chuzume:cyber19_1 player @a ~ ~ ~ 1 1
+# サウンド
+    execute if entity @a[scores={ChuzItems.Trade=1..}] run playsound chuzume:cyber19_1 player @a ~ ~ ~ 0.5 1
 
 # 回収
     # 下をどかされると消える

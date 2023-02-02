@@ -6,6 +6,7 @@
 
 #> 共通タグ
     #declare tag This
+    #declare tag Chuz.StopSoundTarget
     #declare tag Chuz.HitReact
     #declare tag Chuz.Vector0
     #declare tag Chuz.Init

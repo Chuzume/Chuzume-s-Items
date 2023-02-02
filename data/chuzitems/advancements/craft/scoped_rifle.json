@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "chuzitems:item/scoped_rifle/craft"
+    "function": "chuzitems:item/weapon/scoped_rifle/craft"
   }
 }

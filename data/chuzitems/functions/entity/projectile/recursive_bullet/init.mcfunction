@@ -15,7 +15,7 @@
         execute if score @p[tag=This] ChuzItems.Spread matches 1.. store result storage forward_spreader: Spread float 0.01 run scoreboard players get @p[tag=This] ChuzItems.Spread
 
     # タグ付きプレイヤーから実行する。ただし拡散0なら射撃側で設定する
-        execute unless data storage forward_spreader: {Spread:0.0f} as @p[tag=This] at @s run function chuzitems:item/gunblade/ranged/fire/spread
+        execute unless data storage forward_spreader: {Spread:0.0f} as @p[tag=This] at @s run function chuzitems:item/weapon/gunblade/ranged/fire/spread
 
     # 拡散用のエンティティを消す
         execute facing entity @e[type=marker,tag=SpreadMarker,distance=..100] feet run tp @s ~ ~-0.15 ~ ~ ~

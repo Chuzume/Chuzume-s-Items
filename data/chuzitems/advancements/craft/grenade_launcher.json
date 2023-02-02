@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "chuzitems:item/grenade_launcher/craft"
+    "function": "chuzitems:item/weapon/grenade_launcher/craft"
   }
 }

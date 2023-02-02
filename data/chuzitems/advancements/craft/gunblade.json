@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "chuzitems:item/gunblade/craft"
+    "function": "chuzitems:item/weapon/gunblade/craft"
   }
 }

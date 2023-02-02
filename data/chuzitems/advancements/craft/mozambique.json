@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "chuzitems:item/mozambique/craft"
+    "function": "chuzitems:item/weapon/mozambique/craft"
   }
 }

@@ -27,33 +27,33 @@
 
 ## スコープライフル
     # メインハンドに入ってる時のメイン処理
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Scoped_Rifle} run function chuzitems:item/scoped_rifle/main
+        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Scoped_Rifle} run function chuzitems:item/weapon/scoped_rifle/main
 
 ## ショットガン
     # メインハンドに入ってる時のメイン処理
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Shotgun} run function chuzitems:item/shotgun/main
+        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Shotgun} run function chuzitems:item/weapon/shotgun/main
     # リロード
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Shotgun_Reload} run function chuzitems:item/shotgun/reload/main
+        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Shotgun_Reload} run function chuzitems:item/weapon/shotgun/reload/main
 
 ## グレネードランチャー
     # メインハンドに入ってる時のメイン処理
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher} run function chuzitems:item/grenade_launcher/main
+        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher} run function chuzitems:item/weapon/grenade_launcher/main
     # リロード
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher_Reload} run function chuzitems:item/grenade_launcher/reload/main
+        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher_Reload} run function chuzitems:item/weapon/grenade_launcher/reload/main
 
 ## ガンブレード
     # 銃モード
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Gunblade,ItemMode:Ranged} run function chuzitems:item/gunblade/ranged/main
+        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Gunblade,ItemMode:Ranged} run function chuzitems:item/weapon/gunblade/ranged/main
     # 剣モード
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Gunblade,ItemMode:Melee} run function chuzitems:item/gunblade/melee/main
+        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Gunblade,ItemMode:Melee} run function chuzitems:item/weapon/gunblade/melee/main
     # オフハンドに入れると変形する
-        execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{ItemID:Craftsman_Gunblade} in overworld run function chuzitems:item/gunblade/switch
+        execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{ItemID:Craftsman_Gunblade} in overworld run function chuzitems:item/weapon/gunblade/switch
 
 ## モザンビークショットガン
-    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Mozambique} run function chuzitems:item/mozambique/main
+    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Mozambique} run function chuzitems:item/weapon/mozambique/main
 
 ## ウィングマン
-    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Wingman} run function chuzitems:item/wingman/main
+    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Wingman} run function chuzitems:item/weapon/wingman/main
 
 ## TechKit: レヴォマシンガン
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TechKit_Revomachine_Gun} run function chuzitems:item/techkit_revomachine_gun/main
