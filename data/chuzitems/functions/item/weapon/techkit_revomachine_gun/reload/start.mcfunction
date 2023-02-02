@@ -1,10 +1,10 @@
-#> chuzitems:item/techkit_revomachine_gun/reload/start
+#> chuzitems:item/weapon/techkit_revomachine_gun/reload/start
 #
 # リロードと同士に銃を投げる
 #
 # @within function
-#   chuzitems:item/techkit_revomachine_gun/main
-#   chuzitems:item/techkit_revomachine_gun/gun/
+#   chuzitems:item/weapon/techkit_revomachine_gun/main
+#   chuzitems:item/weapon/techkit_revomachine_gun/gun/
 
 # 俺が実行者だ
     tag @s add This
@@ -25,7 +25,7 @@
     execute in overworld run function chuzitems:item/consume_ammo
 
 # アイテム変更
-    loot replace entity @s weapon.mainhand loot chuzitems:item/techkit_revomachine_gun/reload
+    loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/techkit_revomachine_gun/reload
 
 # 射撃のポーズ戻す
     tag @s remove ChuzItems.Shot.ADS

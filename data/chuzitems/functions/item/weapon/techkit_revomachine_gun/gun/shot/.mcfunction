@@ -1,8 +1,8 @@
-#> chuzitems:item/techkit_revomachine_gun/gun/shot/
+#> chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/
 #
 # ノーマル射撃
 #
-# @within function chuzitems:item/techkit_revomachine_gun/gun/
+# @within function chuzitems:item/weapon/techkit_revomachine_gun/gun/
 
 # 俺が実行者だ
     tag @s add This
@@ -26,8 +26,8 @@
     execute if score $Gamerule.Recoil Chuz.Rule matches 1 run function yv_recoil:
 
 # 弾を召喚
-    execute if entity @s[tag=ChuzItems.Shot.Normal] anchored eyes positioned ^-0.25 ^ ^ run function chuzitems:item/techkit_revomachine_gun/gun/shot/summon_bullet 
-    execute if entity @s[tag=ChuzItems.Shot.ADS] anchored eyes positioned ^ ^ ^ run function chuzitems:item/techkit_revomachine_gun/gun/shot/summon_bullet 
+    execute if entity @s[tag=ChuzItems.Shot.Normal] anchored eyes positioned ^-0.25 ^ ^ run function chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/summon_bullet 
+    execute if entity @s[tag=ChuzItems.Shot.ADS] anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/summon_bullet 
 
 # 弾が減る
     execute in overworld run function chuzitems:item/consume_ammo

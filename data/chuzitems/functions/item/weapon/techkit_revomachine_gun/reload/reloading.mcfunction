@@ -1,12 +1,12 @@
-#> chuzitems:item/techkit_revomachine_gun/reload/reloading
+#> chuzitems:item/weapon/techkit_revomachine_gun/reload/reloading
 #
 # 
 #
-# @within function chuzitems:item/techkit_revomachine_gun/main
+# @within function chuzitems:item/weapon/techkit_revomachine_gun/main
 
 # スコア増やしてく、一定値で完了
     scoreboard players add @s ChuzItems.Reload 1
-    execute if score @s ChuzItems.Reload matches 60.. run function chuzitems:item/techkit_revomachine_gun/reload/finish
+    execute if score @s ChuzItems.Reload matches 60.. run function chuzitems:item/weapon/techkit_revomachine_gun/reload/finish
 
 # 音
     execute if score @s ChuzItems.Reload matches 10 run playsound minecraft:entity.allay.item_given player @a ~ ~ ~ 1 2

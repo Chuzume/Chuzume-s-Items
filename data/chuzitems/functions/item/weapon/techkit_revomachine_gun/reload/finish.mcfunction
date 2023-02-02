@@ -1,11 +1,11 @@
-#> chuzitems:item/techkit_revomachine_gun/reload/finish
+#> chuzitems:item/weapon/techkit_revomachine_gun/reload/finish
 #
 # 
 #
-# @within function chuzitems:item/techkit_revomachine_gun/reload/reloading
+# @within function chuzitems:item/weapon/techkit_revomachine_gun/reload/reloading
 
 # アイテムを渡す
-    loot replace entity @s weapon.mainhand loot chuzitems:item/techkit_revomachine_gun/
+    loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/techkit_revomachine_gun/
 
 # 演出
     playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 1 2

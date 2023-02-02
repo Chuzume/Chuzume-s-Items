@@ -1,8 +1,8 @@
-#> chuzitems:item/techkit_revomachine_gun/gun/shot/setdata_normal
+#> chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/setdata_normal
 #
 # 色々設定する 
 #
-# @within function chuzitems:item/techkit_revomachine_gun/gun/
+# @within function chuzitems:item/weapon/techkit_revomachine_gun/gun/
 
 # タグ付与: 通常射撃
     tag @s add ChuzItems.Shot.Normal

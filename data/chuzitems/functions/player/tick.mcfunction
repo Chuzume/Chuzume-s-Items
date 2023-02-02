@@ -56,7 +56,7 @@
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Wingman} run function chuzitems:item/weapon/wingman/main
 
 ## TechKit: レヴォマシンガン
-    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TechKit_Revomachine_Gun} run function chuzitems:item/techkit_revomachine_gun/main
+    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TechKit_Revomachine_Gun} run function chuzitems:item/weapon/techkit_revomachine_gun/main
 
 ## 共通処理
     # アイテムが変わったら状態リセット

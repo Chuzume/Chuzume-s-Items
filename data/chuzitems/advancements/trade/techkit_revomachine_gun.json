@@ -13,7 +13,7 @@
       }
     },
     "rewards": {
-      "function": "chuzitems:item/techkit_revomachine_gun/get"
+      "function": "chuzitems:item/weapon/techkit_revomachine_gun/get"
     }
   }
   

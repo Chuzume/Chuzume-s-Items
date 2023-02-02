@@ -1,8 +1,8 @@
-#> chuzitems:item/techkit_revomachine_gun/gun/shot/setdata_ads
+#> chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/setdata_ads
 #
 # 
 #
-# @within function chuzitems:item/techkit_revomachine_gun/gun/
+# @within function chuzitems:item/weapon/techkit_revomachine_gun/gun/
 
 # タグ付与: 通常射撃
     tag @s add ChuzItems.Shot.ADS
