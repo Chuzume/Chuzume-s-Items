@@ -29,7 +29,7 @@
     #execute if entity @s[predicate=!chuzitems:sneak,x_rotation=-90..-80] run effect give @s minecraft:levitation 1 200 true
 
 # 下向きに撃つと飛び上がる
-    execute if entity @s[predicate=!chuzitems:sneak,x_rotation=80..90] run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0f,Duration:6,Age:4,Effects:[{Id:25b,Amplifier:15b,Duration:6,ShowParticles:0b}]}
+    execute if entity @s[predicate=!chuzitems:sneak,x_rotation=80..90] run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0f,Duration:6,Age:4,Effects:[{Id:25,Amplifier:15b,Duration:6,ShowParticles:0b}]}
 
 # もう実行者ではない
     tag @s remove This
