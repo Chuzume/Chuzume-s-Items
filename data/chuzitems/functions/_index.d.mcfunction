@@ -47,6 +47,8 @@
     #declare tag ChuzItems.ReloadSuccess
     #declare tag ChuzItems.ReloadFailed
     #declare tag ChuzItems.Reflected
+    #declare tag ChuzItems.FallResist
+    #declare tag ChuzItems.JumpBoots.TimeOut
 
 #> 制御系タグ
     #declare tag ChuzItems.ReloadStart
@@ -56,7 +58,8 @@
 #> ストレージ
     #declare storage chuz:storage
     #declare storage chuz:context
-    #declare storage chuz:context
+    #declare storage api:
+    #declare storage global
 
 #> スコアホルダー
     #declare score_holder $L.RotX

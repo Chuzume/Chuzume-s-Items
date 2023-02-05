@@ -1,5 +1,6 @@
 {
   "values": [
-    "chuzitems:tick"
+    "chuzitems:tick",
+    "delta:internal/technical/tick"
   ]
 }

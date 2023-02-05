@@ -11,6 +11,8 @@
     function oh_my_dat:sys/load
     function yv_recoil:load
     function yv_reflection:load
+    function delta:internal/technical/load
+    function random:private/load
 
 #> スコアボード作成
     scoreboard objectives add ChuzItems.Drop minecraft.custom:minecraft.drop {"text":"イベント: 投げ捨て"}
@@ -19,6 +21,7 @@
     scoreboard objectives add ChuzItems.FungusStick minecraft.used:warped_fungus_on_a_stick {"text":"イベント: クリック キノコ付きの棒"}
     scoreboard objectives add ChuzItems.KnowledgeBook minecraft.used:knowledge_book {"text":"イベント: クリック 知恵の本"}
     scoreboard objectives add ChuzItems.Trade minecraft.custom:minecraft.talked_to_villager {"text":"イベント: 村人と話す"}
+    scoreboard objectives add ChuzItems.Jump minecraft.custom:minecraft.jump {"text":"イベント: ジャンプ"}
     scoreboard objectives add ChuzItems.CoolTime dummy
     scoreboard objectives add ChuzItems.Charge dummy
     scoreboard objectives add ChuzItems.Reload dummy
@@ -32,6 +35,9 @@
     scoreboard objectives add ChuzItems.BurstRate dummy
     scoreboard objectives add ChuzItems.ModelSpin dummy
     scoreboard objectives add ChuzItems.Tick dummy
+    scoreboard objectives add ChuzItems.FallResist dummy
+    scoreboard objectives add ChuzItems.FallResistTime dummy
+
 
 #> その他なんか分類しづらいもの
     scoreboard objectives add ChuzItems.Revo.Magazine dummy

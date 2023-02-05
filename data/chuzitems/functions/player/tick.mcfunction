@@ -58,6 +58,9 @@
 ## TechKit: レヴォマシンガン
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TechKit_Revomachine_Gun} run function chuzitems:item/weapon/techkit_revomachine_gun/main
 
+## 指向性ジャンプブーツ
+    execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:Directional_Jump_Boots} run function chuzitems:item/armor/directional_jump_boots/main
+
 ## 共通処理
     # アイテムが変わったら状態リセット
         execute if entity @s[scores={Chuz.ItemCheck=1}] run function chuzitems:item/score_reset
@@ -72,10 +75,11 @@
 
     # オフハンドに入れると戻ってくる
         execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} run function chuzitems:item/no_offhand
-
+        
 ## 一般的なスコアリセット
     scoreboard players reset @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Sneak
     scoreboard players reset @s[scores={ChuzItems.Crossbow=1..}] ChuzItems.Crossbow
     scoreboard players reset @s[scores={ChuzItems.FungusStick=0..}] ChuzItems.FungusStick
     scoreboard players reset @s[scores={ChuzItems.KnowledgeBook=1..}] ChuzItems.KnowledgeBook
     scoreboard players reset @s[scores={ChuzItems.Trade=1..}] ChuzItems.Trade
+    scoreboard players reset @s[scores={ChuzItems.Jump=1..}] ChuzItems.Jump
