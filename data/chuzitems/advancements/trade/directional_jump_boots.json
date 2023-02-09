@@ -5,15 +5,15 @@
         "conditions": {
           "item": {
             "items": [
-              "minecraft:crossbow"
+              "minecraft:iron_boots"
             ],
-            "nbt": "{ChuzData:{ItemID:TechKit_RevomachineGun,SellSample:1b}}"
+            "nbt": "{ChuzData:{ItemID:Directional_Jump_Boots,SellSample:1b}}"
           }
         }
       }
     },
     "rewards": {
-      "function": "chuzitems:item/weapon/techkit_revomachine_gun/get"
+      "function": "chuzitems:item/armor/directional_jump_boots/get"
     }
   }
   
