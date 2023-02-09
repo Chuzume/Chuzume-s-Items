@@ -23,7 +23,7 @@
     #execute in overworld run function chuzitems:item/consume_ammo
 
 # 腹が減る
-    #effect give @s[gamemode=!creative] minecraft:hunger 1 40 true
+    effect give @s[gamemode=!creative] minecraft:hunger 1 20 true
 
 # リセット
     scoreboard players reset @s ChuzItems.Ready
