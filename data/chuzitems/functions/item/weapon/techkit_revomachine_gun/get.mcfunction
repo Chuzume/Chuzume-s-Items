@@ -14,7 +14,7 @@
     playsound chuzume:cash_register01_2 player @a ~ ~ ~ 1 1.2
 
 # 商品サンプルを削除
-    clear @s crossbow{ChuzData:{ItemID:TechKit_RevomachineGun_Sample,SellSample:1b}} 1
+    clear @s crossbow{ChuzData:{SellSample:1b}} 1
 
 # 進捗消去
     advancement revoke @s only chuzitems:trade/techkit_revomachine_gun
