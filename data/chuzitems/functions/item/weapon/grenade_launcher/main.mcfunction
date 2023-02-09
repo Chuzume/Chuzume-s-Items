@@ -15,7 +15,7 @@
 
 # 発砲(チャージ0)
     execute if entity @s[scores={ChuzItems.Crossbow=0..}] unless score @s ChuzItems.Charge matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/grenade_launcher/fire/normal
-    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches ..14 unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/grenade_launcher/fire/normal
+    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches ..10 unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/grenade_launcher/fire/normal
 
 # 発砲(チャージ1)
     execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches 10..19 unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/grenade_launcher/fire/charge1
