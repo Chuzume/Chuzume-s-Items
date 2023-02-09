@@ -1,5 +1,5 @@
 # もし使用者自身に当たったなら、なかったことにする
-    execute store success score @s Chuz.HitCheck if score @s Chuz.EntityID = @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,dx=0,sort=nearest,limit=1] Chuz.PlayerID
+    execute store success score @s Chuz.HitCheck if score @s Chuz.EntityID = @e[type=!#chuzitems:unhurtable,tag=!Chuz.Uninterferable,dx=0,sort=nearest,limit=1] Chuz.PlayerID
 
 # ヒット
     execute store result storage csr_score_damage: ChuzDamage.Body int 1 run data get entity @s data.ChuzData.BodyDamage
