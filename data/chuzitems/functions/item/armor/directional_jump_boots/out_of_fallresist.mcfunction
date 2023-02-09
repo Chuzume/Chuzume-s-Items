@@ -5,7 +5,6 @@
 # @within function chuzitems:item/armor/directional_jump_boots/main
 
 # 演出
-    playsound minecraft:entity.item.break player @a ~ ~ ~ 1 1
     particle minecraft:smoke ~ ~0.1 ~ 0.3 0 0.3 0 20
 
 # リセット
