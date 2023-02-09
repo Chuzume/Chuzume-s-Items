@@ -2,7 +2,7 @@
     tag @s add This
     
 # 演出
-    execute positioned ^ ^-0.2 ^1.0 run playsound chuzume:launcher_shot player @a ~ ~ ~ 3 1.4
+    execute positioned ^ ^-0.2 ^1.0 run playsound chuzume:launcher_shot player @a ~ ~ ~ 3 1.2
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 1
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 4 1.3
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 3 1.5
