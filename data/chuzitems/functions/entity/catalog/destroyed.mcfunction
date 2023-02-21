@@ -5,7 +5,7 @@
 # @within function chuzitems:entity/catalog/tick
 
 # アイテムを出す
-    loot spawn ~ ~ ~ loot chuzitems:item/otherworldly_catalogue
+    loot spawn ~ ~ ~ loot chuzitems:item/otherworldly_catalog
 
 # トレーダーを片付ける
     execute positioned ~ ~-1 ~ as @e[type=wandering_trader,tag=ChuzItems.Entity.Catalog.Trader,sort=nearest,limit=1] run function chuzitems:entity/catalog/trader/kill

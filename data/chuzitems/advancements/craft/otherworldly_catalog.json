@@ -3,11 +3,11 @@
       "unlock": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "chuzitems:otherworldly_catalogue"
+          "recipe": "chuzitems:otherworldly_catalog"
         }
       }
     },
     "rewards": {
-      "function": "chuzitems:item/otherworldly_catalogue/craft"
+      "function": "chuzitems:item/otherworldly_catalog/craft"
     }
   }
