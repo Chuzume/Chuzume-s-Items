@@ -1,8 +1,8 @@
-#> chuzitems:entity/catalogue/trader/init
+#> chuzitems:entity/catalog/trader/init
 #
 # 取引
 #
-# @within function chuzitems:entity/catalogue/trader/summon
+# @within function chuzitems:entity/catalog/trader/summon
 
 # 上から降りてくる
     tp @s ~ ~-1001 ~

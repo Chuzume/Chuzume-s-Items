@@ -1,8 +1,8 @@
-#> chuzitems:entity/catalogue/in_use
+#> chuzitems:entity/catalog/in_use
 #
 # 使用中
 #
-# @within function chuzitems:entity/catalogue/tick
+# @within function chuzitems:entity/catalog/tick
 
 # 演出
     particle minecraft:dust 0.3 1 1 0.8 ~ ~0.3 ~ 0.2 0 0.2 0 1

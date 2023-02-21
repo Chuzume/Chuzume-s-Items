@@ -36,11 +36,11 @@
     #declare tag ChuzItems.Projectile.ThrownGun
 
 #> カタログ周りのタグ
-    #declare tag ChuzItems.Entity.Catalogue
-    #declare tag ChuzItems.Entity.Catalogue.Wait
-    #declare tag ChuzItems.Entity.Catalogue.InUse
-    #declare tag ChuzItems.Entity.Catalogue.Trader
-    #declare tag ChuzItems.Entity.Catalogue.Hologram
+    #declare tag ChuzItems.Entity.Catalog
+    #declare tag ChuzItems.Entity.Catalog.Wait
+    #declare tag ChuzItems.Entity.Catalog.InUse
+    #declare tag ChuzItems.Entity.Catalog.Trader
+    #declare tag ChuzItems.Entity.Catalog.Hologram
 
 #> その他
     #declare tag ChuzItems.Steping

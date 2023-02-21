@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:armor_stand",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Otherworldly Catalog\",\"color\":\"#37CDFF\",\"italic\":false}',Lore:['{\"text\":\" \"}','{\"text\":\"ブロックの上に設置できる。\",\"color\":\"white\",\"italic\":false}','{\"text\":\"設置後は、付近でスニークすると回収できる。\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"様々なアイテムが載ったカタログ本。\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"アイテムの入手に使えそうだ。\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:1,EntityTag:{Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:[\"ChuzItems.Entity.Catalog\",\"ChuzItems.Entity.Catalog.Wait\"],ArmorItems:[{},{},{},{id:\"minecraft:armor_stand\",Count:1b,tag:{CustomModelData:1}}]}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
