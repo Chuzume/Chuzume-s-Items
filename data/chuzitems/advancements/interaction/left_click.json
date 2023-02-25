@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "interaction"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "chuzitems:player/click_detection/left"
+    }
+  }
+  
