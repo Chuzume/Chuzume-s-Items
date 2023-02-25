@@ -27,16 +27,16 @@
 
     # プレイヤー、またはドラゴンでないなら、ヘルス0でキル
         execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches ..0 run function chuzitems:hitreact 
-        execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches ..0 run kill @s
+        #execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches ..0 run kill @s
 
     # ドラゴンならヘルス0でDragonPhaseを9にして墜落させる
         execute if entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches ..0 run data merge entity @s {DragonPhase:9}
 
-    # ヘルスが1以上ならUUID攻撃
-        execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $SubtractedHealth ScoreDamageCore matches 1.. run function chuzitems:uuid_hit_no_kb
+    # UUIDダメージで敵対などを奪う。トドメもここ。
+        function csr_score_damage:core/uuid_attack
 
     # プレイヤーなら見た目だけダメージ
-        execute if entity @s[type=player] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
+        #execute if entity @s[type=player] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
 
     # プレイヤーかつヘルス0なら死亡メッセージ
         execute if entity @s[type=player] if score @s ScoreToHealth matches ..0 run function chuzitems:message/death
