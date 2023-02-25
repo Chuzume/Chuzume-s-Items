@@ -13,6 +13,8 @@
 ## データ取得
     function chuzitems:get_data/
 
+    #function chuzitems:player/click_detection/main
+
 ## リロード
     execute if entity @s[scores={ChuzItems.Drop=0..}] run function chuzitems:common/throw_item/main
 
@@ -83,3 +85,7 @@
     scoreboard players reset @s[scores={ChuzItems.KnowledgeBook=1..}] ChuzItems.KnowledgeBook
     scoreboard players reset @s[scores={ChuzItems.Trade=1..}] ChuzItems.Trade
     scoreboard players reset @s[scores={ChuzItems.Jump=1..}] ChuzItems.Jump
+
+## タグリセット
+    tag @s[tag=Chuz.Click.Left] remove Chuz.Click.Left
+    tag @s[tag=Chuz.Click.Right] remove Chuz.Click.Right

@@ -22,6 +22,10 @@
     #declare tag Chuz.PlayerAttack
     #declare tag Chuz.Uninterferable
     #declare tag Chuz.PlayerShouldInvulnerable
+    #declare tag Chuz.Click.Left
+    #declare tag Chuz.Click.Right
+    #declare tag Chuz.Entity.Interaction
+
 
 #> 飛び道具関連
     #declare tag ChuzItems.HeadShot

@@ -5,6 +5,9 @@
 # カタログ
     execute as @e[type=armor_stand,tag=ChuzItems.Entity.Catalog] at @s run function chuzitems:entity/catalog/tick
 
+# インタラクション
+    execute as @e[type=interaction,tag=Chuz.Entity.Interaction] run function chuzitems:entity/click_detection/tick
+
 ## プレイヤーへのメイン処理
     execute as @a at @s run function chuzitems:player/tick
 
