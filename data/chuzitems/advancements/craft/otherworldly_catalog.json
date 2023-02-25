@@ -8,6 +8,6 @@
       }
     },
     "rewards": {
-      "function": "chuzitems:item/otherworldly_catalog/craft"
+      "function": "chuzitems:item/other/otherworldly_catalog/craft"
     }
   }
