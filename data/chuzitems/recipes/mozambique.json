@@ -1,14 +1,11 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "## ",
+        "ii ",
         "iRO",
         "  L"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:iron_trapdoor"
-        },
         "i": {
             "item": "minecraft:iron_ingot"
         },
