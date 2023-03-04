@@ -38,6 +38,8 @@
     scoreboard objectives add ChuzItems.FallResist dummy
     scoreboard objectives add ChuzItems.FallResistTime dummy
 
+#> 
+    scoreboard objectives add Chuz.PosDiffY dummy
 
 #> その他なんか分類しづらいもの
     scoreboard objectives add ChuzItems.Revo.Magazine dummy
@@ -75,7 +77,6 @@
 
 #> 時たま使い回されるスコアボード
     scoreboard objectives add Chuz.Temporary dummy
-    scoreboard objectives add Col_Check_Temp dummy
     scoreboard objectives add Chuz.Calc dummy
     scoreboard objectives add Chuz.Rule dummy
     scoreboard objectives add Chuz.ItemCheck dummy
@@ -85,13 +86,6 @@
     scoreboard objectives add Chuz.Speed dummy
     scoreboard objectives add Chuz.Recursion dummy
 
-# モーション関連
-    scoreboard objectives add Col_Check_X dummy
-    scoreboard objectives add Col_Check_Y dummy
-    scoreboard objectives add Col_Check_Z dummy
-    scoreboard objectives add Chuz.F.Check_X dummy
-    scoreboard objectives add Chuz.F.Check_Y dummy
-    scoreboard objectives add Chuz.F.Check_Z dummy
 
 # ダメージ受けたときのやつ
     scoreboard objectives add Chuz.HitCheck dummy
