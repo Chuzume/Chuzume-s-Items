@@ -49,6 +49,7 @@
     #declare tag ChuzItems.Reflected
     #declare tag ChuzItems.FallResist
     #declare tag ChuzItems.JumpBoots.TimeOut
+    #declare tag ChuzItems.JumpBoots.NoUse
 
 #> 制御系タグ
     #declare tag ChuzItems.ReloadStart

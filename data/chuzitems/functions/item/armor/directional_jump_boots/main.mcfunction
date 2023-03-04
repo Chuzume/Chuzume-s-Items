@@ -7,8 +7,8 @@
 # OnGround取得
     function chuzitems:get_data/on_ground
 
-# ジャンプ検知したら発動
-    execute if score @s[predicate=chuzitems:sneak] ChuzItems.Jump matches 0.. run function chuzitems:item/armor/directional_jump_boots/jump
+# Posをスコア化、1tick後との差を求める
+    execute if entity @s[tag=!ChuzItems.JumpBoots.NoUse,predicate=chuzitems:sneak] run function chuzitems:item/armor/directional_jump_boots/get_pos
 
 # 落下を開始したら無敵になる
     execute unless score @s[tag=!ChuzItems.JumpBoots.TimeOut] ChuzItems.FallResistTime matches 0.. if data storage api: {OnGround:0b} run scoreboard players set @s ChuzItems.FallResistTime 40
