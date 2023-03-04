@@ -42,3 +42,6 @@
 
 # 更新
     execute in overworld run function chuzitems:item/replaceitem
+
+# リロード開始タグを付与されたらリロード開始
+    execute if entity @s[tag=ChuzItems.ReloadStart] run function chuzitems:item/weapon/wingman/reload/start
