@@ -19,3 +19,7 @@
 
 # 着地まで使えないようにタグを付与
     tag @s add ChuzItems.JumpBoots.NoUse
+
+# リセット
+    scoreboard players reset $Y Chuz.Temporary
+    scoreboard players reset @s Chuz.PosDiffY

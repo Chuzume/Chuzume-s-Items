@@ -13,12 +13,12 @@
 # 1tick後に保存しておく
     execute store result score $Y_Save Chuz.Temporary run data get entity @s Pos[1] 100
 
-# 計算結果が34、41、51以上なら跳躍
+# 計算結果が34、41、51、61以上なら跳躍
     scoreboard players operation @s Chuz.PosDiffY -= $Y Chuz.Temporary
-    execute if score @s Chuz.PosDiffY matches 34 run function chuzitems:item/armor/directional_jump_boots/jump
-    execute if score @s Chuz.PosDiffY matches 41 run function chuzitems:item/armor/directional_jump_boots/jump
-    execute if score @s Chuz.PosDiffY matches 51.. run function chuzitems:item/armor/directional_jump_boots/jump
-    tellraw @a [{"text":"score: "},{"score":{"objective":"Chuz.PosDiffY","name":"@s"}}]
+    execute if score @s[predicate=chuzitems:sneak] Chuz.PosDiffY matches 34 run function chuzitems:item/armor/directional_jump_boots/jump
+    execute if score @s[predicate=chuzitems:sneak] Chuz.PosDiffY matches 41..45 run function chuzitems:item/armor/directional_jump_boots/jump
+    execute if score @s[predicate=chuzitems:sneak] Chuz.PosDiffY matches 51.. run function chuzitems:item/armor/directional_jump_boots/jump
+    #tellraw @a[scores={Chuz.PosDiffY=1..}] [{"text":"score: "},{"score":{"objective":"Chuz.PosDiffY","name":"@s"}}]
 
 # リセット
     scoreboard players reset $Y Chuz.Temporary
