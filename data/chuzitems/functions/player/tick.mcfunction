@@ -13,8 +13,6 @@
 ## データ取得
     function chuzitems:get_data/
 
-    #function chuzitems:player/click_detection/main
-
 ## リロード
     execute if entity @s[scores={ChuzItems.Drop=0..}] run function chuzitems:common/throw_item/main
 
@@ -62,6 +60,9 @@
 
 ## 指向性ジャンプブーツ
     execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:Directional_Jump_Boots} run function chuzitems:item/armor/directional_jump_boots/main
+
+## テスト斧
+    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TestAxe} run function chuzitems:item/weapon/testaxe/main
 
 ## 共通処理
     # アイテムが変わったら状態リセット
