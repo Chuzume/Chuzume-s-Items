@@ -21,5 +21,7 @@
 # 下
     summon interaction ~ ~1.2 ~ {width:0.15f,height:0.01f,Tags:["Chuz.Entity.Interaction"]}
 
+
+
 # 旧判定 チャンクの周辺で奇妙なことになる
     #execute as @a at @a anchored eyes rotated ~ 0 run summon interaction ^ ^0.1 ^ {width:0.6f,height:0.05f,Tags:["Chuz.Entity.Interaction"]}
