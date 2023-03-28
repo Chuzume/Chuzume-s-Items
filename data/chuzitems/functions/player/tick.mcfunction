@@ -79,14 +79,5 @@
     # オフハンドに入れると戻ってくる
         execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} run function chuzitems:item/no_offhand
         
-## 一般的なスコアリセット
-    scoreboard players reset @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Sneak
-    scoreboard players reset @s[scores={ChuzItems.Crossbow=1..}] ChuzItems.Crossbow
-    scoreboard players reset @s[scores={ChuzItems.FungusStick=0..}] ChuzItems.FungusStick
-    scoreboard players reset @s[scores={ChuzItems.KnowledgeBook=1..}] ChuzItems.KnowledgeBook
-    scoreboard players reset @s[scores={ChuzItems.Trade=1..}] ChuzItems.Trade
-    scoreboard players reset @s[scores={ChuzItems.Jump=1..}] ChuzItems.Jump
-
-## タグリセット
-    tag @s[tag=Chuz.Click.Left] remove Chuz.Click.Left
-    tag @s[tag=Chuz.Click.Right] remove Chuz.Click.Right
+## 一般的なリセット
+    function chuzitems:player/reset

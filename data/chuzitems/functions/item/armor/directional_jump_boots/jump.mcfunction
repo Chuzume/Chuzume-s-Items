@@ -2,7 +2,7 @@
 #
 # Deltaデータパックを用いた跳躍
 #
-# @within function chuzitems:item/armor/directional_jump_boots/main
+# @within function chuzitems:item/armor/directional_jump_boots/get_pos
 
 # 飛ばす
     scoreboard players set $strength delta.api.launch 10000
@@ -16,3 +16,10 @@
 # パーティクル
     particle minecraft:poof ~ ~0.1 ~ 0.3 0 0.3 0.2 10
     particle minecraft:crit ~ ~0.3 ~ 0.3 0 0.3 0.5 10
+
+# 着地まで使えないようにタグを付与
+    tag @s add ChuzItems.JumpBoots.NoUse
+
+# リセット
+    scoreboard players reset $Y Chuz.Temporary
+    scoreboard players reset @s Chuz.PosDiffY

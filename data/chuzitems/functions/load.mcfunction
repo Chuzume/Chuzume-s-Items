@@ -38,9 +38,9 @@
     scoreboard objectives add ChuzItems.FallResist dummy
     scoreboard objectives add ChuzItems.FallResistTime dummy
 
-
 #> その他なんか分類しづらいもの
     scoreboard objectives add ChuzItems.Revo.Magazine dummy
+    scoreboard objectives add Chuz.PosDiffY dummy
 
 #> 固定数値
     scoreboard objectives add Chuz.Const dummy
@@ -75,7 +75,6 @@
 
 #> 時たま使い回されるスコアボード
     scoreboard objectives add Chuz.Temporary dummy
-    scoreboard objectives add Col_Check_Temp dummy
     scoreboard objectives add Chuz.Calc dummy
     scoreboard objectives add Chuz.Rule dummy
     scoreboard objectives add Chuz.ItemCheck dummy
@@ -85,13 +84,6 @@
     scoreboard objectives add Chuz.Speed dummy
     scoreboard objectives add Chuz.Recursion dummy
 
-# モーション関連
-    scoreboard objectives add Col_Check_X dummy
-    scoreboard objectives add Col_Check_Y dummy
-    scoreboard objectives add Col_Check_Z dummy
-    scoreboard objectives add Chuz.F.Check_X dummy
-    scoreboard objectives add Chuz.F.Check_Y dummy
-    scoreboard objectives add Chuz.F.Check_Z dummy
 
 # ダメージ受けたときのやつ
     scoreboard objectives add Chuz.HitCheck dummy
@@ -100,11 +92,6 @@
     scoreboard objectives add Chuz.PlayerID.Core dummy
     scoreboard objectives add Chuz.PlayerID dummy
     scoreboard objectives add Chuz.EntityID dummy
-    #scoreboard objectives add Chuz_Mo.ID dummy
-
-# 時たま使い回されるチーム
-    team add NoCollision
-    team modify NoCollision collisionRule never
 
 # ルールが存在してなかったら定義
     execute unless score $Gamerule.AmmoRequire Chuz.Rule = $Gamerule.AmmoRequire Chuz.Rule run scoreboard players set $Gamerule.AmmoRequire Chuz.Rule 1

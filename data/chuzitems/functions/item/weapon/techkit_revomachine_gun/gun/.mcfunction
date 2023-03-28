@@ -34,8 +34,10 @@
         execute if entity @s[tag=!ChuzItems.Shot.Normal] if predicate chuzitems:sneak run scoreboard players set $CMD Chuz.Temporary 10
 
 # リコイルの収まりが戻っていく
-    #scoreboard players remove @s[scores={ChuzItems.Recoil.Change=1..}] ChuzItems.Recoil.Change 1
     scoreboard players reset @s[scores={ChuzItems.Recoil.Change=0}] ChuzItems.Recoil.Change
 
 # 更新
     execute in overworld run function chuzitems:item/replaceitem
+
+# リロード開始タグを付与されたらリロード開始
+    execute if entity @s[tag=ChuzItems.ReloadStart] run function chuzitems:item/weapon/techkit_revomachine_gun/reload/start

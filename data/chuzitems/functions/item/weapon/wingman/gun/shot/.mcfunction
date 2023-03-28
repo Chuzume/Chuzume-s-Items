@@ -23,7 +23,7 @@
 # リコイル
     execute if score $Gamerule.Recoil Chuz.Rule matches 1 if entity @s[scores={ChuzItems.Recoil.Change=0..}] run data modify storage yv:gun Recoil set value {Magnitude:[0.0f,-1.17f],Smooth:5,WaitTick:4}
     execute if score $Gamerule.Recoil Chuz.Rule matches 1 unless entity @s[scores={ChuzItems.Recoil.Change=0..}] run data modify storage yv:gun Recoil set value {Magnitude:[1.85f,-3.325f],Smooth:5,WaitTick:4}
-    function yv_recoil:
+    execute if score $Gamerule.Recoil Chuz.Rule matches 1 run function yv_recoil:
 
 # 真上リコイルに変更
     scoreboard players set @s ChuzItems.Recoil.Change 12

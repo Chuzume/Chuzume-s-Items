@@ -9,6 +9,3 @@
   
 # リロード
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Wingman,ItemMode:Reloading} run function chuzitems:item/weapon/wingman/reload/reloading
-  
-# リロード開始タグを付与されたらリロード開始
-    execute if entity @s[tag=ChuzItems.ReloadStart] run function chuzitems:item/weapon/wingman/reload/start
