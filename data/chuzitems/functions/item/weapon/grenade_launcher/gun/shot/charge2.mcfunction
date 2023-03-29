@@ -1,3 +1,9 @@
+#> chuzitems:item/weapon/grenade_launcher/gun/shot/charge2
+#
+# 
+#
+# @within function chuzitems:item/weapon/grenade_launcher/gun/
+
 # 俺が実行者だ
     tag @s add This
     
@@ -8,8 +14,8 @@
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 3 1.5
 
 # 弾を召喚
-    function chuzitems:item/weapon/grenade_launcher/fire/summon
-
+    function chuzitems:item/weapon/grenade_launcher/gun/shot/summon
+    
 # 弾丸にInit処理
     scoreboard players set @e[type=item,tag=Chuz.Init,distance=..100,limit=1] Chuz.Speed 18
     execute as @e[type=item,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuzitems:entity/grenade/init

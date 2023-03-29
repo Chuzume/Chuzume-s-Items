@@ -25,6 +25,9 @@
 ## 保存してみる
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from storage chuz:context Item.Mainhand
 
+## アイテムの処理
+    function #chuzitems:item/tick
+
 ## スコープライフル
     # メインハンドに入ってる時のメイン処理
         execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Scoped_Rifle} run function chuzitems:item/weapon/scoped_rifle/main
@@ -37,9 +40,9 @@
 
 ## グレネードランチャー
     # メインハンドに入ってる時のメイン処理
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher} run function chuzitems:item/weapon/grenade_launcher/main
+        #execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher} run function chuzitems:item/weapon/grenade_launcher/main
     # リロード
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher_Reload} run function chuzitems:item/weapon/grenade_launcher/reload/main
+        #execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher_Reload} run function chuzitems:item/weapon/grenade_launcher/reload/main
 
 ## ガンブレード
     # 銃モード

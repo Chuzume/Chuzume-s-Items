@@ -1,3 +1,8 @@
+#> chuzitems:item/weapon/grenade_launcher/gun/shot/spread
+#
+# 
+#
+# @within function chuzitems:item/weapon/grenade_launcher/gun/shot/summon
     
 # 返り値のEntity
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
@@ -5,7 +10,7 @@
     # どれくらい視点から離すか
         data modify storage forward_spreader: Distance set value 10f
     # どれくらい拡散させるか
-        data modify storage forward_spreader: Spread set value 0.5f
+        data modify storage forward_spreader: Spread set value 1.0f
 
 # 処理の実行
     execute at @s as @e[type=marker,tag=SpreadMarker,limit=1] run function forward_spreader:api/circle
