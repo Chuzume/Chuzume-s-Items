@@ -1,6 +1,11 @@
+#> chuzitems:entity/projectile/recursive_bullet/hit_damage
+#
+# 弾丸ヒット時の処理
+#
+# @within function chuzitems:entity/projectile/recursive_bullet/hit
 
 # 爆発
-    execute if entity @s[type=end_crystal] run summon tnt
+    damage @s[type=end_crystal] 0 minecraft:generic
 
 # キルログ設定
     data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sの%3$sで撃たれた","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"nbt":"KillerItem.HoldItem","storage":"chuz:context","interpret":true}]}'
