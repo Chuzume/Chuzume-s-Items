@@ -39,6 +39,10 @@
     #declare tag ChuzItems.Projectile.RevoBullet
     #declare tag ChuzItems.Projectile.ThrownGun
 
+## エフェクト
+    #declare tag ChuzItems.Effect.Magic
+    #declare tag ChuzItems.Effect.Lockon
+
 #> カタログ周りのタグ
     #declare tag ChuzItems.Entity.Catalog
     #declare tag ChuzItems.Entity.Catalog.Wait
