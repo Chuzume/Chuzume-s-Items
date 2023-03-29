@@ -4,9 +4,6 @@
 #
 # @within function chuzitems:item/weapon/gunblade/gun/
 
-# 弾を召喚してInit処理
-    #execute summon marker run function chuzitems:item/weapon/gunblade/gun/shot/init/charge0
-
 # 連射数
     scoreboard players set @s ChuzItems.BurstCount 1
     scoreboard players set @s ChuzItems.CoolTime 2
