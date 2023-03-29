@@ -1,3 +1,9 @@
+#> chuzitems:item/weapon/scoped_rifle/main
+#
+# 
+#
+# @within function chuzitems:item/weapon/scoped_rifle/trigger
+
 # スニークでチャージ
     scoreboard players add @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Charge 1 
 
@@ -10,14 +16,13 @@
     execute if entity @s[scores={ChuzItems.Charge=30}] run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 1 2
     execute if entity @s[scores={ChuzItems.Charge=30}] run playsound minecraft:block.note_block.bell player @a ~ ~ ~ 1 1.5
 
-# 離して発砲
-    execute unless score @s[scores={ChuzItems.Charge=13..29}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/scoped_rifle/fire/normal
-
-# シャープシュート
-    execute unless score @s[scores={ChuzItems.Charge=30..}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/scoped_rifle/fire/sharpshoot
-
-# 残弾0なら失敗
-    execute unless score @s[scores={ChuzItems.Charge=13..}] ChuzItems.Sneak matches 0.. if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/scoped_rifle/fire/out_of_ammo
+## 発砲
+    # チャージ0
+        execute unless score @s[scores={ChuzItems.Charge=13..29}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/scoped_rifle/shot/charge0/
+    # チャージ1
+        execute unless score @s[scores={ChuzItems.Charge=30..}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/scoped_rifle/shot/charge1/
+    # 残弾0なら失敗
+        execute unless score @s[scores={ChuzItems.Charge=13..}] ChuzItems.Sneak matches 0.. if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/scoped_rifle/shot/no_ammo
 
 # 残弾0でリロードをする
     execute unless score @s ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:4} run scoreboard players add @s ChuzItems.Ready 1

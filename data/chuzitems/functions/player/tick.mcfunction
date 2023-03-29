@@ -28,10 +28,6 @@
 ## アイテムの処理
     function #chuzitems:item/tick
 
-## スコープライフル
-    # メインハンドに入ってる時のメイン処理
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Scoped_Rifle} run function chuzitems:item/weapon/scoped_rifle/main
-
 ## ショットガン
     # メインハンドに入ってる時のメイン処理
         execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Shotgun} run function chuzitems:item/weapon/shotgun/main
