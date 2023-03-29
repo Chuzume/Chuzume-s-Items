@@ -6,3 +6,6 @@
     function chuzitems:get_data/selecteditem
     function chuzitems:get_data/inventory
     function chuzitems:get_data/item_check
+
+# アイテムIDだけ外に出しておく
+    data modify storage chuz:context ItemID set from storage chuz:context Item.Mainhand.tag.ChuzData.ItemID

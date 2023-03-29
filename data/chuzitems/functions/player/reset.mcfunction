@@ -16,3 +16,6 @@
     scoreboard players reset @s[scores={ChuzItems.KnowledgeBook=1..}] ChuzItems.KnowledgeBook
     scoreboard players reset @s[scores={ChuzItems.Trade=1..}] ChuzItems.Trade
     scoreboard players reset @s[scores={ChuzItems.Jump=1..}] ChuzItems.Jump
+
+# ストレージ
+    data remove storage chuz:context ItemID
