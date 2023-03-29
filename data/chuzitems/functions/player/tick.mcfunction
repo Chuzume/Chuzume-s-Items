@@ -38,20 +38,6 @@
     # リロード
         execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Shotgun_Reload} run function chuzitems:item/weapon/shotgun/reload/main
 
-## グレネードランチャー
-    # メインハンドに入ってる時のメイン処理
-        #execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher} run function chuzitems:item/weapon/grenade_launcher/main
-    # リロード
-        #execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Grenade_Launcher_Reload} run function chuzitems:item/weapon/grenade_launcher/reload/main
-
-## ガンブレード
-    # 銃モード
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Gunblade,ItemMode:Ranged} run function chuzitems:item/weapon/gunblade/ranged/main
-    # 剣モード
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Gunblade,ItemMode:Melee} run function chuzitems:item/weapon/gunblade/melee/main
-    # オフハンドに入れると変形する
-        execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{ItemID:Craftsman_Gunblade} in overworld run function chuzitems:item/weapon/gunblade/switch
-
 ## モザンビークショットガン
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Mozambique} run function chuzitems:item/weapon/mozambique/main
 
@@ -77,7 +63,7 @@
     # クールタイム処理
         scoreboard players remove @s[scores={ChuzItems.CoolTime=1..}] ChuzItems.CoolTime 1
         # リセット
-            execute if score @s ChuzItems.CoolTime matches 0 run function chuzitems:item/cooltime_end
+            execute if score @s ChuzItems.CoolTime matches 0 run function chuzitems:player/cooltime_end
 
     # オフハンドに入れると戻ってくる
         execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} run function chuzitems:item/no_offhand
