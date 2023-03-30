@@ -2,7 +2,7 @@
 #
 # 銃モード時の処理
 #
-# @within function chuzitems:item/weapon/mozambique/main
+# @within function chuzitems:item/weapon/mozambique/trigger
 
 # 発砲
     # 残弾0ならリロード開始

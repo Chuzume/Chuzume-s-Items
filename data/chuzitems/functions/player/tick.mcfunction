@@ -28,15 +28,6 @@
 ## アイテムの処理
     function #chuzitems:item/tick
 
-## モザンビークショットガン
-    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Mozambique} run function chuzitems:item/weapon/mozambique/main
-
-## ウィングマン
-    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Wingman} run function chuzitems:item/weapon/wingman/main
-
-## TechKit: レヴォマシンガン
-    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TechKit_Revomachine_Gun} run function chuzitems:item/weapon/techkit_revomachine_gun/main
-
 ## 指向性ジャンプブーツ
     execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:Directional_Jump_Boots} run function chuzitems:item/armor/directional_jump_boots/main
 

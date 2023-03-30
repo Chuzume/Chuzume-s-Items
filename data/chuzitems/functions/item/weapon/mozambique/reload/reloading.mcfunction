@@ -2,7 +2,7 @@
 #
 # リロードモードのメイン処理
 #
-# @within function chuzitems:item/weapon/mozambique/main
+# @within function chuzitems:item/weapon/mozambique/trigger
 
 # スコア増やしてく、一定値で終了
     scoreboard players add @s ChuzItems.Reload 1
