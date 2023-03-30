@@ -2,6 +2,7 @@
     "values": [
         "chuzitems:item/weapon/grenade_launcher/trigger",
         "chuzitems:item/weapon/gunblade/trigger",
-        "chuzitems:item/weapon/scoped_rifle/trigger"
+        "chuzitems:item/weapon/scoped_rifle/trigger",
+        "chuzitems:item/weapon/shotgun/trigger"
     ]
 }

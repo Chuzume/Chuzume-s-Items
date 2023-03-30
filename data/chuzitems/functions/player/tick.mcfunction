@@ -28,12 +28,6 @@
 ## アイテムの処理
     function #chuzitems:item/tick
 
-## ショットガン
-    # メインハンドに入ってる時のメイン処理
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Shotgun} run function chuzitems:item/weapon/shotgun/main
-    # リロード
-        execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Craftsman_Shotgun_Reload} run function chuzitems:item/weapon/shotgun/reload/main
-
 ## モザンビークショットガン
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Mozambique} run function chuzitems:item/weapon/mozambique/main
 
