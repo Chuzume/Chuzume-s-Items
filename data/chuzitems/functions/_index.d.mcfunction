@@ -25,6 +25,7 @@
     #declare tag Chuz.Click.Left
     #declare tag Chuz.Click.Right
     #declare tag Chuz.Entity.Interaction
+    #declare tag Chuz.TargetEntity
 
 
 #> 飛び道具関連
