@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuzitems:item/weapon/techkit_revomachine_gun/main
+# @within function chuzitems:item/weapon/techkit_revomachine_gun/trigger
 
 # スコア増やしてく、一定値で完了
     scoreboard players add @s ChuzItems.Reload 1

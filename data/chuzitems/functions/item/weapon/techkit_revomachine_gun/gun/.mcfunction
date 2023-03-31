@@ -2,18 +2,18 @@
 #
 # 銃モードのメイン処理
 #
-# @within function chuzitems:item/weapon/techkit_revomachine_gun/main
+# @within function chuzitems:item/weapon/techkit_revomachine_gun/trigger
 
 # 発砲
     # 残弾0ならリロード開始
         execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:common/reload/check_have_ammo
     # 腰だめ
-        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=!chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/setdata_normal
+        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=!chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/normal
     # ADS
-        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/setdata_ads
+        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/ads
     # 弾の召喚部分
-        execute unless score @s[scores={ChuzItems.BurstCount=1..}] ChuzItems.BurstRate matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/
-
+        execute unless score @s[scores={ChuzItems.BurstCount=1..}] ChuzItems.BurstRate matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes run function chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/
+        execute unless score @s[scores={ChuzItems.BurstCount=1..}] ChuzItems.BurstRate matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes run say yo
 # バースト間隔の処理
     scoreboard players remove @s[scores={ChuzItems.BurstRate=1..}] ChuzItems.BurstRate 1
     # リセット
@@ -32,9 +32,6 @@
         execute if entity @s run scoreboard players set $CMD Chuz.Temporary 9
     # ADS
         execute if entity @s[tag=!ChuzItems.Shot.Normal] if predicate chuzitems:sneak run scoreboard players set $CMD Chuz.Temporary 10
-
-# リコイルの収まりが戻っていく
-    scoreboard players reset @s[scores={ChuzItems.Recoil.Change=0}] ChuzItems.Recoil.Change
 
 # 更新
     execute in overworld run function chuzitems:item/replaceitem

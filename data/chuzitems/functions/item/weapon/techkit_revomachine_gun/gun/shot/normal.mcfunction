@@ -1,4 +1,4 @@
-#> chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/setdata_normal
+#> chuzitems:item/weapon/techkit_revomachine_gun/gun/shot/normal
 #
 # 色々設定する 
 #
@@ -12,6 +12,3 @@
 
 # バースト数を設定
     scoreboard players set @s ChuzItems.BurstCount 2
-
-# 精度
-    scoreboard players set @s ChuzItems.Spread 20
