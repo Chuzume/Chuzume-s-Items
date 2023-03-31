@@ -15,16 +15,16 @@
 
 # 弾を召喚
     # 上
-        execute positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/weapon/mozambique/gun/shot/init
         summon marker ^ ^0.25 ^10 {Tags:["SpreadMarker"]}
+        execute positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/weapon/mozambique/gun/shot/init
 
     # 下
-        execute positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/weapon/mozambique/gun/shot/init
         summon marker ^0.25 ^-0.25 ^10 {Tags:["SpreadMarker"]}
+        execute positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/weapon/mozambique/gun/shot/init
 
     # 下2
-        execute positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/weapon/mozambique/gun/shot/init
         summon marker ^-0.25 ^-0.25 ^10 {Tags:["SpreadMarker"]}
+        execute positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/weapon/mozambique/gun/shot/init
 
 # 弾が減る
     execute in overworld run function chuzitems:item/consume_ammo

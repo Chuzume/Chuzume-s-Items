@@ -2,7 +2,9 @@
 #
 # 
 #
-# @within function chuzitems:item/weapon/mozambique/gun/shot/
+# @within function
+#   chuzitems:item/weapon/mozambique/gun/shot/
+#   chuzitems:item/weapon/mozambique/gun/shot/ads
 
 ## タグ設定
     tag @s add Chuz.Projectile
