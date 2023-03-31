@@ -2,17 +2,17 @@
 #
 # 銃モード時の処理
 #
-# @within function chuzitems:item/weapon/wingman/main
-
-
+# @within function chuzitems:item/weapon/wingman/trigger
 
 # 発砲
     # 残弾0ならリロード開始
         execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:common/reload/check_have_ammo
     # 腰だめ
-        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=!chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/weapon/wingman/gun/shot/
+        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=!chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run tag @s add ChuzItems.Shot.Normal
     # ADS
-        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/weapon/wingman/gun/shot/ads
+        execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run tag @s add ChuzItems.Shot.ADS
+    # 弾丸を発射
+        execute unless score @s[scores={ChuzItems.Crossbow=0..}] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/wingman/gun/shot/
 
 # ADS
     #構える
@@ -21,10 +21,6 @@
     #戻す
         execute if score @s ChuzItems.Charge matches 1.. unless predicate chuzitems:sneak run playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 2 1.5
         execute if score @s ChuzItems.Charge matches 1.. unless predicate chuzitems:sneak run scoreboard players reset @s ChuzItems.Charge
-
-# 精度が落ち着いていく
-    #execute unless score @s ChuzItems.Spread matches ..1 run scoreboard players remove @s ChuzItems.Spread 1
-    #scoreboard players reset @s[scores={ChuzItems.Spread=..1}] ChuzItems.Spread
 
 # 見た目
     # 通常時

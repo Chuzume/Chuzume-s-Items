@@ -8,14 +8,7 @@
     tag @s add This
 
 # 演出
-    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound chuzume:rifle_shot player @a ~ ~ ~ 5 0.5
-    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5
-    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.6
-    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.shulker.shoot player @a ~ ~ ~ 5 1.8
-    execute anchored eyes positioned ^ ^-0.4 ^1.0 run playsound minecraft:entity.zombie.attack_wooden_door player @a ~ ~ ~ 3 1.5
-
-# タグ付与: 通常射撃
-    tag @s add ChuzItems.Shot.Normal
+    execute positioned ^ ^-0.4 ^1.0 run function chuzitems:item/weapon/wingman/gun/shot/sound
 
 # クールタイム設定
     scoreboard players set @s ChuzItems.CoolTime 7
@@ -28,16 +21,12 @@
 # 真上リコイルに変更
     scoreboard players set @s ChuzItems.Recoil.Change 12
 
-# タグ付与: 通常射撃
-    tag @s add ChuzItems.Shot.Normal
-
-# 精度悪化
-    #scoreboard players add @s ChuzItems.Spread 20
-    #scoreboard players set @s[scores={ChuzItems.Spread=50..}] ChuzItems.Spread 50
-
 # 弾を召喚
-    execute anchored eyes run summon marker ^-0.25 ^ ^ {Tags:["Chuz.Projectile","ChuzItems.RecursiveBullet","ChuzItems.Projectile.Wingman","Chuz.UUIDAttack","Chuz.Init"],data:{ChuzData:{BodyDamage:8.0,HeadDamage:16.0,Speed:45,Range:400,Distance:3.0f,Spread:0.1f}}}
-    execute as @e[type=marker,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuzitems:entity/projectile/recursive_bullet/init
+    # 腰だめ
+        execute if entity @s[tag=ChuzItems.Shot.Normal] positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/weapon/wingman/gun/shot/init
+    # ADS
+        execute if entity @s[tag=ChuzItems.Shot.ADS] run summon marker ^ ^ ^10 {Tags:["SpreadMarker"]}
+        execute if entity @s[tag=ChuzItems.Shot.ADS] summon marker run function chuzitems:item/weapon/wingman/gun/shot/init
 
 # 弾が減る
     execute in overworld run function chuzitems:item/consume_ammo

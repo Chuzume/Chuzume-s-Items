@@ -2,7 +2,7 @@
 #
 # リロードモードのメイン処理
 #
-# @within function chuzitems:item/weapon/wingman/main
+# @within function chuzitems:item/weapon/wingman/trigger
 
 # スコア増やしてく、一定値で完了
     scoreboard players add @s ChuzItems.Reload 1

@@ -1,8 +1,8 @@
-#> chuzitems:item/weapon/wingman/main
+#> chuzitems:item/weapon/wingman/trigger
 #
-# 持ってる間の処理
+# 
 #
-# @within function chuzitems:player/tick
+# @within tag/function chuzitems:item/tick
 
 # 通常モード
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Wingman,ItemMode:Standby} run function chuzitems:item/weapon/wingman/gun/
