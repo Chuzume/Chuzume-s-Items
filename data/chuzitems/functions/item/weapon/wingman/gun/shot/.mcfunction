@@ -26,7 +26,7 @@
         execute if entity @s[tag=ChuzItems.Shot.Normal] positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/weapon/wingman/gun/shot/init
     # ADS
         execute if entity @s[tag=ChuzItems.Shot.ADS] run summon marker ^ ^ ^10 {Tags:["SpreadMarker"]}
-        execute if entity @s[tag=ChuzItems.Shot.ADS] summon marker run function chuzitems:item/weapon/wingman/gun/shot/init
+        execute if entity @s[tag=ChuzItems.Shot.ADS] positioned ^ ^ ^ summon marker run function chuzitems:item/weapon/wingman/gun/shot/init
 
 # 弾が減る
     execute in overworld run function chuzitems:item/consume_ammo
