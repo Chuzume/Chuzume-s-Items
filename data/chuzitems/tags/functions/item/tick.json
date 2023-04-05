@@ -6,6 +6,7 @@
         "chuzitems:item/weapon/shotgun/trigger",
         "chuzitems:item/weapon/techkit_revomachine_gun/trigger",
         "chuzitems:item/weapon/mozambique/trigger",
-        "chuzitems:item/weapon/wingman/trigger"
+        "chuzitems:item/weapon/wingman/trigger",
+        "chuzitems:item/weapon/ambassador/trigger"
     ]
 }
