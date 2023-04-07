@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'[{\"text\":\"Rod of Light\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[Hold Sneak: Charge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Release Sneak: Fire]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Heavy Bullet]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"望遠鏡を乗っけた狙撃用ライフル\",\"color\":\"gray\",\"italic\":false}']},ChuzData:{Ammo:0,AmmoUse:1,CoolTime:0,MaxCoolTime:1,NoOffhand:true,ItemID:Rod_of_Light,RawName:'{\"text\":\"Rod of Light\",\"color\":\"#ffce60\",\"italic\":false}'}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

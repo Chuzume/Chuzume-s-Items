@@ -25,6 +25,9 @@
 ## 保存してみる
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from storage chuz:context Item.Mainhand
 
+# インタラクションの削除
+    kill @e[type=interaction,tag=Chuz.Entity.Interaction]
+
 ## アイテムの処理
     function #chuzitems:item/tick
 

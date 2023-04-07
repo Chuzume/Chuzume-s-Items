@@ -39,6 +39,7 @@
     #declare tag ChuzItems.Projectile.Grenade
     #declare tag ChuzItems.Projectile.RevoBullet
     #declare tag ChuzItems.Projectile.ThrownGun
+    #declare tag ChuzItems.Projectile.WizardSeeker
 
 ## エフェクト
     #declare tag ChuzItems.Effect.Magic

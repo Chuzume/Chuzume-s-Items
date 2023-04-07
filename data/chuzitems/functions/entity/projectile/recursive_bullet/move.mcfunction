@@ -1,6 +1,16 @@
+#> chuzitems:entity/projectile/recursive_bullet/move
+#
+# 
+#
+# @within function
+#   chuzitems:entity/projectile/recursive_bullet/tick
+#   chuzitems:entity/projectile/recursive_bullet/move
 
 # パーティクル
     function chuzitems:entity/projectile/recursive_bullet/particle
+
+# 再帰イベント
+    function chuzitems:entity/projectile/event/recursive
 
 # 再帰カウントが0なら弾速からセット
     execute unless entity @s[scores={Chuz.Recursion=1..,Chuz.Range=1..}] run scoreboard players operation @s Chuz.Recursion = @s Chuz.Speed

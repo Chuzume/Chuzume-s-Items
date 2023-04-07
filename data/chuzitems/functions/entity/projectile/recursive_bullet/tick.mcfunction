@@ -2,7 +2,7 @@
 #
 # 再帰で飛ぶ弾丸の共通処理
 #
-# @within function chuzitems:entity/projectile/check
+# @within function chuzitems:entity/projectile/event/tick
 
 # 再帰移動  
     function chuzitems:entity/projectile/recursive_bullet/move
