@@ -5,4 +5,4 @@
 # @within function chuzitems:entity/projectile/beam/recursive/
 
 # 
-    particle smoke ~ ~ ~ 0 0 0 0.05 10 force @a[distance=..60]
+    particle smoke ~ ~ ~ 0 0 0 0.02 10 force @a[distance=..60]

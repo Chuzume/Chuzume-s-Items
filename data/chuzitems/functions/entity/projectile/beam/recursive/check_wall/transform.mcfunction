@@ -4,6 +4,7 @@
 #
 # @within function chuzitems:entity/projectile/beam/recursive/check_wall/
 
+# 補完時間と開始時間
     data merge entity @s {start_interpolation:0,interpolation_duration:2}
 
 # サイズをスコアから代入

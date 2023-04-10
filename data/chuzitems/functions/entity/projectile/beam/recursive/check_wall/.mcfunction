@@ -2,7 +2,9 @@
 #
 # 壁を探す 
 #
-# @within chuzitems:entity/projectile/beam/recursive/check_wall/detect
+# @within function
+#   chuzitems:entity/projectile/beam/recursive/check_wall/detect
+#   chuzitems:entity/projectile/beam/tick/
 
 # 壁についたらサイズ変更
     execute unless block ~ ~ ~ #chuzitems:no_collision run function chuzitems:entity/projectile/beam/recursive/check_wall/transform
