@@ -12,3 +12,9 @@
     data merge entity @s[tag=ChuzItems.Color.Sky] {item:{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:4904447},CustomModelData:1}}}
     data merge entity @s[tag=ChuzItems.Color.Blue] {item:{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:5065471},CustomModelData:1}}}
     data merge entity @s[tag=ChuzItems.Color.Purple] {item:{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:13191935},CustomModelData:1}}}
+
+# ルーン設置
+    execute positioned ^ ^ ^ run function chuzitems:entity/projectile/beam/tick/event/summon_rune
+
+# パーティクル
+    particle explosion ^ ^ ^-0.5 0 0 0 0 0 force @a[distance=..60]
