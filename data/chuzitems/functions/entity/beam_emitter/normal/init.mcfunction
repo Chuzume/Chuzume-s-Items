@@ -1,4 +1,4 @@
-#> chuzitems:entity/beam_emitter/init
+#> chuzitems:entity/beam_emitter/normal/init
 #
 # 
 #
