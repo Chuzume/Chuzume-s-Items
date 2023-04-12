@@ -27,3 +27,4 @@
 
 # リセット
     scoreboard players reset $HaveItems Chuz.Temporary
+    scoreboard players reset $HaveAmmo Chuz.Temporary

@@ -16,6 +16,8 @@
 
 # スコアリセット
     scoreboard players reset @s ChuzItems.Reload
+    scoreboard players reset $AmmoAdd Chuz.Temporary
+    scoreboard players reset $AmmoReload Chuz.Temporary
 
 # 更新
     execute in overworld run function chuzitems:item/replaceitem

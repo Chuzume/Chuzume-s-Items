@@ -9,6 +9,9 @@
     tag @s[tag=Chuz.Click.Left] remove Chuz.Click.Left
     tag @s[tag=Chuz.Click.Right] remove Chuz.Click.Right
 
+# スコアホルダー
+    scoreboard players reset $Ammo Chuz.Temporary
+
 # スコア
     scoreboard players reset @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Sneak
     scoreboard players reset @s[scores={ChuzItems.Crossbow=1..}] ChuzItems.Crossbow
@@ -16,12 +19,6 @@
     scoreboard players reset @s[scores={ChuzItems.KnowledgeBook=1..}] ChuzItems.KnowledgeBook
     scoreboard players reset @s[scores={ChuzItems.Trade=1..}] ChuzItems.Trade
     scoreboard players reset @s[scores={ChuzItems.Jump=1..}] ChuzItems.Jump
-
-# スコアホルダーの掃除
-    scoreboard players reset $AmmoUse Chuz.Temporary
-    scoreboard players reset $NotLatestData Chuz.Temporary
-    scoreboard players reset $HaveAmmo Chuz.Temporary
-    scoreboard players reset $Ammo Chuz.Temporary
 
 # ストレージ
     data remove storage chuz:context ItemID

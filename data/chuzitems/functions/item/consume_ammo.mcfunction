@@ -10,5 +10,8 @@
     data modify storage chuz:context Item.Mainhand.tag.display.Name set from block 100001 0 100000 Items[0].tag.display.Name
     execute store result storage chuz:context Item.Mainhand.tag.ChuzData.Ammo int 1 run scoreboard players get $Ammo Chuz.Temporary
 
+# リセット
+    scoreboard players reset $AmmoUse Chuz.Temporary
+
 # 更新
     execute in overworld run function chuzitems:item/replaceitem
