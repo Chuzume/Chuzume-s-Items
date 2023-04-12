@@ -12,9 +12,3 @@
 
 # 投げられたレヴォマシンガン
     execute if entity @s[tag=ChuzItems.Projectile.ThrownGun] run function chuzitems:entity/revo_machinegun_thrown/tick
-
-# ウィザードシーカー
-    execute if entity @s[tag=ChuzItems.Projectile.WizardSeeker] run function chuzitems:entity/projectile/wizard_seeker/tick/
-
-# 超ビーム
-    execute if entity @s[tag=ChuzItems.Projectile.Beam] run function chuzitems:entity/projectile/beam/tick/
