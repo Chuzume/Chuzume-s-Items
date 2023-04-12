@@ -7,8 +7,6 @@
         "chuzitems:item/weapon/techkit_revomachine_gun/trigger",
         "chuzitems:item/weapon/mozambique/trigger",
         "chuzitems:item/weapon/wingman/trigger",
-        "chuzitems:item/weapon/ambassador/trigger",
-        "chuzitems:item/weapon/rod_of_light/trigger",
-        "chuzitems:item/weapon/rod_of_darkness_laser/trigger"
+        "chuzitems:item/weapon/ambassador/trigger"
     ]
 }
