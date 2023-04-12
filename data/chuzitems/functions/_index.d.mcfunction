@@ -84,9 +84,3 @@
     #declare storage chuz:context
     #declare storage api:
     #declare storage global
-
-#> スコアホルダー
-    #declare score_holder $L.RotX
-    #declare score_holder $L.RotY
-    #declare score_holder $L.AngleX
-    #declare score_holder $L.AngleY

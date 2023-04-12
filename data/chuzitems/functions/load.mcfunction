@@ -57,7 +57,6 @@
     scoreboard players set $8 Chuz.Const 8
     scoreboard players set $9 Chuz.Const 9
     scoreboard players set $10 Chuz.Const 10
-    scoreboard players set $40 Chuz.Const 40
 
 #> Chuz.Vector0が存在しなければ召喚
     forceload add 0 0 0 0
