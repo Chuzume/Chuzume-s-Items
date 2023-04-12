@@ -2,6 +2,15 @@
 # 飛び道具チェック 
     execute as @e[type=#chuzitems:projectile,tag=Chuz.Projectile] at @s run function chuzitems:entity/projectile/event/tick
 
+# ビームエミッター
+    execute as @e[type=marker,tag=BeamEmitter] at @s run function chuzitems:entity/beam_emitter/tick
+
+# ビームルーン
+    execute as @e[type=item_display,tag=BeamRune] at @s run function chuzitems:entity/beam_rune/tick
+
+# でけぇ魔法陣
+    execute as @e[type=item_display,tag=BigRune] at @s run function chuzitems:entity/big_rune/tick
+
 # 魔法エフェクトテスト
     execute as @e[type=item_display,tag=ChuzItems.Effect.Magic] at @s run function chuzitems:entity/effect/magic/tick
 
@@ -25,5 +34,3 @@
 
 # やぶ氏のリコイルライブラリ
     function yv_recoil:tick
-
-scoreboard players reset @a Test

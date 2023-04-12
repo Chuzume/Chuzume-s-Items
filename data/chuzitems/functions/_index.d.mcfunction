@@ -27,7 +27,6 @@
     #declare tag Chuz.Entity.Interaction
     #declare tag Chuz.TargetEntity
 
-
 #> 飛び道具関連
     #declare tag ChuzItems.HeadShot
     #declare tag ChuzItems.RecursiveBullet
@@ -40,6 +39,17 @@
     #declare tag ChuzItems.Projectile.RevoBullet
     #declare tag ChuzItems.Projectile.ThrownGun
     #declare tag ChuzItems.Projectile.WizardSeeker
+    #declare tag ChuzItems.Projectile.Beam
+
+#> 飛び道具の色
+    #declare tag ChuzItems.Color.Red
+    #declare tag ChuzItems.Color.Orange
+    #declare tag ChuzItems.Color.Yellow
+    #declare tag ChuzItems.Color.Green
+    #declare tag ChuzItems.Color.Sky
+    #declare tag ChuzItems.Color.Blue
+    #declare tag ChuzItems.Color.Purple
+    #declare tag ChuzItems.Color.White
 
 ## エフェクト
     #declare tag ChuzItems.Effect.Magic
@@ -60,6 +70,9 @@
     #declare tag ChuzItems.FallResist
     #declare tag ChuzItems.JumpBoots.TimeOut
     #declare tag ChuzItems.JumpBoots.NoUse
+    #declare tag BeamEmitter
+    #declare tag BeamRune
+    #declare tag BigRune
 
 #> 制御系タグ
     #declare tag ChuzItems.ReloadStart

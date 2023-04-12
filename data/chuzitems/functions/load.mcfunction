@@ -41,6 +41,7 @@
 #> その他なんか分類しづらいもの
     scoreboard objectives add ChuzItems.Revo.Magazine dummy
     scoreboard objectives add Chuz.PosDiffY dummy
+    scoreboard objectives add ChuzItems.Count dummy
 
 #> 固定数値
     scoreboard objectives add Chuz.Const dummy
@@ -56,6 +57,7 @@
     scoreboard players set $8 Chuz.Const 8
     scoreboard players set $9 Chuz.Const 9
     scoreboard players set $10 Chuz.Const 10
+    scoreboard players set $40 Chuz.Const 40
 
 #> Chuz.Vector0が存在しなければ召喚
     forceload add 0 0 0 0

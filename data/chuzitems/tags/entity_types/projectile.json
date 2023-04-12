@@ -15,6 +15,7 @@
     "minecraft:snowball",
     "minecraft:egg",
     "minecraft:ender_pearl",
-    "minecraft:potion"
+    "minecraft:potion",
+    "minecraft:item_display"
   ]
 }

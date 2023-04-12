@@ -12,7 +12,7 @@
     function chuzitems:player/click_detection/main
 
 # タグによってサウンドを鳴らす
-    execute if entity @s[tag=Chuz.Click.Left] anchored eyes positioned ^ ^ ^ run function chuzitems:item/weapon/rod_of_light/left/shoot
+    execute if entity @s[tag=Chuz.Click.Left] anchored eyes positioned ^-0.25 ^ ^ run function chuzitems:item/weapon/rod_of_light/left/shoot
 
     execute if entity @s[tag=Chuz.Click.Right] run playsound minecraft:block.note_block.bit player @a ~ ~ ~ 1 2
 
