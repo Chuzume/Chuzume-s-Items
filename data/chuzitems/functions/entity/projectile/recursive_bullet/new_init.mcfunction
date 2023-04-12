@@ -4,9 +4,6 @@
 #
 # @within function chuzitems:**
 
-## お願いOhMyDat!
-    function oh_my_dat:please
-
 ## 拡散設定
     # どれくらい視点から離すか
         data modify storage forward_spreader: Distance set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Distance
