@@ -10,6 +10,6 @@
 
 # 拡散させてそこからビーム撃つ
     summon marker ~ ~ ~ {Tags:["BeamPos"]}
-    spreadplayers ~ ~ 10 10 true @e[type=marker,tag=BeamPos,sort=nearest,limit=1]
-    execute at @e[type=marker,tag=BeamPos,sort=nearest,limit=1] positioned ~ ~20 ~ run function chuzitems:entity/beam_emitter/normal/shoot 
+    spreadplayers ~ ~ 90 90 true @e[type=marker,tag=BeamPos,sort=nearest,limit=1]
+    execute at @e[type=marker,tag=BeamPos,sort=nearest,limit=1] positioned ~ ~60 ~ run function chuzitems:entity/beam_emitter/normal/shoot 
     kill @e[type=marker,tag=BeamPos,sort=nearest,limit=1]

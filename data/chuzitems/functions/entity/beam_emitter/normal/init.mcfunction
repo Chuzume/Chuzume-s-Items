@@ -7,8 +7,9 @@
 
 # 向き
     #data modify entity @s Rotation set from entity @p[tag=This] Rotation
-    tp @s ~ ~ ~ ~ 90
+    #tp @s ~ ~ ~ ~ 90
     #execute facing entity @e[tag=Test,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~
+    execute facing entity @e[type=ender_dragon,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~
 
 # データのマージ
     data merge entity @s {shadow_strength:0f,Tags:["Chuz.Projectile","ChuzItems.Projectile.Beam"],brightness:{sky:15,block:15}}

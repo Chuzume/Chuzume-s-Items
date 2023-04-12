@@ -29,8 +29,14 @@
     execute if score @s ChuzItems.Tick matches 10..119 if score $Interval Chuz.Temporary matches 0 run function chuzitems:entity/beam_emitter/normal/spread
     execute if score @s ChuzItems.Tick matches 120.. if score $Interval Chuz.Temporary matches 0 run function chuzitems:entity/beam_emitter/finish/spread
 
-# 魔法陣
-    execute if score @s ChuzItems.Tick matches 120 run summon item_display ~ ~22 ~ {Rotation:[0.0f,90.0f],brightness:{sky:15,block:15},start_interpolation:0,interpolation_duration:10,item_display:"head",Tags:["BigRune"],item:{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16777215},CustomModelData:3}}}
+# フィニッシュスタート
+    execute if score @s ChuzItems.Tick matches 120 run function chuzitems:entity/beam_emitter/finish/start
+
+# フィニッシュ終盤
+    execute if score @s ChuzItems.Tick matches 190 run function chuzitems:entity/beam_emitter/finish/screen_effect
+
+# こっそりドラゴンをキル
+    execute if score @s ChuzItems.Tick matches 200 run kill @e[type=ender_dragon]
 
 # 時間経過で消える
-    kill @s[scores={ChuzItems.Tick=150..}]
+    kill @s[scores={ChuzItems.Tick=200..}]

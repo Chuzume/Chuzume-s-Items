@@ -8,7 +8,7 @@
     tag @s add This
 
 # 演出
-    #execute positioned ~ ~ ~ run function chuzitems:entity/beam_emitter/sound
+    execute positioned ~ ~ ~ run function chuzitems:entity/beam_emitter/finish/sound
 
 # ビーム
     execute summon item_display run function chuzitems:entity/beam_emitter/finish/init
