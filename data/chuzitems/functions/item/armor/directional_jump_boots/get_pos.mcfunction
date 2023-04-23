@@ -22,5 +22,4 @@
 
 # リセット
     scoreboard players reset $Y Chuz.Temporary
-    scoreboard players reset $Y_Save Chuz.Temporary
     scoreboard players reset @s Chuz.PosDiffY
