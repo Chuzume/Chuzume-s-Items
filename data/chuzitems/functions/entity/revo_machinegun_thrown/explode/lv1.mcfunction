@@ -18,11 +18,11 @@
     data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sに%3$sをぶつけられた","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"text":"Techkit: Revomachine Gun","color":"#37CDFF"}]}'
 
 # ダメージ設定
-    data modify storage csr_score_damage: Damage set value 5.0f
+    data modify storage lib: Damage set value 5.0f
 
 # ダメージを与える
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},dx=0] at @s run function csr_score_damage:api/attack
-    data remove storage csr_score_damage: Damage
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},dx=0] at @s run function lib:api/attack
+    data remove storage lib: Damage
 
 # キル
     kill @s

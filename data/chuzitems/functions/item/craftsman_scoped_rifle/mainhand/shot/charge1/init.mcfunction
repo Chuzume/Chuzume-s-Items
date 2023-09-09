@@ -24,6 +24,8 @@
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Range set value 800
     # どれほど遠くから拡散するか
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Distance set value 10.0f
+    # ダメージタイプ
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType set value mob_projectile
     # 拡散の大きさ
         # 腰だめ
             execute if entity @p[tag=This,tag=!Chuz.UsingSpyglass] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 1.0f

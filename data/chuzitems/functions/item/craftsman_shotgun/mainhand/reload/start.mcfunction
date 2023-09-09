@@ -1,3 +1,9 @@
+#> chuzitems:item/craftsman_shotgun/mainhand/reload/start
+#
+# 
+#
+# @within function chuzitems:item/craftsman_shotgun/mainhand/main
+
 
 # アクションバーをまっさらに
     title @s actionbar {"text":""}

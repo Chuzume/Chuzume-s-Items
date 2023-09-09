@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "chuzitems:item/weapon/shotgun/craft"
+    "function": "chuzitems:item/craftsman_shotgun/mainhand/craft"
   }
 }

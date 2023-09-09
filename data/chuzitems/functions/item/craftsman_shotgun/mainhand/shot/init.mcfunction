@@ -1,8 +1,8 @@
-#> chuzitems:item/weapon/shotgun/shot/init
+#> chuzitems:item/craftsman_shotgun/mainhand/shot/init
 #
 # 
 #
-# @within function chuzitems:item/weapon/shotgun/shot/
+# @within function chuzitems:item/craftsman_shotgun/mainhand/shot/
 
 ## タグ設定
     tag @s add Chuz.Projectile

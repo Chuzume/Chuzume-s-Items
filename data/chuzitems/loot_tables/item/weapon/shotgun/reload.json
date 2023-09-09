@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Craftsman Shotgun\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | Reloading |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[RClick: Just Reload]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Shotshell]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"タイミングを見極めよう\",\"color\":\"gray\",\"italic\":false}']},HideFlags:7,Unbreakable:1b,CustomModelData:13,ChuzData:{ItemID:Craftsman_Shotgun_Reload,Ammotype:Shotshell,NoOffhand:1b,NoDrop:1b,Ammo:0},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-100d,Operation:0,UUID:[I;1214350222,1737049035,-2006853743,-1572707679],Slot:\"mainhand\"}]}"
+              "tag": "{display:{Name:'[{\"text\":\"Craftsman Shotgun\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | Reloading |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[RClick: Just Reload]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Shotshell]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"タイミングを見極めよう\",\"color\":\"gray\",\"italic\":false}']},HideFlags:7,Unbreakable:1b,CustomModelData:13,ChuzData:{ItemID:craftsman_shotgun,ItemMode:Reload,Ammotype:Shotshell,NoOffhand:1b,NoDrop:1b,Ammo:0},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-100d,Operation:0,UUID:[I;1214350222,1737049035,-2006853743,-1572707679],Slot:\"mainhand\"}]}"
             }
           ]
         }

@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function csr_score_damage:core/health_subtract
+# @within function lib:core/health_subtract
 
 # まずバニラのメッセージを非表示に
     gamerule showDeathMessages false

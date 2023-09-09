@@ -1,3 +1,10 @@
+#> chuzitems:item/craftsman_shotgun/mainhand/reload/finish
+#
+# 
+#
+# @within function 
+#   chuzitems:item/craftsman_shotgun/mainhand/reload/
+#   chuzitems:item/craftsman_shotgun/mainhand/reload/success
 
 # アイテム取得
     loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/shotgun/

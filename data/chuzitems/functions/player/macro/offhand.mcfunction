@@ -4,4 +4,4 @@
 #
 # @within function chuzitems:player/macro/
     $function chuzitems:item/$(offhand)/offhand/
-    $say オフハンド:$(offhand)
+    #$say オフハンド:$(offhand)

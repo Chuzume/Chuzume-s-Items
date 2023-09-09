@@ -74,6 +74,7 @@
         team modify Chuz.NoCollision collisionRule never
 
 #> 時たま使い回されるスコアボード
+    scoreboard objectives add Chuz.Death deathCount {"text":"イベント: 死亡"}
     scoreboard objectives add Chuz.Temporary dummy
     scoreboard objectives add Chuz.Calc dummy
     scoreboard objectives add Chuz.Rule dummy

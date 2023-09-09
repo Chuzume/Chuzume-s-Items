@@ -11,11 +11,11 @@
 
 # ダメージを設定
     # ダメージは14
-        data merge storage csr_score_damage: {Damage:14.0}
+        data merge storage lib: {Damage:14.0}
     # クリエのプレイヤーだったらダメージを消す
-        execute if entity @s[gamemode=!survival,gamemode=!adventure] run data merge storage csr_score_damage: {Damage:0.0}
+        execute if entity @s[gamemode=!survival,gamemode=!adventure] run data merge storage lib: {Damage:0.0}
     # 実行
-        execute if entity @s[type=!end_crystal] run function csr_score_damage:api/attack
+        execute if entity @s[type=!end_crystal] run function lib:api/attack
 
 # デバフ
     effect give @s weakness 1 10 true

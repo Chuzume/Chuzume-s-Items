@@ -41,6 +41,9 @@
     #declare tag ChuzItems.Projectile.WizardSeeker
     #declare tag ChuzItems.Projectile.Beam
 
+#> 当たり判定
+    #declare tag ChuzItems.HitBox.Head
+
 #> 飛び道具の色
     #declare tag ChuzItems.Color.Red
     #declare tag ChuzItems.Color.Orange
@@ -83,6 +86,7 @@
     #declare storage chuz:storage
     #declare storage chuz:context
     #declare storage api:
+    #declare storage lib:
     #declare storage global
 
 #> スコアホルダー

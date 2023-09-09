@@ -11,7 +11,7 @@
     # チャージスマッシュ
         execute if score @s[scores={ChuzItems.FungusStick=0..}] ChuzItems.Charge matches 30.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/weapon/gunblade/melee/charge_smash/main
     # 弾切れ
-        execute if score @s[scores={ChuzItems.FungusStick=0..}] ChuzItems.Charge matches 30.. if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/weapon/shotgun/fire/out_of_ammo
+        execute if score @s[scores={ChuzItems.FungusStick=0..}] ChuzItems.Charge matches 30.. if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/craftsman_shotgun/mainhand/fire/out_of_ammo
 
 # 残弾0でエイムしてない場合はリロードをする
     execute unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:8} unless score @s ChuzItems.Sneak matches 0.. run scoreboard players add @s ChuzItems.Ready 1
