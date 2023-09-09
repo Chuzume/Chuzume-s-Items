@@ -10,7 +10,7 @@
 
 # タグによってサウンドを鳴らす
     execute if entity @s[tag=Chuz.Click.Left] anchored eyes run function chuzitems:item/weapon/rod_of_darkness_laser/event/left/shoot
-    execute if entity @s[tag=Chuz.Click.Right] run playsound minecraft:block.note_block.bit player @a ~ ~ ~ 1 2
+    execute if entity @s[tag=Chuz.Click.Right] run function chuzitems:item/weapon/rod_of_darkness_laser/event/right/
 
 # ロックオン
     tag @e[tag=HogeLock] remove HogeLock

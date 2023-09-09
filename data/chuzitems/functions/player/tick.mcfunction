@@ -29,7 +29,12 @@
     kill @e[type=interaction,tag=Chuz.Entity.Interaction]
 
 ## アイテムの処理
-    function #chuzitems:item/tick
+    #function #chuzitems:item/tick
+
+# 手持ちを指定して、ソイツの名前をsayで吐き出す
+    function chuzitems:player/macro/
+    #data remove storage chuz:context hoge_offhand
+    #$setblock ~ ~ ~ $(block)
 
 ## 指向性ジャンプブーツ
     execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:Directional_Jump_Boots} run function chuzitems:item/armor/directional_jump_boots/main

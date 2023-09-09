@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:skeleton",
+            "nbt": "{Tags:[\"HogePre\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "chuzitems:item/armor/directional_jump_boots/explosion/pre"
+    }
+  }

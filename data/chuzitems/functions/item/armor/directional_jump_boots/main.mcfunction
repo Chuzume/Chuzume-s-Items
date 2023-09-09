@@ -22,3 +22,5 @@
 
 # 着地
     execute if data storage api: {OnGround:1b} run function chuzitems:item/armor/directional_jump_boots/landing
+
+    #function chuzitems:item/armor/directional_jump_boots/test

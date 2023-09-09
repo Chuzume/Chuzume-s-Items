@@ -5,8 +5,6 @@
 # @within tag/function minecraft:load
 
 # 他のライブラリに必要なものもこっから呼び出してやる
-    function csr_score_damage:core/init
-    function score_to_health:load
     function forward_spreader:core/load
     function oh_my_dat:sys/load
     function yv_recoil:load

@@ -33,10 +33,10 @@
     execute if score @s ChuzItems.Tick matches 120 run function chuzitems:entity/beam_emitter/finish/start
 
 # フィニッシュ終盤
-    execute if score @s ChuzItems.Tick matches 190 run function chuzitems:entity/beam_emitter/finish/screen_effect
+    #execute if score @s ChuzItems.Tick matches 190 run function chuzitems:entity/beam_emitter/finish/screen_effect
 
 # こっそりドラゴンをキル
-    execute if score @s ChuzItems.Tick matches 200 run kill @e[type=ender_dragon]
+    #execute if score @s ChuzItems.Tick matches 200 run kill @e[type=ender_dragon]
 
 # 時間経過で消える
     kill @s[scores={ChuzItems.Tick=200..}]

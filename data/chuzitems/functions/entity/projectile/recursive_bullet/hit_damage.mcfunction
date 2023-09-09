@@ -18,7 +18,3 @@
 
 # ヘッドショットチェック
     execute anchored eyes positioned ^ ^ ^ positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=marker,tag=Chuz.Projectile,dx=0] run function chuzitems:entity/projectile/recursive_bullet/hit_headshot
-
-# ダメージを与える
-    execute if entity @s[type=!end_crystal] run function csr_score_damage:api/attack
-    data remove storage csr_score_damage: Damage
