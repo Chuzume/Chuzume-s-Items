@@ -31,7 +31,7 @@
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:4} run scoreboard players reset @s ChuzItems.Ready 
 
 # リロード準備が整ったら弾を込めだす
-    execute if score @s ChuzItems.Ready matches 30.. run function chuzitems:item/craftsman_scoped_rifle/reloading
+    execute if score @s ChuzItems.Ready matches 30.. run function chuzitems:item/craftsman_scoped_rifle/mainhand/reloading
 
 # チャージ値リセット
     execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Charge

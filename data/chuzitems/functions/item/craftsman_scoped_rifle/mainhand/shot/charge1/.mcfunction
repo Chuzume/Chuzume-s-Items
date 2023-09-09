@@ -1,8 +1,8 @@
-#> chuzitems:item/craftsman_scoped_rifle/shot/charge1/
+#> chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge1/
 #
 # チャージ1
 #
-# @within function chuzitems:item/craftsman_scoped_rifle/main
+# @within function chuzitems:item/craftsman_scoped_rifle/mainhand/
 
 # 俺が実行者だ
     tag @s add This
@@ -12,16 +12,16 @@
     execute if score $Gamerule.Recoil Chuz.Rule matches 1 run function yv_recoil:
 
 # 発砲
-    execute positioned ^ ^-0.2 ^1.0 run function chuzitems:item/craftsman_scoped_rifle/shot/charge1/sound
+    execute positioned ^ ^-0.2 ^1.0 run function chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge1/sound
 
 # 弾を召喚
     # 腰だめ
         execute if entity @s[tag=!Chuz.UsingSpyglass] run particle smoke ^-0.25 ^ ^0.7 0 0 0 0.05 5
-        execute if entity @s[tag=!Chuz.UsingSpyglass] positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/craftsman_scoped_rifle/shot/charge1/init
+        execute if entity @s[tag=!Chuz.UsingSpyglass] positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge1/init
     # スコープ！
         execute if entity @s[tag=Chuz.UsingSpyglass] run particle smoke ^ ^ ^0.7 0 0 0 0.05 2
         execute if entity @s[tag=Chuz.UsingSpyglass] run summon marker ^ ^-0.15 ^10 {Tags:["SpreadMarker"]}
-        execute if entity @s[tag=Chuz.UsingSpyglass] positioned ^ ^ ^ summon marker run function chuzitems:item/craftsman_scoped_rifle/shot/charge1/init
+        execute if entity @s[tag=Chuz.UsingSpyglass] positioned ^ ^ ^ summon marker run function chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge1/init
 
 # 弾が減る
     execute in overworld run function chuzitems:item/consume_ammo
