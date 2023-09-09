@@ -1,3 +1,8 @@
+#> chuzitems:entity/projectile/recursive_bullet/hit/headshot
+#
+# 
+#
+# @within function chuzitems:entity/projectile/recursive_bullet/hit/damage
 
 # キルログ設定
     data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sの%3$sで正確に頭を撃ち抜かれた","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"nbt":"KillerItem.HoldItem","storage":"chuz:context","interpret":true}]}'
@@ -8,8 +13,5 @@
 # ヒット者にしか見えないパーティクル
     execute at @s anchored eyes run particle end_rod ^ ^ ^ 0 0 0 0.1 3 force @p[tag=ChuzItems.HeadShot,distance=..120]
 
-# 胴体ダメージ削除
-    data remove storage csr_score_damage: ChuzDamage.Body
-
 # ダメージを設定
-    execute store result storage csr_score_damage: Damage int 1 run data get storage csr_score_damage: ChuzDamage.Head
+    execute store result storage lib: Damage int 1 run data get storage lib: ChuzDamage.Head
