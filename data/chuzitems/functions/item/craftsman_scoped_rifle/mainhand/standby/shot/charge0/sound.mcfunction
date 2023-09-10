@@ -1,8 +1,8 @@
-#> chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge0/sound
+#> chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/charge0/sound
 #
 # 
 #
-# @within function chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge0/
+# @within function  chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/charge0/
 
 playsound minecraft:entity.generic.explode player @a ~ ~ ~ 5 2
 playsound minecraft:block.chain.break player @a ~ ~ ~ 4 1.5

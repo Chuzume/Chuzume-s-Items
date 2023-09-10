@@ -1,8 +1,8 @@
-#> chuzitems:item/craftsman_scoped_rifle/mainhand/reloading
+#> chuzitems:item/craftsman_scoped_rifle/mainhand/standby/reloading
 #
 # 
 #
-# @within function chuzitems:item/craftsman_scoped_rifle/mainhand/
+# @within function chuzitems:item/craftsman_scoped_rifle/mainhand/standby/
 
 # 弾チェックして持ってたスコア加算
     execute if score $Gamerule.AmmoRequire Chuz.Rule matches 1 store success score @s Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Heavy_Bullet}} 0

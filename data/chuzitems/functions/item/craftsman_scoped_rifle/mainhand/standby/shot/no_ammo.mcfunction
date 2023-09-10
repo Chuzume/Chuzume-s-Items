@@ -1,8 +1,9 @@
-#> chuzitems:item/craftsman_scoped_rifle/shot/no_ammo
+#> chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/no_ammo
 #
-# 残弾0
+# 
 #
-# @within function chuzitems:item/craftsman_scoped_rifle/mainhand/
+# @within function chuzitems:item/craftsman_scoped_rifle/mainhand/standby/
+
 
 # 音
     execute positioned ^ ^-0.2 ^0.5 run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 2 1

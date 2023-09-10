@@ -1,4 +1,4 @@
-#> chuzitems:item/craftsman_scoped_rifle/mainhand/
+#> chuzitems:item/craftsman_scoped_rifle/mainhand/standby/
 #
 # メインハンドに入れている際の処理
 #
@@ -18,11 +18,11 @@
 
 ## 発砲
     # チャージ0
-        execute unless score @s[scores={ChuzItems.Charge=13..29}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge0/
+        execute unless score @s[scores={ChuzItems.Charge=13..29}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/charge0/
     # チャージ1
-        execute unless score @s[scores={ChuzItems.Charge=30..}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge1/
+        execute unless score @s[scores={ChuzItems.Charge=30..}] ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/charge1/
     # 残弾0なら失敗
-        execute unless score @s[scores={ChuzItems.Charge=13..}] ChuzItems.Sneak matches 0.. if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_scoped_rifle/mainhand/shot/no_ammo
+        execute unless score @s[scores={ChuzItems.Charge=13..}] ChuzItems.Sneak matches 0.. if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/no_ammo
 
 # 残弾0でリロードをする
     execute unless score @s ChuzItems.Sneak matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:4} run scoreboard players add @s ChuzItems.Ready 1
@@ -31,7 +31,7 @@
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:4} run scoreboard players reset @s ChuzItems.Ready 
 
 # リロード準備が整ったら弾を込めだす
-    execute if score @s ChuzItems.Ready matches 30.. run function chuzitems:item/craftsman_scoped_rifle/mainhand/reloading
+    execute if score @s ChuzItems.Ready matches 30.. run function chuzitems:item/craftsman_scoped_rifle/mainhand/standby/reloading
 
 # チャージ値リセット
     execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Charge

@@ -1,8 +1,8 @@
-#> chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge0/init
+#> chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/charge0/init
 #
 # Init処理
 #
-# @within function chuzitems:item/craftsman_scoped_rifle/mainhand/shot/charge0/
+# @within function  chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/charge0/
 
 ## タグ設定
     tag @s add Chuz.Projectile
