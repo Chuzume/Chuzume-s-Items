@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'[{\"text\":\"Craftsman Launcher\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[RClick: Fire]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Sneak: Charge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Explosive Cartridge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"吹き飛べ！\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:37,Charged:1b,ChuzData:{Ammo:0,AmmoUse:1,NoOffhand:true,ItemID:Craftsman_Grenade_Launcher,RawName:'{\"text\":\"Craftsman Launcher\",\"color\":\"#ffce60\",\"italic\":false}'}}"
+                "tag": "{display:{Name:'[{\"text\":\"Craftsman Launcher\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[RClick: Fire]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Sneak: Charge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Explosive Cartridge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"吹き飛べ！\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:37,Charged:1b,ChuzData:{Ammo:0,AmmoUse:1,NoOffhand:true,ItemID:craftsman_grenade_launcher,ItemMode:standby,RawName:'{\"text\":\"Craftsman Launcher\",\"color\":\"#ffce60\",\"italic\":false}'}}"
               }
             ]
           }

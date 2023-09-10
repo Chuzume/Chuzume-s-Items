@@ -1,8 +1,8 @@
-#> chuzitems:item/weapon/grenade_launcher/craft
+#> chuzitems:item/craftsman_grenade_launcher/craft
 #
 # 作成
 #
-# @within advancement chuzitems:craft/grenade_launcher
+# @within advancement chuzitems:craft/craftsman_grenade_launcher
 
 # 演出
     execute anchored eyes positioned ^ ^ ^1.5 run playsound minecraft:block.smithing_table.use player @a ~ ~ ~ 1 1

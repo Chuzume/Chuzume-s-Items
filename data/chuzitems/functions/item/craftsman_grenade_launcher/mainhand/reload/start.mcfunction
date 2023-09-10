@@ -1,3 +1,8 @@
+#> chuzitems:item/craftsman_grenade_launcher/mainhand/reload/start
+#
+# 
+#
+# @within function chuzitems:item/craftsman_grenade_launcher/mainhand/standby/
 
 # アクションバーをまっさらに
     title @s actionbar {"text":""}

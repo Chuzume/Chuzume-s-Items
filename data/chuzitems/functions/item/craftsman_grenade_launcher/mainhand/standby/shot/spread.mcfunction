@@ -1,8 +1,8 @@
-#> chuzitems:item/weapon/grenade_launcher/gun/shot/spread
+#> chuzitems:item/craftsman_grenade_launcher/mainhand/standby/shot/spread
 #
 # 
 #
-# @within function chuzitems:item/weapon/grenade_launcher/gun/shot/summon
+# @within function chuzitems:item/craftsman_grenade_launcher/mainhand/standby/shot/summon
     
 # 返り値のEntity
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

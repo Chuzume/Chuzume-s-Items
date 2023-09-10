@@ -1,3 +1,8 @@
+#> chuzitems:item/craftsman_grenade_launcher/mainhand/reload/finish
+#
+# リロード完了
+#
+# @within function chuzitems:item/craftsman_grenade_launcher/mainhand/reload/
 
 # アイテム取得
     loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/grenade_launcher/
