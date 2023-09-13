@@ -4,8 +4,8 @@
         "trigger": "minecraft:player_hurt_entity",
         "conditions": {
           "entity": {
-            "type": "minecraft:skeleton",
-            "nbt": "{Tags:[\"HogePost\"]}"
+            "type": "minecraft:bat",
+            "nbt": "{Tags:[\"Chuz.Motion.Post\"]}"
           }
         }
       }

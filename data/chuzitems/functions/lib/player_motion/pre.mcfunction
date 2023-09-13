@@ -17,7 +17,7 @@
     gamemode creative
 
 #
-    summon marker ~ ~ ~ {Tags:["BackTo"]}
+    summon marker ~ ~ ~ {Tags:["Chuz.Motion.BackMarker"]}
     execute positioned 0 1000 0 run tp @s ^ ^ ^
 
     #say 1

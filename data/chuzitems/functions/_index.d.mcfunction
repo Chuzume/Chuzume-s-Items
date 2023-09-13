@@ -41,6 +41,13 @@
     #declare tag ChuzItems.Projectile.WizardSeeker
     #declare tag ChuzItems.Projectile.Beam
 
+#> PlayerMotion関連
+    #declare tag Chuz.Motion.Pre
+    #declare tag Chuz.Motion.Post
+    #declare tag Chuz.Motion.Pre
+    #declare tag Chuz.Motion.Bat
+    #declare tag Chuz.Motion.Arrow
+
 #> 当たり判定
     #declare tag ChuzItems.HitBox.Head
 
