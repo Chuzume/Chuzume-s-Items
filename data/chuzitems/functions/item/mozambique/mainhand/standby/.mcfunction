@@ -4,7 +4,18 @@
 #
 # @within function chuzitems:player/macro/mainhand
 
-# 更新
+
+# 見た目
+    # 通常時
+        execute if entity @s run scoreboard players set $CMD Chuz.Temporary 12
+    # 反動(腰だめ)
+        execute if entity @s[tag=!ChuzItems.Shot.ADS] if score @s ChuzItems.CoolTime matches 3..7 run scoreboard players set $CMD Chuz.Temporary 13
+    # ADS
+        execute if entity @s[tag=!ChuzItems.Shot.Normal] if predicate chuzitems:sneak run scoreboard players set $CMD Chuz.Temporary 14
+    # 反動(ADS)
+       execute if entity @s[tag=!ChuzItems.Shot.Normal] if score @s ChuzItems.CoolTime matches 3..7 run scoreboard players set $CMD Chuz.Temporary 15
+
+# アイテムの情報を更新
     execute in overworld run function chuzitems:item/replaceitem
 
 # 発砲
@@ -22,13 +33,3 @@
     #戻す
         execute if score @s ChuzItems.Charge matches 1.. unless predicate chuzitems:sneak run playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 2 1.5
         execute if score @s ChuzItems.Charge matches 1.. unless predicate chuzitems:sneak run scoreboard players reset @s ChuzItems.Charge
-
-# 見た目
-    # 通常時
-        execute if entity @s run scoreboard players set $CMD Chuz.Temporary 12
-    # 反動(腰だめ)
-        execute if entity @s[tag=!ChuzItems.Shot.ADS] if score @s ChuzItems.CoolTime matches 3..7 run scoreboard players set $CMD Chuz.Temporary 13
-    # ADS
-        execute if entity @s[tag=!ChuzItems.Shot.Normal] if predicate chuzitems:sneak run scoreboard players set $CMD Chuz.Temporary 14
-    # 反動(ADS)
-       execute if entity @s[tag=!ChuzItems.Shot.Normal] if score @s ChuzItems.CoolTime matches 3..7 run scoreboard players set $CMD Chuz.Temporary 15
