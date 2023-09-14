@@ -1,10 +1,8 @@
-#> chuzitems:item/weapon/wingman/reload/start
+#> chuzitems:item/wingman/mainhand/reload/start
 #
-# リロード開始
+# 
 #
-# @within function
-#   chuzitems:item/weapon/wingman/gun/
-#   chuzitems:item/weapon/wingman/main
+# @within function chuzitems:common/reload/start
 
 # アイテム変更
     loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/wingman/reload

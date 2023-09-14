@@ -1,14 +1,14 @@
-#> chuzitems:item/weapon/wingman/gun/shot/
+#> chuzitems:item/wingman/mainhand/standby/shot/
 #
-# 射撃モード時のメイン処理
+# 
 #
-# @within function chuzitems:item/weapon/wingman/gun/
+# @within function chuzitems:item/wingman/mainhand/standby/
 
 # 俺が実行者だ
     tag @s add This
 
 # 演出
-    execute positioned ^ ^-0.4 ^1.0 run function chuzitems:item/weapon/wingman/gun/shot/sound
+    execute positioned ^ ^-0.4 ^1.0 run function chuzitems:item/wingman/mainhand/standby/shot/sound
 
 # クールタイム設定
     scoreboard players set @s ChuzItems.CoolTime 7
@@ -23,10 +23,10 @@
 
 # 弾を召喚
     # 腰だめ
-        execute if entity @s[tag=ChuzItems.Shot.Normal] positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/weapon/wingman/gun/shot/init
+        execute if entity @s[tag=ChuzItems.Shot.Normal] positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/wingman/mainhand/standby/shot/init
     # ADS
         execute if entity @s[tag=ChuzItems.Shot.ADS] run summon marker ^ ^ ^10 {Tags:["SpreadMarker"]}
-        execute if entity @s[tag=ChuzItems.Shot.ADS] positioned ^ ^ ^ summon marker run function chuzitems:item/weapon/wingman/gun/shot/init
+        execute if entity @s[tag=ChuzItems.Shot.ADS] positioned ^ ^ ^ summon marker run function chuzitems:item/wingman/mainhand/standby/shot/init
 
 # 弾が減る
     execute in overworld run function chuzitems:item/consume_ammo

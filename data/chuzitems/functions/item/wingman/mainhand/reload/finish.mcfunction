@@ -1,8 +1,8 @@
-#> chuzitems:item/weapon/wingman/reload/finish
+#> chuzitems:item/wingman/mainhand/reload/finish
 #
-# リロード完了
+# 
 #
-# @within function chuzitems:item/weapon/wingman/reload/reloading
+# @within function chuzitems:item/wingman/mainhand/reload/
 
 # アイテムを渡す
     loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/wingman/

@@ -1,4 +1,4 @@
-#> chuzitems:item/weapon/wingman/craft
+#> chuzitems:item/wingman/craft
 #
 # クラフト
 #

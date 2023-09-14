@@ -1,12 +1,13 @@
-#> chuzitems:item/weapon/wingman/reload/reloading
+#> chuzitems:item/wingman/mainhand/reload/
 #
-# リロードモードのメイン処理
+# 
 #
-# @within function chuzitems:item/weapon/wingman/trigger
+# @within function chuzitems:player/macro/mainhand
+
 
 # スコア増やしてく、一定値で完了
     scoreboard players add @s ChuzItems.Reload 1
-    execute if score @s ChuzItems.Reload matches 45.. run function chuzitems:item/weapon/wingman/reload/finish
+    execute if score @s ChuzItems.Reload matches 45.. run function chuzitems:item/wingman/mainhand/reload/finish
 
 # 音
     execute if score @s ChuzItems.Reload matches 15 run playsound minecraft:block.iron_trapdoor.open player @a ~ ~ ~ 1 2

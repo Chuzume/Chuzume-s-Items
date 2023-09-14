@@ -1,8 +1,11 @@
-#> chuzitems:item/weapon/wingman/gun/
+#> chuzitems:item/wingman/mainhand/standby/
 #
-# 銃モード時の処理
+# 
 #
-# @within function chuzitems:item/weapon/wingman/trigger
+# @within function chuzitems:player/macro/mainhand
+
+# 更新
+    execute in overworld run function chuzitems:item/replaceitem
 
 # 発砲
     # 残弾0ならリロード開始
@@ -12,7 +15,7 @@
     # ADS
         execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run tag @s add ChuzItems.Shot.ADS
     # 弾丸を発射
-        execute unless score @s[scores={ChuzItems.Crossbow=0..}] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes run function chuzitems:item/weapon/wingman/gun/shot/
+        execute unless score @s[scores={ChuzItems.Crossbow=0..}] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes run function chuzitems:item/wingman/mainhand/standby/shot/
 
 # ADS
     #構える
@@ -35,9 +38,3 @@
 # リコイルの収まりが戻っていく
     scoreboard players remove @s[scores={ChuzItems.Recoil.Change=1..}] ChuzItems.Recoil.Change 1
     scoreboard players reset @s[scores={ChuzItems.Recoil.Change=0}] ChuzItems.Recoil.Change
-
-# 更新
-    execute in overworld run function chuzitems:item/replaceitem
-
-# リロード開始タグを付与されたらリロード開始
-    execute if entity @s[tag=ChuzItems.ReloadStart] run function chuzitems:item/weapon/wingman/reload/start

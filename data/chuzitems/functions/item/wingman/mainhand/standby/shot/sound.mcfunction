@@ -1,11 +1,10 @@
-#> chuzitems:item/weapon/wingman/gun/shot/sound
+#> chuzitems:item/wingman/mainhand/standby/shot/sound
 #
 # 
 #
 # @within function
-#   chuzitems:item/weapon/wingman/gun/shot/
-#   chuzitems:item/weapon/wingman/gun/shot/ads
-
+#   chuzitems:item/wingman/mainhand/standby/shot/
+#   
 playsound chuzume:rifle_shot player @a ~ ~ ~ 5 0.5
 playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.5
 playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 5 0.6

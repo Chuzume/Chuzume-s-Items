@@ -1,10 +1,8 @@
-#> chuzitems:item/weapon/wingman/gun/shot/init
+#> chuzitems:item/wingman/mainhand/standby/shot/init
 #
 # 
 #
-# @within function
-#   chuzitems:item/weapon/wingman/gun/shot/
-#   chuzitems:item/weapon/wingman/gun/shot/ads
+# @within function chuzitems:item/wingman/mainhand/standby/shot/
 
 ## タグ設定
     tag @s add Chuz.Projectile
@@ -33,4 +31,4 @@
             execute if entity @p[tag=This,tag=ChuzItems.Shot.ADS] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.0f
 
 # これらの設定を反映する
-    function chuzitems:entity/projectile/recursive_bullet/new_init
+    function chuzitems:entity/projectile/recursive_bullet/init
