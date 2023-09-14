@@ -19,6 +19,9 @@ function delta:internal/math/get_angle
 execute store result score $diff delta.internal.gamemode run difficulty
 execute if score $diff delta.internal.gamemode matches 0 run difficulty easy
 
+
+tp @s ~ ~1000 ~
+
 #Summon creepers
 execute anchored eyes positioned ^ ^ ^ as ba8a076c-9a37-49bb-bead-79c12d22458a run function delta:internal/summon/summon_creepers
 scoreboard players operation $temp delta.internal.id = @s delta.internal.id
