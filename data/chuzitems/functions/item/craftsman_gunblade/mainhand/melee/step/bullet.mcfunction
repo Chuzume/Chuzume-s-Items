@@ -15,20 +15,18 @@
     playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 1
     playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 1 1.7
     
-# 落下速度リセットしてAECで打ち上げる
-    #tp @s 0 0 0
-    tp ~ ~0.09 ~
-    execute at @s run summon area_effect_cloud ~ ~0.5 ~ {Radius:0.0f,Duration:6,DurationOnUse:0,Age:4,Effects:[{Id:5,Amplifier:0b,Duration:8},{Id:11,Amplifier:3b,Duration:8},{Id:25,Amplifier:20b,Duration:3,ShowParticles:0b},{Id:28,Amplifier:0b,Duration:10,ShowParticles:0b}]}
+# 
+    #tp @s ~ ~0.1 ~
 
-# 数を指定して当たり判定用のスライムをぶつける
-    scoreboard players set @s ChuzItems.Recursive 35
-    execute at @s rotated ~ 0 positioned ~ ~ ~ run function chuzitems:item/weapon/gunblade/summon_recursive
+# 跳躍
+    scoreboard players set $Power Chuz.Motion.Power 1
+    execute rotated ~ ~ run function chuzitems:lib/player_motion/
 
 # 弾が減る
     #execute in overworld run function chuzitems:item/consume_ammo
 
 # 腹が減る
-    effect give @s[gamemode=!creative] minecraft:hunger 1 20 true
+    #effect give @s[gamemode=!creative] minecraft:hunger 1 20 true
 
 # リセット
     scoreboard players reset @s ChuzItems.Ready
