@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuzitems:item/craftsman_shotgun/mainhand/main
+# @within function chuzitems:item/craftsman_shotgun/mainhand/standby/
 
 # 弾チェックして持ってたスコア加算
     execute if score $Gamerule.AmmoRequire Chuz.Rule matches 1 store success score @s Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Shotshell}} 0

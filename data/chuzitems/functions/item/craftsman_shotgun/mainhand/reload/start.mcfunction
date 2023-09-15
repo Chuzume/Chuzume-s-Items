@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuzitems:item/craftsman_shotgun/mainhand/main
+# @within function chuzitems:item/craftsman_shotgun/mainhand/standby/
 
 
 # アクションバーをまっさらに
