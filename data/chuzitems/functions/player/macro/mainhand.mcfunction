@@ -3,5 +3,5 @@
 # 
 #
 # @within function chuzitems:player/macro/
-    $function chuzitems:item/$(mainhand)/mainhand/
-    #$say メインハンド:$(mainhand)
+    $function chuzitems:item/$(ItemID)/mainhand/$(ItemMode)/
+    #$say function chuzitems:item/$(ItemID)/mainhand/$(ItemMode)/
