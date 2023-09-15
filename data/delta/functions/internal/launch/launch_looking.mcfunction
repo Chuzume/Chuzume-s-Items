@@ -24,7 +24,7 @@ tp @s ~ ~1000 ~
 
 #Summon creepers
 execute anchored eyes positioned ^ ^ ^ as ba8a076c-9a37-49bb-bead-79c12d22458a run function delta:internal/summon/summon_creepers
-scoreboard players operation $temp delta.internal.id = @s delta.internal.id
+#scoreboard players operation $temp delta.internal.id = @s delta.internal.id
 execute anchored eyes positioned ^ ^ ^ positioned ~ ~1000 ~ as @e[type=creeper,tag=delta.init,distance=..0.02] at @s run function delta:internal/summon/initialize_creepers
 
 #Set up bat + arrow to trigger advancement immediately after explosion

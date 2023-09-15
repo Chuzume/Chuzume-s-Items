@@ -19,8 +19,20 @@ gamemode creative
 #    summon marker ~ ~ ~ {Tags:["delta.back"]}
 #    execute positioned 0 10 0 run tp @s ^ ^ ^
 
+# 防具を一旦片付けてみる
+    item replace block 100001 0 100000 container.0 from entity @s weapon.mainhand
+    item replace block 100001 0 100000 container.1 from entity @s weapon.offhand
+    item replace block 100001 0 100000 container.2 from entity @s armor.feet
+    item replace block 100001 0 100000 container.3 from entity @s armor.legs
+    item replace block 100001 0 100000 container.4 from entity @s armor.chest
+    item replace block 100001 0 100000 container.5 from entity @s armor.head
+    item replace entity @s armor.feet with minecraft:air
+    item replace entity @s armor.legs with minecraft:air
+    item replace entity @s armor.chest with minecraft:air
+    item replace entity @s armor.head with minecraft:air
+
 #Teleport creepers down
-scoreboard players operation $temp delta.internal.id = @s delta.internal.id
+#scoreboard players operation $temp delta.internal.id = @s delta.internal.id
 
 #Temporarily disable mobGriefing (not usually necessary unless a positive explosion radius creeper is used)
 execute store result score $temp delta.internal.mobgriefing run gamerule mobGriefing
