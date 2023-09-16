@@ -25,7 +25,7 @@
     execute in overworld run function chuzitems:item/consume_ammo
 
 # アイテム変更
-    loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/techkit_revomachine_gun/reload
+    loot replace entity @s weapon.mainhand loot chuzitems:item/techkit_revomachine_gun/reload
 
 # 射撃のポーズ戻す
     tag @s remove ChuzItems.Shot.ADS

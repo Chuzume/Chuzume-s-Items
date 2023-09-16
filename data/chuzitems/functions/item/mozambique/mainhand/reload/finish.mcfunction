@@ -5,7 +5,7 @@
 # @within function chuzitems:item/mozambique/mainhand/reload/
 
 # アイテムを渡す
-    loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/mozambique/
+    loot replace entity @s weapon.mainhand loot chuzitems:item/mozambique/
 
 # 演出
     playsound minecraft:block.iron_door.close player @a ~ ~ ~ 1 1.5

@@ -1,11 +1,11 @@
-#> chuzitems:item/craftsman_grenade_launcher/mainhand/reload/finish
+#> chuzitems:item/craftsman_launcher/mainhand/reload/finish
 #
 # リロード完了
 #
-# @within function chuzitems:item/craftsman_grenade_launcher/mainhand/reload/
+# @within function chuzitems:item/craftsman_launcher/mainhand/reload/
 
 # アイテム取得
-    loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/grenade_launcher/
+    loot replace entity @s weapon.mainhand loot chuzitems:item/craftsman_launcher/
 
 # ルールが弾使うモードなら弾を減らす 消せた弾のぶんだけ$Ammoに代入
     execute if score $Gamerule.AmmoRequire Chuz.Rule matches 1 store result score $Ammo Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Explosive_Cartridge}} 1

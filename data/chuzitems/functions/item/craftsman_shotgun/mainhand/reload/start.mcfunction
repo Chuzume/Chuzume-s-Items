@@ -10,7 +10,7 @@
 
 # 手持ち情報削除、アイテム入れ替え
     data remove storage chuz:context Item
-    loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/shotgun/reload
+    loot replace entity @s weapon.mainhand loot chuzitems:item/craftsman_shotgun/reload
 
 # 演出
     execute anchored eyes run particle smoke ^-0.25 ^ ^0.7 0 0 0 0.05 10

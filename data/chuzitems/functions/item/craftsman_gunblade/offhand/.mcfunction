@@ -17,9 +17,9 @@
     data modify storage chuz:context Item.Offhand set from entity @s Inventory[{Slot:-106b}]
 
 # 銃から剣に
-    execute if data storage chuz:context Item.Offhand.tag.ChuzData{ItemMode:ranged} run loot replace entity @s weapon.offhand loot chuzitems:item/weapon/gunblade/melee
+    execute if data storage chuz:context Item.Offhand.tag.ChuzData{ItemMode:ranged} run loot replace entity @s weapon.offhand loot chuzitems:item/craftsman_gunblade/melee
 # 剣から銃に
-    execute if data storage chuz:context Item.Offhand.tag.ChuzData{ItemMode:melee} run loot replace entity @s weapon.offhand loot chuzitems:item/weapon/gunblade/ranged
+    execute if data storage chuz:context Item.Offhand.tag.ChuzData{ItemMode:melee} run loot replace entity @s weapon.offhand loot chuzitems:item/craftsman_gunblade/ranged
 
 # 前回の弾薬を取る
     execute store result score $Ammo Chuz.Temporary run data get storage chuz:context Item.Offhand.tag.ChuzData.Ammo

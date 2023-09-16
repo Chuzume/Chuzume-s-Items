@@ -40,10 +40,10 @@
 # 指向性ジャンプブーツ
     execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:Directional_Jump_Boots} run function chuzitems:item/armor/directional_jump_boots/main
 
-# テスト斧
-    #execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TestAxe} run function chuzitems:item/weapon/testaxe/main
+# 旧データアイテム交換
+    function chuzitems:item/old_items/
 
-# 共通処理
+## 共通処理
     # アイテムが変わったら状態リセット
         execute if entity @s[scores={Chuz.ItemCheck=1}] run function chuzitems:item/score_reset
 

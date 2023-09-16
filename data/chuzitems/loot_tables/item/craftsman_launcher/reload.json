@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Craftsman Launcher\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | Reloading |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[Ammo: Explosive Cartridge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"リロード中！\",\"color\":\"gray\",\"italic\":false}']},HideFlags:7,Unbreakable:1b,CustomModelData:14,ChuzData:{ItemID:craftsman_launcher,ItemMode:reload,Ammotype:Shotshell,NoOffhand:1b,NoDrop:1b,Ammo:0},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-100d,Operation:0,UUID:[I;1214350222,1737049035,-2006853743,-1572707679],Slot:\"mainhand\"}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

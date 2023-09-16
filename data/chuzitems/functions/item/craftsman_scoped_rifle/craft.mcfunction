@@ -9,7 +9,7 @@
     execute anchored eyes positioned ^ ^ ^1.5 run playsound minecraft:item.spyglass.use player @a ~ ~ ~ 1 0.8
 
 # 実行者の位置にアイテムを召喚
-    execute at @s run loot spawn ~ ~ ~ loot chuzitems:item/weapon/craftsman_scoped_rifle
+    execute at @s run loot spawn ~ ~ ~ loot chuzitems:item/craftsman_scoped_rifle
 
 # すぐに拾えるようにNBT変更
     data modify entity @e[type=item,sort=nearest,limit=1] PickupDelay set value 0

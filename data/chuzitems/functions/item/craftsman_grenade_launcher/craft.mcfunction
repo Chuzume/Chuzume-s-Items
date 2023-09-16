@@ -1,4 +1,4 @@
-#> chuzitems:item/craftsman_grenade_launcher/craft
+#> chuzitems:item/craftsman_launcher/craft
 #
 # 作成
 #
@@ -9,7 +9,7 @@
     execute anchored eyes positioned ^ ^ ^1.5 run playsound minecraft:block.wood.break player @a ~ ~ ~ 1 1
 
 # 実行者の位置にアイテムを召喚
-    execute at @s run loot spawn ~ ~ ~ loot chuzitems:item/weapon/grenade_launcher/
+    execute at @s run loot spawn ~ ~ ~ loot chuzitems:item/craftsman_launcher/
 
 # すぐに拾えるようにNBT変更
     data modify entity @e[type=item,sort=nearest,limit=1] PickupDelay set value 0

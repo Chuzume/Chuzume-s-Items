@@ -1,8 +1,8 @@
-#> chuzitems:item/craftsman_grenade_launcher/mainhand/standby/shot/charge2
+#> chuzitems:item/craftsman_launcher/mainhand/standby/shot/charge2
 #
 # 
 #
-# @within function chuzitems:item/craftsman_grenade_launcher/mainhand/standby/
+# @within function chuzitems:item/craftsman_launcher/mainhand/standby/
 
 # 俺が実行者だ
     tag @s add This
@@ -14,7 +14,7 @@
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 3 1.5
 
 # 弾を召喚
-    function chuzitems:item/craftsman_grenade_launcher/mainhand/standby/shot/summon
+    function chuzitems:item/craftsman_launcher/mainhand/standby/shot/summon
     
 # 弾丸にInit処理
     scoreboard players set @e[type=item,tag=Chuz.Init,distance=..100,limit=1] Chuz.Speed 18

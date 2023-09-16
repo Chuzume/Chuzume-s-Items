@@ -7,7 +7,7 @@
 #   chuzitems:item/craftsman_shotgun/mainhand/reload/success
 
 # アイテム取得
-    loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/shotgun/
+    loot replace entity @s weapon.mainhand loot chuzitems:item/craftsman_shotgun/
 
 # ルールが弾使うモードなら弾を減らす 消せた弾のぶんだけ$Ammoに代入
     execute if score $Gamerule.AmmoRequire Chuz.Rule matches 1 store result score $Ammo Chuz.Temporary run clear @s chain_command_block{ChuzData:{ItemID:Shotshell}} 2

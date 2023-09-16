@@ -1,4 +1,4 @@
-#> chuzitems:item/craftsman_grenade_launcher/mainhand/standby/
+#> chuzitems:item/craftsman_launcher/mainhand/standby/
 #
 # 
 #
@@ -20,17 +20,17 @@
     execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Charge
 
 # 発砲(チャージ0)
-    execute if entity @s[scores={ChuzItems.Crossbow=0..}] unless score @s ChuzItems.Charge matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_grenade_launcher/mainhand/standby/shot/charge0
-    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches ..10 unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_grenade_launcher/mainhand/standby/shot/charge0
+    execute if entity @s[scores={ChuzItems.Crossbow=0..}] unless score @s ChuzItems.Charge matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_launcher/mainhand/standby/shot/charge0
+    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches ..10 unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_launcher/mainhand/standby/shot/charge0
 
 # 発砲(チャージ1)
-    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches 10..19 unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_grenade_launcher/mainhand/standby/shot/charge1
+    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches 10..19 unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_launcher/mainhand/standby/shot/charge1
 
 # 発砲(チャージ2)
-    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches 20.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_grenade_launcher/mainhand/standby/shot/charge2
+    execute if entity @s[scores={ChuzItems.Crossbow=0..}] if score @s ChuzItems.Charge matches 20.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:item/craftsman_launcher/mainhand/standby/shot/charge2
 
 # リロード
-    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/craftsman_grenade_launcher/mainhand/reload/start
+    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/craftsman_launcher/mainhand/reload/start
 
 # アイテム情報更新
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData.Ammo in overworld run function chuzitems:item/replaceitem
