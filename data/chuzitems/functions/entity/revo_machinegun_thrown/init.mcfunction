@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuzitems:item/weapon/techkit_revomachine_gun/reload/start
+# @within function chuzitems:item/techkit_revomachine_gun/mainhand/reload/start
 
 # 向き設定したあとマーカーを消す
     execute facing entity @e[type=marker,tag=SpreadMarker,distance=..100] feet run tp @s ~ ~-0.3 ~ ~ ~

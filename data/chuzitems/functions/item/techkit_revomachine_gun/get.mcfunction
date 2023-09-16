@@ -1,4 +1,4 @@
-#> chuzitems:item/weapon/techkit_revomachine_gun/get
+#> chuzitems:item/techkit_revomachine_gun/get
 #
 # アイテムを入手
 #
