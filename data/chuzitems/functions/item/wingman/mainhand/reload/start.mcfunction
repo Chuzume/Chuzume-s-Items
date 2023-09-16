@@ -5,7 +5,7 @@
 # @within function chuzitems:common/reload/start
 
 # アイテム変更
-    loot replace entity @s weapon.mainhand loot chuzitems:item/weapon/wingman/reload
+    loot replace entity @s weapon.mainhand loot chuzitems:item/wingman/reload
 
 # 演出
     execute at @s run playsound minecraft:block.iron_door.close player @a ~ ~ ~ 1 1.5
