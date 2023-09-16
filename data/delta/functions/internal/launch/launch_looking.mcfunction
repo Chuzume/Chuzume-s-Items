@@ -19,7 +19,6 @@ function delta:internal/math/get_angle
 execute store result score $diff delta.internal.gamemode run difficulty
 execute if score $diff delta.internal.gamemode matches 0 run difficulty easy
 
-
 tp @s ~ ~1000 ~
 
 #Summon creepers
