@@ -16,8 +16,8 @@
     execute if data storage chuz:context {Reload:1} run data modify storage chuz:context Item.Mainhand set from entity @s Item
 
 # リロードの開始を宣言
+    execute if data storage chuz:context {Reload:1} on origin run function chuzitems:item/replaceitem
     execute if data storage chuz:context {Reload:1} on origin run function chuzitems:common/reload/check_have_ammo
-    #execute if data storage chuz:context {Reload:1} on origin run function chuzitems:item/replaceitem
     execute if data storage chuz:context {Reload:1} run kill @s
     
 # 最大時
