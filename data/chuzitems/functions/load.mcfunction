@@ -9,8 +9,6 @@
     function oh_my_dat:sys/load
     function yv_recoil:load
     function yv_reflection:load
-    function delta:internal/technical/load
-    function random:private/load
 
 #> スコアボード作成
     scoreboard objectives add ChuzItems.Drop minecraft.custom:minecraft.drop {"text":"イベント: 投げ捨て"}
@@ -65,8 +63,8 @@
     forceload add 100000 100000
 
 #> シュル箱
-    execute unless block 100001 0 100000 light_blue_shulker_box run setblock 100001 0 100000 light_blue_shulker_box
-    execute unless block 100001 1 100000 bedrock run setblock 100001 1 100000 bedrock
+    execute unless block 100001 -64 100000 light_blue_shulker_box run setblock 100001 -64 100000 light_blue_shulker_box
+    execute unless block 100001 -63 100000 bedrock run setblock 100001 -63 100000 bedrock
 
 #> チーム
     # 衝突判定無効
@@ -79,6 +77,9 @@
     scoreboard objectives add Chuz.Calc dummy
     scoreboard objectives add Chuz.Rule dummy
     scoreboard objectives add Chuz.ItemCheck dummy
+    scoreboard objectives add Chuz.Motion.Power dummy
+    scoreboard objectives add Chuz.Motion.Gamerule dummy
+    scoreboard objectives add Chuz.Motion.Difficulty dummy
 
 # 飛び道具の弾速
     scoreboard objectives add Chuz.Range dummy

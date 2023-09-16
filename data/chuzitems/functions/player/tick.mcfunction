@@ -13,36 +13,31 @@
 ## データ取得
     function chuzitems:get_data/
 
-## リロード
-    execute if entity @s[scores={ChuzItems.Drop=0..}] run function chuzitems:common/throw_item/main
-
-## リロード用データ
-    # 削除
-        data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].HoldedItem
-    # 書き換え / Modify  
-        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].HoldedItem set from storage chuz:context Item.Mainhand
-
-## 保存してみる
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from storage chuz:context Item.Mainhand
-
+# リロード用データ
+   # 削除
+       #data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].HoldedItem
+   # 書き換え / Modify  
+       #data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].HoldedItem set from storage chuz:context Item.Mainhand
+# 保存してみる
+   #data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from storage chuz:context Item.Mainhand
 # インタラクションの削除
-    kill @e[type=interaction,tag=Chuz.Entity.Interaction]
-
-## アイテムの処理
+   kill @e[type=interaction,tag=Chuz.Entity.Interaction]
+# アイテムの処理
     #function #chuzitems:item/tick
 
-# 手持ちを指定して、ソイツの名前をsayで吐き出す
+# 手持ちを実行
     function chuzitems:player/macro/
-    #data remove storage chuz:context hoge_offhand
-    #$setblock ~ ~ ~ $(block)
 
-## 指向性ジャンプブーツ
+# リロード
+    execute if entity @s[scores={ChuzItems.Drop=0..}] run function chuzitems:common/throw_item/main
+
+# 指向性ジャンプブーツ
     execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:Directional_Jump_Boots} run function chuzitems:item/armor/directional_jump_boots/main
 
-## テスト斧
-    execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TestAxe} run function chuzitems:item/weapon/testaxe/main
+# テスト斧
+    #execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TestAxe} run function chuzitems:item/weapon/testaxe/main
 
-## 共通処理
+# 共通処理
     # アイテムが変わったら状態リセット
         execute if entity @s[scores={Chuz.ItemCheck=1}] run function chuzitems:item/score_reset
 
@@ -57,5 +52,5 @@
     # オフハンドに入れると戻ってくる
         execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} run function chuzitems:item/no_offhand
         
-## 一般的なリセット
+# 一般的なリセット
     function chuzitems:player/reset

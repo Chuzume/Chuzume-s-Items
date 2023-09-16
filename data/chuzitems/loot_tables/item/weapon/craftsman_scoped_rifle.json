@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'[{\"text\":\"Craftsman Scoped Rifle\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[Hold Sneak: Charge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Release Sneak: Fire]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Heavy Bullet]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"望遠鏡を乗っけた狙撃用ライフル\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:1,ChuzData:{Ammo:0,AmmoUse:1,CoolTime:0,MaxCoolTime:1,NoOffhand:true,ItemID:craftsman_scoped_rifle,RawName:'{\"text\":\"Craftsman Scoped Rifle\",\"color\":\"#ffce60\",\"italic\":false}'}}"
+                "tag": "{display:{Name:'[{\"text\":\"Craftsman Scoped Rifle\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[Hold Sneak: Charge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Release Sneak: Fire]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Heavy Bullet]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"望遠鏡を乗っけた狙撃用ライフル\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:1,ChuzData:{Ammo:0,AmmoUse:1,CoolTime:0,MaxCoolTime:1,NoOffhand:true,ItemID:craftsman_scoped_rifle,ItemMode:standby,RawName:'{\"text\":\"Craftsman Scoped Rifle\",\"color\":\"#ffce60\",\"italic\":false}'}}"
               }
             ]
           }

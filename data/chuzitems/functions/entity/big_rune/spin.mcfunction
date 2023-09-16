@@ -9,5 +9,3 @@
 
 # スケール0と1を変更
     data merge entity @s {start_interpolation:0,interpolation_duration:100,transformation:{left_rotation:{axis:[0.0f,0.0f,1.0f],angle:4.725f}}}
-
-say yo

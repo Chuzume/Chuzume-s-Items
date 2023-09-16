@@ -8,7 +8,7 @@
     advancement revoke @s only chuzitems:delta_test/pre
 
 #
-    summon marker ~ ~ ~ {Tags:["BackTo"]}
-    execute positioned 0 1000 0 run tp @s ^ ^ ^0.01
+    summon marker ~ ~ ~ {Tags:["Chuz.Motion.BackMarker"]}
+    execute positioned 0 1000 0 run tp @s ^ ^ ^
 
-    say 1
+    #say 1

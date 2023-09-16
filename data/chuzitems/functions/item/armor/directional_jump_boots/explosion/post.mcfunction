@@ -8,7 +8,7 @@
     advancement revoke @s only chuzitems:delta_test/post
 
 #
-    execute positioned as @e[type=marker,tag=BackTo,sort=nearest,limit=1] run tp @s ~ ~ ~
-    kill @e[type=marker,tag=BackTo]
+    execute positioned as @e[type=marker,tag=Chuz.Motion.BackMarker,sort=nearest,limit=1] run tp @s ~ ~ ~
+    kill @e[type=marker,tag=Chuz.Motion.BackMarker]
 
-    say 2
+    #say 2

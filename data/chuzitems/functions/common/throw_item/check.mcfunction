@@ -12,6 +12,6 @@
 
 # "NoDrop"が1bなら手元に戻ってくる
     execute if data storage chuz:context DropItem{NoDrop:1b} run function chuzitems:common/throw_item/return_item
-
+    
 # リセット
     data remove storage chuz:context DropItem

@@ -31,4 +31,4 @@
             execute if entity @p[tag=This,tag=ChuzItems.Shot.ADS] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.01f
 
 # これらの設定を反映する
-    function chuzitems:entity/projectile/recursive_bullet/new_init
+    function chuzitems:entity/projectile/recursive_bullet/init

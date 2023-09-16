@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Craftsman Gunblade\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[RClick: Fire]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Sneak: Charge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Swap: Mode Change]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Light Bullet]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"銃と剣が一体となった、奇妙な武器\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:39,Charged:1b,HideFlags:6,ChuzData:{Ammo:0,AmmoUse:1,ItemID:Craftsman_Gunblade,ItemMode:Ranged,RawName:'{\"text\":\"Craftsman Gunblade\",\"color\":\"#ffce60\",\"italic\":false}'}}"
+              "tag": "{display:{Name:'[{\"text\":\"Craftsman Gunblade\",\"color\":\"#ffce60\",\"italic\":false},{\"text\":\" | - |\",\"color\":\"gray\",\"italic\":false}]',Lore:['{\"text\":\" \"}','{\"text\":\"[RClick: Fire]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Sneak: Charge]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Swap: Mode Change]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Ammo: Light Bullet]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"銃と剣が一体となった、奇妙な武器\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:39,Charged:1b,HideFlags:6,ChuzData:{Ammo:0,AmmoUse:1,ItemID:craftsman_gunblade,ItemMode:ranged,RawName:'{\"text\":\"Craftsman Gunblade\",\"color\":\"#ffce60\",\"italic\":false}'}}"
             }
           ]
         }

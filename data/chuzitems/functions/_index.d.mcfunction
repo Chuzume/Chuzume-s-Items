@@ -47,6 +47,7 @@
     #declare tag Chuz.Motion.Pre
     #declare tag Chuz.Motion.Bat
     #declare tag Chuz.Motion.Arrow
+    #declare tag Chuz.Motion.BackMarker
 
 #> 当たり判定
     #declare tag ChuzItems.HitBox.Head
