@@ -31,6 +31,12 @@
 # リロード
     execute if entity @s[scores={ChuzItems.Drop=0..}] run function chuzitems:common/throw_item/main
 
+## リロード用データ
+    # 削除
+        data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].HoldedItem
+    # 書き換え / Modify  
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].HoldedItem set from storage chuz:context Item.Mainhand
+
 # 指向性ジャンプブーツ
     execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:Directional_Jump_Boots} run function chuzitems:item/armor/directional_jump_boots/main
 
@@ -53,4 +59,5 @@
         execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} run function chuzitems:item/no_offhand
         
 # 一般的なリセット
+# outputのstorageに移す
     function chuzitems:player/reset
