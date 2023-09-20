@@ -13,5 +13,8 @@
 # ヒット者にしか見えないパーティクル
     execute at @s anchored eyes run particle end_rod ^ ^ ^ 0 0 0 0.1 3 force @p[tag=ChuzItems.HeadShot,distance=..120]
 
+# ダメージタイプを移す
+    data modify storage lib: DamageType set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Head
+
 # ダメージを設定
     execute store result storage lib: Damage int 1 run data get storage lib: ChuzDamage.Head

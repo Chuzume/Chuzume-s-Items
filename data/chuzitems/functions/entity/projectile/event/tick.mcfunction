@@ -15,3 +15,6 @@
 
 # 超ビーム
     execute if entity @s[tag=ChuzItems.Projectile.Beam] run function chuzitems:entity/projectile/beam/tick/
+
+# 超ビーム
+    execute if entity @s[tag=ChuzItems.Projectile.AmbassadorBeam] run function chuzitems:entity/projectile/ambassador_beam/tick/

@@ -18,9 +18,6 @@
     execute store result storage lib: ChuzDamage.Body int 1 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.BodyDamage
     execute store result storage lib: ChuzDamage.Head int 1 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.HeadDamage
 
-# ダメージタイプを移す
-    data modify storage lib: DamageType set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType
-
 # ダメージ
     execute if score @s Chuz.HitCheck matches 0 at @s as @e[type=!#chuzitems:unhurtable,tag=Chuz.TargetEntity,sort=nearest,limit=1] at @s run function chuzitems:entity/projectile/recursive_bullet/hit/damage
 

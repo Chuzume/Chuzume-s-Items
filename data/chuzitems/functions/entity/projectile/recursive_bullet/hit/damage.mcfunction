@@ -16,6 +16,9 @@
 # 胴体ダメージ設定
     execute store result storage lib: Damage int 1 run data get storage lib: ChuzDamage.Body
 
+# ダメージタイプを移す
+    data modify storage lib: DamageType set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Body
+
 # ヘッドショットかどうか
     execute anchored eyes positioned ^ ^ ^ positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=marker,tag=Chuz.Projectile,dx=0] run function chuzitems:entity/projectile/recursive_bullet/hit/headshot
 
