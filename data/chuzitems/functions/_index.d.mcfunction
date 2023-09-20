@@ -40,6 +40,7 @@
     #declare tag ChuzItems.Projectile.ThrownGun
     #declare tag ChuzItems.Projectile.WizardSeeker
     #declare tag ChuzItems.Projectile.Beam
+    #declare tag ChuzItems.Projectile.AmbassadorBeam
 
 #> PlayerMotion関連
     #declare tag Chuz.Motion.Pre
