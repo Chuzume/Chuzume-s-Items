@@ -50,9 +50,6 @@
     #declare tag Chuz.Motion.Arrow
     #declare tag Chuz.Motion.BackMarker
 
-#> 当たり判定
-    #declare tag ChuzItems.HitBox.Head
-
 #> 飛び道具の色
     #declare tag ChuzItems.Color.Red
     #declare tag ChuzItems.Color.Orange
@@ -75,6 +72,7 @@
     #declare tag ChuzItems.Entity.Catalog.Hologram
 
 #> その他
+    #declare tag ChuzItems.TiredStep
     #declare tag ChuzItems.Steping
     #declare tag ChuzItems.ReloadSuccess
     #declare tag ChuzItems.ReloadFailed

@@ -28,6 +28,5 @@
     execute as @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},distance=..4] at @s run function chuzitems:lib/storage_damage with storage lib:
     data remove storage lib: Damage
 
-
 # キル
     kill @s
