@@ -29,6 +29,10 @@
             execute if entity @p[tag=This,tag=ChuzItems.Shot.Normal] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.2f
         # ADS
             execute if entity @p[tag=This,tag=ChuzItems.Shot.ADS] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.0f
+    # ダメージタイプ(胴体)
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Body set value "chuzitems:bullet"
+    # ダメージタイプ(頭)
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Head set value "chuzitems:bullet_head"
 
 # これらの設定を反映する
     function chuzitems:entity/projectile/recursive_bullet/init

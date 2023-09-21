@@ -9,7 +9,7 @@
     execute anchored eyes positioned ^ ^ ^1.5 run playsound minecraft:item.flintandsteel.use player @a ~ ~ ~ 1 1
 
 # 実行者の位置にアイテムを召喚
-    execute at @s run loot spawn ~ ~ ~ loot chuzitems:item/weapon/wingman/reload
+    execute at @s run loot spawn ~ ~ ~ loot chuzitems:item/wingman/reload
 
 # すぐに拾えるようにNBT変更
     data modify entity @e[type=item,sort=nearest,limit=1] PickupDelay set value 0

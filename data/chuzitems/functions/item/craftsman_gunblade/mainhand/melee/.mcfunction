@@ -5,7 +5,7 @@
 # @within function chuzitems:player/macro/mainhand
 
 # ステップ
-    execute unless score @s[scores={ChuzItems.FungusStick=0..}] ChuzItems.Sneak matches 0.. run function chuzitems:item/craftsman_gunblade/mainhand/melee/step/
+    execute unless score @s[scores={ChuzItems.FungusStick=0..}] ChuzItems.Sneak matches 0.. if entity @s[nbt={OnGround:1b}] run function chuzitems:item/craftsman_gunblade/mainhand/melee/step/
     # ステップパーティクル
         execute if entity @s[tag=ChuzItems.Steping] run function chuzitems:item/craftsman_gunblade/mainhand/melee/step/particle
     # 着地で解除

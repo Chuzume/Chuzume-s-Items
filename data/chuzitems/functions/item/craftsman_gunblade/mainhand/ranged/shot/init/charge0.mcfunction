@@ -26,6 +26,10 @@
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Distance set value 10.0f
     # 拡散の大きさ
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.1f
-
+    # ダメージタイプ(胴体)
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Body set value "chuzitems:bullet"
+    # ダメージタイプ(頭)
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Head set value "chuzitems:bullet_head"
+        
 # これらの設定を反映する
     function chuzitems:entity/projectile/recursive_bullet/init

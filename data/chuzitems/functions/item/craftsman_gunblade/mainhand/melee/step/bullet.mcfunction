@@ -15,12 +15,18 @@
     playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 1
     playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 1 1.7
     
-# 
-    #tp @s ~ ~0.1 ~
+# 疲労度(?)を追加
+    scoreboard players add @s ChuzItems.Gunblade.StepCount 40
+
+# ちょっと上に持ち上げる
+    tp @s ~ ~0.1 ~
 
 # 跳躍
-    scoreboard players set $Power Chuz.Motion.Power 1
-    execute rotated ~ ~ run function chuzitems:lib/player_motion/
+    summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,effects:[{id:"minecraft:levitation",amplifier:20b,duration:4,show_particles:0b}]}
+
+# 数を指定して当たり判定用のスライムをぶつける
+    scoreboard players set @s ChuzItems.Recursive 35
+    execute at @s rotated ~ 0 positioned ~ ~ ~ run function chuzitems:item/craftsman_gunblade/mainhand/melee/step/summon_recursive
 
 # 弾が減る
     #execute in overworld run function chuzitems:item/consume_ammo

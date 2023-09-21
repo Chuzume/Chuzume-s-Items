@@ -10,15 +10,23 @@
     playsound minecraft:entity.zombie.infect player @a ~ ~ ~ 1.5 2
     playsound minecraft:entity.goat.long_jump player @a ~ ~ ~ 2 1.5
 
+# ちょっと上に上げる
+    tp @s ~ ~0.1 ~
 
-# 落下速度リセットしてAECで打ち上げる
-    tp @s 0 0 0
-    tp ~ ~0.09 ~
-    summon minecraft:area_effect_cloud ~ ~0.5 ~ {Radius:0.0f,Duration:6,DurationOnUse:0,Age:4,Effects:[{Id:25,Amplifier:20b,Duration:3,ShowParticles:0b},{Id:28,Amplifier:0b,Duration:10,ShowParticles:0b}]}
+# 跳躍
+    summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,effects:[{id:"minecraft:levitation",amplifier:20b,duration:4,show_particles:0b}]}
 
 # 数を指定して当たり判定用のスライムをぶつける
-    scoreboard players set @s ChuzItems.Recursive 20
-    execute rotated ~ 0 run function chuzitems:item/weapon/gunblade/summon_recursive
+    scoreboard players set @s ChuzItems.Recursive 10
+    execute at @s rotated ~ 0 positioned ~ ~ ~ run function chuzitems:item/craftsman_gunblade/mainhand/melee/step/summon_recursive
+
+# 弾が減る
+    #execute in overworld run function chuzitems:item/consume_ammo
+
+# 腹が減る
+    #effect give @s[gamemode=!creative] minecraft:hunger 1 20 true
 
 # リセット
+    scoreboard players reset @s ChuzItems.Ready
+    scoreboard players reset @s ChuzItems.Reload
     tag @s remove This

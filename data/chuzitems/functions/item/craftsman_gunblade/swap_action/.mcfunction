@@ -1,4 +1,4 @@
-#> chuzitems:item/craftsman_gunblade/offhand/
+#> chuzitems:item/craftsman_gunblade/swap_action/
 #
 # 
 #
