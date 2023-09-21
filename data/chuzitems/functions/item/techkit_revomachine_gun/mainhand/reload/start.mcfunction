@@ -15,9 +15,9 @@
     execute positioned ^ ^-0.2 ^1.0 run playsound minecraft:entity.witch.throw player @a ~ ~ ~ 2 0.7
 
 # 銃を投げる
-    execute anchored eyes run summon armor_stand ^ ^ ^ {Silent:1b,Small:1b,Invisible:1b,Tags:["Chuz.Projectile",ChuzItems.Projectile.ThrownGun,"Chuz.UUIDAttack","Chuz.Init"],Pose:{Head:[0f,10.0f,0.1f]},DisabledSlots:4144959,ArmorItems:[{id:"minecraft:structure_void",Count:1b},{},{},{id:"minecraft:crossbow",Count:1b,tag:{CustomModelData:9}}]}
+    summon armor_stand ^ ^ ^ {Silent:1b,Small:1b,Invisible:1b,Tags:["Chuz.Projectile",ChuzItems.Projectile.ThrownGun,"Chuz.UUIDAttack","Chuz.Init"],Pose:{Head:[0f,10.0f,0.1f]},DisabledSlots:4144959,ArmorItems:[{id:"minecraft:structure_void",Count:1b},{},{},{id:"minecraft:crossbow",Count:1b,tag:{CustomModelData:9}}]}
     # 拡散用マーカー召喚
-        execute anchored eyes run summon marker ^ ^ ^10 {Tags:["SpreadMarker"]}
+        summon marker ^ ^ ^10 {Tags:["SpreadMarker"]}
 
 # 弾丸にInit処理
     execute as @e[type=armor_stand,tag=Chuz.Init,distance=..100,limit=1] at @s run function chuzitems:entity/revo_machinegun_thrown/init

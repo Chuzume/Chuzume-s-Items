@@ -16,14 +16,18 @@
     playsound minecraft:block.respawn_anchor.deplete neutral @a ~ ~ ~ 3 2
 
 # キルログ設定
-    data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sに%3$sをぶつけられた","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"text":"Techkit: Revomachine Gun","color":"#37CDFF"}]}'
+    #data modify storage chuz:context DeathMessage set value '{"translate": "%1$sは%2$sに%3$sをぶつけられた","with":[{"selector":"@s"},{"selector":"@p[tag=This]"},{"text":"Techkit: Revomachine Gun","color":"#37CDFF"}]}'
+
+# ダメージタイプを移す
+    data modify storage lib: DamageType set value "chuzitems:thrown_gun"
 
 # ダメージ設定
-    data modify storage lib: Damage set value 10.0f
+    data modify storage lib: Damage set value 10
 
 # ダメージを与える
-    execute positioned ~-0.5 ~-0.5 ~-0.5 at @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},dx=0] as @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},distance=..2] at @s run function lib:api/attack
+    execute as @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},distance=..4] at @s run function chuzitems:lib/storage_damage with storage lib:
     data remove storage lib: Damage
+
 
 # キル
     kill @s
