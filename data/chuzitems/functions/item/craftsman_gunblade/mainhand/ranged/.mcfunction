@@ -33,6 +33,6 @@
 
 # チャージ値リセット
     execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Charge
-
+    
 # 更新
     execute in overworld run function chuzitems:item/replaceitem

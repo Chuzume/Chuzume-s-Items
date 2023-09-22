@@ -80,9 +80,8 @@
     #declare tag ChuzItems.FallResist
     #declare tag ChuzItems.JumpBoots.TimeOut
     #declare tag ChuzItems.JumpBoots.NoUse
-    #declare tag BeamEmitter
-    #declare tag BeamRune
-    #declare tag BigRune
+    #declare tag ChuzItems.Gunblade.NormalShot
+    #declare tag ChuzItems.Gunblade.FullBurst
 
 #> 制御系タグ
     #declare tag ChuzItems.ReloadStart
