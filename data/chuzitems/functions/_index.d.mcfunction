@@ -41,6 +41,7 @@
     #declare tag ChuzItems.Projectile.WizardSeeker
     #declare tag ChuzItems.Projectile.Beam
     #declare tag ChuzItems.Projectile.AmbassadorBeam
+    #declare tag ChuzItems.Projectile.PhotonGlaive
 
 #> PlayerMotion関連
     #declare tag Chuz.Motion.Pre
