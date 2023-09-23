@@ -11,7 +11,7 @@
 # 手元チェック
     data modify storage chuz:context ThrownItem.Main set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem.Main
     data modify storage chuz:context ThrownItem.Off set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem.Off
-    tellraw @a [{"text":"メインハンド投擲: "},{"storage":"chuz:context","nbt":"ThrownItem.Main.tag.ChuzData.ItemID"}]
+    #tellraw @a [{"text":"メインハンド投擲: "},{"storage":"chuz:context","nbt":"ThrownItem.Main.tag.ChuzData.ItemID"}]
     execute unless data storage chuz:context ThrownItem.Main{id:"minecraft:knowledge_book"} run tellraw @a [{"text":"オフハンド投擲: "},{"storage":"chuz:context","nbt":"ThrownItem.Off.tag.ChuzData.ItemID"}]
 
 # 投擲処理
