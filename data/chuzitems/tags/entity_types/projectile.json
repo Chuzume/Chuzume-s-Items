@@ -16,7 +16,6 @@
     "minecraft:egg",
     "minecraft:ender_pearl",
     "minecraft:potion",
-    "minecraft:item_display",
-    "minecraft:pig"
-  ]
+    "minecraft:item_display"
+    ]
 }
