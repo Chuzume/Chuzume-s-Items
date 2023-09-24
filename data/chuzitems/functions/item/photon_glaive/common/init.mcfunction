@@ -1,8 +1,8 @@
-#> chuzitems:item/photon_glaive/mainhand/knowledge_book/charge0/init
+#> chuzitems:item/photon_glaive/common/init
 #
 # 
 #
-# @within function chuzitems:item/photon_glaive/mainhand/knowledge_book/
+# @within function chuzitems:item/photon_glaive/**
 
 ## お願いOhMyDat!
     function oh_my_dat:please

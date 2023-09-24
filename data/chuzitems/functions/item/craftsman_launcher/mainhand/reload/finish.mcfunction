@@ -19,10 +19,10 @@
 # 置き換え
     data modify storage chuz:context Item.Mainhand set from entity @s SelectedItem
     execute store result storage chuz:context Item.Mainhand.tag.ChuzData.Ammo int 1 run scoreboard players get $Ammo Chuz.Temporary
-    loot replace block 100001 0 100000 container.0 loot chuzitems:set_ammo
-    data modify block 100001 0 100000 Items set value []
-    data modify block 100001 0 100000 Items append from storage chuz:context Item.Mainhand
-    loot replace entity @s weapon.mainhand 1 mine 100001 0 100000 debug_stick
+    loot replace block 100001 -64 100000 container.0 loot chuzitems:set_ammo
+    data modify block 100001 -64 100000 Items set value []
+    data modify block 100001 -64 100000 Items append from storage chuz:context Item.Mainhand
+    loot replace entity @s weapon.mainhand 1 mine 100001 -64 100000 debug_stick
 
 # 演出
     execute at @s anchored eyes run particle crit ^-0.5 ^ ^0.5 0 0 0 0.2 5
