@@ -46,7 +46,7 @@
     function chuzitems:item/old_items/
 
 # 落下耐性
-    scoreboard players remove @s[scores={ChuzItems.FallResistTime=1..}] ChuzItems.FallResistTime 1
+    scoreboard players remove @s[scores={ChuzItems.FallResistTime=0..}] ChuzItems.FallResistTime 1
     execute if score @s ChuzItems.FallResistTime matches 0.. run function chuzitems:player/fall_resist
     scoreboard players reset @s[scores={ChuzItems.FallResistTime=..-1}] ChuzItems.FallResistTime
 
