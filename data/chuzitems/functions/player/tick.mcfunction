@@ -45,6 +45,11 @@
 # 旧データアイテム交換
     function chuzitems:item/old_items/
 
+# 落下耐性
+    scoreboard players remove @s[scores={ChuzItems.FallResistTime=1..}] ChuzItems.FallResistTime 1
+    execute if score @s ChuzItems.FallResistTime matches 0.. run function chuzitems:player/fall_resist
+    scoreboard players reset @s[scores={ChuzItems.FallResistTime=..-1}] ChuzItems.FallResistTime
+
 ## 共通処理
     # アイテムが変わったら状態リセット
         execute if entity @s[scores={Chuz.ItemCheck=1}] run function chuzitems:item/score_reset
@@ -56,6 +61,8 @@
         scoreboard players remove @s[scores={ChuzItems.CoolTime=1..}] ChuzItems.CoolTime 1
         # リセット
             execute if score @s ChuzItems.CoolTime matches 0 run function chuzitems:player/cooltime_end
+    # チャージ値リセット
+        execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Charge
 
     # ステップのクールタイム処理
             scoreboard players remove @s[scores={ChuzItems.Gunblade.StepCount=1..}] ChuzItems.Gunblade.StepCount 1

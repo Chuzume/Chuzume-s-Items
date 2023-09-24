@@ -8,6 +8,7 @@
     tag @s[tag=ChuzItems.ReloadStart] remove ChuzItems.ReloadStart
     tag @s[tag=Chuz.Click.Left] remove Chuz.Click.Left
     tag @s[tag=Chuz.Click.Right] remove Chuz.Click.Right
+    tag @s[tag=Chuz.PreventRun] remove Chuz.PreventRun
 
 # スコア
     scoreboard players reset @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Sneak

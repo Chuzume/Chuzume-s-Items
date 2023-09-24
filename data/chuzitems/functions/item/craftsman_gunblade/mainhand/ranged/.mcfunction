@@ -4,6 +4,9 @@
 #
 # @within function chuzitems:player/macro/mainhand
 
+# メインハンドを優先
+    tag @s add Chuz.PreventRun
+
 # 発砲
     # 通常
         execute unless score @s[scores={ChuzItems.Crossbow=0..}] ChuzItems.Charge matches 30.. unless score @s ChuzItems.CoolTime matches 0.. run function chuzitems:item/craftsman_gunblade/mainhand/ranged/shot/charge0
@@ -30,9 +33,6 @@
 
 # リロード準備が整ったら弾を込めだす
     execute if score @s ChuzItems.Ready matches 30.. run function chuzitems:item/craftsman_gunblade/common/reloading
-
-# チャージ値リセット
-    execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Charge
 
 # 更新
     execute in overworld run function chuzitems:item/replaceitem

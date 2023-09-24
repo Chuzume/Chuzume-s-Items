@@ -18,10 +18,16 @@
     scoreboard players operation @s Chuz.EntityID = @p Chuz.PlayerID
 
 # 飛距離設定
-    scoreboard players set @s Chuz.Range 100
+    # ノンチャージ
+        execute unless score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Range 20
+    # チャージ1
+        execute if score @p[tag=This] ChuzItems.Charge matches 10.. run scoreboard players set @s Chuz.Range 60
 
 # 弾速設定
-    scoreboard players set @s Chuz.Speed 3
+    # ノンチャージ
+        execute unless score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Speed 3
+    # チャージ1
+        execute if score @p[tag=This] ChuzItems.Charge matches 10.. run scoreboard players set @s Chuz.Speed 4
 
 # Init終了
     tag @s remove Chuz.Init

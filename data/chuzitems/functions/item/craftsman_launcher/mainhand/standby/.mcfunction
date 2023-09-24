@@ -4,6 +4,9 @@
 #
 # @within function  chuzitems:player/macro/mainhand
 
+# メインハンドを優先
+    tag @s add Chuz.PreventRun
+
 # スニークでチャージ
     scoreboard players add @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Charge 1 
 

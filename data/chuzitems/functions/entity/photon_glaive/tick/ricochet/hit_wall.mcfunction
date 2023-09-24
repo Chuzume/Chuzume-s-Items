@@ -8,9 +8,10 @@
     tp @s ~ ~ ~ ~ ~
 
 # 演出
-    playsound minecraft:block.note_block.bit neutral @a ~ ~ ~ 3 1
     playsound chuzume:blaster3 neutral @a ~ ~ ~ 3 2
-    particle crit ~ ~0.5 ~ 0 0 0 0.5 10
+    playsound minecraft:entity.item.break neutral @a ~ ~ ~ 2 1.5
+    playsound minecraft:entity.blaze.hurt neutral @a ~ ~ ~ 2 2
+    particle minecraft:crit ~ ~ ~ 0 0 0 0.5 10
 
 # すぐさま移動しないようにタグ付与
     tag @s add ChuzItems.Reflected

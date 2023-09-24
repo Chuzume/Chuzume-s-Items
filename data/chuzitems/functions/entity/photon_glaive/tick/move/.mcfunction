@@ -25,5 +25,8 @@
     scoreboard players remove @s Chuz.Recursion 1
     scoreboard players remove @s Chuz.Range 1
 
+# キャッチ
+    execute if entity @s[scores={Chuz.Range=..0}] at @s positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=Chuz.ID.Target,dx=0] at @s run function chuzitems:entity/photon_glaive/tick/catch
+    
 # 再帰
     execute if entity @s[scores={Chuz.Recursion=1..}] at @s run function chuzitems:entity/photon_glaive/tick/move/

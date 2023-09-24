@@ -4,10 +4,8 @@
 #
 # @within function chuzitems:entity/projectile/event/tick
 
-# パーティクル
-    #particle mineraft:crit ~ ~ ~ 0.2 0.2 0.2 0 1 force @a[distance=..30]
-    #particle minecraft:dust 0.3 1 1 0.8 ~ ~ ~ 0.2 0.2 0.2 0 2 force @a[distance=..30]
-    #particle minecraft:dust 0 0.75 1 1 ~ ~ ~ 0.2 0.2 0.2 0 2 force @a[distance=..30]
+# 持ち主を特定
+    execute at @a[distance=..100] if score @s Chuz.EntityID = @p Chuz.PlayerID run tag @p add Chuz.ID.Target
 
 # 接触で爆発
     # クールタイム加算
@@ -20,6 +18,12 @@
     tp @e[type=item_display,tag=ChuzItems.Model.PhotonGlaive,tag=This,sort=nearest,limit=1] ~ ~ ~ ~ ~
     execute on passengers run tag @s remove This
 
+# テスト
+    execute at @p[tag=Chuz.ID.Target,predicate=chuzitems:sneak] facing entity @s feet as @p run function chuzitems:entity/photon_glaive/tick/pull
+
+# 落下耐性
+    execute if score @p[tag=Chuz.ID.Target] ChuzItems.FallResistTime matches 0..
+
 # モデル回転
     execute on passengers run function chuzitems:entity/photon_glaive/tick/model_spin
 
@@ -31,12 +35,7 @@
 
 # 飛翔
     function chuzitems:entity/photon_glaive/tick/move/
-    #execute at @s positioned ^ ^ ^0.5 if block ~ ~ ~ #chuzitems:no_collision run tp @s ~ ~ ~
-    #execute at @s positioned ^ ^ ^0.5 if block ~ ~ ~ #chuzitems:no_collision run tp @s ~ ~ ~
-    #execute at @s positioned ^ ^ ^0.5 if block ~ ~ ~ #chuzitems:no_collision run tp @s ~ ~ ~
-    #execute at @s positioned ^ ^ ^0.5 if block ~ ~ ~ #chuzitems:no_collision run tp @s ~ ~ ~
-
     tag @s remove ChuzItems.Reflected
 
-# 起爆アラート
-    #execute if entity @s[scores={Chuz.Range=..50}] if entity @a[distance=..4] run function chuzitems:entity/grenade/alert
+# リセット
+    #tag @p[tag=Chuz.ID.Target] remove Chuz.ID.Target
