@@ -29,7 +29,7 @@
 
 # 演出
     playsound minecraft:block.iron_door.close neutral @a ~ ~ ~ 1.5 2
-    playsound minecraft:block.note_block.bit neutral @a ~ ~ ~ 1.5 2
+    playsound minecraft:item.flintandsteel.use player @a ~ ~ ~ 1.5 1
     particle crit ~ ~ ~ 0 0 0 0.5 10
 
 # キル
