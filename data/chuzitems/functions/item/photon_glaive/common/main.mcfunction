@@ -10,4 +10,4 @@
     scoreboard players add @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Charge 1
 
 # チャージ中のパーティクル
-    execute if score @s ChuzItems.Charge matches 0.. run function chuzitems:item/photon_glaive/common/charge/
+    execute if score @s ChuzItems.Charge matches 1.. run function chuzitems:item/photon_glaive/common/charge/

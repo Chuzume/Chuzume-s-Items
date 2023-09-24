@@ -1,8 +1,8 @@
-#> chuzitems:item/photon_glaive/common/charge/shape_finish
+#> chuzitems:item/photon_glaive/common/charge/shape1
 #
 # 
 #
-# @within function chuzitems:item/photon_glaive/common/charge/finish
+# @within function chuzitems:item/photon_glaive/common/charge/1
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGwAcAnAEb0As1ADALSvXUCG7TPFACZ2PODwDM7AKy0AZgHZWQupXpz6YAgDseAWwTJAYYoACAIxawMHhn0BnJOBQB7QtohImrAijju4GI5gAG482ISG4AAeSN5gULEAvokEtqRohA6IZgB0TAR2EDYeiHFw2NhoMHaGZqxxGM5FEIZxaHYAohVVNR0AjoRh2FAAyta+5IhyYTXJALpAA_3
 # 円 1

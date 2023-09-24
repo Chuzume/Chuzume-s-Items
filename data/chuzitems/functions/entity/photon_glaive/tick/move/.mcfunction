@@ -10,7 +10,10 @@
     #tp @s ~ ~ ~
 
 # パーティクル
-    function chuzitems:entity/photon_glaive/tick/move/particle_charge0
+    # チャージ0~1
+        execute if score @s ChuzItems.Projectile.Charge matches 0..1 run function chuzitems:entity/photon_glaive/tick/move/particle_charge0
+    # チャージ2
+        execute if score @s ChuzItems.Projectile.Charge matches 2 run function chuzitems:entity/photon_glaive/tick/move/particle_charge2
 
 # 再帰カウントが0なら弾速からセット
     execute unless entity @s[scores={Chuz.Recursion=1..}] run scoreboard players operation @s Chuz.Recursion = @s Chuz.Speed

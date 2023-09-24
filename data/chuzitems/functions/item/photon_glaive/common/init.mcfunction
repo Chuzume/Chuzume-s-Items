@@ -17,17 +17,27 @@
 # スコアコピー
     scoreboard players operation @s Chuz.EntityID = @p Chuz.PlayerID
 
-# 飛距離設定
+## 飛距離設定
     # ノンチャージ
-        execute unless score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Range 20
+        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Range 20
     # チャージ1
-        execute if score @p[tag=This] ChuzItems.Charge matches 10.. run scoreboard players set @s Chuz.Range 60
+        execute if score @p[tag=This] ChuzItems.Charge matches 10..29 run scoreboard players set @s Chuz.Range 60
+    # チャージ2
+        execute if score @p[tag=This] ChuzItems.Charge matches 30.. run scoreboard players set @s Chuz.Range 80
 
-# 弾速設定
+## 弾速設定
     # ノンチャージ
-        execute unless score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Speed 3
+        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Speed 3
     # チャージ1
         execute if score @p[tag=This] ChuzItems.Charge matches 10.. run scoreboard players set @s Chuz.Speed 4
+
+## チャージカウントを付与
+    # ノンチャージ
+        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s ChuzItems.Projectile.Charge 0
+    # チャージ1
+        execute if score @p[tag=This] ChuzItems.Charge matches 10..19 run scoreboard players set @s ChuzItems.Projectile.Charge 1
+    # チャージ2
+        execute if score @p[tag=This] ChuzItems.Charge matches 20.. run scoreboard players set @s ChuzItems.Projectile.Charge 2
 
 # Init終了
     tag @s remove Chuz.Init
