@@ -11,7 +11,7 @@
     scoreboard players operation $AmmoReload Chuz.Temporary += $AmmoAdd Chuz.Temporary
 
 # 置き換え
-    data modify storage chuz:context Item.Mainhand.tag.display.Name set from block 100001 0 100000 Items[0].tag.display.Name
+    data modify storage chuz:context Item.Mainhand.tag.display.Name set from block 100001 -64 100000 Items[0].tag.display.Name
     execute store result storage chuz:context Item.Mainhand.tag.ChuzData.Ammo int 1 run scoreboard players get $AmmoReload Chuz.Temporary
 
 # スコアリセット
