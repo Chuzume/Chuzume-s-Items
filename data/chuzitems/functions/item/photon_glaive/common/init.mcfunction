@@ -5,7 +5,7 @@
 # @within function chuzitems:item/photon_glaive/**
 
 ## お願いOhMyDat!
-    function oh_my_dat:please
+    #function oh_my_dat:please
 
 # 向き設定したあとマーカーを消す
     execute facing entity @e[type=marker,tag=SpreadMarker,distance=..100] feet run tp @s ~ ~ ~ ~ ~
@@ -19,7 +19,7 @@
 
 ## 飛距離設定
     # ノンチャージ
-        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Range 20
+        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Range 30
     # チャージ1
         execute if score @p[tag=This] ChuzItems.Charge matches 10..29 run scoreboard players set @s Chuz.Range 60
     # チャージ2
