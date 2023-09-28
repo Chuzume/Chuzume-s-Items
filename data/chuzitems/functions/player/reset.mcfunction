@@ -2,7 +2,7 @@
 #
 # 色々リセットする
 #
-# @within function chuzitems:player/tick
+# @within function chuzitems:tick
 
 # タグ
     tag @s[tag=ChuzItems.ReloadStart] remove ChuzItems.ReloadStart

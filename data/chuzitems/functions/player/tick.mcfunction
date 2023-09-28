@@ -13,7 +13,6 @@
 ## データ取得
     function chuzitems:get_data/
 
-
 # インタラクションの削除
    kill @e[type=interaction,tag=Chuz.Entity.Interaction]
 
@@ -63,19 +62,19 @@
         # リセット
             execute if score @s ChuzItems.CoolTime matches 0 run function chuzitems:player/cooltime_end
 
-    # スニークでチャージ
-        scoreboard players add @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Charge 1
-        # チャージ値リセット
-            execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players set @s ChuzItems.Charge 0
-
     # ステップのクールタイム処理
             scoreboard players remove @s[scores={ChuzItems.Gunblade.StepCount=1..}] ChuzItems.Gunblade.StepCount 1
         # リセット
             execute if score @s ChuzItems.Gunblade.StepCount matches 0 run tag @s remove ChuzItems.TiredStep
             execute if score @s ChuzItems.Gunblade.StepCount matches 0 run scoreboard players reset @s ChuzItems.Gunblade.StepCount
 
+    # スニークでチャージ
+        scoreboard players add @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Charge 1
+        # チャージ値リセット
+            execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players set @s ChuzItems.Charge 0
+
     # オフハンドに入れると戻ってくる
         execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} run function chuzitems:item/no_offhand
         
 # 一般的なリセット
-    function chuzitems:player/reset
+    #function chuzitems:player/reset

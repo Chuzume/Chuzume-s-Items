@@ -20,3 +20,6 @@
 
 # やぶ氏のリコイルライブラリ
     function yv_recoil:tick
+
+# オールリセット
+    execute as @a run function chuzitems:player/reset
