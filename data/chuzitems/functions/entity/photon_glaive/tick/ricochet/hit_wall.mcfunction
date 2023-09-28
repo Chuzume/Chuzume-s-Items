@@ -8,8 +8,7 @@
     tp @s ~ ~ ~ ~ ~
 
 # 演出
-    playsound chuzume:blaster3 neutral @a ~ ~ ~ 3 2
-    playsound minecraft:entity.item.break neutral @a ~ ~ ~ 2 1.5
+    playsound chuzume:blaster3 neutral @a ~ ~ ~ 2 2
     playsound minecraft:entity.blaze.hurt neutral @a ~ ~ ~ 2 2
     particle minecraft:crit ~ ~ ~ 0 0 0 0.5 10
 
