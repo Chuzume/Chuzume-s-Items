@@ -30,7 +30,9 @@
 # キャッチ時の手元データを即時にブーメランにしとく
     data modify storage chuz:context ThrownItem.Main set from entity @p[tag=Chuz.ID.Target] SelectedItem 
     data modify storage chuz:context ThrownItem.Off set from entity @p[tag=Chuz.ID.Target] Inventory[{Slot:-106b}]
-    #tellraw @a [{"text":"キャッチ時: "},{"storage":"chuz:context","nbt":"ThrownItem.Main.tag.ChuzData.ItemID"}]
+
+# キャッチ時にチャージ0にしとく
+    scoreboard players reset @p[tag=Chuz.ID.Target] ChuzItems.Charge
 
 # 演出
     playsound minecraft:block.iron_door.close neutral @a ~ ~ ~ 1.5 2

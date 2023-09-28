@@ -5,7 +5,7 @@
 # @within function chuzitems:entity/photon_glaive/tick/
 
 # 持ち主の胴体を狙う
-    execute as @p[tag=Chuz.ID.Target] at @s anchored eyes positioned ^ ^-0.5 ^ run summon marker ~ ~ ~ {Tags:["Chuz.BodyMarker"]}
+    execute as @p[tag=Chuz.ID.Target] at @s anchored eyes rotated ~ 0 positioned ^ ^-0.5 ^ run summon marker ~ ~ ~ {Tags:["Chuz.BodyMarker"]}
 
 # プレイヤーを実行者として移動処理
     execute as @p[tag=Chuz.ID.Target] run function chuzitems:entity/photon_glaive/tick/pull/player
@@ -18,4 +18,4 @@
     execute at @s facing entity @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1] feet run function chuzitems:entity/photon_glaive/tick/pull/laser
 
 # 胴体部分のマーカー削除
-    kill @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1]
+    #kill @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1]

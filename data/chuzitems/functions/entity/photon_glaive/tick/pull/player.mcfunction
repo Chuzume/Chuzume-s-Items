@@ -14,6 +14,3 @@
 
 # 落下速度を抑える
     summon area_effect_cloud ~ ~ ~ {Particle:"crit",Radius:0.1f,Duration:6,Age:4,effects:[{id:"minecraft:levitation",amplifier:0b,duration:2,show_particles:0b}]}
-
-# 持ち主の胴体を狙う
-    execute anchored eyes positioned ^ ^-0.5 ^ run summon marker ~ ~ ~ {Tags:["Chuz.BodyMarker"]}

@@ -10,8 +10,8 @@
 # Tick加算
     scoreboard players add @s ChuzItems.Tick 1
 
-# 所有者がスニークし直したらイベント
-    execute if score @s ChuzItems.Tick matches 2.. if score @p[tag=Chuz.ID.Target,predicate=chuzitems:sneak] ChuzItems.Charge matches 1 run say yo
+# 所有者がスニークし直したら戻ってくる
+    execute if score @s[tag=!ChuzItems.PhotonGlaive.Recalled] ChuzItems.Tick matches 2.. if score @p[tag=Chuz.ID.Target,scores={ChuzItems.Sneak=0..}] ChuzItems.Charge matches 1 run function chuzitems:entity/photon_glaive/tick/quick_return/
 
 # モデルを追従
     execute on passengers run tag @s add This
@@ -19,7 +19,7 @@
     execute on passengers run tag @s remove This
 
 # チャージ2で投擲された場合、プレイヤーを引っ張る能力を得る。ただし持ち主のカウントが3未満の場合
-    execute if entity @s[scores={ChuzItems.Projectile.Charge=2,ChuzItems.Tick=5..}] at @p[tag=Chuz.ID.Target,scores={ChuzItems.PhotonGlaive.GlideCount=..2},predicate=chuzitems:sneak,distance=2..] facing entity @s feet run function chuzitems:entity/photon_glaive/tick/pull/
+    execute if entity @s[scores={ChuzItems.Projectile.Charge=2,ChuzItems.Tick=5..}] at @p[tag=Chuz.ID.Target,scores={ChuzItems.PhotonGlaive.GlideCount=..2,ChuzItems.Sneak=0..},distance=2..] facing entity @s feet run function chuzitems:entity/photon_glaive/tick/pull/
 
 # モデル回転
     execute on passengers run function chuzitems:entity/photon_glaive/tick/model_spin
