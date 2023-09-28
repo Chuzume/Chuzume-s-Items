@@ -23,9 +23,9 @@
 
 # ブーメランを与える
     # メインハンド
-        execute if entity @s[tag=!ChuzItems.Projectile.PhotonGlaive.Off] run loot replace entity @p[gamemode=!creative,tag=Chuz.ID.Target] weapon.mainhand loot chuzitems:item/photon_glaive/
+        execute if entity @s[tag=!ChuzItems.Projectile.PhotonGlaive.Off] run loot replace entity @p[gamemode=!creative,tag=Chuz.ID.Target] weapon.mainhand loot chuzitems:item/photon_glaive
     # オフハンド
-        execute if entity @s[tag=ChuzItems.Projectile.PhotonGlaive.Off] run loot replace entity @p[gamemode=!creative,tag=Chuz.ID.Target] weapon.offhand loot chuzitems:item/photon_glaive/
+        execute if entity @s[tag=ChuzItems.Projectile.PhotonGlaive.Off] run loot replace entity @p[gamemode=!creative,tag=Chuz.ID.Target] weapon.offhand loot chuzitems:item/photon_glaive
 
 # キャッチ時の手元データを即時にブーメランにしとく
     data modify storage chuz:context ThrownItem.Main set from entity @p[tag=Chuz.ID.Target] SelectedItem 
