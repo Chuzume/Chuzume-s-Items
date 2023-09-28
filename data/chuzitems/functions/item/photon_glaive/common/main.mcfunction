@@ -8,3 +8,6 @@
 
 # チャージ中のパーティクル
     execute if score @s ChuzItems.Charge matches 1.. run function chuzitems:item/photon_glaive/common/charge/
+
+# 着地でスコアリセット
+    execute if entity @s[nbt={OnGround:1b}] run scoreboard players set @s ChuzItems.PhotonGlaive.GlideCount 0
