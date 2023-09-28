@@ -11,4 +11,4 @@
     execute if score @s Chuz.Range matches ..1 facing entity @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-90 facing entity @s eyes positioned as @s run tp @s ^ ^ ^ ~ ~
 
 # 胴体部分のマーカー削除
-    #kill @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1]
+    kill @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1]

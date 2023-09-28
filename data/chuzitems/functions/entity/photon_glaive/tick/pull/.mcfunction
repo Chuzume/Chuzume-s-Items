@@ -18,4 +18,4 @@
     execute at @s facing entity @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1] feet run function chuzitems:entity/photon_glaive/tick/pull/laser
 
 # 胴体部分のマーカー削除
-    #kill @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1]
+    kill @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1]

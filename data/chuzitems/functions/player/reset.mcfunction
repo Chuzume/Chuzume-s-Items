@@ -17,6 +17,3 @@
     scoreboard players reset @s[scores={ChuzItems.KnowledgeBook=1..}] ChuzItems.KnowledgeBook
     scoreboard players reset @s[scores={ChuzItems.Trade=1..}] ChuzItems.Trade
     scoreboard players reset @s[scores={ChuzItems.Jump=1..}] ChuzItems.Jump
-
-# 胴体部分のマーカー削除
-    kill @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1]
