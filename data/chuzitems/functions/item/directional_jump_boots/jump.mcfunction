@@ -1,8 +1,8 @@
-#> chuzitems:item/armor/directional_jump_boots/jump
+#> chuzitems:item/directional_jump_boots/jump
 #
 # Deltaデータパックを用いた跳躍
 #
-# @within function chuzitems:item/armor/directional_jump_boots/get_pos
+# @within function chuzitems:item/directional_jump_boots/get_pos
 
 # 飛ばす
     scoreboard players set $strength delta.api.launch 10000

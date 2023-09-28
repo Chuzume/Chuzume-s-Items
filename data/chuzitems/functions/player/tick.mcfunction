@@ -40,7 +40,7 @@
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem.Off set from storage chuz:context Item.Inventory[{Slot:-106b}]
         
 # 指向性ジャンプブーツ
-    execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:Directional_Jump_Boots} run function chuzitems:item/armor/directional_jump_boots/main
+    execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:directional_jump_boots} run function chuzitems:item/directional_jump_boots/main
 
 # 旧データアイテム交換
     function chuzitems:item/old_items/

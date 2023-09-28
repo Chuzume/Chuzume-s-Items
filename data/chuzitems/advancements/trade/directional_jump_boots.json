@@ -5,15 +5,15 @@
         "conditions": {
           "item": {
             "items": [
-              "minecraft:iron_boots"
+              "minecraft:leather_boots"
             ],
-            "nbt": "{ChuzData:{ItemID:Directional_Jump_Boots,SellSample:1b}}"
+            "nbt": "{ChuzData:{ItemID:directional_jump_boots,SellSample:1b}}"
           }
         }
       }
     },
     "rewards": {
-      "function": "chuzitems:item/armor/directional_jump_boots/get"
+      "function": "chuzitems:item/directional_jump_boots/get"
     }
   }
   
