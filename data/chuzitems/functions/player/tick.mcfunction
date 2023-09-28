@@ -78,3 +78,7 @@
         
 # 一般的なリセット
     #function chuzitems:player/reset
+
+# ストレージリセット
+    data remove storage chuz:context ItemID
+    data remove storage chuz:context ThrownItem

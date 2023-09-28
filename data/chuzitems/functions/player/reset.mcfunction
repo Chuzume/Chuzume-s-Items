@@ -20,7 +20,3 @@
 
 # 胴体部分のマーカー削除
     kill @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1]
-
-# ストレージ
-    data remove storage chuz:context ItemID
-    data remove storage chuz:context ThrownItem
