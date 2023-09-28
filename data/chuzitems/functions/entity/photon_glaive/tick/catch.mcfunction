@@ -32,7 +32,7 @@
     data modify storage chuz:context ThrownItem.Off set from entity @p[tag=Chuz.ID.Target] Inventory[{Slot:-106b}]
 
 # キャッチ時にチャージ0にしとく
-    scoreboard players reset @p[tag=Chuz.ID.Target] ChuzItems.Charge
+    scoreboard players set @p[tag=Chuz.ID.Target] ChuzItems.Charge 0
 
 # 演出
     playsound minecraft:block.iron_door.close neutral @a ~ ~ ~ 1.5 2
