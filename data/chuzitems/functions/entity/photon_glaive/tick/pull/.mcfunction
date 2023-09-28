@@ -4,15 +4,18 @@
 #
 # @within function chuzitems:entity/photon_glaive/tick/
 
-# 飛ばす
-    scoreboard players set $strength delta.api.launch 2000
-    execute positioned ~ ~ ~ run function delta:api/launch_looking
-
-# 落下耐性
-    scoreboard players set @s ChuzItems.FallResistTime 30
-
-# 落下速度を抑える
-    summon area_effect_cloud ~ ~ ~ {Particle:"crit",Radius:0.1f,Duration:6,Age:4,effects:[{id:"minecraft:levitation",amplifier:0b,duration:2,show_particles:0b}]}
-
 # 持ち主の胴体を狙う
     execute as @p[tag=Chuz.ID.Target] at @s anchored eyes positioned ^ ^-0.5 ^ run summon marker ~ ~ ~ {Tags:["Chuz.BodyMarker"]}
+
+# プレイヤーを実行者として移動処理
+    execute as @p[tag=Chuz.ID.Target] run function chuzitems:entity/photon_glaive/tick/pull/player
+
+# 自分の存在一回につき、持ち主にスコア付与
+    execute if entity @s[tag=!ChuzItems.PhotonGlaive.Counted] run scoreboard players add @p[tag=Chuz.ID.Target] ChuzItems.PhotonGlaive.GlideCount 1
+    tag @s add ChuzItems.PhotonGlaive.Counted
+
+# プレイヤーに向けてビーム
+    execute at @s facing entity @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1] feet run function chuzitems:entity/photon_glaive/tick/pull/laser
+
+# 胴体部分のマーカー削除
+    kill @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1]

@@ -10,37 +10,38 @@
 # Tick加算
     scoreboard players add @s ChuzItems.Tick 1
 
-# 接触で爆発
-    # クールタイム加算
-        scoreboard players add @s ChuzItems.CoolTime 1
-    # 一定のクールタイムが過ぎたら、接触で爆発するようになる
-        execute if entity @s[scores={ChuzItems.CoolTime=5..}] at @s positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,dx=0] run function chuzitems:entity/revo_machinegun_thrown/explode/active
+# 所有者がスニークし直したらイベント
+    execute if score @s ChuzItems.Tick matches 2.. if score @p[tag=Chuz.ID.Target,predicate=chuzitems:sneak] ChuzItems.Charge matches 1 run say yo
 
 # モデルを追従
     execute on passengers run tag @s add This
     tp @e[type=item_display,tag=ChuzItems.Model.PhotonGlaive,tag=This,sort=nearest,limit=1] ~ ~ ~ ~ ~
     execute on passengers run tag @s remove This
 
-# チャージ2で投擲された場合、プレイヤーを引っ張る能力を得る
-    execute if entity @s[scores={ChuzItems.Projectile.Charge=2,ChuzItems.Tick=5..}] at @p[tag=Chuz.ID.Target,predicate=chuzitems:sneak] facing entity @s feet as @p run function chuzitems:entity/photon_glaive/tick/pull/
-# プレイヤーに向けてビーム
-    execute if entity @s[scores={ChuzItems.Projectile.Charge=2,ChuzItems.Tick=5..}] if entity @p[tag=Chuz.ID.Target,predicate=chuzitems:sneak] facing entity @e[type=marker,tag=Chuz.BodyMarker,sort=nearest,limit=1] feet run function chuzitems:entity/photon_glaive/tick/pull/laser
-
-# 落下耐性
-    execute if score @p[tag=Chuz.ID.Target] ChuzItems.FallResistTime matches 0..
+# チャージ2で投擲された場合、プレイヤーを引っ張る能力を得る。ただし持ち主のカウントが3未満の場合
+    execute if entity @s[scores={ChuzItems.Projectile.Charge=2,ChuzItems.Tick=5..}] at @p[tag=Chuz.ID.Target,scores={ChuzItems.PhotonGlaive.GlideCount=..2},predicate=chuzitems:sneak,distance=2..] facing entity @s feet run function chuzitems:entity/photon_glaive/tick/pull/
 
 # モデル回転
     execute on passengers run function chuzitems:entity/photon_glaive/tick/model_spin
 
 # 飛距離使い切ったら戻ってくる
+    #execute if entity @s[scores={ChuzItems.Projectile.Charge=..1,Chuz.Range=..0}] run function chuzitems:entity/photon_glaive/tick/return
     execute if entity @s[scores={Chuz.Range=..0}] run function chuzitems:entity/photon_glaive/tick/return
 
 # 壁反射
-    function chuzitems:entity/photon_glaive/tick/ricochet/
+    execute if score @s Chuz.Range matches -70.. run function chuzitems:entity/photon_glaive/tick/ricochet/
+    #execute if score @s[scores={ChuzItems.Projectile.Charge=..1}] Chuz.Range matches -70.. run function chuzitems:entity/photon_glaive/tick/ricochet/
+    # チャージ2だと壁ヒットの演出が違う
+        #execute if score @s[scores={ChuzItems.Projectile.Charge=2}] Chuz.Range matches 0.. unless block ^ ^ ^0.5 #chuzitems:no_collision run function chuzitems:entity/photon_glaive/tick/tp_return/hit_wall
 
 # 飛翔
     function chuzitems:entity/photon_glaive/tick/move/
-    tag @s remove ChuzItems.Reflected
+    #execute if score @s ChuzItems.Projectile.Charge matches ..1 run function chuzitems:entity/photon_glaive/tick/move/
 
-# リセット
-    #tag @p[tag=Chuz.ID.Target] remove Chuz.ID.Target
+# チャージ2の場合、飛翔距離の限界で留まる
+    #execute if score @s[scores={ChuzItems.Projectile.Charge=2}] Chuz.Range matches 0.. run function chuzitems:entity/photon_glaive/tick/move/
+    #execute if score @s[scores={ChuzItems.Projectile.Charge=2}] Chuz.Range matches ..0 run function chuzitems:entity/photon_glaive/tick/tp_return/
+
+# リセット    
+    tag @s remove ChuzItems.Reflected
+    tag @p[tag=Chuz.ID.Target] remove Chuz.ID.Target

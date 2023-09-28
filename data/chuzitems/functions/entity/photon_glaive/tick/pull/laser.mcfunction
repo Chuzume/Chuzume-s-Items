@@ -3,7 +3,7 @@
 # 
 #
 # @within function
-#   chuzitems:entity/photon_glaive/tick/
+#   chuzitems:entity/photon_glaive/tick/pull/
 #   chuzitems:entity/photon_glaive/tick/pull/laser
 # パーティクル
     particle electric_spark ~ ~ ~ 0 0 0 0 1 force @a[distance=..30]

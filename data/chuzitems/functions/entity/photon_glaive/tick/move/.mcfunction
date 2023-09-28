@@ -6,12 +6,11 @@
 #   chuzitems:entity/photon_glaive/tick/
 #   chuzitems:entity/photon_glaive/tick/move/
 
-# 移動
-    #tp @s ~ ~ ~
-
 # パーティクル
-    # チャージ0~1
-        execute if score @s ChuzItems.Projectile.Charge matches 0..1 run function chuzitems:entity/photon_glaive/tick/move/particle_charge0
+    # チャージ0
+        execute if score @s ChuzItems.Projectile.Charge matches 0 run function chuzitems:entity/photon_glaive/tick/move/particle_charge0
+    # チャージ1
+        execute if score @s ChuzItems.Projectile.Charge matches 1 run function chuzitems:entity/photon_glaive/tick/move/particle_charge1
     # チャージ2
         execute if score @s ChuzItems.Projectile.Charge matches 2 run function chuzitems:entity/photon_glaive/tick/move/particle_charge2
 
@@ -25,7 +24,10 @@
 # 飛距離0なら壁を無視するようになる
     #execute if entity @s[scores={Chuz.Recursion=1..,Chuz.Range=..0}] at @s positioned ^ ^ ^0.5 run tp @s ~ ~ ~
 
-# 途中で無理やり返ってくる
+# アイテムを吸い込む
+    execute at @s as @e[type=#chuzitems:vacuumable,distance=0.5..2] run function chuzitems:entity/photon_glaive/tick/vacuum
+
+# 途中で壁貫通して無理やり帰ってくる
     execute if entity @s[scores={Chuz.Recursion=1..,Chuz.Range=..-70}] at @s positioned ^ ^ ^0.5 run tp @s ~ ~ ~
 
 # スコア減算

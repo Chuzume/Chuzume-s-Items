@@ -1,4 +1,4 @@
-#> chuzitems:item/photon_glaive/common/charge/shape1
+#> chuzitems:item/photon_glaive/common/charge/shape_charge1
 #
 # 
 #

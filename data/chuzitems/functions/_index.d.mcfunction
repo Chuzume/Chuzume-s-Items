@@ -83,6 +83,7 @@
     #declare tag ChuzItems.FallResist
     #declare tag ChuzItems.JumpBoots.TimeOut
     #declare tag ChuzItems.JumpBoots.NoUse
+    #declare tag ChuzItems.PhotonGlaive.Counted
     #declare tag Chuz.PreventRun
 
 #> 制御系タグ
