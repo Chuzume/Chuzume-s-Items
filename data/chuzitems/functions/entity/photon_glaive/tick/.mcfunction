@@ -14,7 +14,7 @@
     scoreboard players operation $Interval Chuz.Temporary = @s ChuzItems.Tick
 
 # サウンド
-    scoreboard players operation $Interval Chuz.Temporary %= $4 Chuz.Const
+    scoreboard players operation $Interval Chuz.Temporary %= $2 Chuz.Const
     execute if score $Interval Chuz.Temporary matches 0 run function chuzitems:entity/photon_glaive/tick/sound
 
 # 所有者がスニークし直したら戻ってくる
