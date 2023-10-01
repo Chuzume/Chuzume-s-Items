@@ -86,6 +86,7 @@
     #declare tag ChuzItems.PhotonGlaive.Counted
     #declare tag ChuzItems.PhotonGlaive.Recalled
     #declare tag Chuz.PreventRun
+    #declare tag Chuz.AlreadySetData
 
 #> 制御系タグ
     #declare tag ChuzItems.ReloadStart

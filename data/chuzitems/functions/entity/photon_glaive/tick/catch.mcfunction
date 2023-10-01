@@ -30,6 +30,7 @@
 # キャッチ時の手元データを即時にブーメランにしとく
     data modify storage chuz:context ThrownItem.Main set from entity @p[tag=Chuz.ID.Target] SelectedItem 
     data modify storage chuz:context ThrownItem.Off set from entity @p[tag=Chuz.ID.Target] Inventory[{Slot:-106b}]
+    tag @p[tag=Chuz.ID.Target] add Chuz.AlreadySetData
 
 # キャッチ時にチャージ0にしとく
     scoreboard players set @p[tag=Chuz.ID.Target] ChuzItems.Charge 0

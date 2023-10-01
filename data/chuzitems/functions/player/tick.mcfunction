@@ -79,6 +79,7 @@
 # 一般的なリセット
     #function chuzitems:player/reset
 
-# ストレージリセット
-    data remove storage chuz:context ItemID
-    data remove storage chuz:context ThrownItem
+# リセット
+    execute unless entity @s[tag=Chuz.AlreadySetData] run data remove storage chuz:context ItemID
+    execute unless entity @s[tag=Chuz.AlreadySetData] run data remove storage chuz:context ThrownItem
+    tag @s[tag=Chuz.AlreadySetData] remove Chuz.AlreadySetData
