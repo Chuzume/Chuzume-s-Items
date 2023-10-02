@@ -26,7 +26,7 @@
     execute on passengers run tag @s remove This
 
 # チャージ2で投擲された場合、プレイヤーを引っ張る能力を得る。ただし持ち主のカウントが3未満の場合
-    execute if entity @s[tag=!ChuzItems.PhotonGlaive.Recalled,scores={ChuzItems.Projectile.Charge=2,ChuzItems.Tick=5..}] at @p[tag=Chuz.ID.Target,scores={ChuzItems.PhotonGlaive.GlideCount=..2,ChuzItems.Sneak=0..},distance=2..] facing entity @s feet run function chuzitems:entity/photon_glaive/tick/pull/
+    execute if entity @s[tag=!ChuzItems.PhotonGlaive.Recalled,scores={ChuzItems.Projectile.Charge=2,ChuzItems.Tick=5..,Chuz.Range=0..}] at @p[tag=Chuz.ID.Target,scores={ChuzItems.PhotonGlaive.GlideCount=..2,ChuzItems.Sneak=0..}] facing entity @s feet run function chuzitems:entity/photon_glaive/tick/pull/
 
 # モデル回転
     execute on passengers run function chuzitems:entity/photon_glaive/tick/model_spin
@@ -36,7 +36,7 @@
     execute if entity @s[scores={Chuz.Range=..0}] run function chuzitems:entity/photon_glaive/tick/return
 
 # 壁反射
-    execute if score @s Chuz.Range matches -40.. run function chuzitems:entity/photon_glaive/tick/ricochet/
+    execute if score @s Chuz.Range matches -40.. run function uzitems:entity/photon_glaive/tick/ricochet/
     #execute if score @s[scores={ChuzItems.Projectile.Charge=..1}] Chuz.Range matches -70.. run function chuzitems:entity/photon_glaive/tick/ricochet/
     # チャージ2だと壁ヒットの演出が違う
         #execute if score @s[scores={ChuzItems.Projectile.Charge=2}] Chuz.Range matches 0.. unless block ^ ^ ^0.5 #chuzitems:no_collision run function chuzitems:entity/photon_glaive/tick/tp_return/hit_wall
@@ -52,4 +52,4 @@
 # リセット    
     tag @s remove ChuzItems.Reflected
     tag @p[tag=Chuz.ID.Target] remove Chuz.ID.Target
-    scoreboard players reset $Interval Chuz.Temporary
+    scoreboard players reset $Interval Chuz.Temporarych
