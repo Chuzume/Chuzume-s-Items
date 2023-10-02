@@ -21,9 +21,9 @@
     # ノンチャージ
         execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Range 30
     # チャージ1
-        execute if score @p[tag=This] ChuzItems.Charge matches 10..29 run scoreboard players set @s Chuz.Range 60
+        execute if score @p[tag=This] ChuzItems.Charge matches 10..19 run scoreboard players set @s Chuz.Range 60
     # チャージ2
-        execute if score @p[tag=This] ChuzItems.Charge matches 30.. run scoreboard players set @s Chuz.Range 80
+        execute if score @p[tag=This] ChuzItems.Charge matches 20.. run scoreboard players set @s Chuz.Range 80
 
 ## 弾速設定
     # ノンチャージ
