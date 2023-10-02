@@ -18,6 +18,3 @@
 
 # 超ビーム
     execute if entity @s[tag=ChuzItems.Projectile.AmbassadorBeam] run function chuzitems:entity/projectile/ambassador_beam/tick/
-
-# フォトングレイヴ
-    execute if entity @s[tag=ChuzItems.Projectile.PhotonGlaive] run function chuzitems:entity/photon_glaive/tick/

@@ -7,7 +7,7 @@
             "items": [
               "minecraft:crossbow"
             ],
-            "nbt": "{ChuzData:{ItemID:techkit_revomachine_gun,SellSample:1b}}"
+            "nbt": "{ChuzData:{ItemID:TechKit_RevomachineGun,SellSample:1b}}"
           }
         }
       }

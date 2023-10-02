@@ -4,8 +4,4 @@
 #
 # @within function chuzitems:player/macro/mainhand
 
-# メインハンドを優先
-    tag @s add Chuz.PreventRun
-
-# メイン処理
-    function chuzitems:item/photon_glaive/common/main
+item replace entity @e[tag=Test,sort=nearest,limit=1] weapon.mainhand from entity @s weapon.mainhand

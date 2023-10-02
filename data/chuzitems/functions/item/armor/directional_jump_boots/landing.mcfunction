@@ -1,8 +1,8 @@
-#> chuzitems:item/directional_jump_boots/landing
+#> chuzitems:item/armor/directional_jump_boots/landing
 #
 # 
 #
-# @within function chuzitems:item/directional_jump_boots/main
+# @within function chuzitems:item/armor/directional_jump_boots/main
 
 # リセット
     scoreboard players reset @s ChuzItems.FallResistTime

@@ -6,6 +6,9 @@
 #   chuzitems:item/craftsman_gunblade/mainhand/ranged/
 #   chuzitems:item/craftsman_gunblade/mainhand/melee/
 
+# スコア加算
+    scoreboard players add @s ChuzItems.Charge 1
+
 # 演出
     execute if score @s ChuzItems.Charge matches 10..20 run particle minecraft:smoke ~ ~0.75 ~ 0.25 0.5 0.25 0 1
     execute if score @s ChuzItems.Charge matches 10 run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 1 1

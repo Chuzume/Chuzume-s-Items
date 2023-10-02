@@ -23,7 +23,7 @@
 
 # 発砲
     # 残弾0ならリロード開始
-        execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} anchored eyes positioned ^ ^ ^ run function chuzitems:common/reload/check_have_ammo
+        execute if entity @s[scores={ChuzItems.Crossbow=0..}] if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:common/reload/check_have_ammo
     # 腰だめ
         execute unless score @s[scores={ChuzItems.Crossbow=0..},predicate=!chuzitems:sneak] ChuzItems.CoolTime matches 0.. unless data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function chuzitems:item/techkit_revomachine_gun/mainhand/standby/shot/normal
     # ADS

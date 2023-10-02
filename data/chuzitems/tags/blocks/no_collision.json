@@ -71,7 +71,6 @@
         "minecraft:water",
         "minecraft:weeping_vines",
         "minecraft:weeping_vines_plant",
-        "minecraft:moss_carpet",
         "minecraft:light",
         "#minecraft:banners",
         "#minecraft:buttons",
@@ -86,7 +85,6 @@
         "#minecraft:standing_signs",
         "#minecraft:trapdoors",
         "#minecraft:wall_corals",
-        "#minecraft:wall_signs",
-        "#minecraft:wool_carpets"
+        "#minecraft:wall_signs"
     ]
 }

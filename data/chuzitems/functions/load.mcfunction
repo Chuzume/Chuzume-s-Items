@@ -37,8 +37,6 @@
 #> その他なんか分類しづらいもの
     scoreboard objectives add ChuzItems.Revo.Magazine dummy
     scoreboard objectives add ChuzItems.Gunblade.StepCount dummy
-    scoreboard objectives add ChuzItems.PhotonGlaive.GlideCount dummy
-    scoreboard objectives add ChuzItems.Projectile.Charge dummy
 
     scoreboard objectives add Chuz.PosDiffY dummy
     scoreboard objectives add ChuzItems.Count dummy

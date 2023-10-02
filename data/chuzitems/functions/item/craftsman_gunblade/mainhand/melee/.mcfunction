@@ -4,9 +4,6 @@
 #
 # @within function chuzitems:player/macro/mainhand
 
-# メインハンドを優先
-    tag @s add Chuz.PreventRun
-
 # ステップ
     execute unless score @s[scores={ChuzItems.FungusStick=0..}] ChuzItems.Sneak matches 0.. if entity @s[nbt={OnGround:1b}] run function chuzitems:item/craftsman_gunblade/mainhand/melee/step/
     # ステップパーティクル
@@ -32,3 +29,6 @@
 
 # アイテム情報更新
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData.Ammo in overworld run function chuzitems:item/replaceitem
+
+# チャージ値リセット
+    execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Charge
