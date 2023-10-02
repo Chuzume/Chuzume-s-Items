@@ -15,7 +15,9 @@
 
 # サウンド
     scoreboard players operation $Interval Chuz.Temporary %= $2 Chuz.Const
-    execute if score $Interval Chuz.Temporary matches 0 run function chuzitems:entity/photon_glaive/tick/sound
+    execute if score $Interval Chuz.Temporary matches 0 unless block ~ ~ ~ water run function chuzitems:entity/photon_glaive/tick/sound
+    execute if score $Interval Chuz.Temporary matches 0 if block ~ ~ ~ water run playsound minecraft:entity.player.swim neutral @a ~ ~ ~ 0.3 1.5
+    execute if score $Interval Chuz.Temporary matches 0 if block ~ ~ ~ water run playsound minecraft:entity.witch.throw neutral @a ~ ~ ~ 1 0.5
 
 # 所有者がスニークし直したら戻ってくる
     execute if score @s[tag=!ChuzItems.PhotonGlaive.Recalled] ChuzItems.Tick matches 2.. if score @p[tag=Chuz.ID.Target,scores={ChuzItems.Sneak=0..}] ChuzItems.Charge matches 1 run function chuzitems:entity/photon_glaive/tick/quick_return/
