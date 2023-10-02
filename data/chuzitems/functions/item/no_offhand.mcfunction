@@ -12,5 +12,5 @@
     execute if data storage chuz:context Item.Mainhand run loot replace entity @s weapon.offhand 1 mine 100001 -64 100000 debug_stick
 
 # 取得しなおす
-    data modify storage chuz:context Item.Mainhand set from entity @s SelectedItem 
-    data modify storage chuz:context Item.Inventory set from entity @s Inventory
+    #data modify storage chuz:context Item.Mainhand set from entity @s SelectedItem 
+    #data modify storage chuz:context Item.Inventory set from entity @s Inventory

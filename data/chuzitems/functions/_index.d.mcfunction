@@ -38,17 +38,16 @@
     #declare tag ChuzItems.Projectile.Grenade
     #declare tag ChuzItems.Projectile.RevoBullet
     #declare tag ChuzItems.Projectile.ThrownGun
-    #declare tag ChuzItems.Projectile.WizardSeeker
     #declare tag ChuzItems.Projectile.Beam
     #declare tag ChuzItems.Projectile.AmbassadorBeam
+    #declare tag ChuzItems.Projectile.PhotonGlaive
+    #declare tag ChuzItems.Projectile.PhotonGlaive.Off
 
-#> PlayerMotion関連
-    #declare tag Chuz.Motion.Pre
-    #declare tag Chuz.Motion.Post
-    #declare tag Chuz.Motion.Pre
-    #declare tag Chuz.Motion.Bat
-    #declare tag Chuz.Motion.Arrow
-    #declare tag Chuz.Motion.BackMarker
+#> ID関連
+    #declare tag Chuz.ID.Target
+
+#> 胴体狙いマーカー
+    #declare tag Chuz.BodyMarker
 
 #> 飛び道具の色
     #declare tag ChuzItems.Color.Red
@@ -59,6 +58,10 @@
     #declare tag ChuzItems.Color.Blue
     #declare tag ChuzItems.Color.Purple
     #declare tag ChuzItems.Color.White
+
+#> モデル
+    #declare tag ChuzItems.Model.PhotonGlaive
+    #declare tag ChuzItems.Model.PhotonGlaive.Off
 
 ## エフェクト
     #declare tag ChuzItems.Effect.Magic
@@ -82,6 +85,10 @@
     #declare tag ChuzItems.JumpBoots.NoUse
     #declare tag ChuzItems.Gunblade.NormalShot
     #declare tag ChuzItems.Gunblade.FullBurst
+    #declare tag ChuzItems.PhotonGlaive.Counted
+    #declare tag ChuzItems.PhotonGlaive.Recalled
+    #declare tag Chuz.PreventRun
+    #declare tag Chuz.AlreadySetData
 
 #> 制御系タグ
     #declare tag ChuzItems.ReloadStart

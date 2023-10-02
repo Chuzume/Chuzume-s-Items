@@ -13,7 +13,6 @@
 ## データ取得
     function chuzitems:get_data/
 
-
 # インタラクションの削除
    kill @e[type=interaction,tag=Chuz.Entity.Interaction]
 
@@ -35,15 +34,21 @@
 ## 投擲チェックデータ
     # 削除
         data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem
+
     # 書き換え / Modify  
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem.Main set from storage chuz:context Item.Mainhand
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem.Off set from storage chuz:context Item.Inventory[{Slot:-106b}]
-
+        
 # 指向性ジャンプブーツ
-    execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:Directional_Jump_Boots} run function chuzitems:item/armor/directional_jump_boots/main
+    execute if data storage chuz:context Item.Inventory[{Slot:100b}].tag.ChuzData{ItemID:directional_jump_boots} run function chuzitems:item/directional_jump_boots/main
 
 # 旧データアイテム交換
     function chuzitems:item/old_items/
+
+# 落下耐性
+    scoreboard players remove @s[scores={ChuzItems.FallResistTime=0..}] ChuzItems.FallResistTime 1
+    execute if score @s ChuzItems.FallResistTime matches 0.. run function chuzitems:player/fall_resist
+    scoreboard players reset @s[scores={ChuzItems.FallResistTime=..-1}] ChuzItems.FallResistTime
 
 ## 共通処理
     # アイテムが変わったら状態リセット
@@ -63,8 +68,18 @@
             execute if score @s ChuzItems.Gunblade.StepCount matches 0 run tag @s remove ChuzItems.TiredStep
             execute if score @s ChuzItems.Gunblade.StepCount matches 0 run scoreboard players reset @s ChuzItems.Gunblade.StepCount
 
+    # スニークでチャージ
+        scoreboard players add @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Charge 1
+        # チャージ値リセット
+            execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players set @s ChuzItems.Charge 0
+
     # オフハンドに入れると戻ってくる
         execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} run function chuzitems:item/no_offhand
         
 # 一般的なリセット
-    function chuzitems:player/reset
+    #function chuzitems:player/reset
+
+# リセット
+    execute unless entity @s[tag=Chuz.AlreadySetData] run data remove storage chuz:context ItemID
+    execute unless entity @s[tag=Chuz.AlreadySetData] run data remove storage chuz:context ThrownItem
+    tag @s[tag=Chuz.AlreadySetData] remove Chuz.AlreadySetData
