@@ -36,7 +36,7 @@
     execute if entity @s[scores={Chuz.Range=..0}] run function chuzitems:entity/photon_glaive/tick/return
 
 # 壁反射
-    execute if score @s Chuz.Range matches -40.. run function uzitems:entity/photon_glaive/tick/ricochet/
+    execute if score @s Chuz.Range matches -40.. run function chuzitems:entity/photon_glaive/tick/ricochet/
     #execute if score @s[scores={ChuzItems.Projectile.Charge=..1}] Chuz.Range matches -70.. run function chuzitems:entity/photon_glaive/tick/ricochet/
     # チャージ2だと壁ヒットの演出が違う
         #execute if score @s[scores={ChuzItems.Projectile.Charge=2}] Chuz.Range matches 0.. unless block ^ ^ ^0.5 #chuzitems:no_collision run function chuzitems:entity/photon_glaive/tick/tp_return/hit_wall
