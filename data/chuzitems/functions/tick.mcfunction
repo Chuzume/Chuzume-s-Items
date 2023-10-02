@@ -1,12 +1,13 @@
 
-# 飛び道具チェック 
-    execute as @e[type=#chuzitems:projectile,tag=Chuz.Projectile] at @s run function chuzitems:entity/projectile/event/tick
 
 # カタログ
     execute as @e[type=armor_stand,tag=ChuzItems.Entity.Catalog] at @s run function chuzitems:entity/catalog/tick
 
 ## プレイヤーへのメイン処理
     execute as @a at @s run function chuzitems:player/tick
+
+# 飛び道具チェック 
+    execute as @e[type=#chuzitems:projectile,tag=Chuz.Projectile] at @s run function chuzitems:entity/projectile/event/tick
 
 # スライムを消す
     execute as @e[type=magma_cube,tag=Chuz.CollisionSlime] at @s run function chuzitems:entity/col_slime/main
@@ -19,3 +20,6 @@
 
 # やぶ氏のリコイルライブラリ
     function yv_recoil:tick
+
+# オールリセット
+    execute as @a run function chuzitems:player/reset

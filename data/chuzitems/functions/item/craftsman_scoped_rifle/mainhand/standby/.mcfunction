@@ -4,8 +4,8 @@
 #
 # @within function chuzitems:player/macro/mainhand
 
-# スニークでチャージ
-    scoreboard players add @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Charge 1 
+# メインハンドを優先
+    tag @s add Chuz.PreventRun
 
 # チャージ
     execute if entity @s[scores={ChuzItems.Charge=5}] run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 1 1
