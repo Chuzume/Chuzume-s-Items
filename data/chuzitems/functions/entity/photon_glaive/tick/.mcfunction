@@ -12,6 +12,7 @@
 
 # 実行時間を移す
     scoreboard players operation $Interval Chuz.Temporary = @s ChuzItems.Tick
+    scoreboard players operation $PullInterval Chuz.Temporary = @s ChuzItems.Tick
 
 # サウンド
     scoreboard players operation $Interval Chuz.Temporary %= $2 Chuz.Const
@@ -28,7 +29,8 @@
     execute on passengers run tag @s remove This
 
 # チャージ2で投擲された場合、プレイヤーを引っ張る能力を得る。ただし持ち主のカウントが3未満の場合
-    execute if entity @s[tag=!ChuzItems.PhotonGlaive.Recalled,scores={ChuzItems.Projectile.Charge=2,ChuzItems.Tick=5..,Chuz.Range=0..}] at @p[tag=Chuz.ID.Target,scores={ChuzItems.PhotonGlaive.GlideCount=..2,ChuzItems.Sneak=0..}] facing entity @s feet run function chuzitems:entity/photon_glaive/tick/pull/
+    scoreboard players operation $Interval Chuz.Temporary %= $2 Chuz.Const
+    execute if score $Interval Chuz.Temporary matches 0 if entity @s[tag=!ChuzItems.PhotonGlaive.Recalled,scores={ChuzItems.Projectile.Charge=2,ChuzItems.Tick=3..,Chuz.Range=0..}] at @p[tag=Chuz.ID.Target,scores={ChuzItems.PhotonGlaive.GlideCount=..2,ChuzItems.Sneak=0..}] facing entity @s feet run function chuzitems:entity/photon_glaive/tick/pull/
 
 # モデル回転
     execute on passengers run function chuzitems:entity/photon_glaive/tick/model_spin
@@ -55,3 +57,4 @@
     tag @s remove ChuzItems.Reflected
     tag @p[tag=Chuz.ID.Target] remove Chuz.ID.Target
     scoreboard players reset $Interval Chuz.Temporarych
+    scoreboard players reset $PullInterval Chuz.Temporarych

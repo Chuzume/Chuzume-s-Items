@@ -6,7 +6,7 @@
 
 
 # 飛ばす
-    scoreboard players set $strength delta.api.launch 3000
+    scoreboard players set $strength delta.api.launch 6000
     execute positioned ~ ~ ~ run function delta:api/launch_looking
 
 # 落下耐性
