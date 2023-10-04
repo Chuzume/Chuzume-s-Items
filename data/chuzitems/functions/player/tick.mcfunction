@@ -74,7 +74,7 @@
             execute unless score @s ChuzItems.Sneak matches 1.. run scoreboard players set @s ChuzItems.Charge 0
 
     # オフハンドに入れると戻ってくる
-        execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} run function chuzitems:item/no_offhand
+        execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} in overworld run function chuzitems:item/no_offhand
         
 # 一般的なリセット
     #function chuzitems:player/reset
