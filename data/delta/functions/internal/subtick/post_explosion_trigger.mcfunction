@@ -18,7 +18,7 @@ execute if score $temp delta.internal.mobgriefing matches 1 run gamerule mobGrie
 execute if score $diff delta.internal.gamemode matches 0 run difficulty peaceful
 
 # 装備を戻す
-    loot replace entity @s weapon.mainhand mine 100001 -64 100000 minecraft:debug_stick
+    execute in overworld run loot replace entity @s weapon.mainhand mine 100001 -64 100000 minecraft:debug_stick
 
 
 #Teleport self down
