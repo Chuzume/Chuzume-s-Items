@@ -25,5 +25,5 @@ execute if score $diff delta.internal.gamemode matches 0 run difficulty peaceful
 tp @s ~ ~-1000 ~
 
 # kill entity
-    tp @e[type=bat,tag=delta.bat,sort=nearest,limit=2] ~ ~-300 ~
-    kill @e[type=bat,tag=delta.bat,sort=nearest,limit=2]
+    tp @e[type=bat,tag=delta.bat,sort=nearest] ~ ~-300 ~
+    kill @e[type=bat,tag=delta.bat,sort=nearest]
