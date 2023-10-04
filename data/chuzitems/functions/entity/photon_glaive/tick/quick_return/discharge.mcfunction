@@ -13,4 +13,4 @@
     playsound minecraft:block.respawn_anchor.deplete neutral @a ~ ~ ~ 3 1.5
 
 # ダメージ
-    execute as @e[type=!#chuzitems:unhurtable,tag=!Chuz.ID.Target,distance=..2.5] run damage @s 10 minecraft:generic by @p[tag=Chuz.ID.Target]
+    execute as @e[type=!#chuzitems:unhurtable,tag=!Chuz.ID.Target,distance=..2.5] run damage @s 10 minecraft:player_attack by @p[tag=Chuz.ID.Target]
