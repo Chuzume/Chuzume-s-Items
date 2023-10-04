@@ -19,7 +19,7 @@
     scoreboard players reset @s[scores={ChuzItems.CoolTime=20..}] ChuzItems.CoolTime
 
 # サウンド
-    execute if entity @a[scores={ChuzItems.Trade=1..}] run playsound chuzume:cyber19_1 player @a ~ ~ ~ 0.5 1
+    execute if entity @a[scores={ChuzItems.Trade=1..}] run playsound chuzume:cyber19_1 player @a ~ ~ ~ 1 1
 
 # 回収
     # 下をどかされると消える
