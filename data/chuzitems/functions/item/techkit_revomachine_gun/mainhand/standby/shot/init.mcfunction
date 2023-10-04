@@ -32,6 +32,6 @@
     # ダメージタイプ(胴体)
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Body set value "chuzitems:bullet"
     # ダメージタイプ(頭)
-        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Head set value "chuzitems:bullet_head"
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Head set value "chuzitems:bullet_headshot"
 # これらの設定を反映する
     function chuzitems:entity/projectile/recursive_bullet/init
