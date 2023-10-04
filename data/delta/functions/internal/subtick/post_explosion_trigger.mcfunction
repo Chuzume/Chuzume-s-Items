@@ -22,7 +22,8 @@ execute if score $diff delta.internal.gamemode matches 0 run difficulty peaceful
 
 
 #Teleport self down
-tp @s ~ ~-1000 ~
+tp @s[tag=delta.failsafe] ~ ~-1000 ~
+tag @s remove delta.failsafe
 
 # kill entity
     tp @e[type=bat,tag=delta.bat,sort=nearest] ~ ~-300 ~
