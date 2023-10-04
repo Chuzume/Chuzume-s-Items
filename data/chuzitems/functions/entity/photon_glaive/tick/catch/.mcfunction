@@ -1,4 +1,4 @@
-#> chuzitems:entity/photon_glaive/tick/catch
+#> chuzitems:entity/photon_glaive/tick/catch/
 #
 # キャッチ
 #
@@ -8,18 +8,7 @@
 #   chuzitems:entity/photon_glaive/tick/tp_return/
 
 # 今の手持ちをシュルカーボックスに放り込む
-    data modify block 100001 -64 100000 Items set value []
-    # メインハンド
-        execute if entity @s[tag=!ChuzItems.Projectile.PhotonGlaive.Off] run data modify block 100001 -64 100000 Items append from storage chuz:context Item.Mainhand
-    # オフハンド
-        data modify storage chuz:context Item.Offhand set from storage chuz:context Item.Inventory[{Slot:-106b}]
-        data modify storage chuz:context Item.Offhand merge value {Slot:0b}
-        execute if entity @s[tag=ChuzItems.Projectile.PhotonGlaive.Off] run data modify block 100001 -64 100000 Items append from storage chuz:context Item.Offhand
-        data remove storage chuz:context Item.Offhand
-# 足元に今の手持ちを出す
-    execute at @p[gamemode=!creative,tag=Chuz.ID.Target] run loot spawn ~ ~ ~ mine 100001 -64 100000 debug_stick
-# 即座にデータ変更してすぐ拾う
-    execute at @p[gamemode=!creative,tag=Chuz.ID.Target] run data modify entity @e[type=item,sort=nearest,limit=1] PickupDelay set value 0
+    execute in overworld run function chuzitems:entity/photon_glaive/tick/catch/replace
 
 # ブーメランを与える
     # メインハンド

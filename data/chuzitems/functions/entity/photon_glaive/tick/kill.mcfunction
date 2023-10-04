@@ -4,7 +4,7 @@
 #
 # @within function
 #   chuzitems:entity/photon_glaive/tick/
-#   chuzitems:entity/photon_glaive/tick/catch
+#   chuzitems:entity/photon_glaive/tick/catch/
 
 # 消滅
     kill @s

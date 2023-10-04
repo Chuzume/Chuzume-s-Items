@@ -12,7 +12,7 @@
     scoreboard players remove @s Chuz.Range 1
 
 # キャッチ
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=Chuz.ID.Target,dx=0] at @s run function chuzitems:entity/photon_glaive/tick/catch
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=Chuz.ID.Target,dx=0] at @s run function chuzitems:entity/photon_glaive/tick/catch/
     
 # アクティブ
     execute if score @s Chuz.Range matches ..-40 run function chuzitems:entity/photon_glaive/tick/tp_return/active

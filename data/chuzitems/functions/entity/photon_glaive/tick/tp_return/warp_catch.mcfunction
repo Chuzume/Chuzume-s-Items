@@ -8,4 +8,4 @@
     playsound minecraft:entity.enderman.teleport neutral @p ~ ~ ~ 2 1.2
 
 # キャッチ
-    function chuzitems:entity/photon_glaive/tick/catch
+    function chuzitems:entity/photon_glaive/tick/catch/
