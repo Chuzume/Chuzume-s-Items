@@ -9,8 +9,8 @@
     particle minecraft:explosion ~ ~ ~ 0 0 0 1 2 force @a[distance=..30]
 
 # サウンド
-    playsound chuzume:blaster1 neutral @a ~ ~ ~ 3 1.7
-    playsound minecraft:block.respawn_anchor.deplete neutral @a ~ ~ ~ 3 1.5
+    playsound chuzume:blaster1 neutral @a ~ ~ ~ 2 1.7
+    playsound minecraft:block.respawn_anchor.deplete neutral @a ~ ~ ~ 2 1.5
 
 # ダメージ
     execute as @e[type=!#chuzitems:unhurtable,tag=!Chuz.ID.Target,distance=..2.5] run damage @s 10 minecraft:player_attack by @p[tag=Chuz.ID.Target]
