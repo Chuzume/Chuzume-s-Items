@@ -28,4 +28,3 @@
 
 # 弾が減る
     execute in overworld run function chuzitems:item/consume_ammo
-
