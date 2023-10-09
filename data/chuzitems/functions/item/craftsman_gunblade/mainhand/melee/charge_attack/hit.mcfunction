@@ -15,7 +15,7 @@
     playsound minecraft:entity.player.attack.strong neutral @a ~ ~ ~ 1.5 1
 
 # ダメージタイプ
-    data modify storage lib: DamageType set value "minecraft:generic"
+    data modify storage lib: DamageType set value "minecraft:player_attack"
 
 # ダメージ設定
     data modify storage lib: Damage set value 14
