@@ -18,6 +18,7 @@
     scoreboard objectives add ChuzItems.KnowledgeBook minecraft.used:knowledge_book {"text":"イベント: クリック 知恵の本"}
     scoreboard objectives add ChuzItems.Trade minecraft.custom:minecraft.talked_to_villager {"text":"イベント: 村人と話す"}
     scoreboard objectives add ChuzItems.Jump minecraft.custom:minecraft.jump {"text":"イベント: ジャンプ"}
+    scoreboard objectives add ChuzItems.Death deathCount {"text":"イベント: 死亡"}
     scoreboard objectives add ChuzItems.CoolTime dummy
     scoreboard objectives add ChuzItems.Charge dummy
     scoreboard objectives add ChuzItems.Reload dummy

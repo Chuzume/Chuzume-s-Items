@@ -4,9 +4,9 @@
 #
 # @within function chuzitems:player/tick
 
-# 手元データを上書き。ただしキャッチ直後は行わない
-    execute unless entity @s[tag=Chuz.AlreadySetData] run data modify storage chuz:context ThrownItem.Main set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem.Main
-    execute unless entity @s[tag=Chuz.AlreadySetData] run data modify storage chuz:context ThrownItem.Off set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem.Off
+# 手元データを上書き。ただしキャッチ直後は行わない    
+    data modify storage chuz:context ThrownItem.Main set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem.Main
+    data modify storage chuz:context ThrownItem.Off set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ThrownItem.Off
 
 # 投擲処理
     function chuzitems:player/macro/knowledge_book/mainhand with storage chuz:context ThrownItem.Main.tag.ChuzData
