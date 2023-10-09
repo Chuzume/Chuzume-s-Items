@@ -45,6 +45,9 @@
     # チャージ2だと壁ヒットの演出が違う
         #execute if score @s[scores={ChuzItems.Projectile.Charge=2}] Chuz.Range matches 0.. unless block ^ ^ ^0.5 #chuzitems:no_collision run function chuzitems:entity/photon_glaive/tick/tp_return/hit_wall
 
+# 持ち主の死亡時、その場でポロっと落ちる
+    execute if score @p[tag=Chuz.ID.Target] ChuzItems.Death matches 1.. run function chuzitems:entity/photon_glaive/tick/catch/death
+
 # 飛翔
     function chuzitems:entity/photon_glaive/tick/move/
     #execute if score @s ChuzItems.Projectile.Charge matches ..1 run function chuzitems:entity/photon_glaive/tick/move/
@@ -56,5 +59,5 @@
 # リセット    
     tag @s remove ChuzItems.Reflected
     tag @p[tag=Chuz.ID.Target] remove Chuz.ID.Target
-    scoreboard players reset $Interval Chuz.Temporarych
-    scoreboard players reset $PullInterval Chuz.Temporarych
+    scoreboard players reset $Interval Chuz.Temporary
+    scoreboard players reset $PullInterval Chuz.Temporary
