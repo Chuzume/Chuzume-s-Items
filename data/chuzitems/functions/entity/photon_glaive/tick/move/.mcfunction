@@ -24,6 +24,9 @@
 # 飛距離0なら壁を無視するようになる
     #execute if entity @s[scores={Chuz.Recursion=1..,Chuz.Range=..0}] at @s positioned ^ ^ ^0.5 run tp @s ~ ~ ~
 
+# あまりにも長引いた場合、無理やり戻ってくる
+    execute if entity @s[scores={Chuz.Range=..-100}] run function chuzitems:entity/photon_glaive/tick/catch/
+
 # アイテムを吸い込む
     execute at @s as @e[type=#chuzitems:vacuumable,distance=0.5..2] run function chuzitems:entity/photon_glaive/tick/vacuum
 
