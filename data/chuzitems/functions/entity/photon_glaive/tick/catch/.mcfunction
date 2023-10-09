@@ -21,7 +21,8 @@
         execute if entity @s[tag=ChuzItems.Projectile.PhotonGlaive.Off] run loot replace entity @p[gamemode=!creative,tag=Chuz.ID.Target] weapon.offhand loot chuzitems:item/photon_glaive
 
 # さっきの手持ちをgiveする
-    execute as @p[gamemode=!creative,tag=Chuz.ID.Target] run function chuzitems:entity/photon_glaive/tick/catch/give with storage chuz:context Give
+    execute as @p[gamemode=!creative,tag=Chuz.ID.Target] if data storage chuz:context Give.tag run function chuzitems:entity/photon_glaive/tick/catch/give with storage chuz:context Give
+    execute as @p[gamemode=!creative,tag=Chuz.ID.Target] unless data storage chuz:context Give.tag run function chuzitems:entity/photon_glaive/tick/catch/give_nodata with storage chuz:context Give
 
 # キャッチ時の手元データを即時にブーメランにしとく
     execute as @p[tag=Chuz.ID.Target] run function oh_my_dat:please
