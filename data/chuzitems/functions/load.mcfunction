@@ -40,8 +40,6 @@
     scoreboard objectives add ChuzItems.Gunblade.StepCount dummy
     scoreboard objectives add ChuzItems.PhotonGlaive.GlideCount dummy
     scoreboard objectives add ChuzItems.Projectile.Charge dummy
-
-    scoreboard objectives add Chuz.PosDiffY dummy
     scoreboard objectives add ChuzItems.Count dummy
 
 #> 固定数値
@@ -85,6 +83,8 @@
     scoreboard objectives add Chuz.Motion.Power dummy
     scoreboard objectives add Chuz.Motion.Gamerule dummy
     scoreboard objectives add Chuz.Motion.Difficulty dummy
+    scoreboard objectives add Chuz.PosDiffY dummy
+    scoreboard objectives add Chuz.PosSaveY dummy
 
 # 飛び道具の弾速
     scoreboard objectives add Chuz.Range dummy
