@@ -2,7 +2,7 @@
 #
 # 作成
 #
-# @within advancement chuzitems:craft/craftsman_grenade_launcher
+# @within advancement chuzitems:craft/craftsman_launcher
 
 # 演出
     execute anchored eyes positioned ^ ^ ^1.5 run playsound minecraft:block.smithing_table.use player @a ~ ~ ~ 1 1
@@ -14,11 +14,8 @@
 # すぐに拾えるようにNBT変更
     data modify entity @e[type=item,sort=nearest,limit=1] PickupDelay set value 0
 
-# 次回以降も実行するためにレシピ没収
-    recipe take @s chuzitems:grenade_launcher
-
 # クラフト時のダミー表示のチェストを削除
     clear @s chest 1
 
 # 進捗消去
-    advancement revoke @s only chuzitems:craft/grenade_launcher
+    advancement revoke @s only chuzitems:craft/craftsman_launcher

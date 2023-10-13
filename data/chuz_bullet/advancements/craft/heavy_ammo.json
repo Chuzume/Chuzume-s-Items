@@ -1,9 +1,9 @@
 {
   "criteria": {
     "unlock": {
-      "trigger": "minecraft:recipe_unlocked",
+      "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe": "chuz_bullet:heavy_ammo"
+        "recipe_id": "chuz_bullet:heavy_ammo"
       }
     }
   },

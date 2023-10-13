@@ -15,7 +15,7 @@
     data modify entity @e[type=item,sort=nearest,limit=1] PickupDelay set value 0
 
 # 次回以降も実行するためにレシピ没収
-    recipe take @s chuzitems:scoped_rifle
+    #recipe take @s chuzitems:scoped_rifle
 
 # クラフト時のダミー表示のチェストを削除
     clear @s chest 1

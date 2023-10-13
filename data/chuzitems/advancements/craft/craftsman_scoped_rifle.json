@@ -1,9 +1,9 @@
 {
   "criteria": {
     "unlock": {
-      "trigger": "minecraft:recipe_unlocked",
+      "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe": "chuzitems:scoped_rifle"
+        "recipe_id": "chuzitems:craftsman_scoped_rifle"
       }
     }
   },

@@ -1,9 +1,9 @@
 {
     "criteria": {
       "unlock": {
-        "trigger": "minecraft:recipe_unlocked",
+        "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe": "chuzitems:otherworldly_catalog"
+          "recipe_id": "chuzitems:otherworldly_catalog"
         }
       }
     },

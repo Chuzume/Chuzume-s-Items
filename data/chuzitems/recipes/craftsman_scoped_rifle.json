@@ -13,7 +13,7 @@
             "item": "minecraft:iron_ingot"
         },
         "O": {
-            "tag": "minecraft:planks"
+            "item": "minecraft:oak_planks"
         },
         "L": {
             "item": "minecraft:lever"

@@ -1,9 +1,9 @@
 {
   "criteria": {
     "unlock": {
-      "trigger": "minecraft:recipe_unlocked",
+      "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe": "chuzitems:grenade_launcher"
+        "recipe_id": "chuzitems:craftsman_launcher"
       }
     }
   },

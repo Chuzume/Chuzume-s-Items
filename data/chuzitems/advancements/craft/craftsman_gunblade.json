@@ -3,11 +3,11 @@
     "unlock": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "chuz_bullet:light_bullet"
+        "recipe_id": "chuzitems:craftsman_gunblade"
       }
     }
   },
   "rewards": {
-    "function": "chuz_bullet:craft/light_bullet"
+    "function": "chuzitems:item/craftsman_gunblade/craft"
   }
 }
