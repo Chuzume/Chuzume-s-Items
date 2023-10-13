@@ -12,3 +12,9 @@
     recipe give @s chuzitems:wingman
     recipe give @s chuzitems:mozambique
     recipe give @s chuzitems:otherworldly_catalog
+
+# 弾薬
+    recipe give @s chuz_bullet:explosive_cartridge
+    recipe give @s chuz_bullet:light_bullet
+    recipe give @s chuz_bullet:heavy_ammo
+    recipe give @s chuz_bullet:shot_shell
