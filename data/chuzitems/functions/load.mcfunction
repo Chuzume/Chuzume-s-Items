@@ -11,6 +11,7 @@
     function yv_reflection:load
 
 #> スコアボード作成
+    scoreboard objectives add ChuzItems.Leave minecraft.custom:minecraft.leave_game {"text":"イベント: ゲーム退出"}
     scoreboard objectives add ChuzItems.Drop minecraft.custom:minecraft.drop {"text":"イベント: 投げ捨て"}
     scoreboard objectives add ChuzItems.Sneak minecraft.custom:sneak_time {"text":"イベント: スニーク"}
     scoreboard objectives add ChuzItems.Crossbow minecraft.used:crossbow {"text":"イベント: クリック クロスボウ使用"}

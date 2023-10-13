@@ -50,7 +50,7 @@
     execute if score @s ChuzItems.FallResistTime matches 0.. run function chuzitems:player/fall_resist
     scoreboard players reset @s[scores={ChuzItems.FallResistTime=..-1}] ChuzItems.FallResistTime
 
-## 共通処理
+#> 共通処理
     # アイテムが変わったら状態リセット
         execute if entity @s[scores={Chuz.ItemCheck=1}] run function chuzitems:item/score_reset
 
@@ -75,6 +75,10 @@
 
     # オフハンドに入れると戻ってくる
         execute if data storage chuz:context Item.Inventory[{Slot:-106b}].tag.ChuzData{NoOffhand:true} in overworld run function chuzitems:item/no_offhand
-        
+
+# ワールドから出たとき、入るたびに実行される進捗を削除
+    advancement revoke @s[scores={ChuzItems.Leave=1..}] only chuzitems:entered_world_every_time
+    scoreboard players reset @s[scores={ChuzItems.Leave=1..}] ChuzItems.Leave
+ 
 # 一般的なリセット
     #function chuzitems:player/reset

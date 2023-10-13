@@ -3,7 +3,7 @@
 # カタログ
     execute as @e[type=armor_stand,tag=ChuzItems.Entity.Catalog] at @s run function chuzitems:entity/catalog/tick
 
-## プレイヤーへのメイン処理
+# プレイヤーへのメイン処理
     execute as @a at @s run function chuzitems:player/tick
 
 # 飛び道具チェック 
