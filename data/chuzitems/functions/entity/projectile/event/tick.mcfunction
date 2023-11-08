@@ -22,5 +22,8 @@
 # フォトングレイヴ
     execute if entity @s[tag=ChuzItems.Projectile.PhotonGlaive] run function chuzitems:entity/photon_glaive/tick/
 
+# 流星ロックオン
+    execute if entity @s[tag=ChuzItems.Entity.Lockon] run function chuzitems:entity/lockon_marker/
+
 # 流星アロー(チャージ)
     execute if entity @s[tag=ChuzItems.Projectile.ChargedShootingArrow] run function chuzitems:entity/projectile/charged_shooting_arrow/tick/

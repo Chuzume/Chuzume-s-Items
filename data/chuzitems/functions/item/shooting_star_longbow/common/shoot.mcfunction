@@ -4,9 +4,6 @@
 #
 # @within function chuzitems:item/shooting_star_longbow/common/main
 
-# おいらが使用者だよ
-    tag @s add This
-
 # ノーチャージ
     execute if entity @e[type=arrow,nbt={crit:0b},distance=..5,sort=nearest,limit=1] run say NAH
 
@@ -15,9 +12,6 @@
 
 # サウンドを停止
     stopsound @s player minecraft:entity.arrow.shoot
-
-# 使用者ではない
-    tag @s remove This
 
 # 矢を削除
     kill @e[type=arrow,sort=nearest,limit=1]

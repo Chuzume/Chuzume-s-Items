@@ -41,6 +41,8 @@
     scoreboard objectives add ChuzItems.Revo.Magazine dummy
     scoreboard objectives add ChuzItems.Gunblade.StepCount dummy
     scoreboard objectives add ChuzItems.PhotonGlaive.GlideCount dummy
+    scoreboard objectives add ChuzItems.ShootingStar.LockCount dummy
+    scoreboard objectives add ChuzItems.ShootingStar.LockDelay dummy
     scoreboard objectives add ChuzItems.Projectile.Charge dummy
     scoreboard objectives add ChuzItems.Count dummy
 

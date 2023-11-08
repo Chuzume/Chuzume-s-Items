@@ -2,11 +2,23 @@
 #
 # 
 #
-# @within function chuzitems:item/shooting_star_longbow/common/chargeshot/
+# @within function chuzitems:item/shooting_star_longbow/common/chargeshot/summon
 
-# 向き設定したあとマーカーを消す
-    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..100] feet run tp @s ~ ~ ~ ~ ~
-    kill @e[type=marker,tag=SpreadMarker,distance=..100]
+## 拡散設定
+    # どれくらい視点から離すか
+        data modify storage forward_spreader: Distance set value 7.0f
+
+    # どれくらい拡散させるか。
+        data modify storage forward_spreader: Spread set value 4.0f
+
+    # タグ付きプレイヤーから実行する。ただし拡散値0なら射撃側で設定
+        execute as @p[tag=This] at @s run function chuzitems:item/shooting_star_longbow/common/chargeshot/spread
+
+    # 拡散用のエンティティのほうを向く
+        execute facing entity @e[type=marker,tag=SpreadMarker,distance=..100] feet run tp @s ~ ~ ~ ~ ~
+    
+    # マーカーをキル
+        kill @e[type=marker,tag=SpreadMarker,distance=..100]
 
 # UUIDコピー
     data modify entity @s data.ChuzData.Owner set from entity @p UUID
@@ -16,25 +28,8 @@
 
 ## 飛距離設定
     # ノンチャージ
-        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Range 30
-    # チャージ1
-        execute if score @p[tag=This] ChuzItems.Charge matches 10..19 run scoreboard players set @s Chuz.Range 60
-    # チャージ2
-        execute if score @p[tag=This] ChuzItems.Charge matches 20.. run scoreboard players set @s Chuz.Range 80
-
-## 弾速設定
-    # ノンチャージ
-        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Speed 3
-    # チャージ1
-        execute if score @p[tag=This] ChuzItems.Charge matches 10.. run scoreboard players set @s Chuz.Speed 4
-
-## チャージカウントを付与
-    # ノンチャージ
-        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s ChuzItems.Projectile.Charge 0
-    # チャージ1
-        execute if score @p[tag=This] ChuzItems.Charge matches 10..19 run scoreboard players set @s ChuzItems.Projectile.Charge 1
-    # チャージ2
-        execute if score @p[tag=This] ChuzItems.Charge matches 20.. run scoreboard players set @s ChuzItems.Projectile.Charge 2
+        scoreboard players set @s Chuz.Range 100
+        scoreboard players set @s Chuz.Speed 10
 
 # Init終了
     tag @s remove Chuz.Init

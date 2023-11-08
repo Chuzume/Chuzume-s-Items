@@ -75,6 +75,9 @@
     #declare tag ChuzItems.Entity.Catalog.Trader
     #declare tag ChuzItems.Entity.Catalog.Hologram
 
+#> ロックオン関連
+    #declare tag ChuzItems.Entity.Lockon
+
 #> その他
     #declare tag ChuzItems.TiredStep
     #declare tag ChuzItems.Steping
