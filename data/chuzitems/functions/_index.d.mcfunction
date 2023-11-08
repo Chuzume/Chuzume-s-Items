@@ -42,6 +42,7 @@
     #declare tag ChuzItems.Projectile.AmbassadorBeam
     #declare tag ChuzItems.Projectile.PhotonGlaive
     #declare tag ChuzItems.Projectile.PhotonGlaive.Off
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow
 
 #> ID関連
     #declare tag Chuz.ID.Target

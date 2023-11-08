@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{ChuzData:{ItemID:shooting_star_longbow,ItemMode:standby},display:{Name:'{\"text\":\"Shooting Star Longbow\",\"color\":\"gold\",\"italic\":false}',Lore:['{\"text\":\" \",\"color\":\"white\",\"italic\":false}','{\"text\":\"[RClick: Charge/Shoot]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Sneak: Lock-on]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"それはまるで流星のように\",\"color\":\"gray\",\"italic\":false}']},HideFlags:39,CustomModelData:1}\n"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

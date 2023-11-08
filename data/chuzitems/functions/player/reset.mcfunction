@@ -18,3 +18,4 @@
     scoreboard players reset @s[scores={ChuzItems.Trade=1..}] ChuzItems.Trade
     scoreboard players reset @s[scores={ChuzItems.Jump=1..}] ChuzItems.Jump
     scoreboard players reset @s[scores={ChuzItems.Death=0..}] ChuzItems.Death
+    scoreboard players reset @s[scores={ChuzItems.Bow=0..}] ChuzItems.Bow
