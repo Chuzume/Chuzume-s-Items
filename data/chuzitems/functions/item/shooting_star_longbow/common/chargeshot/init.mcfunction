@@ -29,7 +29,7 @@
 ## 飛距離設定
     # ノンチャージ
         scoreboard players set @s Chuz.Range 100
-        scoreboard players set @s Chuz.Speed 10
+        scoreboard players set @s Chuz.Speed 5
 
 # Init終了
     tag @s remove Chuz.Init

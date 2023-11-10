@@ -7,7 +7,8 @@
 #   chuzitems:entity/projectile/charged_shooting_arrow/tick/move/
 
 # パーティクル
-    particle end_rod ~ ~ ~ 0 0 0 0.0 1 force @a[distance=..120]
+    execute if entity @s[scores={ChuzItems.Tick=2..}] run particle electric_spark ~ ~ ~ 0.05 0.05 0.05 0.1 1 force @a[distance=..120]
+    execute if entity @s[scores={ChuzItems.Tick=2..}] run particle dust 1 1 1 1 ~ ~ ~ 0 0 0 0.0 1 force @a[distance=..120]
 
 
 # 再帰カウントが0なら弾速からセット
@@ -22,6 +23,7 @@
 
 # ヒット
     #execute at @s positioned ~-0.75 ~-0.75 ~-0.75 at @e[type=!#chuzitems:unhurtable,tag=!Chuz.ID.Target,dx=0.5,dy=0.5,dz=0.5] run function chuzitems:entity/photon_glaive/tick/hit/
+    execute positioned ~-0.1 ~-0.1 ~-0.1 if entity @e[type=!#chuzitems:unhurtable,type=!ender_dragon,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,dx=0,sort=nearest,limit=1] positioned ~-0.8 ~-0.8 ~-0.8 if entity @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},dx=0,sort=nearest,limit=1] at @s run function chuzitems:entity/projectile/charged_shooting_arrow/tick/hit/
 
 # 壁の衝突判定
     execute unless block ^ ^ ^0.5 #chuzitems:no_collision run kill @s

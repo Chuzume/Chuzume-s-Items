@@ -6,4 +6,3 @@
 
 # マーカー召喚
     summon marker ~ ~ ~ {Tags:["Chuz.Projectile","ChuzItems.Entity.Lockon"]}
-    say yo

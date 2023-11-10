@@ -14,4 +14,5 @@ particle explosion
     execute at @s run playsound minecraft:block.iron_door.open player @s ~ ~ ~ 1 2
 
 # ヒット者として実行
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=!ChuzItems.Entity.Lockon,dx=0] at @s run function chuzitems:item/shooting_star_longbow/common/lockon/hit_victim
+    execute positioned ~-0.5 ~-0.5 ~-0.5 at @e[tag=!ChuzItems.Entity.Lockon,dx=0] run function chuzitems:item/shooting_star_longbow/common/lockon/summon_marker
+    execute as @e[type=marker,tag=ChuzItems.Entity.Lockon,tag=Chuz.Init] store result score @s Chuz.EntityID run scoreboard players get @p[tag=This] Chuz.PlayerID

@@ -44,6 +44,31 @@
     #declare tag ChuzItems.Projectile.PhotonGlaive.Off
     #declare tag ChuzItems.Projectile.ChargedShootingArrow
 
+#> 流星の弓
+    #declare tag ChuzItems.Entity.Lockon
+    #declare tag ChuzItems.Entity.Lockon0
+    #declare tag ChuzItems.Entity.Lockon1
+    #declare tag ChuzItems.Entity.Lockon2
+    #declare tag ChuzItems.Entity.Lockon3
+    #declare tag ChuzItems.Entity.Lockon4
+    #declare tag ChuzItems.Entity.Lockon5
+    #declare tag ChuzItems.Entity.Lockon6
+    #declare tag ChuzItems.Entity.Lockon7
+    #declare tag ChuzItems.Entity.Lockon8
+    #declare tag ChuzItems.Entity.Lockon9
+
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow0
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow1
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow2
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow3
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow4
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow5
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow6
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow7
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow8
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow9
+    #declare tag ChuzItems.Projectile.ChargedShootingArrow10
+
 #> ID関連
     #declare tag Chuz.ID.Target
 
@@ -74,9 +99,6 @@
     #declare tag ChuzItems.Entity.Catalog.InUse
     #declare tag ChuzItems.Entity.Catalog.Trader
     #declare tag ChuzItems.Entity.Catalog.Hologram
-
-#> ロックオン関連
-    #declare tag ChuzItems.Entity.Lockon
 
 #> その他
     #declare tag ChuzItems.TiredStep
