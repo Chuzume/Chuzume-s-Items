@@ -18,16 +18,9 @@ gamemode creative
 #Teleport self up
 tp @s ~ ~1000 ~
 
-# フェイルセーフ
-    tag @s add delta.failsafe
-
-# 防具を一旦片付けてみる
+# Store armor
     execute in overworld run function delta:internal/subtick/store_armor
     item replace entity @s armor.feet with minecraft:air
     item replace entity @s armor.legs with minecraft:air
     item replace entity @s armor.chest with minecraft:air
     item replace entity @s armor.head with minecraft:air
-
-#Temporarily disable mobGriefing (not usually necessary unless a positive explosion radius creeper is used)
-execute store result score $temp delta.internal.mobgriefing run gamerule mobGriefing
-gamerule mobGriefing false
