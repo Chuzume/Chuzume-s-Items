@@ -35,3 +35,6 @@
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.DamageType.Head set value "chuzitems:bullet_headshot"
 # これらの設定を反映する
     function chuzitems:entity/projectile/recursive_bullet/init
+
+# 全部終わってから位置を下げる
+    tp @s ~ ~-0.12 ~

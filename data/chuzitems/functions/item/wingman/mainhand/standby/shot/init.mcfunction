@@ -36,3 +36,6 @@
 
 # これらの設定を反映する
     function chuzitems:entity/projectile/recursive_bullet/init
+
+# 全部終わってから位置を下げる
+    tp @s ~ ~-0.15 ~

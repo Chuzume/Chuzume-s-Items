@@ -20,7 +20,7 @@
         execute if entity @s[tag=!Chuz.UsingSpyglass] positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/charge0/init
     # スコープ！
         execute if entity @s[tag=Chuz.UsingSpyglass] run particle smoke ^ ^ ^0.7 0 0 0 0.05 2
-        execute if entity @s[tag=Chuz.UsingSpyglass] run summon marker ^ ^-0.15 ^10 {Tags:["SpreadMarker"]}
+        execute if entity @s[tag=Chuz.UsingSpyglass] run summon marker ^ ^ ^10 {Tags:["SpreadMarker"]}
         execute if entity @s[tag=Chuz.UsingSpyglass] positioned ^ ^ ^ summon marker run function chuzitems:item/craftsman_scoped_rifle/mainhand/standby/shot/charge0/init
 
 # 弾が減る
