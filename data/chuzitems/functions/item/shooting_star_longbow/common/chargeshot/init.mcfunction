@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuzitems:item/shooting_star_longbow/common/chargeshot/summon
+# @within function chuzitems:item/shooting_star_longbow/common/chargeshot/summon/
 
 ## 拡散設定
     # どれくらい視点から離すか

@@ -12,3 +12,6 @@
 
 # リセット
     scoreboard players reset @s Chuz.HitCheck
+
+# 消失
+    function chuzitems:entity/projectile/charged_shooting_arrow/tick/kill

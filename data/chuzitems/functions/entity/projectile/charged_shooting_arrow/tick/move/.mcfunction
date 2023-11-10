@@ -26,10 +26,10 @@
     execute positioned ~-0.1 ~-0.1 ~-0.1 if entity @e[type=!#chuzitems:unhurtable,type=!ender_dragon,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,dx=0,sort=nearest,limit=1] positioned ~-0.8 ~-0.8 ~-0.8 if entity @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},dx=0,sort=nearest,limit=1] at @s run function chuzitems:entity/projectile/charged_shooting_arrow/tick/hit/
 
 # 壁の衝突判定
-    execute unless block ^ ^ ^0.5 #chuzitems:no_collision run kill @s
+    execute unless block ^ ^ ^0.5 #chuzitems:no_collision run function chuzitems:entity/projectile/charged_shooting_arrow/tick/kill
 
 # キル
-    execute if entity @s[scores={Chuz.Range=0}] run kill @s
+    execute if entity @s[scores={Chuz.Range=0}] run function chuzitems:entity/projectile/charged_shooting_arrow/tick/kill
 
 # 再帰
     execute if entity @s[scores={Chuz.Recursion=1..}] at @s run function chuzitems:entity/projectile/charged_shooting_arrow/tick/move/

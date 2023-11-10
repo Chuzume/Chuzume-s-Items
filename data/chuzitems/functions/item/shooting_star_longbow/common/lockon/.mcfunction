@@ -15,5 +15,5 @@
 # 
     execute positioned ^ ^ ^1 run function chuzitems:item/shooting_star_longbow/common/lockon/beam
 
-# 実行終了
+# リセット
     tag @s remove This

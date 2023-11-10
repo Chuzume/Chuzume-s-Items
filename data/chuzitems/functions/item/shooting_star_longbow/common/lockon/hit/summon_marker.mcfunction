@@ -1,8 +1,8 @@
-#> chuzitems:item/shooting_star_longbow/common/lockon/summon_marker
+#> chuzitems:item/shooting_star_longbow/common/lockon/hit/summon_marker
 #
 # 
 #
-# @within function chuzitems:item/shooting_star_longbow/common/lockon/hit
+# @within function chuzitems:item/shooting_star_longbow/common/lockon/hit/success
 
 # 召喚
     execute if entity @s[scores={ChuzItems.ShootingStar.LockCount=0}] run summon marker ~ ~ ~ {Tags:["Chuz.Projectile","ChuzItems.Entity.Lockon","ChuzItems.Entity.Lockon0","Chuz.Init"]}
@@ -15,9 +15,6 @@
     execute if entity @s[scores={ChuzItems.ShootingStar.LockCount=7}] run summon marker ~ ~ ~ {Tags:["Chuz.Projectile","ChuzItems.Entity.Lockon","ChuzItems.Entity.Lockon7","Chuz.Init"]}
     execute if entity @s[scores={ChuzItems.ShootingStar.LockCount=8}] run summon marker ~ ~ ~ {Tags:["Chuz.Projectile","ChuzItems.Entity.Lockon","ChuzItems.Entity.Lockon8","Chuz.Init"]}
     execute if entity @s[scores={ChuzItems.ShootingStar.LockCount=9}] run summon marker ~ ~ ~ {Tags:["Chuz.Projectile","ChuzItems.Entity.Lockon","ChuzItems.Entity.Lockon9","Chuz.Init"]}
-
-# ロックカウント加算
-    scoreboard players add @s ChuzItems.ShootingStar.LockCount 1
 
 # Init
     execute as @e[type=marker,tag=ChuzItems.Entity.Lockon,tag=Chuz.Init,sort=nearest,limit=1] store result score @s Chuz.EntityID run scoreboard players get @p[tag=This] Chuz.PlayerID
