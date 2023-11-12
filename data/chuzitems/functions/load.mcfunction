@@ -36,15 +36,19 @@
     scoreboard objectives add ChuzItems.Tick dummy
     scoreboard objectives add ChuzItems.FallResist dummy
     scoreboard objectives add ChuzItems.FallResistTime dummy
+    scoreboard objectives add ChuzItems.LockonID dummy
+
 
 #> その他なんか分類しづらいもの
     scoreboard objectives add ChuzItems.Revo.Magazine dummy
     scoreboard objectives add ChuzItems.Gunblade.StepCount dummy
     scoreboard objectives add ChuzItems.PhotonGlaive.GlideCount dummy
-    scoreboard objectives add ChuzItems.ShootingStar.LockCount dummy
-    scoreboard objectives add ChuzItems.ShootingStar.LockDelay dummy
     scoreboard objectives add ChuzItems.Projectile.Charge dummy
     scoreboard objectives add ChuzItems.Count dummy
+
+#> 流星の弓
+    scoreboard objectives add ChuzItems.ShootingStar.LockCount dummy
+    scoreboard objectives add ChuzItems.ShootingStar.LockDelay dummy
 
 #> 固定数値
     scoreboard objectives add Chuz.Const dummy

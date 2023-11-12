@@ -46,16 +46,7 @@
 
 #> 流星の弓
     #declare tag ChuzItems.Entity.Lockon
-    #declare tag ChuzItems.Entity.Lockon0
-    #declare tag ChuzItems.Entity.Lockon1
-    #declare tag ChuzItems.Entity.Lockon2
-    #declare tag ChuzItems.Entity.Lockon3
-    #declare tag ChuzItems.Entity.Lockon4
-    #declare tag ChuzItems.Entity.Lockon5
-    #declare tag ChuzItems.Entity.Lockon6
-    #declare tag ChuzItems.Entity.Lockon7
-    #declare tag ChuzItems.Entity.Lockon8
-    #declare tag ChuzItems.Entity.Lockon9
+    #declare tag ChuzItems.Entity.HomingMarker
 
     #declare tag ChuzItems.Projectile.ChargedShootingArrow0
     #declare tag ChuzItems.Projectile.ChargedShootingArrow1

@@ -4,12 +4,18 @@
 #
 # @within function chuzitems:item/shooting_star_longbow/common/lockon/beam
 
-# 持ち主を特定
-    execute at @e[type=marker,tag=ChuzItems.Entity.Lockon,distance=..100] if score @p[tag=This] Chuz.PlayerID = @e[type=marker,tag=ChuzItems.Entity.Lockon,sort=nearest,limit=1] Chuz.EntityID run tag @e[type=marker,tag=ChuzItems.Entity.Lockon,sort=nearest,limit=1] add Chuz.ID.Target
+# 召喚
+    #execute at @e[tag=!ChuzItems.Entity.Lockon,tag=!This,dx=0] run summon marker ~ ~ ~ {Tags:["Chuz.Projectile","ChuzItems.Entity.Lockon","Chuz.Init"]}
 
-# ヒット者として実行
-    #execute if entity @e[type=marker,tag=Chuz.ID.Target,distance=..0.1] run say 既にロックされてる！ 
-    execute unless entity @e[type=marker,tag=Chuz.ID.Target,distance=..0.1] as @p[tag=This] run function chuzitems:item/shooting_star_longbow/common/lockon/hit/success
+# マクロ実行
+    execute store result storage chuz:context LockID int 1 run scoreboard players get @s Chuz.PlayerID
+    execute store result storage chuz:context LockCount int 1 run scoreboard players get @s ChuzItems.ShootingStar.LockCount
+    execute as @e[tag=!ChuzItems.Entity.Lockon,tag=!This,dx=0] run function chuzitems:item/shooting_star_longbow/common/lockon/hit/check with storage chuz:context
+
+# Init
+    #execute as @e[type=marker,tag=ChuzItems.Entity.Lockon,tag=Chuz.Init,sort=nearest,limit=1] at @s run function chuzitems:item/shooting_star_longbow/common/lockon/hit/init
+    #tag @e[type=marker,tag=ChuzItems.Entity.Lockon,tag=Chuz.Init,sort=nearest,limit=1] remove Chuz.Init
 
 # リセット
-    tag @e[type=marker,tag=ChuzItems.Entity.Lockon] remove Chuz.ID.Target
+    data remove storage chuz:context LockID
+    data remove storage chuz:context LockCount

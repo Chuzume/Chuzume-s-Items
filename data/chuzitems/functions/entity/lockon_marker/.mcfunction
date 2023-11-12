@@ -14,13 +14,30 @@
     particle minecraft:electric_spark ~ ~0.5 ~ 0 0 0 0.1 1 force @a[distance=..60]
 
 # エンティティにくっつく
-    #execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=!ChuzItems.Entity.Lockon,tag=!Chuz.Projectile,sort=nearest,limit=1] at @s anchored eyes positioned ^ ^ ^ run tp @e[type=marker,tag=ChuzItems.Entity.Lockon,distance=..20,sort=nearest,limit=1] ~ ~ ~
+    execute at @s at @e[tag=!ChuzItems.Entity.Lockon,tag=!Chuz.Projectile,distance=..0.1,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
+    #execute at @s run tag @e[tag=!ChuzItems.Entity.Lockon,tag=!Chuz.Projectile,distance=..0.1,sort=nearest,limit=1] add This
+    #execute at @s at @e[tag=This,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
+    #execute at @s as @e[tag=This,sort=nearest,limit=1] at @s anchored eyes positioned ^ ^ ^ run summon marker ~ ~ ~ {Tags:["ChuzItems.Entity.HomingMarker"]}
 
-# ロックオンされたエンティティが死亡したり離れたりしたら消える
-    execute positioned ~-0.5 ~-0.5 ~-0.5 unless entity @e[tag=!ChuzItems.Entity.Lockon,tag=!Chuz.Projectile,dx=0,sort=nearest,limit=1] run function chuzitems:entity/lockon_marker/kill
+# ID付与
+    execute if entity @s[scores={ChuzItems.LockonID=0}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 0
+    execute if entity @s[scores={ChuzItems.LockonID=1}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 1
+    execute if entity @s[scores={ChuzItems.LockonID=2}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 2
+    execute if entity @s[scores={ChuzItems.LockonID=3}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 3
+    execute if entity @s[scores={ChuzItems.LockonID=4}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 4
+    execute if entity @s[scores={ChuzItems.LockonID=5}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 5
+    execute if entity @s[scores={ChuzItems.LockonID=6}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 6
+    execute if entity @s[scores={ChuzItems.LockonID=7}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 7
+    execute if entity @s[scores={ChuzItems.LockonID=8}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 8
+    execute if entity @s[scores={ChuzItems.LockonID=9}] run scoreboard players set @s[tag=ChuzItems.Entity.HomingMarker] ChuzItems.LockonID 9
+
+# 消滅処理
+    execute unless entity @e[tag=This,sort=nearest,limit=1] run function chuzitems:entity/lockon_marker/kill
 
 # 時間経ちすぎても消える
-    execute if score @s ChuzItems.Tick matches 400.. run function chuzitems:entity/lockon_marker/kill
+    execute if score @s ChuzItems.Tick matches 40.. run function chuzitems:entity/lockon_marker/kill
 
 # リセット
     tag @p[tag=Chuz.ID.Target] remove Chuz.ID.Target
+    tag @e[tag=This] remove This
+

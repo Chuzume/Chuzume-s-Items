@@ -18,6 +18,7 @@
 
 # 飛翔
     function chuzitems:entity/projectile/charged_shooting_arrow/tick/move/
+    execute if entity @e[type=marker,tag=ChuzItems.Entity.HomingMarker]
 
 # リセット
     #tag @s remove ChuzItems.Reflected
