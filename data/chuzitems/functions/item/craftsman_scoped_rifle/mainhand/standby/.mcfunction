@@ -38,8 +38,5 @@
     execute if score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Ready
     execute if score @s ChuzItems.Sneak matches 1.. run scoreboard players reset @s ChuzItems.Reload
 
-# ズームタグリセット
-    tag @s[tag=Chuz.UsingSpyglass] remove Chuz.UsingSpyglass
-
 # アイテム情報更新
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData.Ammo in overworld run function chuzitems:item/replaceitem

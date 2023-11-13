@@ -5,13 +5,13 @@
         "conditions": {
           "item": {
             "items": [
-              "minecraft:spyglass"
+              "minecraft:bow"
             ]
           }
         }
       }
     },
     "rewards": {
-        "function": "chuzitems:player/using_item/spyglass"
+        "function": "chuzitems:player/using_item/bow"
       }
     }

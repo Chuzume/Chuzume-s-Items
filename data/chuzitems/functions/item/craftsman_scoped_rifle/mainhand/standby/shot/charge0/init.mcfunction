@@ -33,9 +33,9 @@
 
     # 拡散の大きさ
         # 腰だめ
-            execute if entity @p[tag=This,tag=!Chuz.UsingSpyglass] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 1.0f
+            execute if entity @p[tag=This,tag=!Chuz.Using.Spyglass] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 1.0f
         # スコープ
-            execute if entity @p[tag=This,tag=Chuz.UsingSpyglass] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.0f
+            execute if entity @p[tag=This,tag=Chuz.Using.Spyglass] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.0f
 
 # これらの設定を反映する
     function chuzitems:entity/projectile/recursive_bullet/init

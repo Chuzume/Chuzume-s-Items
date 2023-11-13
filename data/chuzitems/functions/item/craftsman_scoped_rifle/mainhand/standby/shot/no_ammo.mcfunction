@@ -11,7 +11,7 @@
 
 # 煙
     # 腰だめ
-        execute if entity @s[tag=!Chuz.UsingSpyglass] run particle smoke ^-0.25 ^ ^0.7 0 0 0 0.05 5
+        execute if entity @s[tag=!Chuz.Using.Spyglass] run particle smoke ^-0.25 ^ ^0.7 0 0 0 0.05 5
 
     # スコープ！
-        execute if entity @s[tag=Chuz.UsingSpyglass] run particle smoke ^ ^ ^0.7 0 0 0 0.05 2
+        execute if entity @s[tag=Chuz.Using.Spyglass] run particle smoke ^ ^ ^0.7 0 0 0 0.05 2

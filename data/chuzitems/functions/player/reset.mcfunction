@@ -9,7 +9,8 @@
     tag @s[tag=Chuz.Click.Left] remove Chuz.Click.Left
     tag @s[tag=Chuz.Click.Right] remove Chuz.Click.Right
     tag @s[tag=Chuz.PreventRun] remove Chuz.PreventRun
-
+    tag @s[tag=Chuz.Using.Spyglass] remove Chuz.Using.Spyglass
+    
 # スコア
     scoreboard players reset @s[scores={ChuzItems.Sneak=0..}] ChuzItems.Sneak
     scoreboard players reset @s[scores={ChuzItems.Crossbow=1..}] ChuzItems.Crossbow
