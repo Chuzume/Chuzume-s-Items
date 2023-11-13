@@ -1,8 +1,7 @@
-#> chuzitems:item/shooting_star_longbow/common/chargeshot/spread
+#> chuzitems:item/shooting_star_longbow/common/chargeshot/locked/spread
 #
 # 
 #
-# @within function chuzitems:item/shooting_star_longbow/common/chargeshot/init
 
 # 返り値のEntity
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

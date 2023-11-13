@@ -22,8 +22,10 @@
     scoreboard players remove @s Chuz.Range 1
 
 # ヒット
-    #execute at @s positioned ~-0.75 ~-0.75 ~-0.75 at @e[type=!#chuzitems:unhurtable,tag=!Chuz.ID.Target,dx=0.5,dy=0.5,dz=0.5] run function chuzitems:entity/photon_glaive/tick/hit/
     execute positioned ~-0.1 ~-0.1 ~-0.1 if entity @e[type=!#chuzitems:unhurtable,type=!ender_dragon,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,dx=0,sort=nearest,limit=1] positioned ~-0.8 ~-0.8 ~-0.8 if entity @e[type=!#chuzitems:unhurtable,tag=!Chuz.PlayerShouldInvulnerable,tag=!Chuz.Uninterferable,nbt={Invulnerable:0b},dx=0,sort=nearest,limit=1] at @s run function chuzitems:entity/projectile/charged_shooting_arrow/tick/hit/
+
+# 対ドラゴン
+    execute at @s at @e[type=minecraft:ender_dragon,team=!Null,distance=..6,sort=nearest,limit=1] run function chuzitems:entity/projectile/charged_shooting_arrow/tick/hit/
 
 # 壁の衝突判定
     execute unless block ^ ^ ^0.5 #chuzitems:no_collision run function chuzitems:entity/projectile/charged_shooting_arrow/tick/kill

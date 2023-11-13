@@ -1,8 +1,8 @@
-#> chuzitems:item/shooting_star_longbow/common/chargeshot/summon/3
+#> chuzitems:item/shooting_star_longbow/common/chargeshot/locked/summon/3
 #
 # ロック3
 #
-# @within function chuzitems:item/shooting_star_longbow/common/chargeshot/summon/
+# @within function chuzitems:item/shooting_star_longbow/common/chargeshot/locked/summon/
 
 execute if score @s ChuzItems.BurstCount matches 10 run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ChuzItems.Projectile.ChargedShootingArrow","ChuzItems.Projectile.ChargedShootingArrow0","Chuz.Projectile","Chuz.Init"]}
 execute if score @s ChuzItems.BurstCount matches 9 run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ChuzItems.Projectile.ChargedShootingArrow","ChuzItems.Projectile.ChargedShootingArrow0","Chuz.Projectile","Chuz.Init"]}

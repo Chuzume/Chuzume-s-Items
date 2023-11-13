@@ -1,8 +1,8 @@
-#> chuzitems:item/shooting_star_longbow/common/chargeshot/init
+#> chuzitems:item/shooting_star_longbow/common/chargeshot/locked/init
 #
 # 
 #
-# @within function chuzitems:item/shooting_star_longbow/common/chargeshot/summon/
+# @within function chuzitems:item/shooting_star_longbow/common/chargeshot/locked/summon/
 
 ## 拡散設定
     # どれくらい視点から離すか
@@ -12,7 +12,7 @@
         data modify storage forward_spreader: Spread set value 4.0f
 
     # タグ付きプレイヤーから実行する。ただし拡散値0なら射撃側で設定
-        execute as @p[tag=This] at @s run function chuzitems:item/shooting_star_longbow/common/chargeshot/spread
+        execute as @p[tag=This] at @s run function chuzitems:item/shooting_star_longbow/common/chargeshot/locked/spread
 
     # 拡散用のエンティティのほうを向く
         execute facing entity @e[type=marker,tag=SpreadMarker,distance=..100] feet run tp @s ~ ~ ~ ~ ~
@@ -28,8 +28,8 @@
 
 ## 飛距離設定
     # ノンチャージ
-        scoreboard players set @s Chuz.Range 100
-        scoreboard players set @s Chuz.Speed 5
+        scoreboard players set @s Chuz.Range 300
+        scoreboard players set @s Chuz.Speed 7
 
 # Init終了
     tag @s remove Chuz.Init
