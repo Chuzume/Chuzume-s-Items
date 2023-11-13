@@ -2,3 +2,6 @@
 #
 # 
 #
+
+# 連射数セット
+    scoreboard players set @s ChuzItems.BurstCount 10

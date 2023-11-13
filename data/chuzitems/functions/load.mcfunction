@@ -49,6 +49,7 @@
 #> 流星の弓
     scoreboard objectives add ChuzItems.ShootingStar.LockCount dummy
     scoreboard objectives add ChuzItems.ShootingStar.LockDelay dummy
+    scoreboard objectives add ChuzItems.ShootingStar.LockLimit dummy
 
 #> 固定数値
     scoreboard objectives add Chuz.Const dummy
