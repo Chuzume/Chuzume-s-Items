@@ -12,7 +12,8 @@
     execute unless score @s ChuzItems.ShootingStar.LockCount matches 0.. run scoreboard players set @s ChuzItems.ShootingStar.LockCount 0
 
 # 放つ
-    scoreboard players set @s ChuzItems.BurstCount 10
+    scoreboard players set @s[scores={ChuzItems.Bow.Charge=20..39}] ChuzItems.BurstCount 3
+    scoreboard players set @s[scores={ChuzItems.Bow.Charge=40..}] ChuzItems.BurstCount 10
 
 # ロック0なら
 
