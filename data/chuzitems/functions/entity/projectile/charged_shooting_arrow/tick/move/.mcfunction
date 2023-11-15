@@ -9,6 +9,7 @@
 # パーティクル
     execute if entity @s[scores={ChuzItems.Tick=2..}] run particle electric_spark ~ ~ ~ 0.05 0.05 0.05 0.1 1 force @a[distance=..120]
     execute if entity @s[scores={ChuzItems.Tick=2..}] run particle dust 1 1 1 1 ~ ~ ~ 0 0 0 0.0 1 force @a[distance=..120]
+    particle dust 1 1 1 0.5 ~ ~ ~ 0 0 0 0.0 1 force @a[distance=..120]
 
 
 # 再帰カウントが0なら弾速からセット
