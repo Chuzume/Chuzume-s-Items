@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{ChuzData:{ItemID:shooting_star_longbow,ItemMode:standby},display:{Name:'{\"text\":\"Shooting Star Longbow\",\"color\":\"gold\",\"italic\":false}',Lore:['{\"text\":\" \",\"color\":\"white\",\"italic\":false}','{\"text\":\"[RClick: Charge/Shoot]\",\"color\":\"white\",\"italic\":false}','{\"text\":\"[Sneak: Lock-on]\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"それはまるで流星のように\",\"color\":\"gray\",\"italic\":false}']},HideFlags:39,CustomModelData:1}\n"
+                "tag": "{ChuzData:{ItemID:shooting_star_longbow,ItemMode:standby},display:{Name:'{\"text\":\"Shooting Star Longbow\",\"color\":\"gold\",\"italic\":false}',Lore:['{\"text\":\" \",\"color\":\"white\",\"italic\":false}','{\"text\":\"構え続けることで、視界に捉えた敵をロックできる。\",\"color\":\"white\",\"italic\":false}','{\"text\":\"放たれた矢は、ロックした敵を追尾する。\",\"color\":\"white\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"それはまるで流星のように\",\"color\":\"gray\",\"italic\":false}']},HideFlags:39,CustomModelData:1}\n"
               }
             ]
           }
