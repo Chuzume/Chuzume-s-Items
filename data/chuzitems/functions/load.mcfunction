@@ -45,6 +45,7 @@
     scoreboard objectives add ChuzItems.PhotonGlaive.GlideCount dummy
     scoreboard objectives add ChuzItems.Projectile.Charge dummy
     scoreboard objectives add ChuzItems.Count dummy
+    scoreboard objectives add ChuzItems.Bow.Charge dummy
 
 #> 流星の弓
     scoreboard objectives add ChuzItems.ShootingStar.LockCount dummy

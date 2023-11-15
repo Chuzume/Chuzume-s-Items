@@ -13,7 +13,6 @@
     #declare tag SpreadMarker
     #declare tag Chuz.UUIDAttack
     #declare tag Chuz.Projectile
-    #declare tag Chuz.UsingSpyglass
     #declare tag Chuz.CollisionSlime
     #declare tag Chuz.NonVanillaMob
     #declare tag Chuz.Explosion
@@ -26,6 +25,10 @@
     #declare tag Chuz.Click.Right
     #declare tag Chuz.Entity.Interaction
     #declare tag Chuz.TargetEntity
+
+#> アイテム使用
+    #declare tag Chuz.Using.Spyglass
+    #declare tag Chuz.Using.Bow
 
 #> 飛び道具関連
     #declare tag ChuzItems.HeadShot
