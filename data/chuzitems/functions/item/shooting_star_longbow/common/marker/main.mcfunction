@@ -5,7 +5,7 @@
 # @within function chuzitems:item/shooting_star_longbow/common/marker/macro
 
 # パーティクル
-    execute anchored eyes positioned ^ ^ ^ run particle minecraft:electric_spark ~ ~0.5 ~ 0 0 0 0.1 1 force @a[distance=..200]
+    execute anchored eyes positioned ^ ^ ^ run particle minecraft:electric_spark ~ ~0.5 ~ 0 0 0 0.1 1 force @p[tag=This]
 
 # スコア減らす
     $scoreboard players remove @s ChuzItems.LockonTime.$(LockID) 1
