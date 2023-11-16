@@ -11,7 +11,6 @@
     execute if entity @s[scores={ChuzItems.Tick=2..}] run particle dust 1 1 1 1 ~ ~ ~ 0 0 0 0.0 1 force @a[distance=..120]
     particle dust 1 1 1 0.5 ~ ~ ~ 0 0 0 0.0 1 force @a[distance=..120]
 
-
 # 再帰カウントが0なら弾速からセット
     execute unless entity @s[scores={Chuz.Recursion=1..}] run scoreboard players operation @s Chuz.Recursion = @s Chuz.Speed
 

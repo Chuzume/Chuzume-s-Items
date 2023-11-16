@@ -28,14 +28,12 @@
     scoreboard players remove @s[scores={ChuzItems.ShootingStar.LockDelay=1..}] ChuzItems.ShootingStar.LockDelay 1
     scoreboard players reset @s[scores={ChuzItems.ShootingStar.LockDelay=0}] ChuzItems.ShootingStar.LockDelay
 
-# 構えて20tickでロックオンモードに
-    execute unless score @s[scores={ChuzItems.Bow.Charge=19..}] ChuzItems.ShootingStar.LockDelay matches 0.. if score @s ChuzItems.ShootingStar.LockLimit matches ..9 anchored eyes positioned ^ ^ ^ run function chuzitems:item/shooting_star_longbow/common/lockon/
-
 # チャージ1
     execute if score @s ChuzItems.Bow.Charge matches 19 anchored eyes positioned ^ ^ ^1 rotated ~ ~90 run function chuzitems:item/shooting_star_longbow/common/charge1
 
 # チャージ2
     execute if score @s ChuzItems.Bow.Charge matches 40 anchored eyes positioned ^ ^ ^1 rotated ~ ~90 run function chuzitems:item/shooting_star_longbow/common/charge2
 
-# スニークでロックオン
-    #execute unless score @s ChuzItems.ShootingStar.LockDelay matches 0.. if score @s ChuzItems.ShootingStar.LockLimit matches ..9 if predicate chuzitems:sneak anchored eyes positioned ^ ^ ^ run function chuzitems:item/shooting_star_longbow/common/lockon/
+# 構えて20tickでロックオンモードに
+    execute unless score @s[scores={ChuzItems.Bow.Charge=19..39}] ChuzItems.ShootingStar.LockDelay matches 0.. if score @s ChuzItems.ShootingStar.LockLimit matches ..2 anchored eyes positioned ^ ^ ^ run function chuzitems:item/shooting_star_longbow/common/lockon/
+    execute unless score @s[scores={ChuzItems.Bow.Charge=40..}] ChuzItems.ShootingStar.LockDelay matches 0.. if score @s ChuzItems.ShootingStar.LockLimit matches ..9 anchored eyes positioned ^ ^ ^ run function chuzitems:item/shooting_star_longbow/common/lockon/

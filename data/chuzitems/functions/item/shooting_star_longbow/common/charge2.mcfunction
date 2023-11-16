@@ -7,6 +7,7 @@
     playsound minecraft:block.end_portal_frame.fill player @a ~ ~ ~ 1 2
     playsound minecraft:entity.ender_eye.death player @a ~ ~ ~ 1 2
     playsound minecraft:block.respawn_anchor.charge player @a ~ ~ ~ 1 2
+    playsound minecraft:block.amethyst_block.fall player @a ~ ~ ~ 1.5 2
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAJwAMALAIYqmUCMAtHCiwBxu0BscAEZshAJkFtuAViGkhlAMzc4tRZTAEAdvQC2CZIDDFAAQtNYGPQx6AzknAoA9oS0QktagRRxXcDPbAAN3psQgNwAA8kTzAoaIBfeIJrUjRCO0RqADoAdgIbCCs3TII4bGw0GBsDFmoYjEdCiAMYtBsAUXLK6vaAR0IQ7CgAZUtvckQAMxDqxLxwaHgKdCxcc2IyCm5J6X4mbmo2FEUhaT4uM6FaFlo2aRzhFGppWWfacx19ChMxc0trXQZBzOVxIRQxby+fyIcDBULhMBREqxBJJMApNIZbLSfKFDDFGJlCpVGp1ZKNejNaIENqdYk9fqDEZjOATabYWbxAC6QA_3
 # 円 1
