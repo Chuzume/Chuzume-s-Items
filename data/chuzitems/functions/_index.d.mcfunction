@@ -45,6 +45,7 @@
     #declare tag ChuzItems.Projectile.AmbassadorBeam
     #declare tag ChuzItems.Projectile.PhotonGlaive
     #declare tag ChuzItems.Projectile.PhotonGlaive.Off
+    #declare tag ChuzItems.Projectile.ShootingArrow
     #declare tag ChuzItems.Projectile.ChargedShootingArrow
 
 #> 流星の弓

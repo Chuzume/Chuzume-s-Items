@@ -10,7 +10,7 @@
     scoreboard players add @s[tag=Chuz.Using.Bow] ChuzItems.Bow.Charge 1
 
 # 弓を撃ったことを検知
-    execute if score @s ChuzItems.Bow.Charge matches 19.. if score @s ChuzItems.Bow matches 1.. run function chuzitems:item/shooting_star_longbow/common/shoot
+    execute if score @s ChuzItems.Bow matches 1.. run function chuzitems:item/shooting_star_longbow/common/shoot
 
 # スコア定義
     execute unless score @s ChuzItems.ShootingStar.LockLimit matches 0.. run scoreboard players set @s ChuzItems.ShootingStar.LockLimit 0
