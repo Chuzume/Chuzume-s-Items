@@ -12,10 +12,10 @@
     execute unless score @s ChuzItems.ShootingStar.LockCount matches 0.. run scoreboard players set @s ChuzItems.ShootingStar.LockCount 0
 
 # 放つ
-    scoreboard players set @s[scores={ChuzItems.Bow.Charge=20..39}] ChuzItems.BurstCount 3
-    scoreboard players set @s[scores={ChuzItems.Bow.Charge=40..}] ChuzItems.BurstCount 10
-
-# ロック0なら
+    # チャージ1
+        scoreboard players set @s[scores={ChuzItems.Bow.Charge=19..39}] ChuzItems.BurstCount 3
+    # チャージ2
+        scoreboard players set @s[scores={ChuzItems.Bow.Charge=40..}] ChuzItems.BurstCount 10
 
 # リセット
     data remove storage chuz:context LockID
