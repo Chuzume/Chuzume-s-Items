@@ -28,8 +28,8 @@
     scoreboard players set @s ChuzItems.BurstRate 1
 
 # サウンド
+    playsound minecraft:block.amethyst_block.break player @a ~ ~ ~ 1.5 1
     playsound minecraft:block.respawn_anchor.deplete player @a ^ ^ ^1 2 2
-    playsound minecraft:entity.arrow.shoot player @a ^ ^ ^1 1.5 1
     playsound minecraft:item.crossbow.shoot player @a ^ ^ ^1 1.5 1
 
 # 使用者ではない
