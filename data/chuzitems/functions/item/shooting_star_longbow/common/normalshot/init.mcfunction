@@ -21,7 +21,7 @@
         execute if score @p[tag=This] ChuzItems.Bow.Charge matches 10.. run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.HeadDamage set value 7.0
     # 弾速
         execute if score @p[tag=This] ChuzItems.Bow.Charge matches ..9 run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Speed set value 1
-        execute if score @p[tag=This] ChuzItems.Bow.Charge matches 10.. run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Speed set value 10
+        execute if score @p[tag=This] ChuzItems.Bow.Charge matches 10.. run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Speed set value 7
     # 飛距離
         execute if score @p[tag=This] ChuzItems.Bow.Charge matches ..9 run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Range set value 20
         execute if score @p[tag=This] ChuzItems.Bow.Charge matches 10.. run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Range set value 100
