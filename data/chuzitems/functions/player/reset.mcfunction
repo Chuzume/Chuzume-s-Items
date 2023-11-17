@@ -24,3 +24,4 @@
     scoreboard players reset @s[scores={ChuzItems.Jump=1..}] ChuzItems.Jump
     scoreboard players reset @s[scores={ChuzItems.Death=0..}] ChuzItems.Death
     scoreboard players reset @s[scores={ChuzItems.Bow=0..}] ChuzItems.Bow
+    scoreboard players reset @s[scores={ChuzItems.BurstCount=..0}] ChuzItems.BurstCount 
