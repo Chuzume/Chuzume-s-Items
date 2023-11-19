@@ -16,3 +16,6 @@
 
 # 実行者解除
     tag @s remove This
+
+# リセット
+    data remove storage chuz:context arrow

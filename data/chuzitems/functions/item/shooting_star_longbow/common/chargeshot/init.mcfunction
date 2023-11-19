@@ -26,10 +26,13 @@
 # スコアコピー
     scoreboard players operation @s Chuz.EntityID = @p Chuz.PlayerID
 
-## 飛距離設定
-    # ノンチャージ
+## 設定
+    # 飛距離
         scoreboard players set @s Chuz.Range 300
+    # 弾速
         scoreboard players set @s Chuz.Speed 7
+    # ダメージ
+        execute store result score @s Chuz.Damage run data get storage chuz:context arrow.damage 40
 
 # Init終了
     tag @s remove Chuz.Init

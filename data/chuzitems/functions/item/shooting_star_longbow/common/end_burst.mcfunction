@@ -5,6 +5,7 @@
 
 # リセット
     scoreboard players reset @s ChuzItems.ShootingStar.LockCount
+    data remove storage chuz:context arrow
 
 # オーバーヒート
     playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 1.5

@@ -14,11 +14,10 @@
 
 ## 弾のステータスを設定
     # ダメージ(ボディ)
-        execute if score @p[tag=This] ChuzItems.Bow.Charge matches ..9 run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.BodyDamage set value 2.0
-        execute if score @p[tag=This] ChuzItems.Bow.Charge matches 10.. run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.BodyDamage set value 7.0
+        execute if score @p[tag=This] ChuzItems.Bow.Charge matches ..9 store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.BodyDamage int 1 run data get storage chuz:context arrow.damage 1
+        execute if score @p[tag=This] ChuzItems.Bow.Charge matches 10.. store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.BodyDamage int 1 run data get storage chuz:context arrow.damage 3
     # ダメージ(ヘッド)
-        execute if score @p[tag=This] ChuzItems.Bow.Charge matches ..9 run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.HeadDamage set value 2.0
-        execute if score @p[tag=This] ChuzItems.Bow.Charge matches 10.. run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.HeadDamage set value 7.0
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.HeadDamage set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.BodyDamage
     # 弾速
         execute if score @p[tag=This] ChuzItems.Bow.Charge matches ..9 run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Speed set value 1
         execute if score @p[tag=This] ChuzItems.Bow.Charge matches 10.. run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Speed set value 7
