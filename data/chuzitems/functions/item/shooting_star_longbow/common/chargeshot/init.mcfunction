@@ -9,7 +9,7 @@
         data modify storage forward_spreader: Distance set value 7.0f
 
     # どれくらい拡散させるか。
-        data modify storage forward_spreader: Spread set value 4.0f
+        data modify storage forward_spreader: Spread set value 3.0f
 
     # タグ付きプレイヤーから実行する。ただし拡散値0なら射撃側で設定
         execute as @p[tag=This] at @s run function chuzitems:item/shooting_star_longbow/common/chargeshot/spread
