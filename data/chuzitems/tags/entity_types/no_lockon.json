@@ -3,6 +3,7 @@
     "values": [
       "minecraft:marker",
       "minecraft:item",
+      "minecraft:area_effect_cloud",
       "minecraft:arrow",
       "minecraft:spectral_arrow",
       "minecraft:wither_skull",
