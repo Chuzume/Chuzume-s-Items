@@ -47,6 +47,7 @@
     #declare tag ChuzItems.Projectile.PhotonGlaive.Off
     #declare tag ChuzItems.Projectile.ShootingArrow
     #declare tag ChuzItems.Projectile.ChargedShootingArrow
+    #declare tag ChuzItems.Projectile.FlameArrow
 
 #> 流星の弓
     #declare tag ChuzItems.Entity.Lockon
