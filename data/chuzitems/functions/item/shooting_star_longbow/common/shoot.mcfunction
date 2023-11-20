@@ -8,6 +8,9 @@
 # サウンドを停止
     stopsound @s player minecraft:entity.arrow.shoot
 
+# フレイムかどうか取得
+    execute if data entity @e[type=arrow,sort=nearest,limit=1] {Fire:2000s} run data modify storage chuz:context arrow.flame set value 1b
+
 # 最寄りの矢のダメージを保存
     data modify storage chuz:context arrow.damage set from entity @e[type=arrow,sort=nearest,limit=1] damage
 

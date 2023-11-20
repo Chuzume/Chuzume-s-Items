@@ -6,10 +6,10 @@
 
 ## 拡散設定
     # どれくらい視点から離すか
-        data modify storage forward_spreader: Distance set value 7.0f
+        data modify storage forward_spreader: Distance set value 10.0f
 
     # どれくらい拡散させるか。
-        data modify storage forward_spreader: Spread set value 3.0f
+        data modify storage forward_spreader: Spread set value 2.0f
 
     # タグ付きプレイヤーから実行する。ただし拡散値0なら射撃側で設定
         execute as @p[tag=This] at @s run function chuzitems:item/shooting_star_longbow/common/chargeshot/spread
@@ -30,9 +30,11 @@
     # 飛距離
         scoreboard players set @s Chuz.Range 300
     # 弾速
-        scoreboard players set @s Chuz.Speed 7
+        scoreboard players set @s Chuz.Speed 5
     # ダメージ
         execute store result score @s Chuz.Damage run data get storage chuz:context arrow.damage 40
+    # フレイム矢であることを反映
+        execute if data storage chuz:context arrow.flame run tag @s add ChuzItems.Projectile.FlameArrow
 
 # Init終了
     tag @s remove Chuz.Init
