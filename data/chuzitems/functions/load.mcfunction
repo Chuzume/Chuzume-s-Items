@@ -96,7 +96,6 @@
 # 飛び道具の弾速
     scoreboard objectives add Chuz.Range dummy
     scoreboard objectives add Chuz.Speed dummy
-    scoreboard objectives add Chuz.Damage dummy
     scoreboard objectives add Chuz.Recursion dummy
 
 

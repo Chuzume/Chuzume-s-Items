@@ -4,6 +4,9 @@
 #
 # @within function chuzitems:item/shooting_star_longbow/common/chargeshot/summon/
 
+## お願いOhMyDat!
+    function oh_my_dat:please
+
 ## 拡散設定
     # どれくらい視点から離すか
         data modify storage forward_spreader: Distance set value 10.0f
@@ -31,10 +34,12 @@
         scoreboard players set @s Chuz.Range 300
     # 弾速
         scoreboard players set @s Chuz.Speed 5
-    # ダメージ
-        execute store result score @s Chuz.Damage run data get storage chuz:context arrow.damage 40
     # フレイム矢であることを反映
         execute if data storage chuz:context arrow.flame run tag @s add ChuzItems.Projectile.FlameArrow
-
+    # ダメージ
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Damage set from storage chuz:context arrow.damage
+    # ノックバック
+        data modify storage chuz:context arrow.knockback set value 1
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Knockback set from storage chuz:context arrow.knockback
 # Init終了
     tag @s remove Chuz.Init
