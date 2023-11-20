@@ -88,7 +88,6 @@
     scoreboard objectives add Chuz.Calc dummy
     scoreboard objectives add Chuz.Rule dummy
     scoreboard objectives add Chuz.ItemCheck dummy
-    scoreboard objectives add Chuz.Motion.Power dummy
     scoreboard objectives add Chuz.Motion.Gamerule dummy
     scoreboard objectives add Chuz.Motion.Difficulty dummy
     scoreboard objectives add Chuz.PosDiffY dummy
