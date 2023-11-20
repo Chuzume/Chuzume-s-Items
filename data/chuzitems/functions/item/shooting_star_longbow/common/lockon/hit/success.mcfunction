@@ -17,4 +17,4 @@
 # スコアボード設定
     #$scoreboard players set @s ChuzItems.Lockon.$(LockID) $(LockCount)
     $scoreboard players set @s ChuzItems.LockedBy.$(LockID) 1
-    $scoreboard players set @s ChuzItems.LockonTime.$(LockID) 100
+    $scoreboard players set @s ChuzItems.LockonTime.$(LockID) 200
