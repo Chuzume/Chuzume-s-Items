@@ -14,9 +14,8 @@
     scoreboard players add @s ChuzItems.Tick 1
 
 # ホーミング
-    execute if entity @s[scores={ChuzItems.Tick=5..20}] run function chuzitems:entity/projectile/charged_shooting_arrow/tick/homing/
-    #execute unless entity @s[scores={ChuzItems.Tick=20..}] run function chuzitems:entity/projectile/charged_shooting_arrow/tick/homing/
-
+    function chuzitems:entity/projectile/charged_shooting_arrow/tick/homing/
+    
 # 飛翔
     function chuzitems:entity/projectile/charged_shooting_arrow/tick/move/
     execute if entity @e[type=marker,tag=ChuzItems.Entity.HomingMarker]
