@@ -12,6 +12,6 @@
       }
     },
     "rewards": {
-        "function": "chuzitems:item/using_spyglass"
+        "function": "chuzitems:player/using_item/spyglass"
       }
     }

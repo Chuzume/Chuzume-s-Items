@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "unlock": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "chuzitems:shooting_star_longbow"
+        }
+      }
+    },
+    "rewards": {
+      "function": "chuzitems:item/shooting_star_longbow/craft"
+    }
+  }

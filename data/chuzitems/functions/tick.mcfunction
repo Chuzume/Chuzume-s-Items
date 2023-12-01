@@ -8,6 +8,7 @@
 
 # 飛び道具チェック 
     execute as @e[type=#chuzitems:projectile,tag=Chuz.Projectile] at @s run function chuzitems:entity/projectile/event/tick
+    kill @e[type=marker,tag=ChuzItems.Entity.HomingMarker]
 
 # スライムを消す
     execute as @e[type=magma_cube,tag=Chuz.CollisionSlime] at @s run function chuzitems:entity/col_slime/main

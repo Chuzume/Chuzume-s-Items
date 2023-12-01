@@ -21,3 +21,6 @@
 
 # レヴォ弾丸
     execute if entity @s[tag=ChuzItems.Projectile.RevoBullet] run function chuzitems:entity/projectile/revo_bullet/particle
+
+# 流星の矢
+    execute if entity @s[tag=ChuzItems.Projectile.ShootingArrow] run function chuzitems:entity/projectile/shooting_arrow/particle

@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:marker",
+      "minecraft:item",
+      "minecraft:area_effect_cloud",
+      "minecraft:arrow",
+      "minecraft:spectral_arrow",
+      "minecraft:wither_skull",
+      "minecraft:experience_orb",
+      "minecraft:experience_bottle",
+      "minecraft:dragon_fireball",
+      "minecraft:small_fireball",
+      "minecraft:fireball",
+      "minecraft:falling_block",
+      "minecraft:snowball",
+      "minecraft:egg",
+      "minecraft:ender_pearl",
+      "minecraft:potion",
+      "minecraft:item_display",
+      "minecraft:block_display",
+      "minecraft:text_display"
+      ]
+  }

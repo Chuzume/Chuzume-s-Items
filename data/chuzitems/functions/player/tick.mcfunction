@@ -25,6 +25,9 @@
 # 投擲
     execute if entity @s[scores={ChuzItems.KnowledgeBook=0..}] run function chuzitems:player/macro/knowledge_book/
 
+# 流星の弓用のロックオン
+    function chuzitems:item/shooting_star_longbow/common/marker/
+
 ## リロード用データ
     # 削除
         data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].HoldedItem

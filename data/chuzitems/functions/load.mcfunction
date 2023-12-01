@@ -18,6 +18,7 @@
     scoreboard objectives add ChuzItems.FungusStick minecraft.used:warped_fungus_on_a_stick {"text":"イベント: クリック キノコ付きの棒"}
     scoreboard objectives add ChuzItems.KnowledgeBook minecraft.used:knowledge_book {"text":"イベント: クリック 知恵の本"}
     scoreboard objectives add ChuzItems.Trade minecraft.custom:minecraft.talked_to_villager {"text":"イベント: 村人と話す"}
+    scoreboard objectives add ChuzItems.Bow minecraft.used:minecraft.bow {"text":"イベント: 弓の使用"}
     scoreboard objectives add ChuzItems.Jump minecraft.custom:minecraft.jump {"text":"イベント: ジャンプ"}
     scoreboard objectives add ChuzItems.Death deathCount {"text":"イベント: 死亡"}
     scoreboard objectives add ChuzItems.CoolTime dummy
@@ -42,6 +43,12 @@
     scoreboard objectives add ChuzItems.PhotonGlaive.GlideCount dummy
     scoreboard objectives add ChuzItems.Projectile.Charge dummy
     scoreboard objectives add ChuzItems.Count dummy
+    scoreboard objectives add ChuzItems.Bow.Charge dummy
+
+#> 流星の弓
+    scoreboard objectives add ChuzItems.ShootingStar.LockCount dummy
+    scoreboard objectives add ChuzItems.ShootingStar.LockDelay dummy
+    scoreboard objectives add ChuzItems.ShootingStar.LockLimit dummy
 
 #> 固定数値
     scoreboard objectives add Chuz.Const dummy
@@ -81,7 +88,6 @@
     scoreboard objectives add Chuz.Calc dummy
     scoreboard objectives add Chuz.Rule dummy
     scoreboard objectives add Chuz.ItemCheck dummy
-    scoreboard objectives add Chuz.Motion.Power dummy
     scoreboard objectives add Chuz.Motion.Gamerule dummy
     scoreboard objectives add Chuz.Motion.Difficulty dummy
     scoreboard objectives add Chuz.PosDiffY dummy

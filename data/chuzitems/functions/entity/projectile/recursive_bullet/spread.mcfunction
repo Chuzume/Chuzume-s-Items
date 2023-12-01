@@ -4,6 +4,7 @@
 #
 # @within function
 #   chuzitems:entity/projectile/recursive_bullet/init
+#   
 
 # 返り値のEntity
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
