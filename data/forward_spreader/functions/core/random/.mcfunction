@@ -11,4 +11,4 @@ scoreboard players operation $Random.Carry ForwardSpreader = $Random.Base Forwar
 scoreboard players operation $Random.Carry ForwardSpreader /= $65535 ForwardSpreader
 scoreboard players operation $Random.Base ForwardSpreader %= $65535 ForwardSpreader
 
-scoreboard players get $Random.Base ForwardSpreader
+return run scoreboard players get $Random.Base ForwardSpreader
