@@ -14,7 +14,7 @@
     #playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 1
 
 # パーティクル
-    particle minecraft:poof ~ ~0.1 ~ 0.3 0 0.3 0.2 10
+    #particle minecraft:poof ~ ~0.1 ~ 0.3 0 0.3 0.2 10
     particle minecraft:crit ~ ~0.3 ~ 0.3 0 0.3 0.5 10
 
 # 着地まで使えないようにタグを付与
