@@ -34,6 +34,7 @@
     scoreboard players reset $X ForwardSpreader
     scoreboard players reset $Y ForwardSpreader
     scoreboard players reset $Z ForwardSpreader
+    scoreboard players reset $Result ForwardSpreader
     data remove storage forward_spreader: Distance
     data remove storage forward_spreader: Spread
     data remove storage forward_spreader: Rotation
