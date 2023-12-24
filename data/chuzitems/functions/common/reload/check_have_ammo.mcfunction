@@ -26,4 +26,4 @@
     execute if score $Gamerule.AmmoRequire Chuz.Rule matches 1 if score $HaveAmmo Chuz.Temporary matches 0 run playsound minecraft:block.stone_button.click_on player @s ~ ~ ~ 2 1.5
 
 # リセット
-    scoreboard players reset $HaveItems Chuz.Temporary
+    scoreboard players reset $HaveAmmo Chuz.Temporary
