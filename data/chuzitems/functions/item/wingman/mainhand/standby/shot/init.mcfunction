@@ -23,10 +23,12 @@
     # 飛距離
         data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Range set value 400
     # どれほど遠くから拡散するか
-        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Distance set value 3.0f
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Distance set value 1.0f
     # 拡散の大きさ
         # 腰だめ
-            execute if entity @p[tag=This,tag=ChuzItems.Shot.Normal] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.2f
+            execute if entity @p[tag=This,tag=ChuzItems.Shot.Normal] unless score @p[tag=This] ChuzItems.Wingman.Spread matches 0.. run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.0f
+            execute if entity @p[tag=This,tag=ChuzItems.Shot.Normal] if score @p[tag=This] ChuzItems.Wingman.Spread matches 0.. run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.5f
+            execute if entity @p[tag=This,tag=ChuzItems.Shot.Normal] run scoreboard players set @p[tag=This] ChuzItems.Wingman.Spread 15
         # ADS
             execute if entity @p[tag=This,tag=ChuzItems.Shot.ADS] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread set value 0.0f
     # ダメージタイプ(胴体)

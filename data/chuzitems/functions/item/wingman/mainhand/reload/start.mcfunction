@@ -20,4 +20,5 @@
     scoreboard players reset @s ChuzItems.Spread
     scoreboard players reset @s ChuzItems.Recoil
     scoreboard players reset @s ChuzItems.Recoil.Change
+    scoreboard players reset @s ChuzItems.Wingman.Spread
     tag @s remove ChuzItems.ReloadStart

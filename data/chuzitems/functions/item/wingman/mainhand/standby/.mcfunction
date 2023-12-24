@@ -37,3 +37,7 @@
     scoreboard players remove @s[scores={ChuzItems.Recoil.Change=1..}] ChuzItems.Recoil.Change 1
     scoreboard players reset @s[scores={ChuzItems.Recoil.Change=0}] ChuzItems.Recoil.Change
 
+# 拡散が収まっていく
+    scoreboard players remove @s[scores={ChuzItems.Wingman.Spread=1..}] ChuzItems.Wingman.Spread 1
+    scoreboard players reset @s[scores={ChuzItems.Wingman.Spread=0}] ChuzItems.Wingman.Spread
+

@@ -23,6 +23,7 @@
 
 # 弾を召喚
     # 腰だめ
+        execute if entity @s[tag=ChuzItems.Shot.Normal] unless score @s ChuzItems.Wingman.Spread matches 0.. run summon marker ^ ^ ^30 {Tags:["SpreadMarker"]}
         execute if entity @s[tag=ChuzItems.Shot.Normal] positioned ^-0.25 ^ ^ summon marker run function chuzitems:item/wingman/mainhand/standby/shot/init
     # ADS
         execute if entity @s[tag=ChuzItems.Shot.ADS] run summon marker ^ ^ ^10 {Tags:["SpreadMarker"]}

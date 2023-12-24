@@ -38,6 +38,7 @@
     scoreboard objectives add ChuzItems.FallResistTime dummy
 
 #> その他なんか分類しづらいもの
+    scoreboard objectives add ChuzItems.Wingman.Spread dummy
     scoreboard objectives add ChuzItems.Revo.Magazine dummy
     scoreboard objectives add ChuzItems.Gunblade.StepCount dummy
     scoreboard objectives add ChuzItems.PhotonGlaive.GlideCount dummy
