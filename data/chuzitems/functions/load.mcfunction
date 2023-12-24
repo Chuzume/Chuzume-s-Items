@@ -98,7 +98,6 @@
     scoreboard objectives add Chuz.Speed dummy
     scoreboard objectives add Chuz.Recursion dummy
 
-
 # ダメージ受けたときのやつ
     scoreboard objectives add Chuz.HitCheck dummy
     
@@ -110,4 +109,4 @@
 # ルールが存在してなかったら定義
     execute unless score $Gamerule.AmmoRequire Chuz.Rule = $Gamerule.AmmoRequire Chuz.Rule run scoreboard players set $Gamerule.AmmoRequire Chuz.Rule 1
     execute unless score $Gamerule.Griefing Chuz.Rule = $Gamerule.Griefing Chuz.Rule run scoreboard players set $Gamerule.Griefing Chuz.Rule 0
-    execute unless score $Gamerule.Recoil Chuz.Rule = $Gamerule.Recoil Chuz.Rule run scoreboard players set $Gamerule.Recoil Chuz.Rule 0
+    execute unless score $Gamerule.Recoil Chuz.Rule = $Gamerule.Recoil Chuz.Rule run scoreboard players set $Gamerule.Recoil Chuz.Rule 1

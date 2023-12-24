@@ -4,7 +4,7 @@ execute unless block 100001 -64 100000 light_blue_shulker_box run setblock 10000
 execute unless block 100001 1 100000 bedrock run setblock 100001 1 100000 bedrock
 scoreboard players set $Gamerule.AmmoRequire Chuz.Rule 1
 scoreboard players set $Gamerule.Griefing Chuz.Rule 0
-scoreboard players set $Gamerule.Recoil Chuz.Rule 0
+scoreboard players set $Gamerule.Recoil Chuz.Rule 1
 # Chuz.Vector0が存在しなければ召喚
     forceload add 0 0 0 0
     execute unless entity @e[type=marker,tag=Chuz.Vector0] run summon marker 0 0 0 {Tags:["Chuz.Vector0"]}
