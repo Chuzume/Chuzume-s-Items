@@ -51,7 +51,6 @@
 
 #> 流星の弓
     #declare tag ChuzItems.Entity.Lockon
-    #declare tag ChuzItems.Entity.HomingMarker
 
     #declare tag ChuzItems.Projectile.ChargedShootingArrow0
     #declare tag ChuzItems.Projectile.ChargedShootingArrow1
