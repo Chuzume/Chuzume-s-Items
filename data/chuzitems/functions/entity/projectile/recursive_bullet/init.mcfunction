@@ -15,7 +15,7 @@
         data modify storage forward_spreader: Spread set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Projectile.Spread
 
     # タグ付きプレイヤーから実行する。ただし拡散値0なら射撃側で設定
-        execute unless data storage forward_spreader: {Spread:0.0f} as @p[tag=This] at @s anchored eyes positioned ^ ^ ^ run function chuzitems:entity/projectile/recursive_bullet/spread
+        execute unless data storage forward_spreader: {Spread:0.0f} as @p[tag=This] at @s anchored eyes positioned ^ ^ ^30 run function chuzitems:entity/projectile/recursive_bullet/spread
 
     # 拡散用のエンティティのほうを向く
         execute facing entity @e[type=marker,tag=SpreadMarker,distance=..100] feet run tp @s ~ ~ ~ ~ ~
