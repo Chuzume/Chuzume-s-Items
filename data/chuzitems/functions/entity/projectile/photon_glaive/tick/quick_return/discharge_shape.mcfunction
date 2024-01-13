@@ -1,8 +1,8 @@
-#> chuzitems:entity/photon_glaive/tick/quick_return/discharge_shape
+#> chuzitems:entity/projectile/photon_glaive/tick/quick_return/discharge_shape
 #
 # 
 #
-# @within function chuzitems:entity/photon_glaive/tick/quick_return/discharge
+# @within function chuzitems:entity/projectile/photon_glaive/tick/quick_return/discharge
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAJwCMA7KQEaUBmArALRzXNzsAsAQxQAOdkOq8ATM0kA2WQzgBmFKRT4wAOwEBbBMkChioBcFMARgCMugM5JwKAPaFNEJEoAMBdc7gZbYAG4C2IT64AAeSB5gUJEAvrEElqRohDaIkgRWEBYuiFFw2NhoMFb61G5RGPbZEPpRaFYAooXFpY0AjoRB2FAAyubq5IjMQaXxeODQ8BToWLimRCRDYHx8lKRupMIo7LLMfNT83LLswkq0O6TUSgwMSjS0DAICC9p6FIBomiZmFtZ+Dk5cnwol5ar5EOBAsFQmAInkCDE8uMwEkUmlJAA6ViZbIYXL5FolMoVRLVAS1SIEBrNIpEjpdQp9AZwIYjbBjWIAXSAA_3
 # 円 2

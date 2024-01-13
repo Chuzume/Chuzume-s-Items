@@ -1,8 +1,8 @@
-#> chuzitems:entity/photon_glaive/tick/move/particle_charge0
+#> chuzitems:entity/projectile/photon_glaive/tick/particle/charge0
 #
 # 
 #
-# @within function chuzitems:entity/photon_glaive/tick/move/
+# @within function chuzitems:entity/projectile/photon_glaive/tick/recursion
 
 # パーティクル1
     particle dust_color_transition 0 0.7 1 0.7 0.5 1 1 ^ ^ ^ 0 0 0 0 2 force @a[distance=..120]

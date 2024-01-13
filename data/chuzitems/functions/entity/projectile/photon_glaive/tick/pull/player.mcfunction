@@ -1,8 +1,8 @@
-#> chuzitems:entity/photon_glaive/tick/pull/player
+#> chuzitems:entity/projectile/photon_glaive/tick/pull/player
 #
 # プレイヤー側の処理
 #
-# @within function chuzitems:entity/photon_glaive/tick/pull/
+# @within function chuzitems:entity/projectile/photon_glaive/tick/pull/
 
 
 # 飛ばす
