@@ -1,24 +1,17 @@
-#> chuzitems:entity/photon_glaive/tick/catch/
+#> chuzitems:entity/projectile/glaive_common/tick/catch/
 #
-# キャッチ
+# 
 #
-# @within function
-#   chuzitems:entity/photon_glaive/tick/move/
-#   chuzitems:entity/photon_glaive/tick/tp_return/warp_catch
-#   chuzitems:entity/photon_glaive/tick/tp_return/
-#   chuzitems:entity/photon_glaive/tick/catch/death
+# @within function chuzitems:entity/projectile/**
 
 # 今の手持ちをストレージに放り込む
     # メインハンド
-        execute if entity @s[tag=!ChuzItems.Projectile.PhotonGlaive.Off] as @p[gamemode=!creative,tag=Chuz.ID.Target] run function chuzitems:entity/photon_glaive/tick/catch/get_data/mainhand
+        execute if entity @s[tag=!ChuzItems.Projectile.Glaive.Off] as @p[gamemode=!creative,tag=Chuz.ID.Target] run function chuzitems:entity/projectile/glaive_common/tick/catch/get_data/mainhand
     # オフハンド
-        execute if entity @s[tag=ChuzItems.Projectile.PhotonGlaive.Off] as @p[gamemode=!creative,tag=Chuz.ID.Target] run function chuzitems:entity/photon_glaive/tick/catch/get_data/offhand
+        execute if entity @s[tag=ChuzItems.Projectile.Glaive.Off] as @p[gamemode=!creative,tag=Chuz.ID.Target] run function chuzitems:entity/projectile/glaive_common/tick/catch/get_data/offhand
 
 # ブーメランを与える
-    # メインハンド
-        execute if entity @s[tag=!ChuzItems.Projectile.PhotonGlaive.Off] run loot replace entity @p[gamemode=!creative,tag=Chuz.ID.Target] weapon.mainhand loot chuzitems:item/photon_glaive
-    # オフハンド
-        execute if entity @s[tag=ChuzItems.Projectile.PhotonGlaive.Off] run loot replace entity @p[gamemode=!creative,tag=Chuz.ID.Target] weapon.offhand loot chuzitems:item/photon_glaive
+    function chuzitems:entity/projectile/glaive_common/tick/catch/macro with storage chuz:context Glaive
 
 # さっきの手持ちをgiveする
     execute as @p[gamemode=!creative,tag=Chuz.ID.Target] if data storage chuz:context Give.tag run function chuzitems:entity/projectile/glaive_common/tick/catch/give with storage chuz:context Give
@@ -31,11 +24,3 @@
 
 # キャッチ時にチャージ0にしとく
     scoreboard players set @p[tag=Chuz.ID.Target] ChuzItems.Charge 0
-
-# 演出
-    playsound minecraft:block.iron_door.close neutral @a ~ ~ ~ 1.5 2
-    playsound minecraft:item.flintandsteel.use player @a ~ ~ ~ 1.5 1
-    particle crit ~ ~ ~ 0 0 0 0.5 10
-
-# キル
-    function chuzitems:entity/photon_glaive/tick/kill

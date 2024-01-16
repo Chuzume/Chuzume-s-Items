@@ -6,6 +6,6 @@
 
 # 渡す
     $give @s $(id)$(tag) $(count)
-
+    
 # リセット
     data remove storage chuz:context Give

@@ -15,6 +15,9 @@
 # モデルを回す
     execute on passengers run function chuzitems:entity/projectile/glaive_common/tick/model_spin
 
+# 持ち主の死亡時の処理
+    execute if score @p[tag=Chuz.ID.Target] ChuzItems.Death matches 1.. run function chuzitems:entity/projectile/glaive_common/tick/catch/death with storage chuz:context Glaive
+
 # モデルを追従
     execute on passengers run tag @s add This
     tp @e[type=item_display,tag=ChuzItems.Model.Glaive,tag=This,sort=nearest,limit=1] ~ ~ ~ ~ ~
