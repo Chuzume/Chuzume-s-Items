@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuzitems:entity/projectile/event/tick
+# @within function chuzitems:entity/projectile/check/tick
 
 # パーティクル
     particle minecraft:crit ~ ~0.5 ~ 0.2 0.2 0.2 0 1 force @a[distance=..30]

@@ -21,7 +21,7 @@
     execute if score @s Chuz.HitCheck matches 0 at @s as @e[type=!#chuzitems:unhurtable,tag=Chuz.TargetEntity,sort=nearest,limit=1] at @s run function chuzitems:entity/projectile/recursive_bullet/hit/damage
 
 # ヒット時イベント
-    execute if score @s Chuz.HitCheck matches 0 run function chuzitems:entity/projectile/event/hit
+    execute if score @s Chuz.HitCheck matches 0 run function chuzitems:entity/projectile/check/hit
 
 # 消失
     execute if score @s Chuz.HitCheck matches 0 at @s run function chuzitems:entity/projectile/recursive_bullet/break
