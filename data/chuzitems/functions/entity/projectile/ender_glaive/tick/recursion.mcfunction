@@ -22,9 +22,6 @@
     # チャージ1
         execute if entity @s[scores={Chuz.Range=0..,ChuzItems.Projectile.Charge=1}] run function chuzitems:entity/projectile/ender_glaive/tick/particle/charge1
 
-# ワープで戻ってくる
-    execute if entity @s[scores={Chuz.Range=..-60}] run function chuzitems:entity/projectile/ender_glaive/tick/catch/
-
 # アイテムを吸い込む
     execute at @s run function chuzitems:entity/projectile/glaive_common/tick/vacuum
 
