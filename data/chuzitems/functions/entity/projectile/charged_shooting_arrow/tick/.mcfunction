@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function chuzitems:entity/projectile/event/tick
+# @within function chuzitems:entity/projectile/check/tick
 
 # 持ち主を特定
     execute at @e[type=marker,tag=ChuzItems.Entity.Lockon,distance=..100] if score @s Chuz.EntityID = @e[type=marker,tag=ChuzItems.Entity.Lockon,distance=..100,sort=nearest,limit=1] Chuz.EntityID run tag @e[type=marker,tag=ChuzItems.Entity.Lockon,distance=..100,sort=nearest,limit=1] add Chuz.ID.Target
