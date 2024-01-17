@@ -25,6 +25,7 @@
     #declare tag Chuz.Click.Right
     #declare tag Chuz.Entity.Interaction
     #declare tag Chuz.TargetEntity
+    #declare tag Chuz.Particle
 
 #> アイテム使用
     #declare tag Chuz.Using.Spyglass
@@ -43,15 +44,19 @@
     #declare tag ChuzItems.Projectile.ThrownGun
     #declare tag ChuzItems.Projectile.Beam
     #declare tag ChuzItems.Projectile.AmbassadorBeam
-    #declare tag ChuzItems.Projectile.PhotonGlaive
-    #declare tag ChuzItems.Projectile.PhotonGlaive.Off
     #declare tag ChuzItems.Projectile.ShootingArrow
     #declare tag ChuzItems.Projectile.ChargedShootingArrow
     #declare tag ChuzItems.Projectile.FlameArrow
+    #declare tag ChuzItems.Projectile.Glaive.Off
+    #declare tag ChuzItems.Projectile.PhotonGlaive
+    #declare tag ChuzItems.Projectile.RicochetGlaive
+    #declare tag ChuzItems.Projectile.EnderGlaive
+
+#> パーティクルチェック
+    #declare tag ChuzItems.Particle.Discharge
 
 #> 流星の弓
     #declare tag ChuzItems.Entity.Lockon
-
     #declare tag ChuzItems.Projectile.ChargedShootingArrow0
     #declare tag ChuzItems.Projectile.ChargedShootingArrow1
     #declare tag ChuzItems.Projectile.ChargedShootingArrow2
@@ -81,8 +86,10 @@
     #declare tag ChuzItems.Color.White
 
 #> モデル
-    #declare tag ChuzItems.Model.PhotonGlaive
-    #declare tag ChuzItems.Model.PhotonGlaive.Off
+    #declare tag ChuzItems.Model.Glaive
+    #declare tag ChuzItems.Model.Glaive.Off
+    #declare tag ChuzItems.Model.RicochetGlaive
+    #declare tag ChuzItems.Model.RicochetGlaive.Off
 
 ## エフェクト
     #declare tag ChuzItems.Effect.Magic
@@ -107,7 +114,8 @@
     #declare tag ChuzItems.Gunblade.NormalShot
     #declare tag ChuzItems.Gunblade.FullBurst
     #declare tag ChuzItems.PhotonGlaive.Counted
-    #declare tag ChuzItems.PhotonGlaive.Recalled
+    #declare tag ChuzItems.Glaive.Recalled
+    #declare tag ChuzItems.Glaive.HitWall
     #declare tag Chuz.PreventRun
 
 #> 制御系タグ
