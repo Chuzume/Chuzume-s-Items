@@ -6,21 +6,16 @@
 #   chuzitems:entity/projectile/ender_glaive/tick/recursion
 #   chuzitems:entity/projectile/ender_glaive/tick/teleport/
 
-# データ取得
-    function chuzitems:entity/projectile/glaive_common/tick/catch/store_current_item
+# キャッチ
+    function chuzitems:entity/projectile/glaive_common/tick/catch/
 
-# ブーメランを与える
-    # メインハンド
-        execute if entity @s[tag=!ChuzItems.Projectile.Glaive.Off] run loot replace entity @p[gamemode=!creative,tag=Chuz.ID.Target] weapon.mainhand loot chuzitems:item/ender_glaive
-    # オフハンド
-        execute if entity @s[tag=ChuzItems.Projectile.Glaive.Off] run loot replace entity @p[gamemode=!creative,tag=Chuz.ID.Target] weapon.offhand loot chuzitems:item/ender_glaive
+# 自分の位置で演出
+    playsound minecraft:entity.enderman.teleport neutral @a ~ ~ ~ 0.5 1
+    particle minecraft:explosion ~ ~ ~ 0 0 0 0 0 force @a[distance=..120]
+    particle minecraft:dust_color_transition 1 0.5 1 1 1 0 1 ~ ~ ~ 0.25 0.25 0.25 0 50 force @a[distance=..120]
 
-# データ戻す
-    function chuzitems:entity/projectile/glaive_common/tick/catch/give_previous_item
-
-# 演出
-    playsound minecraft:block.iron_door.close neutral @a ~ ~ ~ 1.5 2
-    playsound minecraft:item.flintandsteel.use player @a ~ ~ ~ 1.5 1
+# プレイヤーの位置で演出
+    execute at @p[tag=Chuz.ID.Target] positioned ~ ~1 ~ run function chuzitems:entity/projectile/ender_glaive/tick/catch/vfx
 
 # 乗せてるアイテムを持ち主に送る
     execute on passengers if entity @s[type=#chuzitems:vacuumable] at @p[tag=Chuz.ID.Target] run tp ~ ~ ~

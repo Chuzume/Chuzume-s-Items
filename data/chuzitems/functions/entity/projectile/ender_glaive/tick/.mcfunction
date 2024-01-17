@@ -2,7 +2,10 @@
 #
 # 
 #
-# @within function chuzitems:entity/projectile/event/tick
+# @within function chuzitems:entity/projectile/check/tick
+
+# IDを保存しておく
+    data modify storage chuz:context Glaive.ID set value ender_glaive
 
 # 共通処理
     function chuzitems:entity/projectile/glaive_common/tick/
@@ -18,8 +21,8 @@
 # 壁ヒット
     execute if score @s Chuz.Range matches 1.. unless block ^ ^ ^0.5 #chuzitems:no_collision run function chuzitems:entity/projectile/ender_glaive/tick/hit_wall
 
-# 飛距離使い切ったらこっちを向く
-    #execute if entity @s[scores={Chuz.Range=..0}] run function chuzitems:entity/projectile/ender_glaive/tick/teleport_ready
+# 空中でとどまる際の処理
+    execute if score @s Chuz.Range matches ..1 run function chuzitems:entity/projectile/ender_glaive/tick/wait
 
 # 再帰
     execute at @s run function chuzitems:entity/projectile/ender_glaive/tick/recursion

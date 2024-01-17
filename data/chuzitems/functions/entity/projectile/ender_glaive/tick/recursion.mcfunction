@@ -18,13 +18,12 @@
 
 # パーティクル
     # チャージ0
-        execute if score @s ChuzItems.Projectile.Charge matches 0 run function chuzitems:entity/projectile/ender_glaive/tick/particle/charge0
+        execute if entity @s[scores={Chuz.Range=0..,ChuzItems.Projectile.Charge=0}] run function chuzitems:entity/projectile/ender_glaive/tick/particle/charge0
     # チャージ1
-        execute if score @s ChuzItems.Projectile.Charge matches 1 run function chuzitems:entity/projectile/ender_glaive/tick/particle/charge1
+        execute if entity @s[scores={Chuz.Range=0..,ChuzItems.Projectile.Charge=1}] run function chuzitems:entity/projectile/ender_glaive/tick/particle/charge1
 
 # ワープで戻ってくる
-    execute if entity @s[scores={Chuz.Range=..-40}] run function chuzitems:entity/projectile/ender_glaive/tick/catch/
-    execute if entity @s[scores={Chuz.Range=..-40}] run function chuzitems:entity/projectile/ender_glaive/tick/catch/vfx
+    execute if entity @s[scores={Chuz.Range=..-60}] run function chuzitems:entity/projectile/ender_glaive/tick/catch/
 
 # アイテムを吸い込む
     execute at @s run function chuzitems:entity/projectile/glaive_common/tick/vacuum
