@@ -2,7 +2,9 @@
 #
 # 
 #
-# @within function chuzitems:item/ender_glaive/mainhand/standby/
+# @within function
+#   chuzitems:item/ender_glaive/mainhand/standby/
+#   chuzitems:item/ender_glaive/offhand/standby/
 
 # チャージ中のパーティクル
     execute if score @s ChuzItems.Charge matches 1.. run function chuzitems:item/ender_glaive/common/charge/

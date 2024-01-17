@@ -2,7 +2,9 @@
 #
 # 
 #
-# @within function chuzitems:item/ender_glaive/mainhand/knowledge_book/
+# @within function
+#   chuzitems:item/ender_glaive/mainhand/knowledge_book/
+#   chuzitems:item/ender_glaive/offhand/knowledge_book/
 
 # 拡散用マーカー召喚
     execute anchored eyes run summon marker ^ ^ ^30 {Tags:["SpreadMarker"]}
