@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:villager_trade",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:knowledge_book"
+            ],
+            "nbt": "{ChuzData:{ItemID:ricochet_glaive,SellSample:1b}}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "chuzitems:item/ricochet_glaive/get"
+    }
+  }
+  
