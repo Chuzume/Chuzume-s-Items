@@ -19,6 +19,4 @@
     execute if score @p[tag=Chuz.ID.Target] ChuzItems.Death matches 1.. run function chuzitems:entity/projectile/glaive_common/tick/catch/death with storage chuz:context Glaive
 
 # モデルを追従
-    execute on passengers run tag @s add This
-    tp @e[type=item_display,tag=ChuzItems.Model.Glaive,tag=This,sort=nearest,limit=1] ~ ~ ~ ~ ~
-    execute on passengers run tag @s remove This
+    execute at @s on passengers run tp @s ~ ~ ~ ~ ~
