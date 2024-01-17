@@ -16,18 +16,18 @@
 
 ## 飛距離設定
     # ノンチャージ
-        execute if score @p[tag=This] ChuzItems.Charge matches ..14 run scoreboard players set @s Chuz.Range 30
+        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s Chuz.Range 30
     # チャージ
-        execute if score @p[tag=This] ChuzItems.Charge matches 15.. run scoreboard players set @s Chuz.Range 60
+        execute if score @p[tag=This] ChuzItems.Charge matches 10.. run scoreboard players set @s Chuz.Range 60
 
 ## 弾速設定
-    scoreboard players set @s Chuz.Speed 3
+    scoreboard players set @s Chuz.Speed 4
 
 ## チャージカウントを付与
     # ノンチャージ
-        execute if score @p[tag=This] ChuzItems.Charge matches ..14 run scoreboard players set @s ChuzItems.Projectile.Charge 0
+        execute if score @p[tag=This] ChuzItems.Charge matches ..9 run scoreboard players set @s ChuzItems.Projectile.Charge 0
     # チャージ
-        execute if score @p[tag=This] ChuzItems.Charge matches 15.. run scoreboard players set @s ChuzItems.Projectile.Charge 1
+        execute if score @p[tag=This] ChuzItems.Charge matches 10.. run scoreboard players set @s ChuzItems.Projectile.Charge 1
 
 # Init終了
     tag @s remove Chuz.Init

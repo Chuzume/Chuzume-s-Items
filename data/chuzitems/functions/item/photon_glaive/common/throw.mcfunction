@@ -16,10 +16,6 @@
     playsound minecraft:entity.arrow.shoot player @a ~ ~ ~ 2 0.5
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 2 0.7
 
-# 飛ばす
-    #scoreboard players set $strength delta.api.launch -3000
-    #execute positioned ~ ~ ~ run function delta:api/launch_looking
-
 # チャージ値リセット
     scoreboard players reset @s ChuzItems.Charge
 

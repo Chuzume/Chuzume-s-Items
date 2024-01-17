@@ -10,5 +10,5 @@
 
 # サウンド
     playsound chuzume:cyber19_1 player @s ~ ~ ~ 1 2
-        playsound minecraft:block.note_block.bit player @a ~ ~ ~ 1.5 2
+    playsound minecraft:block.note_block.bit player @a ~ ~ ~ 1.5 2
     playsound minecraft:block.iron_trapdoor.open player @a ~ ~ ~ 1 2
