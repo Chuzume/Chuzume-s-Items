@@ -14,11 +14,9 @@
         execute if score @s ChuzItems.Projectile.Charge matches 0 run function chuzitems:entity/projectile/ricochet_glaive/tick/particle/charge0
     # チャージ1
         execute if score @s ChuzItems.Projectile.Charge matches 1 run function chuzitems:entity/projectile/ricochet_glaive/tick/particle/charge1
-    # チャージ2
-        execute if score @s ChuzItems.Projectile.Charge matches 2 run function chuzitems:entity/projectile/ricochet_glaive/tick/particle/charge2
 
 # あまりにも長引いた場合、無理やり戻ってくる
-    execute if entity @s[scores={Chuz.Range=..-300}] run function chuzitems:entity/projectile/ricochet_glaive/tick/catch
+    execute if entity @s[scores={Chuz.Range=..-200}] run function chuzitems:entity/projectile/ricochet_glaive/tick/catch
 
 # キャッチ
     execute if entity @s[scores={Chuz.Range=..0}] at @s positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=Chuz.ID.Target,dx=0] at @s run function chuzitems:entity/projectile/ricochet_glaive/tick/catch
