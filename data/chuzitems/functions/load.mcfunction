@@ -34,6 +34,8 @@
     scoreboard objectives add ChuzItems.BurstRate dummy
     scoreboard objectives add ChuzItems.ModelSpin dummy
     scoreboard objectives add ChuzItems.Tick dummy
+    scoreboard objectives add ChuzItems.Tick2 dummy
+    scoreboard objectives add ChuzItems.Tick3 dummy
     scoreboard objectives add ChuzItems.FallResist dummy
     scoreboard objectives add ChuzItems.FallResistTime dummy
 
