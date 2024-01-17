@@ -24,7 +24,7 @@
     execute if entity @s[scores={Chuz.Range=..-100}] run function chuzitems:entity/projectile/photon_glaive/tick/catch
 
 # アイテムを吸い込む
-    execute at @s as @e[type=#chuzitems:vacuumable,distance=0.5..2] run function chuzitems:entity/projectile/photon_glaive/tick/vacuum
+    execute at @s run function chuzitems:entity/projectile/glaive_common/tick/vacuum
 
 # ヒット
     execute at @s positioned ~-0.75 ~-0.75 ~-0.75 at @e[type=!#chuzitems:unhurtable,tag=!Chuz.ID.Target,dx=0.5,dy=0.5,dz=0.5] run function chuzitems:entity/projectile/photon_glaive/tick/hit/
