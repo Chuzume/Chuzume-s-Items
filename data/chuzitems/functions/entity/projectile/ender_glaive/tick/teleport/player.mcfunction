@@ -14,7 +14,7 @@
     execute rotated ~ 0 run tp @s ^ ^ ^-0.5
 
 # エフェクト付与
-    effect give @s slow_falling 1 0 true
+    effect give @s slow_falling 2 0 true
 
 # 演出
     execute at @s positioned ~ ~0.5 ~ run function chuzitems:entity/projectile/ender_glaive/tick/teleport/vfx
