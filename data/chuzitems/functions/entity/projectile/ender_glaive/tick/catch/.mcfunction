@@ -10,6 +10,9 @@
 # カスタムパーティクル
     summon text_display ~ ~ ~ {billboard:"center",Tags:["Chuz.Particle"],Passengers:[{id:"minecraft:marker",data:{font:warp,color:FF00FF,frame:5}}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1f]},background:0}
 
+# チャージ済なら炸裂
+    execute if score @s ChuzItems.Projectile.Charge matches 1 run function chuzitems:entity/projectile/ender_glaive/tick/discharge
+
 # 自分の位置で演出
     playsound minecraft:entity.enderman.teleport neutral @a ~ ~ ~ 0.5 1
     #particle minecraft:explosion ~ ~ ~ 0 0 0 0 0 force @a[distance=..120]

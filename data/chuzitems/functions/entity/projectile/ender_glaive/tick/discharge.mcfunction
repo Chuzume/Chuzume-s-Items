@@ -1,11 +1,12 @@
-#> chuzitems:entity/projectile/ender_glaive/tick/teleport/discharge/
+#> chuzitems:entity/projectile/ender_glaive/tick/discharge
 #
 # 
 #
-# @within function chuzitems:entity/projectile/ender_glaive/tick/teleport/
+# @within function
+#   chuzitems:entity/projectile/ender_glaive/tick/teleport/
+#   chuzitems:entity/projectile/ender_glaive/tick/catch/
 
 # パーティクル
-    #execute rotated 0 0 run function chuzitems:entity/projectile/photon_glaive/tick/quick_return/discharge_shape
     particle dust_color_transition 1 0.3 1 2 1 1 1 ~ ~ ~ 1.5 1.5 1.5 0 50 force @a[distance=..30]
 
 # カスタムパーティクル
