@@ -18,9 +18,9 @@
 
 ## 飛距離設定
     # ノンチャージ
-        execute if score @p[tag=This] ChuzItems.Charge matches ..14 run scoreboard players set @s Chuz.Range 60
+        execute if score @p[tag=This] ChuzItems.Charge matches ..14 run scoreboard players set @s Chuz.Range 90
     # チャージ1
-        execute if score @p[tag=This] ChuzItems.Charge matches 15.. run scoreboard players set @s Chuz.Range 120
+        execute if score @p[tag=This] ChuzItems.Charge matches 15.. run scoreboard players set @s Chuz.Range 180
 
 ## 弾速設定
     # ノンチャージ
