@@ -5,7 +5,7 @@
 # @within function chuzitems:entity/projectile/**
 
 # 飛距離依存サウンド
-    execute if score @s Chuz.Range matches 70..80 run playsound minecraft:entity.witch.throw neutral @a ~ ~ ~ 1 1.5
+    execute if score @s Chuz.Range matches 70.. run playsound minecraft:entity.witch.throw neutral @a ~ ~ ~ 1 1.5
     execute if score @s Chuz.Range matches 60..70 run playsound minecraft:entity.witch.throw neutral @a ~ ~ ~ 1 1.4
     execute if score @s Chuz.Range matches 50..60 run playsound minecraft:entity.witch.throw neutral @a ~ ~ ~ 1 1.3
     execute if score @s Chuz.Range matches 40..50 run playsound minecraft:entity.witch.throw neutral @a ~ ~ ~ 1 1.2
