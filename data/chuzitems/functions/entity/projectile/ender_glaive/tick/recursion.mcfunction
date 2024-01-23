@@ -26,7 +26,7 @@
     execute at @s run function chuzitems:entity/projectile/glaive_common/tick/vacuum
 
 # ヒット
-    execute at @s positioned ~-0.75 ~-0.75 ~-0.75 at @e[type=!#chuzitems:unhurtable,tag=!Chuz.ID.Target,dx=0.5,dy=0.5,dz=0.5] run function chuzitems:entity/projectile/photon_glaive/tick/hit/
+    execute at @s positioned ~-0.75 ~-0.75 ~-0.75 at @e[type=!#chuzitems:unhurtable,tag=!Chuz.ID.Target,dx=0.5,dy=0.5,dz=0.5] run function chuzitems:entity/projectile/ender_glaive/tick/hit/
 
 # 再帰
     execute if entity @s[scores={Chuz.Recursion=1..}] at @s run function chuzitems:entity/projectile/ender_glaive/tick/recursion
